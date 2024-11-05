@@ -1,0 +1,41 @@
+# Ignore build and installation directories for ROS 2
+/build/
+/install/
+/log/
+/install_local/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore CMake and other build system files
+CMakeCache.txt
+CMakeFiles/
+/cmake_install.cmake
+/Makefile
+
+# Ignore hidden system files
+.DS_Store
+Thumbs.db
+
+# Ignore Visual Studio Code workspace settings
+.vscode/
+
+# Ignore JetBrains IDE settings (e.g., CLion)
+.idea/
+
+# Ignore ROS 2 specific configuration and setup files
+ament_cmake_environment_hooks/
+ament_workspace/
+.colcon/
+.local/
+.rosinstall
+
+# Ignore YAML files for configurations (optional, keep if desired)
+*.yaml
+*.yml
+
+# Ignore any secret files or credentials
+.env
+*.env
