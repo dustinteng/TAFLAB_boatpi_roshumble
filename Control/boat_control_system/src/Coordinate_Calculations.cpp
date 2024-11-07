@@ -7,14 +7,10 @@
 #include <cmath>
 #include <vector>
 
-
-#include "TAF_LIS3MDL.h"
-#include "TAF_GTU7.h"
 #include "Coordinate_Calculations.h"
-#include "Boat_steer.h"
-#include "TAF_AS5600.h" 
 #include "WaypointQueue.hpp"
-#include "TAF_LIS3MDL.h"
+#include "rclcpp/rclcpp.hpp"
+
 
 using namespace std;
 
@@ -23,30 +19,6 @@ const float DEG_TO_RAD = (M_PI / 180.0f);
 const float RAD_TO_DEG = (180.0f / M_PI);
 const float IRONS_DEGREE = 30;
 
-float CoordinateCalculations::calculate_optimal_sail_angle(float wind_direction)
-{
-    if (IRONS_DEGREE < 30 && tack_status ==false)
-    {
-        // Creating logic for getting out of irons
-        set_rudder_servo(70);
-        set_sail_servo(70);
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
-
-        return 70; // Example return to indicate action taken
-    }
-    else if (wind_direction < 45)
-    {
-        return 20;
-    }
-    else if (wind_direction > 135)
-    {
-        return 90;  // Downwind, wide sail angle (around 90 degrees)
-    }
-    else
-    {
-        return wind_direction / 2;  // Beam reach, moderate sail angle
-    }
-}
 
 // Calculating distance between two coordinate points using the Haversine Formula
 float CoordinateCalculations::calculate_distance(Datatypes::Coordinate coord1, Datatypes::Coordinate coord2)
@@ -206,5 +178,4 @@ void CoordinateCalculations::plan_path(const Datatypes::Coordinate& curr_positio
     WaypointQueue::getInstance().add_front_waypoint(first_tack_waypoint);
     WaypointQueue::getInstance().add_front_waypoint(second_tack_waypoint);
     WaypointQueue::getInstance().add_front_waypoint(next_waypoint);  // Add original destination as the last waypoint
-
 }

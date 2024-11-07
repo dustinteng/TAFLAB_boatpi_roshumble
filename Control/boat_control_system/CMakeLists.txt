@@ -18,6 +18,18 @@ include_directories(
   include
 )
 
+
+# Add executables
+add_executable(coordinate_calculations_node src/coordinate_calculations_node.cpp src/Coordinate_Calculations.cpp)
+ament_target_dependencies(coordinate_calculations_node rclcpp std_msgs sensor_msgs geometry_msgs)
+
+add_executable(waypoint_queue_node src/waypoint_queue_node.cpp src/Waypoint_Queue.cpp)
+ament_target_dependencies(waypoint_queue_node rclcpp std_msgs sensor_msgs geometry_msgs)
+
+# Install targets
+install(TARGETS coordinate_calculations_node waypoint_queue_node
+  DESTINATION lib/${PROJECT_NAME})
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

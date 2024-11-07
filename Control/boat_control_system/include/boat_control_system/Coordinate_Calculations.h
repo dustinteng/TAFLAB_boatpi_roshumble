@@ -73,6 +73,8 @@ public:
      **/
     float calculate_angle_to_wind();
 
+
+
     void plan_path(const Datatypes::Coordinate& curr_position, const Datatypes::Coordinate& next_waypoint);
 
     // Static Method to access single instance
