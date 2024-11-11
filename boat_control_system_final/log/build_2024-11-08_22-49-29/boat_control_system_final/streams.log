@@ -1,0 +1,11 @@
+[0.067s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.256s] [35m[1mConsolidate compiler generated dependencies of target WaypointQueueNode[0m
+[0.370s] [ 50%] [32mBuilding CXX object CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o[0m
+[0.433s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:1:10:[m[K [01;31m[Kfatal error: [m[KBoat_Control_System_Final/WaypointQueueNode.hpp: No such file or directory
+[0.434s]     1 | #include [01;31m[K"Boat_Control_System_Final/WaypointQueueNode.hpp"[m[K
+[0.434s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.435s] compilation terminated.
+[0.439s] gmake[2]: *** [CMakeFiles/WaypointQueueNode.dir/build.make:76: CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o] Error 1
+[0.440s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/WaypointQueueNode.dir/all] Error 2
+[0.441s] gmake: *** [Makefile:146: all] Error 2
+[0.449s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

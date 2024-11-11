@@ -1,0 +1,34 @@
+[0.071s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.288s] [35m[1mConsolidate compiler generated dependencies of target WaypointQueueNode[0m
+[0.422s] [ 50%] [32mBuilding CXX object CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o[0m
+[12.474s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:[m[K In member function ‘[01m[Kvoid WaypointQueueNode::ground_station_callback(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’:
+[12.475s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:47:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.476s]    47 | void WaypointQueueNode::ground_station_callback([01;35m[Kconst sensor_msgs::msg::NavSatFix::SharedPtr msg[m[K)
+[12.477s]       |                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.477s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:[m[K In member function ‘[01m[Kvoid WaypointQueueNode::calculated_waypoints_callback(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’:
+[12.478s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:53:100:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.479s]    53 | void WaypointQueueNode::calculated_waypoints_callback([01;35m[Kconst sensor_msgs::msg::NavSatFix::SharedPtr msg[m[K)
+[12.488s]       |                                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[50.359s] [100%] [32m[1mLinking CXX executable WaypointQueueNode[0m
+[53.407s] [100%] Built target WaypointQueueNode
+[53.456s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[53.653s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final
+[53.692s] -- Install configuration: ""
+[53.695s] -- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/WaypointQueueNode
+[53.764s] -- Set runtime path of "/home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/WaypointQueueNode" to ""
+[53.764s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/package_run_dependencies/boat_control_system_final
+[53.766s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/parent_prefix_path/boat_control_system_final
+[53.767s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/ament_prefix_path.sh
+[53.768s] -- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/ament_prefix_path.dsv
+[53.771s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/path.sh
+[53.772s] -- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/path.dsv
+[53.774s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.bash
+[53.775s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.sh
+[53.776s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.zsh
+[53.776s] -- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.dsv
+[53.782s] -- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/package.dsv
+[53.786s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/packages/boat_control_system_final
+[53.787s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/cmake/boat_control_system_finalConfig.cmake
+[53.788s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/cmake/boat_control_system_finalConfig-version.cmake
+[53.789s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/package.xml
+[53.803s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final

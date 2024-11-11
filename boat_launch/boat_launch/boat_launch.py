@@ -17,7 +17,7 @@ def generate_launch_description():
     )
 
     gps_node = Node(
-        package='gps_sensor',
+        package='gps_gt_u7',
         executable='gps_node',  # Replace with actual executable name
         name='gps_node',
         output='screen',
@@ -42,5 +42,6 @@ def generate_launch_description():
         lis3mdl_node,
         control_node,
         main_logic_node,
+        gps_node,
     ])
 

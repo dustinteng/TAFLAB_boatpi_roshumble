@@ -1,0 +1,40 @@
+[35m[1mConsolidate compiler generated dependencies of target WaypointQueueNode[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o[0m
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:[m[K In constructor ‘[01m[KWaypointQueueNode::WaypointQueueNode()[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:16:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kground_station_callback[m[K’ is not a member of ‘[01m[KWaypointQueueNode[m[K’
+   16 |         std::bind(&WaypointQueueNode::[01;31m[Kground_station_callback[m[K, this, std::placeholders::_1));
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:22:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kcalculated_waypoints_callback[m[K’ is not a member of ‘[01m[KWaypointQueueNode[m[K’
+   22 |         std::bind(&WaypointQueueNode::[01;31m[Kcalculated_waypoints_callback[m[K, this, std::placeholders::_1));
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:34:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit_callback[m[K’ is not a member of ‘[01m[KWaypointQueueNode[m[K’
+   34 |         std::bind(&WaypointQueueNode::[01;31m[Kinit_callback[m[K, this, std::placeholders::_1));
+      |                                       [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:[m[K At global scope:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:47:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid WaypointQueueNode::ground_station_callback(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’
+   47 | void [01;31m[KWaypointQueueNode[m[K::ground_station_callback(const sensor_msgs::msg::NavSatFix::SharedPtr msg)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:47:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid WaypointQueueNode::ground_station_callback(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’
+In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:1[m[K:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:9:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass WaypointQueueNode[m[K’ defined here
+    9 | class [01;36m[KWaypointQueueNode[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:53:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid WaypointQueueNode::calculated_waypoints_callback(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’
+   53 | void [01;31m[KWaypointQueueNode[m[K::calculated_waypoints_callback(const sensor_msgs::msg::NavSatFix::SharedPtr msg)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:53:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid WaypointQueueNode::calculated_waypoints_callback(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’
+In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:1[m[K:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:9:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass WaypointQueueNode[m[K’ defined here
+    9 | class [01;36m[KWaypointQueueNode[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:59:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid WaypointQueueNode::init_callback(std_msgs::msg::Int16_<std::allocator<void> >::SharedPtr)[m[K’
+   59 | void [01;31m[KWaypointQueueNode[m[K::init_callback(const std_msgs::msg::Int16::SharedPtr msg)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:59:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid WaypointQueueNode::init_callback(std_msgs::msg::Int16_<std::allocator<void> >::SharedPtr)[m[K’
+In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:1[m[K:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:9:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass WaypointQueueNode[m[K’ defined here
+    9 | class [01;36m[KWaypointQueueNode[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/WaypointQueueNode.dir/build.make:76: CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/WaypointQueueNode.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,4 @@
+Invoking command in '/home/boat/Desktop/src/Control/build/boat_control_system': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/boat/Desktop/src/Control/boat_control_system -DCMAKE_INSTALL_PREFIX=/home/boat/Desktop/src/Control/install/boat_control_system
+Invoked command in '/home/boat/Desktop/src/Control/build/boat_control_system' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/boat/Desktop/src/Control/boat_control_system -DCMAKE_INSTALL_PREFIX=/home/boat/Desktop/src/Control/install/boat_control_system
+Invoking command in '/home/boat/Desktop/src/Control/build/boat_control_system': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/Control/build/boat_control_system -- -j4 -l4
+Invoked command in '/home/boat/Desktop/src/Control/build/boat_control_system' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/Control/build/boat_control_system -- -j4 -l4

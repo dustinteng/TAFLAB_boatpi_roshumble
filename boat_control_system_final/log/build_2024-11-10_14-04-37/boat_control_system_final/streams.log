@@ -1,0 +1,25 @@
+[0.080s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.431s] [ 50%] [32mBuilding CXX object CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o[0m
+[38.934s] [100%] [32m[1mLinking CXX executable WaypointQueueNode[0m
+[40.888s] [100%] Built target WaypointQueueNode
+[40.943s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[41.141s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final
+[41.174s] -- Install configuration: ""
+[41.186s] -- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/WaypointQueueNode
+[41.222s] -- Set runtime path of "/home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/WaypointQueueNode" to ""
+[41.223s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/package_run_dependencies/boat_control_system_final
+[41.224s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/parent_prefix_path/boat_control_system_final
+[41.226s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/ament_prefix_path.sh
+[41.233s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/ament_prefix_path.dsv
+[41.234s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/path.sh
+[41.234s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/path.dsv
+[41.235s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.bash
+[41.236s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.sh
+[41.237s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.zsh
+[41.237s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.dsv
+[41.238s] -- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/package.dsv
+[41.239s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/packages/boat_control_system_final
+[41.239s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/cmake/boat_control_system_finalConfig.cmake
+[41.240s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/cmake/boat_control_system_finalConfig-version.cmake
+[41.241s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/package.xml
+[41.250s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final

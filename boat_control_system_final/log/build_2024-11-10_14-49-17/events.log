@@ -1,0 +1,295 @@
+[0.000000] (-) TimerEvent: {}
+[0.002193] (boat_control_system_final) JobQueued: {'identifier': 'boat_control_system_final', 'dependencies': OrderedDict()}
+[0.003093] (boat_control_system_final) JobStarted: {'identifier': 'boat_control_system_final'}
+[0.058726] (boat_control_system_final) JobProgress: {'identifier': 'boat_control_system_final', 'progress': 'cmake'}
+[0.063814] (boat_control_system_final) JobProgress: {'identifier': 'boat_control_system_final', 'progress': 'build'}
+[0.067773] (boat_control_system_final) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final', '--', '-j4', '-l4'], 'cwd': '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'boat'), ('SSH_CLIENT', '10.41.245.123 50137 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/boat'), ('TERM_PROGRAM_VERSION', '1.95.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-69cc0ba6-eae2-4dd5-a710-531270b9a253.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'boat'), ('_', '/home/boat/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/remote-cli:/home/boat/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/boat/.local/bin:/home/boat/.local/bin:/home/boat/.local/bin:/home/boat/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-15c79811d2.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.41.245.123 50137 10.41.221.43 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099125] (-) TimerEvent: {}
+[0.200766] (-) TimerEvent: {}
+[0.301999] (-) TimerEvent: {}
+[0.403067] (-) TimerEvent: {}
+[0.428943] (boat_control_system_final) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target WaypointQueueNode\x1b[0m\n'}
+[0.503350] (-) TimerEvent: {}
+[0.584449] (boat_control_system_final) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o\x1b[0m\n'}
+[0.603527] (-) TimerEvent: {}
+[0.704639] (-) TimerEvent: {}
+[0.806000] (-) TimerEvent: {}
+[0.906854] (-) TimerEvent: {}
+[1.007626] (-) TimerEvent: {}
+[1.108439] (-) TimerEvent: {}
+[1.209278] (-) TimerEvent: {}
+[1.310132] (-) TimerEvent: {}
+[1.410919] (-) TimerEvent: {}
+[1.511661] (-) TimerEvent: {}
+[1.612425] (-) TimerEvent: {}
+[1.713279] (-) TimerEvent: {}
+[1.814126] (-) TimerEvent: {}
+[1.914938] (-) TimerEvent: {}
+[2.015717] (-) TimerEvent: {}
+[2.116562] (-) TimerEvent: {}
+[2.217594] (-) TimerEvent: {}
+[2.318503] (-) TimerEvent: {}
+[2.419435] (-) TimerEvent: {}
+[2.520269] (-) TimerEvent: {}
+[2.621891] (-) TimerEvent: {}
+[2.722789] (-) TimerEvent: {}
+[2.823677] (-) TimerEvent: {}
+[2.924547] (-) TimerEvent: {}
+[3.025690] (-) TimerEvent: {}
+[3.126691] (-) TimerEvent: {}
+[3.227633] (-) TimerEvent: {}
+[3.328513] (-) TimerEvent: {}
+[3.429485] (-) TimerEvent: {}
+[3.530406] (-) TimerEvent: {}
+[3.631431] (-) TimerEvent: {}
+[3.732386] (-) TimerEvent: {}
+[3.833283] (-) TimerEvent: {}
+[3.934285] (-) TimerEvent: {}
+[4.035210] (-) TimerEvent: {}
+[4.136184] (-) TimerEvent: {}
+[4.237154] (-) TimerEvent: {}
+[4.338100] (-) TimerEvent: {}
+[4.440053] (-) TimerEvent: {}
+[4.540939] (-) TimerEvent: {}
+[4.641911] (-) TimerEvent: {}
+[4.742824] (-) TimerEvent: {}
+[4.843674] (-) TimerEvent: {}
+[4.944593] (-) TimerEvent: {}
+[5.045619] (-) TimerEvent: {}
+[5.146566] (-) TimerEvent: {}
+[5.247511] (-) TimerEvent: {}
+[5.348397] (-) TimerEvent: {}
+[5.449350] (-) TimerEvent: {}
+[5.550314] (-) TimerEvent: {}
+[5.651191] (-) TimerEvent: {}
+[5.752130] (-) TimerEvent: {}
+[5.853063] (-) TimerEvent: {}
+[5.954030] (-) TimerEvent: {}
+[6.054959] (-) TimerEvent: {}
+[6.155892] (-) TimerEvent: {}
+[6.256839] (-) TimerEvent: {}
+[6.357726] (-) TimerEvent: {}
+[6.458711] (-) TimerEvent: {}
+[6.559629] (-) TimerEvent: {}
+[6.660584] (-) TimerEvent: {}
+[6.761471] (-) TimerEvent: {}
+[6.862417] (-) TimerEvent: {}
+[6.963321] (-) TimerEvent: {}
+[7.064198] (-) TimerEvent: {}
+[7.165098] (-) TimerEvent: {}
+[7.265992] (-) TimerEvent: {}
+[7.366858] (-) TimerEvent: {}
+[7.467766] (-) TimerEvent: {}
+[7.568683] (-) TimerEvent: {}
+[7.669631] (-) TimerEvent: {}
+[7.770612] (-) TimerEvent: {}
+[7.871504] (-) TimerEvent: {}
+[7.972495] (-) TimerEvent: {}
+[8.073431] (-) TimerEvent: {}
+[8.174443] (-) TimerEvent: {}
+[8.275440] (-) TimerEvent: {}
+[8.376549] (-) TimerEvent: {}
+[8.477423] (-) TimerEvent: {}
+[8.578392] (-) TimerEvent: {}
+[8.679291] (-) TimerEvent: {}
+[8.780196] (-) TimerEvent: {}
+[8.881118] (-) TimerEvent: {}
+[8.981971] (-) TimerEvent: {}
+[9.082893] (-) TimerEvent: {}
+[9.183780] (-) TimerEvent: {}
+[9.284688] (-) TimerEvent: {}
+[9.386766] (-) TimerEvent: {}
+[9.487634] (-) TimerEvent: {}
+[9.588541] (-) TimerEvent: {}
+[9.689501] (-) TimerEvent: {}
+[9.790476] (-) TimerEvent: {}
+[9.891442] (-) TimerEvent: {}
+[9.992323] (-) TimerEvent: {}
+[10.093227] (-) TimerEvent: {}
+[10.194215] (-) TimerEvent: {}
+[10.295116] (-) TimerEvent: {}
+[10.396011] (-) TimerEvent: {}
+[10.496972] (-) TimerEvent: {}
+[10.597965] (-) TimerEvent: {}
+[10.698888] (-) TimerEvent: {}
+[10.799795] (-) TimerEvent: {}
+[10.900687] (-) TimerEvent: {}
+[11.001529] (-) TimerEvent: {}
+[11.102488] (-) TimerEvent: {}
+[11.203452] (-) TimerEvent: {}
+[11.304468] (-) TimerEvent: {}
+[11.405380] (-) TimerEvent: {}
+[11.506345] (-) TimerEvent: {}
+[11.607392] (-) TimerEvent: {}
+[11.708301] (-) TimerEvent: {}
+[11.809247] (-) TimerEvent: {}
+[11.910193] (-) TimerEvent: {}
+[12.011118] (-) TimerEvent: {}
+[12.112015] (-) TimerEvent: {}
+[12.212922] (-) TimerEvent: {}
+[12.313877] (-) TimerEvent: {}
+[12.414825] (-) TimerEvent: {}
+[12.515688] (-) TimerEvent: {}
+[12.616574] (-) TimerEvent: {}
+[12.717478] (-) TimerEvent: {}
+[12.775816] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KWaypointQueueNode::WaypointQueueNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.776959] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:8:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kground_station_subscription_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_destroy_subscription\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[12.777646] (boat_control_system_final) StderrLine: {'line': b'    8 |     \x1b[01;31m\x1b[Kground_station_subscription_\x1b[m\x1b[K = this->create_subscription<geometry_msgs::msg::Point>(\n'}
+[12.778438] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.779113] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krmw_destroy_subscription\x1b[m\x1b[K\n'}
+[12.806117] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:8:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.806875] (boat_control_system_final) StderrLine: {'line': b'    8 |     ground_station_subscription_ = this->create_subscription<\x1b[01;31m\x1b[Kgeometry_msgs\x1b[m\x1b[K::msg::Point>(\n'}
+[12.807689] (boat_control_system_final) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.809145] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:8:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[12.809938] (boat_control_system_final) StderrLine: {'line': b'    8 |     ground_station_subscription_ = this->\x1b[01;31m\x1b[Kcreate_subscription<geometry_msgs::msg::Point>\x1b[m\x1b[K(\n'}
+[12.810524] (boat_control_system_final) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.820701] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:11:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kground_station_callback\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KWaypointQueueNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.822251] (-) TimerEvent: {}
+[12.822921] (boat_control_system_final) StderrLine: {'line': b'   11 |         std::bind(&WaypointQueueNode::\x1b[01;31m\x1b[Kground_station_callback\x1b[m\x1b[K, this, std::placeholders::_1));\n'}
+[12.823758] (boat_control_system_final) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.871609] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:14:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcalculated_waypoints_subscription_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.872946] (boat_control_system_final) StderrLine: {'line': b'   14 |     \x1b[01;31m\x1b[Kcalculated_waypoints_subscription_\x1b[m\x1b[K = this->create_subscription<geometry_msgs::msg::PointStamped>(\n'}
+[12.873590] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.874299] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:14:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[12.874983] (boat_control_system_final) StderrLine: {'line': b'   14 |     calculated_waypoints_subscription_ = this->\x1b[01;31m\x1b[Kcreate_subscription<geometry_msgs::msg::PointStamped>\x1b[m\x1b[K(\n'}
+[12.875603] (boat_control_system_final) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.876248] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:17:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcalculated_waypoints_callback\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KWaypointQueueNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.876965] (boat_control_system_final) StderrLine: {'line': b'   17 |         std::bind(&WaypointQueueNode::\x1b[01;31m\x1b[Kcalculated_waypoints_callback\x1b[m\x1b[K, this, std::placeholders::_1));\n'}
+[12.877688] (boat_control_system_final) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.902629] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:20:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgps_subscription_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_subscription_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[12.903626] (boat_control_system_final) StderrLine: {'line': b'   20 |     \x1b[01;31m\x1b[Kgps_subscription_\x1b[m\x1b[K = this->create_subscription<sensor_msgs::msg::NavSatFix>(\n'}
+[12.904315] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.904976] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krmw_subscription_t\x1b[m\x1b[K\n'}
+[12.922451] (-) TimerEvent: {}
+[12.930627] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:20:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.932523] (boat_control_system_final) StderrLine: {'line': b'   20 |     gps_subscription_ = this->create_subscription<\x1b[01;31m\x1b[Ksensor_msgs\x1b[m\x1b[K::msg::NavSatFix>(\n'}
+[12.933034] (boat_control_system_final) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.933706] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:20:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[12.934501] (boat_control_system_final) StderrLine: {'line': b'   20 |     gps_subscription_ = this->\x1b[01;31m\x1b[Kcreate_subscription<sensor_msgs::msg::NavSatFix>\x1b[m\x1b[K(\n'}
+[12.935215] (boat_control_system_final) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.935996] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:23:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgps_callback\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KWaypointQueueNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.936737] (boat_control_system_final) StderrLine: {'line': b'   23 |         std::bind(&WaypointQueueNode::\x1b[01;31m\x1b[Kgps_callback\x1b[m\x1b[K, this, std::placeholders::_1));\n'}
+[12.937425] (boat_control_system_final) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.986169] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:26:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kautonomous_mode_init_subscription\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.987346] (boat_control_system_final) StderrLine: {'line': b'   26 |     \x1b[01;31m\x1b[Kautonomous_mode_init_subscription\x1b[m\x1b[K = this->create_subscription<std_msg::msg::Bool>(\n'}
+[12.988022] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.006881] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:26:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.007863] (boat_control_system_final) StderrLine: {'line': b'   26 |     autonomous_mode_init_subscription = this->create_subscription<\x1b[01;31m\x1b[Kstd_msg\x1b[m\x1b[K::msg::Bool>(\n'}
+[13.008488] (boat_control_system_final) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[13.009120] (boat_control_system_final) StderrLine: {'line': b'      |                                                                   \x1b[32m\x1b[Kstd_msgs\x1b[m\x1b[K\n'}
+[13.009848] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:26:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[13.010544] (boat_control_system_final) StderrLine: {'line': b'   26 |     autonomous_mode_init_subscription = this->\x1b[01;31m\x1b[Kcreate_subscription<std_msg::msg::Bool>\x1b[m\x1b[K(\n'}
+[13.011136] (boat_control_system_final) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.012333] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:29:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgps_callback\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KWaypointQueueNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.013202] (boat_control_system_final) StderrLine: {'line': b'   29 |         std::bind(&WaypointQueueNode::\x1b[01;31m\x1b[Kgps_callback\x1b[m\x1b[K, this, std::placeholders::_1));\n'}
+[13.013918] (boat_control_system_final) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.022659] (-) TimerEvent: {}
+[13.123590] (-) TimerEvent: {}
+[13.224581] (-) TimerEvent: {}
+[13.326068] (-) TimerEvent: {}
+[13.427416] (-) TimerEvent: {}
+[13.528296] (-) TimerEvent: {}
+[13.629159] (-) TimerEvent: {}
+[13.730082] (-) TimerEvent: {}
+[13.830954] (-) TimerEvent: {}
+[13.931885] (-) TimerEvent: {}
+[14.032818] (-) TimerEvent: {}
+[14.133698] (-) TimerEvent: {}
+[14.234626] (-) TimerEvent: {}
+[14.335529] (-) TimerEvent: {}
+[14.436488] (-) TimerEvent: {}
+[14.537440] (-) TimerEvent: {}
+[14.638373] (-) TimerEvent: {}
+[14.739291] (-) TimerEvent: {}
+[14.840192] (-) TimerEvent: {}
+[14.941123] (-) TimerEvent: {}
+[15.042075] (-) TimerEvent: {}
+[15.142948] (-) TimerEvent: {}
+[15.243796] (-) TimerEvent: {}
+[15.344724] (-) TimerEvent: {}
+[15.445623] (-) TimerEvent: {}
+[15.546760] (-) TimerEvent: {}
+[15.647696] (-) TimerEvent: {}
+[15.748578] (-) TimerEvent: {}
+[15.849471] (-) TimerEvent: {}
+[15.950390] (-) TimerEvent: {}
+[16.051251] (-) TimerEvent: {}
+[16.152169] (-) TimerEvent: {}
+[16.253049] (-) TimerEvent: {}
+[16.354091] (-) TimerEvent: {}
+[16.455048] (-) TimerEvent: {}
+[16.555957] (-) TimerEvent: {}
+[16.656872] (-) TimerEvent: {}
+[16.757709] (-) TimerEvent: {}
+[16.858684] (-) TimerEvent: {}
+[16.959632] (-) TimerEvent: {}
+[17.060494] (-) TimerEvent: {}
+[17.161408] (-) TimerEvent: {}
+[17.262416] (-) TimerEvent: {}
+[17.363408] (-) TimerEvent: {}
+[17.464305] (-) TimerEvent: {}
+[17.565211] (-) TimerEvent: {}
+[17.666246] (-) TimerEvent: {}
+[17.767206] (-) TimerEvent: {}
+[17.868095] (-) TimerEvent: {}
+[17.969048] (-) TimerEvent: {}
+[18.069950] (-) TimerEvent: {}
+[18.171010] (-) TimerEvent: {}
+[18.272166] (-) TimerEvent: {}
+[18.373132] (-) TimerEvent: {}
+[18.474071] (-) TimerEvent: {}
+[18.574919] (-) TimerEvent: {}
+[18.675941] (-) TimerEvent: {}
+[18.777879] (-) TimerEvent: {}
+[18.878935] (-) TimerEvent: {}
+[18.979813] (-) TimerEvent: {}
+[19.080688] (-) TimerEvent: {}
+[19.181567] (-) TimerEvent: {}
+[19.282567] (-) TimerEvent: {}
+[19.383438] (-) TimerEvent: {}
+[19.484354] (-) TimerEvent: {}
+[19.585272] (-) TimerEvent: {}
+[19.686269] (-) TimerEvent: {}
+[19.787217] (-) TimerEvent: {}
+[19.888110] (-) TimerEvent: {}
+[19.989144] (-) TimerEvent: {}
+[20.090146] (-) TimerEvent: {}
+[20.191106] (-) TimerEvent: {}
+[20.291995] (-) TimerEvent: {}
+[20.392900] (-) TimerEvent: {}
+[20.493941] (-) TimerEvent: {}
+[20.594833] (-) TimerEvent: {}
+[20.695743] (-) TimerEvent: {}
+[20.796613] (-) TimerEvent: {}
+[20.897490] (-) TimerEvent: {}
+[20.998405] (-) TimerEvent: {}
+[21.099283] (-) TimerEvent: {}
+[21.200203] (-) TimerEvent: {}
+[21.301128] (-) TimerEvent: {}
+[21.402069] (-) TimerEvent: {}
+[21.503022] (-) TimerEvent: {}
+[21.603962] (-) TimerEvent: {}
+[21.704837] (-) TimerEvent: {}
+[21.805698] (-) TimerEvent: {}
+[21.906537] (-) TimerEvent: {}
+[22.007345] (-) TimerEvent: {}
+[22.108189] (-) TimerEvent: {}
+[22.209003] (-) TimerEvent: {}
+[22.309940] (-) TimerEvent: {}
+[22.410859] (-) TimerEvent: {}
+[22.511757] (-) TimerEvent: {}
+[22.612767] (-) TimerEvent: {}
+[22.713654] (-) TimerEvent: {}
+[22.814579] (-) TimerEvent: {}
+[22.915507] (-) TimerEvent: {}
+[23.016418] (-) TimerEvent: {}
+[23.117321] (-) TimerEvent: {}
+[23.160167] (boat_control_system_final) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/WaypointQueueNode.dir/build.make:76: CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o] Error 1\n'}
+[23.162015] (boat_control_system_final) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/WaypointQueueNode.dir/all] Error 2\n'}
+[23.164739] (boat_control_system_final) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[23.169961] (boat_control_system_final) CommandEnded: {'returncode': 2}
+[23.217529] (-) TimerEvent: {}
+[23.318385] (-) TimerEvent: {}
+[23.418165] (boat_control_system_final) JobEnded: {'identifier': 'boat_control_system_final', 'rc': 2}
+[23.421044] (-) TimerEvent: {}
+[23.430496] (-) EventReactorShutdown: {}

@@ -1,0 +1,52 @@
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:[m[K In constructor ‘[01m[KWaypointQueueNode::WaypointQueueNode()[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:8:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kground_station_subscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_destroy_subscription[m[K’?
+    8 |     [01;31m[Kground_station_subscription_[m[K = this->create_subscription<geometry_msgs::msg::Point>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Krmw_destroy_subscription[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:8:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ was not declared in this scope
+    8 |     ground_station_subscription_ = this->create_subscription<[01;31m[Kgeometry_msgs[m[K::msg::Point>(
+      |                                                              [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:8:42:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+    8 |     ground_station_subscription_ = this->[01;31m[Kcreate_subscription<geometry_msgs::msg::Point>[m[K(
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:11:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kground_station_callback[m[K’ is not a member of ‘[01m[KWaypointQueueNode[m[K’
+   11 |         std::bind(&WaypointQueueNode::[01;31m[Kground_station_callback[m[K, this, std::placeholders::_1));
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:14:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcalculated_waypoints_subscription_[m[K’ was not declared in this scope
+   14 |     [01;31m[Kcalculated_waypoints_subscription_[m[K = this->create_subscription<geometry_msgs::msg::PointStamped>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:14:48:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   14 |     calculated_waypoints_subscription_ = this->[01;31m[Kcreate_subscription<geometry_msgs::msg::PointStamped>[m[K(
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:17:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kcalculated_waypoints_callback[m[K’ is not a member of ‘[01m[KWaypointQueueNode[m[K’
+   17 |         std::bind(&WaypointQueueNode::[01;31m[Kcalculated_waypoints_callback[m[K, this, std::placeholders::_1));
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:20:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgps_subscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+   20 |     [01;31m[Kgps_subscription_[m[K = this->create_subscription<sensor_msgs::msg::NavSatFix>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Krmw_subscription_t[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:20:51:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+   20 |     gps_subscription_ = this->create_subscription<[01;31m[Ksensor_msgs[m[K::msg::NavSatFix>(
+      |                                                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:20:31:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   20 |     gps_subscription_ = this->[01;31m[Kcreate_subscription<sensor_msgs::msg::NavSatFix>[m[K(
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:23:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kgps_callback[m[K’ is not a member of ‘[01m[KWaypointQueueNode[m[K’
+   23 |         std::bind(&WaypointQueueNode::[01;31m[Kgps_callback[m[K, this, std::placeholders::_1));
+      |                                       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kautonomous_mode_init_subscription[m[K’ was not declared in this scope
+   26 |     [01;31m[Kautonomous_mode_init_subscription[m[K = this->create_subscription<std_msg::msg::Bool>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:26:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_msgs[m[K’?
+   26 |     autonomous_mode_init_subscription = this->create_subscription<[01;31m[Kstd_msg[m[K::msg::Bool>(
+      |                                                                   [01;31m[K^~~~~~~[m[K
+      |                                                                   [32m[Kstd_msgs[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:26:47:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   26 |     autonomous_mode_init_subscription = this->[01;31m[Kcreate_subscription<std_msg::msg::Bool>[m[K(
+      |                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:29:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kgps_callback[m[K’ is not a member of ‘[01m[KWaypointQueueNode[m[K’
+   29 |         std::bind(&WaypointQueueNode::[01;31m[Kgps_callback[m[K, this, std::placeholders::_1));
+      |                                       [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/WaypointQueueNode.dir/build.make:76: CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/WaypointQueueNode.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

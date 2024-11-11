@@ -1,0 +1,8 @@
+source;share/boat_control_system_final/hook/cmake_prefix_path.ps1
+source;share/boat_control_system_final/hook/cmake_prefix_path.dsv
+source;share/boat_control_system_final/hook/cmake_prefix_path.sh
+source;share/boat_control_system_final/local_setup.bash
+source;share/boat_control_system_final/local_setup.dsv
+source;share/boat_control_system_final/local_setup.ps1
+source;share/boat_control_system_final/local_setup.sh
+source;share/boat_control_system_final/local_setup.zsh

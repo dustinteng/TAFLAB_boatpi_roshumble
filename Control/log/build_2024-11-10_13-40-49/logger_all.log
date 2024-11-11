@@ -1,0 +1,99 @@
+[0.651s] DEBUG:colcon:Command line arguments: ['/home/boat/.local/bin/colcon', 'build', '--packages-select', 'boat_control_system']
+[0.651s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['boat_control_system'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff96f2d150>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff96f2cc10>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff96f2cc10>>)
+[1.543s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.544s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.544s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.544s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.544s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.545s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.545s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/boat/Desktop/src/Control'
+[1.545s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.546s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.546s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.546s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.546s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.546s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.598s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.598s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.598s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.599s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system) by extensions ['ignore', 'ignore_ament_install']
+[1.599s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system) by extension 'ignore'
+[1.599s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system) by extension 'ignore_ament_install'
+[1.599s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system) by extensions ['colcon_pkg']
+[1.600s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system) by extension 'colcon_pkg'
+[1.600s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system) by extensions ['colcon_meta']
+[1.600s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system) by extension 'colcon_meta'
+[1.600s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system) by extensions ['ros']
+[1.600s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system) by extension 'ros'
+[1.611s] DEBUG:colcon.colcon_core.package_identification:Package 'boat_control_system' with type 'ros.ament_cmake' and name 'boat_control_system'
+[1.612s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.612s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.612s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.613s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.614s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.614s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.615s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.615s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.615s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.616s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.616s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.616s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.616s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.616s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.708s] Level 5:colcon.colcon_core.verb:set package 'boat_control_system' build argument 'cmake_args' from command line to 'None'
+[1.709s] Level 5:colcon.colcon_core.verb:set package 'boat_control_system' build argument 'cmake_target' from command line to 'None'
+[1.709s] Level 5:colcon.colcon_core.verb:set package 'boat_control_system' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.709s] Level 5:colcon.colcon_core.verb:set package 'boat_control_system' build argument 'cmake_clean_cache' from command line to 'False'
+[1.709s] Level 5:colcon.colcon_core.verb:set package 'boat_control_system' build argument 'cmake_clean_first' from command line to 'False'
+[1.709s] Level 5:colcon.colcon_core.verb:set package 'boat_control_system' build argument 'cmake_force_configure' from command line to 'False'
+[1.709s] Level 5:colcon.colcon_core.verb:set package 'boat_control_system' build argument 'ament_cmake_args' from command line to 'None'
+[1.709s] Level 5:colcon.colcon_core.verb:set package 'boat_control_system' build argument 'catkin_cmake_args' from command line to 'None'
+[1.709s] Level 5:colcon.colcon_core.verb:set package 'boat_control_system' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.710s] DEBUG:colcon.colcon_core.verb:Building package 'boat_control_system' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/boat/Desktop/src/Control/build/boat_control_system', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/boat/Desktop/src/Control/install/boat_control_system', 'merge_install': False, 'path': '/home/boat/Desktop/src/Control/boat_control_system', 'symlink_install': False, 'test_result_base': None}
+[1.710s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.714s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.715s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/boat/Desktop/src/Control/boat_control_system' with build type 'ament_cmake'
+[1.716s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/boat/Desktop/src/Control/boat_control_system'
+[1.727s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.728s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.728s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.784s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/boat/Desktop/src/Control/build/boat_control_system': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/boat/Desktop/src/Control/boat_control_system -DCMAKE_INSTALL_PREFIX=/home/boat/Desktop/src/Control/install/boat_control_system
+[10.819s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/boat/Desktop/src/Control/build/boat_control_system' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/boat/Desktop/src/Control/boat_control_system -DCMAKE_INSTALL_PREFIX=/home/boat/Desktop/src/Control/install/boat_control_system
+[10.831s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/boat/Desktop/src/Control/build/boat_control_system': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/Control/build/boat_control_system -- -j4 -l4
+[101.898s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/boat/Desktop/src/Control/build/boat_control_system' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/Control/build/boat_control_system -- -j4 -l4
+[102.134s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(boat_control_system)
+[102.196s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/src/Control/install/boat_control_system' for CMake module files
+[102.199s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/src/Control/install/boat_control_system' for CMake config files
+[102.205s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/src/Control/install/boat_control_system/bin'
+[102.205s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/src/Control/install/boat_control_system/lib/pkgconfig/boat_control_system.pc'
+[102.228s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/src/Control/install/boat_control_system/lib/python3.10/site-packages'
+[102.230s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/src/Control/install/boat_control_system/bin'
+[102.231s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/src/Control/install/boat_control_system/share/boat_control_system/package.ps1'
+[102.244s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/boat/Desktop/src/Control/install/boat_control_system/share/boat_control_system/package.dsv'
+[102.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/src/Control/install/boat_control_system/share/boat_control_system/package.sh'
+[102.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/src/Control/install/boat_control_system/share/boat_control_system/package.bash'
+[102.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/src/Control/install/boat_control_system/share/boat_control_system/package.zsh'
+[102.265s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/boat/Desktop/src/Control/install/boat_control_system/share/colcon-core/packages/boat_control_system)
+[102.282s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[102.284s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[102.284s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[102.285s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[102.364s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[102.365s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[102.365s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[102.634s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[102.636s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/boat/Desktop/src/Control/install/local_setup.ps1'
+[102.643s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/boat/Desktop/src/Control/install/_local_setup_util_ps1.py'
+[102.652s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/boat/Desktop/src/Control/install/setup.ps1'
+[102.658s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/boat/Desktop/src/Control/install/local_setup.sh'
+[102.662s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/boat/Desktop/src/Control/install/_local_setup_util_sh.py'
+[102.666s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/boat/Desktop/src/Control/install/setup.sh'
+[102.671s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/boat/Desktop/src/Control/install/local_setup.bash'
+[102.675s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/boat/Desktop/src/Control/install/setup.bash'
+[102.680s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/boat/Desktop/src/Control/install/local_setup.zsh'
+[102.683s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/boat/Desktop/src/Control/install/setup.zsh'

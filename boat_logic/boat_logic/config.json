@@ -1,5 +1,5 @@
 {
     "port": "/dev/ttyXbee", 
     "baud_rate": 115200,
-    "boat_name": "Boat1"    
+    "boat_id": "Boat1"    
 }

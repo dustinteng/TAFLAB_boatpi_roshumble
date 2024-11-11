@@ -7,6 +7,7 @@
 #define TACKING_PATH_PLANNER_H
 
 #include <vector>
+#include <string>
 #include "DataTypes.hpp"
 
 using namespace std;
