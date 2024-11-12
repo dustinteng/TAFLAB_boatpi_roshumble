@@ -1,0 +1,9 @@
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:[m[K In constructor ‘[01m[KCoordinateCalculationsNode::CoordinateCalculationsNode()[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:13:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfinal_waypoint_publisher[m[K’ was not declared in this scope; did you mean ‘[01m[Kfinal_waypoint_publisher_[m[K’?
+   13 |     [01;31m[Kfinal_waypoint_publisher[m[K = this->create_publisher<sensor_msgs::msg::NavSatFix>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kfinal_waypoint_publisher_[m[K
+gmake[2]: *** [CMakeFiles/CoordinateCalculationsNode.dir/build.make:76: CMakeFiles/CoordinateCalculationsNode.dir/src/CoordinateCalculationsNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/CoordinateCalculationsNode.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

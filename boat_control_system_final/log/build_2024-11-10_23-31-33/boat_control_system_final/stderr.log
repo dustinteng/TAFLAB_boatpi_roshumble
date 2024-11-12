@@ -1,0 +1,4 @@
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:[m[K In member function ‘[01m[Kvoid WaypointQueueNode::calculated_waypoints_callback(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:66:100:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   66 | void WaypointQueueNode::calculated_waypoints_callback([01;35m[Kconst sensor_msgs::msg::NavSatFix::SharedPtr msg[m[K)
+      |                                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K

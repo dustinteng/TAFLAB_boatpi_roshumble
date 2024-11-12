@@ -3,12 +3,10 @@
 import json
 import rclpy
 from rclpy.node import Node
-from digi.xbee.devices import XBeeDevice
-from std_msgs.msg import Float32MultiArray, Float32
-from sensor_msgs.msg import NavSatFix  # Removed MagneticField import
+from std_msgs.msg import String, Float32MultiArray, Float32
+from sensor_msgs.msg import NavSatFix
 import math
 
-# Boat class to manage boat's state and updates
 class Boat:
     def __init__(self, boat_id):
         self.boat_id = boat_id
@@ -18,158 +16,128 @@ class Boat:
         self.temperature = 0.0
         self.status = "station-keeping"
         self.notification = None
-        # Removed magnetometer attributes
+        self.target_lat = None
+        self.target_lng = None
 
     def get_data_transfer(self):
-        """Generate compact data transfer payload."""
         return {
-            "t": "dt",   # type: "data_transfer"
+            "t": "dt",
             "id": self.boat_id,
             "lat": round(self.lat, 5),
             "lng": round(self.lng, 5),
             "w": round(self.wndvn, 2),
             "temp": round(self.temperature, 1)
-            # Magnetometer data omitted to reduce size
         }
 
     def get_heartbeat(self):
-        """Generate compact heartbeat payload."""
         return {
-            "t": "hb",  # type: "heartbeat"
+            "t": "hb",
             "id": self.boat_id,
             "s": self.status,
             "n": self.notification or ""
         }
 
-# Main logic node
 class MainLogicNode(Node):
     def __init__(self):
         super().__init__('main_logic_node')
         self.get_logger().info('Main Logic Node Initialized')
 
-        # Inline configuration
-        config = {
-            "port": "/dev/ttyXbee",
-            "baud_rate": 115200,
-            "boat_id": "Boat1"
-        }
-        self.get_logger().info(f'Config loaded: {config}')
-        self.xbee_port = config.get('port', '/dev/ttyXbee')
-        self.xbee_baud_rate = config.get('baud_rate', 115200)
-        self.boat_id = config.get('boat_id', 'Boat_Pi')
+        # Boat configuration
+        self.boat = Boat("Boat1")
 
-        # Initialize Boat instance
-        self.boat = Boat(self.boat_id)
+        # Publisher to send commands to XBeeCommunicationNode
+        self.xbee_command_publisher = self.create_publisher(String, '/xbee_commands', 10)
 
-        # Initialize XBee device
-        try:
-            self.device = XBeeDevice(self.xbee_port, self.xbee_baud_rate)
-            self.device.open()
-            self.device.add_data_received_callback(self.xbee_data_receive_callback)
-            self.get_logger().info(f"XBee device opened on {self.xbee_port} at {self.xbee_baud_rate} baud.")
-        except Exception as e:
-            self.get_logger().error(f'Failed to open XBee device: {e}')
-            rclpy.shutdown()
-            return
-
-        # Set up publishers and subscribers
+        # Publisher for boat control commands
         self.control_publisher = self.create_publisher(Float32MultiArray, '/boatcontrol', 10)
+
+        # Subscriptions
+        self.create_subscription(String, '/xbee_data', self.xbee_data_callback, 10)
         self.create_subscription(Float32, '/as5600_angle', self.angle_callback, 10)
         self.create_subscription(NavSatFix, '/gps/fix', self.gps_callback, 10)
-        # Removed magnetometer subscription to reduce data size
 
-        # Send registration message and start heartbeat timer
+        # Send registration message
         self.send_registration_message()
+        
+        # Timers for periodic messages
         self.create_timer(10.0, self.send_heartbeat_message)
+        self.create_timer(2.0, self.send_data_transfer)
 
-        # Send data transfer every 2 seconds (optional)
-        # self.create_timer(2.0, self.send_data_transfer)
+        
 
     def send_registration_message(self):
-        """Send registration message to the backend."""
-        registration_message = json.dumps({
-            "t": "reg",
-            "id": self.boat_id
-        })
-        try:
-            self.device.send_data_broadcast(registration_message)
-            self.get_logger().info(f"Sent registration message: {registration_message}")
-        except Exception as e:
-            self.get_logger().error(f"Failed to send registration message: {e}")
+        message = json.dumps({"t": "reg", "id": self.boat.boat_id})
+        self._send_xbee_message(message, "Sent registration message")
 
     def send_heartbeat_message(self):
-        """Send heartbeat message to the backend."""
-        heartbeat_message = json.dumps(self.boat.get_heartbeat())
-        try:
-            self.device.send_data_broadcast(heartbeat_message)
-            self.get_logger().info(f"Sent heartbeat message: {heartbeat_message}")
-        except Exception as e:
-            self.get_logger().error(f"Failed to send heartbeat message: {e}")
+        message = json.dumps(self.boat.get_heartbeat())
+        self._send_xbee_message(message, "Sent heartbeat message")
 
     def send_data_transfer(self):
-        """Send current sensor data to the backend."""
-        data_transfer_message = json.dumps(self.boat.get_data_transfer())
-        try:
-            self.device.send_data_broadcast(data_transfer_message)
-            self.get_logger().info(f"Sent data transfer message: {data_transfer_message}")
-        except Exception as e:
-            self.get_logger().error(f"Failed to send data transfer message: {e}")
+        message = json.dumps(self.boat.get_data_transfer())
+        self._send_xbee_message(message, "Sent data transfer message")
 
     def angle_callback(self, msg):
-        """Update the boat's wind angle from /as5600_angle."""
         self.boat.wndvn = msg.data
 
     def gps_callback(self, msg):
-        """Update the boat's latitude and longitude from /gps/fix."""
         self.boat.lat = msg.latitude if not math.isnan(msg.latitude) else 0.0
         self.boat.lng = msg.longitude if not math.isnan(msg.longitude) else 0.0
 
-    def xbee_data_receive_callback(self, xbee_message):
-        """Process incoming XBee messages from the backend."""
+    def xbee_data_callback(self, msg):
+        """Process incoming data from XBee."""
         try:
-            data_str = xbee_message.data.decode('utf-8')
-            self.get_logger().info(f"Received data: {data_str}")
-
-            # Decode JSON message
-            data = json.loads(data_str)
-
-            # Check if the message is intended for this boat
+            data = json.loads(msg.data)
             target_boat_id = data.get('id')
-            if target_boat_id not in [self.boat_id, 'all']:
-                return  # Message is not for this boat
+            if target_boat_id not in [self.boat.boat_id, 'all']:
+                self.get_logger().info(f"Ignored message for boat ID {target_boat_id}")
+                return
 
-            # Process different message types
-            message_type = data.get("t")
-            if message_type == "cmd":
+            # Handle command message type
+            if data.get("t") == "cmd":
                 self.handle_backend_command(data)
-            elif message_type == "dr":
-                self.send_data_transfer()
-        except (ValueError, json.JSONDecodeError) as e:
+            else:
+                self.get_logger().warning(f"Unhandled message type: {data.get('t')}")
+        except json.JSONDecodeError as e:
             self.get_logger().error(f"Error decoding data: {e}")
-            self.get_logger().error("Invalid data received. Please send valid JSON.")
 
     def handle_backend_command(self, data):
-        """Handle control commands from backend."""
-        control_msg = Float32MultiArray()
-        control_msg.data = [
-            float(data.get('r', 0.0)),   # Abbreviated 'rudd' to 'r'
-            float(data.get('s', 0.0)),   # Abbreviated 'sail' to 's'
-            float(data.get('th', 0.0))   # Abbreviated 'throt' to 'th'
-        ]
-        self.control_publisher.publish(control_msg)
-        self.get_logger().info(f"Published control commands to /boatcontrol")
+        # Determine mode from the incoming data
+        mode = data.get('md', 'auto')  # Default to autonomous if 'md' key is missing
+        self.get_logger().info(f"Handling backend command in mode: {mode}")
 
-        # Update target lat/long for autonomous mode
-        self.boat.target_lat = data.get('tlat', self.boat.lat)
-        self.boat.target_lng = data.get('tlng', self.boat.lng)
-        self.boat.status = data.get("cmd", "station-keeping")
+        if mode == 'mnl':
+            # Manual mode
+            control_msg = Float32MultiArray()
+            control_msg.data = [
+                float(data.get('r', 0.0)),   # Rudder angle
+                float(data.get('s', 0.0)),   # Sail angle
+                float(data.get('th', 0.0))   # Throttle
+            ]
+            self.control_publisher.publish(control_msg)
+            self.boat.status = "manual control"
+            self.get_logger().info("Manual mode: Control command sent.")
 
-    def destroy_node(self):
-        """Ensure XBee device is closed on shutdown."""
-        super().destroy_node()
-        if self.device is not None and self.device.is_open():
-            self.device.close()
-            self.get_logger().info("Closed XBee device.")
+        elif mode == 'auto':
+            # Autonomous mode
+            self.boat.target_lat = data.get('tlat', self.boat.lat)
+            self.boat.target_lng = data.get('tlng', self.boat.lng)
+            self.boat.status = "autonomous navigation"
+            self.get_logger().info("Autonomous mode: Target coordinates updated.")
+
+        else:
+            # Handle any unknown mode
+            self.get_logger().warning(f"Unknown mode '{mode}' received. Ignoring command.")
+
+        # Log mode for debugging purposes
+        self.get_logger().info(f"Mode: {mode}, Status: {self.boat.status}")
+
+    def _send_xbee_message(self, message, log_message):
+        try:
+            self.xbee_command_publisher.publish(String(data=message))
+            self.get_logger().info(f"{log_message}: {message}")
+        except Exception as e:
+            self.get_logger().error(f"Failed to send {log_message}: {e}")
 
 def main(args=None):
     rclpy.init(args=args)
@@ -179,7 +147,6 @@ def main(args=None):
     except KeyboardInterrupt:
         node.get_logger().info("Shutting down MainLogicNode.")
     finally:
-        node.destroy_node()
         rclpy.shutdown()
 
 if __name__ == '__main__':

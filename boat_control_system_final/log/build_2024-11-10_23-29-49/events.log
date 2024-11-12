@@ -1,0 +1,162 @@
+[0.000000] (-) TimerEvent: {}
+[0.002134] (boat_control_system_final) JobQueued: {'identifier': 'boat_control_system_final', 'dependencies': OrderedDict()}
+[0.002362] (boat_control_system_final) JobStarted: {'identifier': 'boat_control_system_final'}
+[0.051538] (boat_control_system_final) JobProgress: {'identifier': 'boat_control_system_final', 'progress': 'cmake'}
+[0.056123] (boat_control_system_final) JobProgress: {'identifier': 'boat_control_system_final', 'progress': 'build'}
+[0.060029] (boat_control_system_final) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final', '--', '-j4', '-l4'], 'cwd': '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'boat'), ('SSH_CLIENT', '10.41.245.123 55176 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/boat'), ('TERM_PROGRAM_VERSION', '1.95.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-5fd80ab5-852c-4c70-a948-40f0a7f5a53e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'boat'), ('_', '/home/boat/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/remote-cli:/home/boat/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/boat/.local/bin:/home/boat/.local/bin:/home/boat/.local/bin:/home/boat/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-15c79811d2.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.41.245.123 55176 10.41.221.43 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099050] (-) TimerEvent: {}
+[0.200489] (-) TimerEvent: {}
+[0.271753] (boat_control_system_final) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target WaypointQueue\x1b[0m\n'}
+[0.300628] (-) TimerEvent: {}
+[0.400905] (boat_control_system_final) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/WaypointQueue.dir/src/WaypointQueue.cpp.o\x1b[0m\n'}
+[0.401824] (-) TimerEvent: {}
+[0.502641] (-) TimerEvent: {}
+[0.603638] (-) TimerEvent: {}
+[0.704496] (-) TimerEvent: {}
+[0.805322] (-) TimerEvent: {}
+[0.906089] (-) TimerEvent: {}
+[1.006889] (-) TimerEvent: {}
+[1.107745] (-) TimerEvent: {}
+[1.208604] (-) TimerEvent: {}
+[1.309499] (-) TimerEvent: {}
+[1.410612] (-) TimerEvent: {}
+[1.511514] (-) TimerEvent: {}
+[1.612314] (-) TimerEvent: {}
+[1.713084] (-) TimerEvent: {}
+[1.813862] (-) TimerEvent: {}
+[1.914655] (-) TimerEvent: {}
+[2.015567] (-) TimerEvent: {}
+[2.116400] (-) TimerEvent: {}
+[2.217198] (-) TimerEvent: {}
+[2.318051] (-) TimerEvent: {}
+[2.419002] (-) TimerEvent: {}
+[2.519962] (-) TimerEvent: {}
+[2.620834] (-) TimerEvent: {}
+[2.721791] (-) TimerEvent: {}
+[2.822697] (-) TimerEvent: {}
+[2.923751] (-) TimerEvent: {}
+[3.024608] (-) TimerEvent: {}
+[3.125483] (-) TimerEvent: {}
+[3.226322] (-) TimerEvent: {}
+[3.327171] (-) TimerEvent: {}
+[3.428165] (-) TimerEvent: {}
+[3.529147] (-) TimerEvent: {}
+[3.630093] (-) TimerEvent: {}
+[3.731088] (-) TimerEvent: {}
+[3.832133] (-) TimerEvent: {}
+[3.933080] (-) TimerEvent: {}
+[4.034132] (-) TimerEvent: {}
+[4.135031] (-) TimerEvent: {}
+[4.236270] (-) TimerEvent: {}
+[4.337270] (-) TimerEvent: {}
+[4.438171] (-) TimerEvent: {}
+[4.539051] (-) TimerEvent: {}
+[4.639958] (-) TimerEvent: {}
+[4.740819] (-) TimerEvent: {}
+[4.841708] (-) TimerEvent: {}
+[4.942592] (-) TimerEvent: {}
+[5.043449] (-) TimerEvent: {}
+[5.144339] (-) TimerEvent: {}
+[5.245208] (-) TimerEvent: {}
+[5.346189] (-) TimerEvent: {}
+[5.447083] (-) TimerEvent: {}
+[5.548017] (-) TimerEvent: {}
+[5.649197] (-) TimerEvent: {}
+[5.750187] (-) TimerEvent: {}
+[5.851133] (-) TimerEvent: {}
+[5.952115] (-) TimerEvent: {}
+[6.052986] (-) TimerEvent: {}
+[6.153888] (-) TimerEvent: {}
+[6.254758] (-) TimerEvent: {}
+[6.355755] (-) TimerEvent: {}
+[6.456900] (-) TimerEvent: {}
+[6.557802] (-) TimerEvent: {}
+[6.658720] (-) TimerEvent: {}
+[6.759610] (-) TimerEvent: {}
+[6.860482] (-) TimerEvent: {}
+[6.961339] (-) TimerEvent: {}
+[7.062213] (-) TimerEvent: {}
+[7.163062] (-) TimerEvent: {}
+[7.264006] (-) TimerEvent: {}
+[7.364859] (-) TimerEvent: {}
+[7.465710] (-) TimerEvent: {}
+[7.566606] (-) TimerEvent: {}
+[7.667631] (-) TimerEvent: {}
+[7.768530] (-) TimerEvent: {}
+[7.869408] (-) TimerEvent: {}
+[7.970284] (-) TimerEvent: {}
+[8.071139] (-) TimerEvent: {}
+[8.172034] (-) TimerEvent: {}
+[8.272926] (-) TimerEvent: {}
+[8.373920] (-) TimerEvent: {}
+[8.474870] (-) TimerEvent: {}
+[8.575948] (-) TimerEvent: {}
+[8.676903] (-) TimerEvent: {}
+[8.777833] (-) TimerEvent: {}
+[8.878769] (-) TimerEvent: {}
+[8.980721] (-) TimerEvent: {}
+[9.081841] (-) TimerEvent: {}
+[9.182859] (-) TimerEvent: {}
+[9.283853] (-) TimerEvent: {}
+[9.385281] (-) TimerEvent: {}
+[9.486506] (-) TimerEvent: {}
+[9.587789] (-) TimerEvent: {}
+[9.688653] (-) TimerEvent: {}
+[9.789514] (-) TimerEvent: {}
+[9.890374] (-) TimerEvent: {}
+[9.991301] (-) TimerEvent: {}
+[10.092248] (-) TimerEvent: {}
+[10.193269] (-) TimerEvent: {}
+[10.294193] (-) TimerEvent: {}
+[10.395104] (-) TimerEvent: {}
+[10.496051] (-) TimerEvent: {}
+[10.596934] (-) TimerEvent: {}
+[10.697859] (-) TimerEvent: {}
+[10.798745] (-) TimerEvent: {}
+[10.899703] (-) TimerEvent: {}
+[11.000840] (-) TimerEvent: {}
+[11.101825] (-) TimerEvent: {}
+[11.202733] (-) TimerEvent: {}
+[11.303680] (-) TimerEvent: {}
+[11.404567] (-) TimerEvent: {}
+[11.505459] (-) TimerEvent: {}
+[11.606594] (-) TimerEvent: {}
+[11.707585] (-) TimerEvent: {}
+[11.808603] (-) TimerEvent: {}
+[11.909582] (-) TimerEvent: {}
+[12.010570] (-) TimerEvent: {}
+[12.105155] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueue.cpp:88:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KWaypointQueue\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.106547] (boat_control_system_final) StderrLine: {'line': b'   88 | \x1b[01;31m\x1b[KWaypointQueue\x1b[m\x1b[K()\n'}
+[12.107173] (boat_control_system_final) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.107961] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueue.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint WaypointQueue()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.108546] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueue.cpp:91:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.109149] (boat_control_system_final) StderrLine: {'line': b'   91 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K;\n'}
+[12.109743] (boat_control_system_final) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.110771] (-) TimerEvent: {}
+[12.211725] (-) TimerEvent: {}
+[12.313882] (-) TimerEvent: {}
+[12.415307] (-) TimerEvent: {}
+[12.516261] (-) TimerEvent: {}
+[12.617170] (-) TimerEvent: {}
+[12.718066] (-) TimerEvent: {}
+[12.818979] (-) TimerEvent: {}
+[12.919884] (-) TimerEvent: {}
+[13.020810] (-) TimerEvent: {}
+[13.121687] (-) TimerEvent: {}
+[13.222585] (-) TimerEvent: {}
+[13.323534] (-) TimerEvent: {}
+[13.424449] (-) TimerEvent: {}
+[13.525317] (-) TimerEvent: {}
+[13.626208] (-) TimerEvent: {}
+[13.727110] (-) TimerEvent: {}
+[13.828067] (-) TimerEvent: {}
+[13.929248] (-) TimerEvent: {}
+[13.969227] (boat_control_system_final) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/WaypointQueue.dir/build.make:76: CMakeFiles/WaypointQueue.dir/src/WaypointQueue.cpp.o] Error 1\n'}
+[13.970608] (boat_control_system_final) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/WaypointQueue.dir/all] Error 2\n'}
+[13.973440] (boat_control_system_final) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[13.980432] (boat_control_system_final) CommandEnded: {'returncode': 2}
+[14.029453] (-) TimerEvent: {}
+[14.130908] (-) TimerEvent: {}
+[14.222577] (boat_control_system_final) JobEnded: {'identifier': 'boat_control_system_final', 'rc': 2}
+[14.231126] (-) TimerEvent: {}
+[14.235206] (-) EventReactorShutdown: {}

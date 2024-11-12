@@ -1,0 +1,96 @@
+[0.000000] (-) TimerEvent: {}
+[0.001753] (boat_control_system_final) JobQueued: {'identifier': 'boat_control_system_final', 'dependencies': OrderedDict()}
+[0.002451] (boat_control_system_final) JobStarted: {'identifier': 'boat_control_system_final'}
+[0.050408] (boat_control_system_final) JobProgress: {'identifier': 'boat_control_system_final', 'progress': 'cmake'}
+[0.054761] (boat_control_system_final) JobProgress: {'identifier': 'boat_control_system_final', 'progress': 'build'}
+[0.058728] (boat_control_system_final) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final', '--', '-j4', '-l4'], 'cwd': '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'boat'), ('SSH_CLIENT', '10.41.245.123 55176 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/boat'), ('TERM_PROGRAM_VERSION', '1.95.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-68577c60-ea2c-4767-8ee5-bb7c2989ddf7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'boat'), ('_', '/home/boat/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/remote-cli:/home/boat/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/boat/.local/bin:/home/boat/.local/bin:/home/boat/.local/bin:/home/boat/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-15c79811d2.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.41.245.123 55176 10.41.221.43 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098963] (-) TimerEvent: {}
+[0.184738] (boat_control_system_final) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199139] (-) TimerEvent: {}
+[0.300043] (-) TimerEvent: {}
+[0.401000] (-) TimerEvent: {}
+[0.501785] (-) TimerEvent: {}
+[0.602703] (-) TimerEvent: {}
+[0.703486] (-) TimerEvent: {}
+[0.804305] (-) TimerEvent: {}
+[0.819991] (boat_control_system_final) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.904484] (-) TimerEvent: {}
+[1.005285] (-) TimerEvent: {}
+[1.020097] (boat_control_system_final) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.032680] (boat_control_system_final) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.060027] (boat_control_system_final) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.104520] (boat_control_system_final) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.105397] (-) TimerEvent: {}
+[1.168393] (boat_control_system_final) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.205627] (-) TimerEvent: {}
+[1.306595] (-) TimerEvent: {}
+[1.329853] (boat_control_system_final) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.336833] (boat_control_system_final) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.406790] (-) TimerEvent: {}
+[1.507580] (-) TimerEvent: {}
+[1.608352] (-) TimerEvent: {}
+[1.709135] (-) TimerEvent: {}
+[1.809898] (-) TimerEvent: {}
+[1.910650] (-) TimerEvent: {}
+[2.011438] (-) TimerEvent: {}
+[2.112176] (-) TimerEvent: {}
+[2.212969] (-) TimerEvent: {}
+[2.313679] (-) TimerEvent: {}
+[2.414505] (-) TimerEvent: {}
+[2.419775] (boat_control_system_final) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.514716] (-) TimerEvent: {}
+[2.615469] (-) TimerEvent: {}
+[2.640645] (boat_control_system_final) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.715668] (-) TimerEvent: {}
+[2.787707] (boat_control_system_final) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.815837] (-) TimerEvent: {}
+[2.916757] (-) TimerEvent: {}
+[3.017607] (-) TimerEvent: {}
+[3.118476] (-) TimerEvent: {}
+[3.219270] (-) TimerEvent: {}
+[3.320031] (-) TimerEvent: {}
+[3.420873] (-) TimerEvent: {}
+[3.521715] (-) TimerEvent: {}
+[3.622514] (-) TimerEvent: {}
+[3.723342] (-) TimerEvent: {}
+[3.769069] (boat_control_system_final) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.770555] (boat_control_system_final) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final\n'}
+[3.771173] (boat_control_system_final) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.823517] (-) TimerEvent: {}
+[3.849346] (boat_control_system_final) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.923717] (-) TimerEvent: {}
+[4.006296] (boat_control_system_final) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.023907] (-) TimerEvent: {}
+[4.085317] (boat_control_system_final) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[4.124085] (-) TimerEvent: {}
+[4.224890] (-) TimerEvent: {}
+[4.325732] (-) TimerEvent: {}
+[4.426441] (-) TimerEvent: {}
+[4.527165] (-) TimerEvent: {}
+[4.627869] (-) TimerEvent: {}
+[4.702864] (boat_control_system_final) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.703568] (boat_control_system_final) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.728043] (-) TimerEvent: {}
+[4.781717] (boat_control_system_final) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.786692] (boat_control_system_final) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.822561] (boat_control_system_final) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:37 (add_library):\n'}
+[4.823352] (boat_control_system_final) StderrLine: {'line': b'  Cannot find source file:\n'}
+[4.823805] (boat_control_system_final) StderrLine: {'line': b'\n'}
+[4.824242] (boat_control_system_final) StderrLine: {'line': b'    src/CoordinateCalculations.cpp\n'}
+[4.824915] (boat_control_system_final) StderrLine: {'line': b'\n'}
+[4.825342] (boat_control_system_final) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h\n'}
+[4.825737] (boat_control_system_final) StderrLine: {'line': b'  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc\n'}
+[4.826149] (boat_control_system_final) StderrLine: {'line': b'\n'}
+[4.826702] (boat_control_system_final) StderrLine: {'line': b'\x1b[0m\n'}
+[4.827558] (boat_control_system_final) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:37 (add_library):\n'}
+[4.828750] (-) TimerEvent: {}
+[4.829308] (boat_control_system_final) StderrLine: {'line': b'  No SOURCES given to target: CoordinateCalculations\n'}
+[4.830056] (boat_control_system_final) StderrLine: {'line': b'\n'}
+[4.830729] (boat_control_system_final) StderrLine: {'line': b'\x1b[0m\n'}
+[4.831289] (boat_control_system_final) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[4.854968] (boat_control_system_final) StderrLine: {'line': b'gmake: *** [Makefile:349: cmake_check_build_system] Error 1\n'}
+[4.861976] (boat_control_system_final) CommandEnded: {'returncode': 2}
+[4.928925] (-) TimerEvent: {}
+[5.029672] (-) TimerEvent: {}
+[5.116286] (boat_control_system_final) JobEnded: {'identifier': 'boat_control_system_final', 'rc': 2}
+[5.128398] (-) EventReactorShutdown: {}

@@ -1,0 +1,35 @@
+[35m[1mConsolidate compiler generated dependencies of target CoordinateCalculations[0m
+[ 20%] Built target WaypointQueue
+[ 30%] [32mBuilding CXX object CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o[0m
+[ 50%] Built target WaypointQueueNode
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Ksensor_msgs::msg::NavSatFix CoordinateCalculations::convert_to_position(sensor_msgs::msg::NavSatFix, float, float)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:78:66:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{new_lat, new_long}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Ksensor_msgs::msg::NavSatFix[m[K’ {aka ‘[01m[Ksensor_msgs::msg::NavSatFix_<std::allocator<void> >[m[K’}
+   78 |     sensor_msgs::msg::NavSatFix new_position = {new_lat, new_long[01;31m[K}[m[K;
+      |                                                                  [01;31m[K^[m[K
+      |                                                                  [01;31m[K|[m[K
+      |                                                                  [01;31m[K<brace-enclosed initializer list>[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Kstd::pair<std::__cxx11::basic_string<char>, float> CoordinateCalculations::calculate_directional_bearing(sensor_msgs::msg::NavSatFix)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:86:67:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} to ‘[01m[Kfloat[m[K’ in initialization
+   86 |     float current_heading = [01;31m[Knode_instance.get_magnetometer_heading()[m[K;
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                                   [01;31m[K|[m[K
+      |                                                                   [01;31m[Kstd_msgs::msg::Float32 {aka std_msgs::msg::Float32_<std::allocator<void> >}[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Kfloat CoordinateCalculations::calculate_angle_to_wind()[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:122:56:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} to ‘[01m[Kfloat[m[K’ in initialization
+  122 |     float wind_direction = [01;31m[Knode_instance.get_wind_angle()[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                        [01;31m[K|[m[K
+      |                                                        [01;31m[Kstd_msgs::msg::Float32 {aka std_msgs::msg::Float32_<std::allocator<void> >}[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:123:67:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} to ‘[01m[Kfloat[m[K’ in initialization
+  123 |     float current_heading = [01;31m[Knode_instance.get_magnetometer_heading()[m[K;
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                                   [01;31m[K|[m[K
+      |                                                                   [01;31m[Kstd_msgs::msg::Float32 {aka std_msgs::msg::Float32_<std::allocator<void> >}[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Kvoid CoordinateCalculations::plan_path(const NavSatFix&, const NavSatFix&)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:140:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_wind_angle[m[K’ was not declared in this scope; did you mean ‘[01m[Kmax_upwind_angle[m[K’?
+  140 |     float wind_direction = [01;31m[Kget_wind_angle[m[K();  // Get current wind direction
+      |                            [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                            [32m[Kmax_upwind_angle[m[K
+gmake[2]: *** [CMakeFiles/CoordinateCalculations.dir/build.make:76: CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/CoordinateCalculations.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

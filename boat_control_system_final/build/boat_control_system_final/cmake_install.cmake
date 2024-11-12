@@ -63,6 +63,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/CoordinateCalculationsNodeExec" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/CoordinateCalculationsNodeExec")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/CoordinateCalculationsNodeExec"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final" TYPE EXECUTABLE FILES "/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final/CoordinateCalculationsNodeExec")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/CoordinateCalculationsNodeExec" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/CoordinateCalculationsNodeExec")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/CoordinateCalculationsNodeExec"
+         OLD_RPATH "/opt/ros/humble/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/CoordinateCalculationsNodeExec")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final" TYPE STATIC_LIBRARY FILES "/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final/libCoordinateCalculationsNodeLib.a")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final" TYPE STATIC_LIBRARY FILES "/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final/libCoordinateCalculations.a")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final" TYPE STATIC_LIBRARY FILES "/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final/libWaypointQueue.a")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/boat_control_system_final" TYPE DIRECTORY FILES "/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/boat_control_system_final")
 endif()
 

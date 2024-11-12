@@ -1,0 +1,124 @@
+[0.073s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.283s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculations[0m
+[0.345s] [ 20%] Built target WaypointQueue
+[0.423s] [ 30%] [32mBuilding CXX object CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o[0m
+[0.475s] [ 50%] Built target WaypointQueueNode
+[12.489s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Ksensor_msgs::msg::NavSatFix CoordinateCalculations::convert_to_position(sensor_msgs::msg::NavSatFix, float, float)[m[K’:
+[12.490s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:78:66:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{new_lat, new_long}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Ksensor_msgs::msg::NavSatFix[m[K’ {aka ‘[01m[Ksensor_msgs::msg::NavSatFix_<std::allocator<void> >[m[K’}
+[12.490s]    78 |     sensor_msgs::msg::NavSatFix new_position = {new_lat, new_long[01;31m[K}[m[K;
+[12.491s]       |                                                                  [01;31m[K^[m[K
+[12.491s]       |                                                                  [01;31m[K|[m[K
+[12.492s]       |                                                                  [01;31m[K<brace-enclosed initializer list>[m[K
+[12.498s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Kstd::pair<std::__cxx11::basic_string<char>, float> CoordinateCalculations::calculate_directional_bearing(sensor_msgs::msg::NavSatFix)[m[K’:
+[12.499s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:90:47:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator-[m[K’ (operand types are ‘[01m[Kfloat[m[K’ and ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’})
+[12.499s]    90 |     float bearing_difference = [32m[Ktarget_bearing[m[K [01;31m[K-[m[K [34m[Kcurrent_heading[m[K;
+[12.500s]       |                                [32m[K~~~~~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~~~~~~~~~~~~[m[K
+[12.502s]       |                                [32m[K|[m[K                [34m[K|[m[K
+[12.509s]       |                                [32m[Kfloat[m[K            [34m[Kstd_msgs::msg::Float32 {aka std_msgs::msg::Float32_<std::allocator<void> >}[m[K
+[12.510s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[12.511s]                  from [01m[K/usr/include/c++/11/bits/char_traits.h:39[m[K,
+[12.512s]                  from [01m[K/usr/include/c++/11/ios:40[m[K,
+[12.513s]                  from [01m[K/usr/include/c++/11/ostream:38[m[K,
+[12.513s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[12.514s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:6[m[K:
+[12.514s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:577:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)[m[K’
+[12.515s]   577 |     [01;36m[Koperator[m[K-(const reverse_iterator<_IteratorL>& __x,
+[12.515s]       |     [01;36m[K^~~~~~~~[m[K
+[12.516s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:577:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.517s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:90:49:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’ and ‘[01m[Kfloat[m[K’
+[12.517s]    90 |     float bearing_difference = target_bearing - [01;36m[Kcurrent_heading[m[K;
+[12.518s]       |                                                 [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.519s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[12.519s]                  from [01m[K/usr/include/c++/11/bits/char_traits.h:39[m[K,
+[12.520s]                  from [01m[K/usr/include/c++/11/ios:40[m[K,
+[12.520s]                  from [01m[K/usr/include/c++/11/ostream:38[m[K,
+[12.521s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[12.521s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:6[m[K:
+[12.522s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1693:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)[m[K’
+[12.523s]  1693 |     [01;36m[Koperator[m[K-(const move_iterator<_IteratorL>& __x,
+[12.524s]       |     [01;36m[K^~~~~~~~[m[K
+[12.524s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1693:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.525s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:90:49:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’ and ‘[01m[Kfloat[m[K’
+[12.526s]    90 |     float bearing_difference = target_bearing - [01;36m[Kcurrent_heading[m[K;
+[12.526s]       |                                                 [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.527s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K At global scope:
+[12.527s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:119:24:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kstd_msgs::msg::Float32 CoordinateCalculations::calculate_angle_to_wind()[m[K’
+[12.528s]   119 | std_msgs::msg::Float32 [01;31m[KCoordinateCalculations[m[K::calculate_angle_to_wind()
+[12.528s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.529s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:12[m[K:
+[12.530s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/Coordinate_Calculations.h:68:11:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kfloat CoordinateCalculations::calculate_angle_to_wind()[m[K’
+[12.530s]    68 |     float [01;36m[Kcalculate_angle_to_wind[m[K();
+[12.531s]       |           [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.531s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:12[m[K:
+[12.532s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/Coordinate_Calculations.h:17:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass CoordinateCalculations[m[K’ defined here
+[12.532s]    17 | class [01;36m[KCoordinateCalculations[m[K
+[12.533s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.533s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Kvoid CoordinateCalculations::plan_path(const NavSatFix&, const NavSatFix&)[m[K’:
+[12.534s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:144:46:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator-[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} and ‘[01m[Kfloat[m[K’)
+[12.535s]   144 |     float angle_to_wind = abs([32m[Kwind_direction[m[K [01;31m[K-[m[K [34m[Kdestination_bearing[m[K);
+[12.535s]       |                               [32m[K~~~~~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~~~~~~~~~~~~~~~~[m[K
+[12.536s]       |                               [32m[K|[m[K                [34m[K|[m[K
+[12.542s]       |                               [32m[K|[m[K                [34m[Kfloat[m[K
+[12.543s]       |                               [32m[Kstd_msgs::msg::Float32 {aka std_msgs::msg::Float32_<std::allocator<void> >}[m[K
+[12.544s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[12.544s]                  from [01m[K/usr/include/c++/11/bits/char_traits.h:39[m[K,
+[12.545s]                  from [01m[K/usr/include/c++/11/ios:40[m[K,
+[12.546s]                  from [01m[K/usr/include/c++/11/ostream:38[m[K,
+[12.549s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[12.551s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:6[m[K:
+[12.551s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:577:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)[m[K’
+[12.552s]   577 |     [01;36m[Koperator[m[K-(const reverse_iterator<_IteratorL>& __x,
+[12.553s]       |     [01;36m[K^~~~~~~~[m[K
+[12.553s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:577:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.554s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:144:48:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[12.554s]   144 |     float angle_to_wind = abs(wind_direction - [01;36m[Kdestination_bearing[m[K);
+[12.556s]       |                                                [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[12.557s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[12.557s]                  from [01m[K/usr/include/c++/11/bits/char_traits.h:39[m[K,
+[12.558s]                  from [01m[K/usr/include/c++/11/ios:40[m[K,
+[12.558s]                  from [01m[K/usr/include/c++/11/ostream:38[m[K,
+[12.559s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[12.560s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:6[m[K:
+[12.560s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1693:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)[m[K’
+[12.561s]  1693 |     [01;36m[Koperator[m[K-(const move_iterator<_IteratorL>& __x,
+[12.566s]       |     [01;36m[K^~~~~~~~[m[K
+[12.567s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1693:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.567s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:144:48:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[12.568s]   144 |     float angle_to_wind = abs(wind_direction - [01;36m[Kdestination_bearing[m[K);
+[12.569s]       |                                                [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[12.569s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:161:47:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator-[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} and ‘[01m[Kfloat[m[K’)
+[12.570s]   161 |     float bearing_difference = [32m[Kwind_direction[m[K [01;31m[K-[m[K [34m[Kdestination_bearing[m[K;
+[12.571s]       |                                [32m[K~~~~~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~~~~~~~~~~~~~~~~[m[K
+[12.571s]       |                                [32m[K|[m[K                [34m[K|[m[K
+[12.572s]       |                                [32m[K|[m[K                [34m[Kfloat[m[K
+[12.573s]       |                                [32m[Kstd_msgs::msg::Float32 {aka std_msgs::msg::Float32_<std::allocator<void> >}[m[K
+[12.573s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[12.574s]                  from [01m[K/usr/include/c++/11/bits/char_traits.h:39[m[K,
+[12.574s]                  from [01m[K/usr/include/c++/11/ios:40[m[K,
+[12.575s]                  from [01m[K/usr/include/c++/11/ostream:38[m[K,
+[12.575s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[12.576s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:6[m[K:
+[12.577s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:577:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)[m[K’
+[12.577s]   577 |     [01;36m[Koperator[m[K-(const reverse_iterator<_IteratorL>& __x,
+[12.578s]       |     [01;36m[K^~~~~~~~[m[K
+[12.578s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:577:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.579s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:161:49:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[12.580s]   161 |     float bearing_difference = wind_direction - [01;36m[Kdestination_bearing[m[K;
+[12.580s]       |                                                 [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[12.581s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[12.581s]                  from [01m[K/usr/include/c++/11/bits/char_traits.h:39[m[K,
+[12.582s]                  from [01m[K/usr/include/c++/11/ios:40[m[K,
+[12.582s]                  from [01m[K/usr/include/c++/11/ostream:38[m[K,
+[12.583s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[12.583s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:6[m[K:
+[12.584s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1693:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)[m[K’
+[12.584s]  1693 |     [01;36m[Koperator[m[K-(const move_iterator<_IteratorL>& __x,
+[12.585s]       |     [01;36m[K^~~~~~~~[m[K
+[12.585s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1693:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.586s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:161:49:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[12.587s]   161 |     float bearing_difference = wind_direction - [01;36m[Kdestination_bearing[m[K;
+[12.587s]       |                                                 [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[14.420s] gmake[2]: *** [CMakeFiles/CoordinateCalculations.dir/build.make:76: CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o] Error 1
+[14.421s] gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/CoordinateCalculations.dir/all] Error 2
+[14.422s] gmake: *** [Makefile:146: all] Error 2
+[14.430s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

@@ -1,0 +1,139 @@
+[0.067s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.268s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculationsNode[0m
+[0.348s] [ 33%] Built target WaypointQueue
+[0.380s] [ 50%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNode.dir/src/CoordinateCalculationsNode.cpp.o[0m
+[0.411s] [35m[1mConsolidate compiler generated dependencies of target WaypointQueueNode[0m
+[0.526s] [ 66%] [32mBuilding CXX object CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o[0m
+[13.494s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:2[m[K:
+[13.495s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:47:52:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat64[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+[13.496s]    47 |     void magnetometerCallback(const std_msgs::msg::[01;31m[KFloat64[m[K::SharedPtr msg);
+[13.497s]       |                                                    [01;31m[K^~~~~~~[m[K
+[13.498s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:47:71:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+[13.498s]    47 |     void magnetometerCallback(const std_msgs::msg::Float64::SharedPtr [01;31m[Kmsg[m[K);
+[13.500s]       |                                                                       [01;31m[K^~~[m[K
+[13.500s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:47:70:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+[13.502s]    47 |     void magnetometerCallback[34m[K([m[Kconst std_msgs::msg::Float64::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K);
+[13.503s]       |                              [34m[K~[m[K                                       [01;31m[K^[m[K[32m[K~~~[m[K
+[13.504s]       |                                                                      [32m[K)[m[K
+[13.506s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:47:61:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[13.507s]    47 |     void magnetometerCallback(const std_msgs::msg::Float64::[01;31m[KSharedPtr[m[K msg);
+[13.508s]       |                                                             [01;31m[K^~~~~~~~~[m[K
+[13.510s]       |                                                                      [32m[K;[m[K
+[13.511s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:47:71:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+[13.512s]    47 |     void magnetometerCallback(const std_msgs::msg::Float64::SharedPtr [01;31m[Kmsg[m[K);
+[13.512s]       |                                                                       [01;31m[K^~~[m[K
+[13.513s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:48:44:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat64[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+[13.514s]    48 |     void windCallback(const std_msgs::msg::[01;31m[KFloat64[m[K::SharedPtr msg);
+[13.515s]       |                                            [01;31m[K^~~~~~~[m[K
+[13.515s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:48:63:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+[13.516s]    48 |     void windCallback(const std_msgs::msg::Float64::SharedPtr [01;31m[Kmsg[m[K);
+[13.517s]       |                                                               [01;31m[K^~~[m[K
+[13.518s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:48:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+[13.518s]    48 |     void windCallback[34m[K([m[Kconst std_msgs::msg::Float64::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K);
+[13.519s]       |                      [34m[K~[m[K                                       [01;31m[K^[m[K[32m[K~~~[m[K
+[13.520s]       |                                                              [32m[K)[m[K
+[13.520s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:48:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[13.521s]    48 |     void windCallback(const std_msgs::msg::Float64::[01;31m[KSharedPtr[m[K msg);
+[13.522s]       |                                                     [01;31m[K^~~~~~~~~[m[K
+[13.523s]       |                                                              [32m[K;[m[K
+[13.523s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:48:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+[13.524s]    48 |     void windCallback(const std_msgs::msg::Float64::SharedPtr [01;31m[Kmsg[m[K);
+[13.525s]       |                                                               [01;31m[K^~~[m[K
+[13.526s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:52:20:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat64[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+[13.526s]    52 |     std_msgs::msg::[01;31m[KFloat64[m[K latest_wind_data_;
+[13.527s]       |                    [01;31m[K^~~~~~~[m[K
+[13.528s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:53:20:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat64[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+[13.529s]    53 |     std_msgs::msg::[01;31m[KFloat64[m[K latest_magnetometer_data_;
+[13.529s]       |                    [01;31m[K^~~~~~~[m[K
+[13.587s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:[m[K In constructor ‘[01m[KCoordinateCalculationsNode::CoordinateCalculationsNode()[m[K’:
+[13.587s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:13:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfinal_waypoint_publisher[m[K’ was not declared in this scope; did you mean ‘[01m[Kwaypoint_publisher_[m[K’?
+[13.588s]    13 |     [01;31m[Kfinal_waypoint_publisher[m[K = this->create_publisher<sensor_msgs::msg::NavSatFix>(
+[13.589s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.589s]       |     [32m[Kwaypoint_publisher_[m[K
+[13.653s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:23:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwind_subscriber_[m[K’ was not declared in this scope; did you mean ‘[01m[Kinit_subscriber_[m[K’?
+[13.654s]    23 |     [01;31m[Kwind_subscriber_[m[K = this->create_subscription<std_msgs::msg::Float64>(
+[13.655s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.656s]       |     [32m[Kinit_subscriber_[m[K
+[13.878s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:[m[K In constructor ‘[01m[KWaypointQueueNode::WaypointQueueNode()[m[K’:
+[13.879s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:25:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit_callback[m[K’ is not a member of ‘[01m[KWaypointQueueNode[m[K’
+[13.879s]    25 |         std::bind(&WaypointQueueNode::[01;31m[Kinit_callback[m[K, this, std::placeholders::_1));
+[13.880s]       |                                       [01;31m[K^~~~~~~~~~~~~[m[K
+[13.954s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:29:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmagnetometer_subscriber_[m[K’ was not declared in this scope
+[13.955s]    29 |     [01;31m[Kmagnetometer_subscriber_[m[K = this->create_subscription<std_msgs::msg::Float64>(
+[13.956s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.984s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:[m[K At global scope:
+[13.984s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:52:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid CoordinateCalculationsNode::windCallback(std_msgs::msg::Float64_<std::allocator<void> >::SharedPtr)[m[K’
+[13.986s]    52 | void [01;31m[KCoordinateCalculationsNode[m[K::windCallback(const std_msgs::msg::Float64::SharedPtr msg)
+[13.986s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.987s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:2[m[K:
+[13.988s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:48:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid CoordinateCalculationsNode::windCallback(...)[m[K’
+[13.989s]    48 |     void [01;36m[KwindCallback[m[K(const std_msgs::msg::Float64::SharedPtr msg);
+[13.989s]       |          [01;36m[K^~~~~~~~~~~~[m[K
+[13.990s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass CoordinateCalculationsNode[m[K’ defined here
+[13.991s]    13 | class [01;36m[KCoordinateCalculationsNode[m[K : public rclcpp::Node
+[13.991s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.992s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:60:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid CoordinateCalculationsNode::magnetometerCallback(std_msgs::msg::Float64_<std::allocator<void> >::SharedPtr)[m[K’
+[13.993s]    60 | void [01;31m[KCoordinateCalculationsNode[m[K::magnetometerCallback(const std_msgs::msg::Float64::SharedPtr msg)
+[13.993s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.994s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:2[m[K:
+[13.995s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:47:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid CoordinateCalculationsNode::magnetometerCallback(...)[m[K’
+[13.995s]    47 |     void [01;36m[KmagnetometerCallback[m[K(const std_msgs::msg::Float64::SharedPtr msg);
+[13.996s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[13.997s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass CoordinateCalculationsNode[m[K’ defined here
+[13.997s]    13 | class [01;36m[KCoordinateCalculationsNode[m[K : public rclcpp::Node
+[13.998s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.023s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[14.024s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:85:35:[m[K [01;31m[Kerror: [m[K‘[01m[KWaypointQueueNode[m[K’ was not declared in this scope; did you mean ‘[01m[KWaypointQueue[m[K’?
+[14.032s]    85 |     rclcpp::spin(std::make_shared<[01;31m[KWaypointQueueNode[m[K>());
+[14.033s]       |                                   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[14.034s]       |                                   [32m[KWaypointQueue[m[K
+[14.038s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:85:53:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+[14.039s]    85 |     rclcpp::spin([01;31m[Kstd::make_shared<WaypointQueueNode>()[m[K);
+[14.040s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[14.041s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[14.042s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[14.042s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:4[m[K,
+[14.043s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:2[m[K:
+[14.044s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[14.044s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[14.045s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[14.046s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[14.047s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:85:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[14.049s]    85 |     rclcpp::spin([01;31m[Kstd::make_shared<WaypointQueueNode>()[m[K);
+[14.050s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[16.361s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:39[m[K,
+[16.363s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[16.364s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[16.364s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[16.365s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[16.366s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[16.366s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[16.367s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[16.368s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[16.368s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[16.369s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:4[m[K,
+[16.370s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:2[m[K:
+[16.371s] /opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp: In instantiation of ‘[01m[Kstruct rclcpp::function_traits::function_traits<std::_Bind<void (CoordinateCalculationsNode::*(CoordinateCalculationsNode*, std::_Placeholder<1>))(...)> >[m[K’:
+[16.371s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:380:10:[m[K   recursively required by substitution of ‘[01m[Ktemplate<class MessageT, class CallbackT> struct rclcpp::detail::SubscriptionCallbackTypeHelper<MessageT, CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>, const rclcpp::MessageInfo&)> >::value, void>::type> [with MessageT = std_msgs::msg::Float64_<std::allocator<void> >; CallbackT = std::_Bind<void (CoordinateCalculationsNode::*(CoordinateCalculationsNode*, std::_Placeholder<1>))(...)>][m[K’
+[16.372s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:380:10:[m[K   required from ‘[01m[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::set(CallbackT) [with CallbackT = std::_Bind<void (CoordinateCalculationsNode::*(CoordinateCalculationsNode*, std::_Placeholder<1>))(...)>; MessageT = std_msgs::msg::Float64_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[16.373s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_factory.hpp:94:32:[m[K   required from ‘[01m[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<ROSMessageType> >) [with MessageT = std_msgs::msg::Float64_<std::allocator<void> >; CallbackT = std::_Bind<void (CoordinateCalculationsNode::*(CoordinateCalculationsNode*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Float64_<std::allocator<void> >, std_msgs::msg::Float64_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> >; ROSMessageType = std_msgs::msg::Float64_<std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[16.374s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:122:63:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::create_subscription(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = std_msgs::msg::Float64_<std::allocator<void> >; CallbackT = std::_Bind<void (CoordinateCalculationsNode::*(CoordinateCalculationsNode*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Float64_<std::allocator<void> >, std_msgs::msg::Float64_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; ROSMessageType = std_msgs::msg::Float64_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[16.375s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:191:76:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = std_msgs::msg::Float64_<std::allocator<void> >; CallbackT = std::_Bind<void (CoordinateCalculationsNode::*(CoordinateCalculationsNode*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Float64_<std::allocator<void> >, std_msgs::msg::Float64_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[16.376s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:99:47:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = std_msgs::msg::Float64_<std::allocator<void> >; CallbackT = std::_Bind<void (CoordinateCalculationsNode::*(CoordinateCalculationsNode*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Float64_<std::allocator<void> >, std_msgs::msg::Float64_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[16.377s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:23:73:[m[K   required from here
+[16.379s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:51:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+[16.380s]    51 |   using [01;31m[Karguments[m[K = typename tuple_tail<
+[16.381s]       |         [01;31m[K^~~~~~~~~[m[K
+[16.381s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+[16.382s]    57 |   using [01;31m[Kargument_type[m[K = typename std::tuple_element<N, arguments>::type;
+[16.384s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[16.386s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+[16.387s]    59 |   using [01;31m[Kreturn_type[m[K = typename function_traits<decltype( &FunctionT::operator())>::return_type;
+[16.387s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[28.723s] gmake[2]: *** [CMakeFiles/WaypointQueueNode.dir/build.make:76: CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o] Error 1
+[28.725s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/WaypointQueueNode.dir/all] Error 2
+[28.726s] gmake[1]: *** Waiting for unfinished jobs....
+[31.679s] gmake[2]: *** [CMakeFiles/CoordinateCalculationsNode.dir/build.make:76: CMakeFiles/CoordinateCalculationsNode.dir/src/CoordinateCalculationsNode.cpp.o] Error 1
+[31.680s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/CoordinateCalculationsNode.dir/all] Error 2
+[31.681s] gmake: *** [Makefile:146: all] Error 2
+[31.721s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

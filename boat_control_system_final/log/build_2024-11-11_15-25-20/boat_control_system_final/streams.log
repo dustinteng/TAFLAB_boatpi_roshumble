@@ -1,0 +1,44 @@
+[0.089s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.381s] [ 20%] Built target WaypointQueue
+[0.389s] [ 30%] [32mBuilding CXX object CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o[0m
+[0.527s] [ 50%] Built target WaypointQueueNode
+[18.828s] [ 60%] [32m[1mLinking CXX static library libCoordinateCalculations.a[0m
+[19.221s] [ 60%] Built target CoordinateCalculations
+[19.413s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculationsNodeLib[0m
+[20.299s] [ 70%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o[0m
+[94.230s] [ 80%] [32m[1mLinking CXX static library libCoordinateCalculationsNodeLib.a[0m
+[96.558s] [ 80%] Built target CoordinateCalculationsNodeLib
+[96.910s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculationsNodeExec[0m
+[97.049s] [ 90%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeExec.dir/src/CoordinateCalculationsNode.cpp.o[0m
+[164.509s] [100%] [32m[1mLinking CXX executable CoordinateCalculationsNodeExec[0m
+[168.429s] [100%] Built target CoordinateCalculationsNodeExec
+[168.484s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[168.761s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final
+[168.809s] -- Install configuration: ""
+[168.810s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/WaypointQueueNode
+[168.819s] -- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/CoordinateCalculationsNodeExec
+[168.915s] -- Set runtime path of "/home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/CoordinateCalculationsNodeExec" to ""
+[168.916s] -- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/libCoordinateCalculationsNodeLib.a
+[169.342s] -- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/libCoordinateCalculations.a
+[169.350s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/libWaypointQueue.a
+[169.351s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final
+[169.352s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp
+[169.352s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/WaypointQueue.hpp
+[169.354s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/Coordinate_Calculations.h
+[169.354s] -- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp
+[169.357s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/package_run_dependencies/boat_control_system_final
+[169.359s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/parent_prefix_path/boat_control_system_final
+[169.368s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/ament_prefix_path.sh
+[169.371s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/ament_prefix_path.dsv
+[169.372s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/path.sh
+[169.375s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/path.dsv
+[169.376s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.bash
+[169.377s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.sh
+[169.378s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.zsh
+[169.379s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.dsv
+[169.380s] -- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/package.dsv
+[169.386s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/packages/boat_control_system_final
+[169.387s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/cmake/boat_control_system_finalConfig.cmake
+[169.388s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/cmake/boat_control_system_finalConfig-version.cmake
+[169.389s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/package.xml
+[169.399s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final

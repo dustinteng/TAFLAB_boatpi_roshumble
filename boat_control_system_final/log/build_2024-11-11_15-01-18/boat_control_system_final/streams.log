@@ -1,0 +1,71 @@
+[0.070s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.282s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculations[0m
+[0.372s] [ 20%] Built target WaypointQueue
+[0.483s] [ 40%] Built target CoordinateCalculations
+[0.523s] [ 60%] Built target WaypointQueueNode
+[0.531s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculationsNodeLib[0m
+[0.671s] [ 70%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o[0m
+[13.032s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:[m[K In function ‘[01m[Ksensor_msgs::msg::NavSatFix get_latest_waypoint()[m[K’:
+[13.033s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:106:40:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs::msg::NavSatFix CoordinateCalculationsNode::latest_waypoint_data_[m[K’ is private within this context
+[13.034s]   106 |     return CoordinateCalculationsNode::[01;31m[Klatest_waypoint_data_[m[K;
+[13.035s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[13.035s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:2[m[K:
+[13.036s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:70:33:[m[K [01;36m[Knote: [m[Kdeclared private here
+[13.036s]    70 |     sensor_msgs::msg::NavSatFix [01;36m[Klatest_waypoint_data_[m[K;
+[13.040s]       |                                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[13.041s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:106:40:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KCoordinateCalculationsNode::latest_waypoint_data_[m[K’
+[13.042s]   106 |     return CoordinateCalculationsNode::[01;31m[Klatest_waypoint_data_[m[K;
+[13.043s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[13.043s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:2[m[K:
+[13.044s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:70:33:[m[K [01;36m[Knote: [m[Kdeclared here
+[13.044s]    70 |     sensor_msgs::msg::NavSatFix [01;36m[Klatest_waypoint_data_[m[K;
+[13.045s]       |                                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[13.046s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:[m[K In function ‘[01m[Kstd_msgs::msg::Float32 get_wind_angle()[m[K’:
+[13.046s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:113:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs::msg::Float32 CoordinateCalculationsNode::latest_wind_data_[m[K’ is private within this context
+[13.049s]   113 |     return CoordinateCalculationsNode::[01;31m[Klatest_wind_data_[m[K;
+[13.050s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[13.054s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:2[m[K:
+[13.055s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:69:28:[m[K [01;36m[Knote: [m[Kdeclared private here
+[13.056s]    69 |     std_msgs::msg::Float32 [01;36m[Klatest_wind_data_[m[K;
+[13.056s]       |                            [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[13.057s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:113:40:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KCoordinateCalculationsNode::latest_wind_data_[m[K’
+[13.057s]   113 |     return CoordinateCalculationsNode::[01;31m[Klatest_wind_data_[m[K;
+[13.058s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[13.059s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:2[m[K:
+[13.059s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:69:28:[m[K [01;36m[Knote: [m[Kdeclared here
+[13.060s]    69 |     std_msgs::msg::Float32 [01;36m[Klatest_wind_data_[m[K;
+[13.061s]       |                            [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[13.061s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:[m[K In function ‘[01m[Kstd_msgs::msg::Float32 get_magnetometer_heading()[m[K’:
+[13.062s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:118:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs::msg::Float32 CoordinateCalculationsNode::latest_magnetometer_data_[m[K’ is private within this context
+[13.063s]   118 |     return CoordinateCalculationsNode::[01;31m[Klatest_magnetometer_data_[m[K;
+[13.063s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.064s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:2[m[K:
+[13.064s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:68:28:[m[K [01;36m[Knote: [m[Kdeclared private here
+[13.065s]    68 |     std_msgs::msg::Float32 [01;36m[Klatest_magnetometer_data_[m[K;
+[13.065s]       |                            [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.066s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:118:40:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KCoordinateCalculationsNode::latest_magnetometer_data_[m[K’
+[13.067s]   118 |     return CoordinateCalculationsNode::[01;31m[Klatest_magnetometer_data_[m[K;
+[13.067s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.068s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:2[m[K:
+[13.068s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:68:28:[m[K [01;36m[Knote: [m[Kdeclared here
+[13.069s]    68 |     std_msgs::msg::Float32 [01;36m[Klatest_magnetometer_data_[m[K;
+[13.069s]       |                            [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.070s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:[m[K In function ‘[01m[Ksensor_msgs::msg::NavSatFix get_curr_pos()[m[K’:
+[13.071s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:123:40:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs::msg::NavSatFix CoordinateCalculationsNode::latest_gps_data_[m[K’ is private within this context
+[13.071s]   123 |     return CoordinateCalculationsNode::[01;31m[Klatest_gps_data_[m[K;
+[13.072s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.072s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:2[m[K:
+[13.073s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:67:33:[m[K [01;36m[Knote: [m[Kdeclared private here
+[13.073s]    67 |     sensor_msgs::msg::NavSatFix [01;36m[Klatest_gps_data_[m[K;
+[13.074s]       |                                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[13.075s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:123:40:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KCoordinateCalculationsNode::latest_gps_data_[m[K’
+[13.075s]   123 |     return CoordinateCalculationsNode::[01;31m[Klatest_gps_data_[m[K;
+[13.076s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.076s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:2[m[K:
+[13.077s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:67:33:[m[K [01;36m[Knote: [m[Kdeclared here
+[13.078s]    67 |     sensor_msgs::msg::NavSatFix [01;36m[Klatest_gps_data_[m[K;
+[13.078s]       |                                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[30.144s] gmake[2]: *** [CMakeFiles/CoordinateCalculationsNodeLib.dir/build.make:76: CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o] Error 1
+[30.146s] gmake[1]: *** [CMakeFiles/Makefile2:198: CMakeFiles/CoordinateCalculationsNodeLib.dir/all] Error 2
+[30.148s] gmake: *** [Makefile:146: all] Error 2
+[30.156s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

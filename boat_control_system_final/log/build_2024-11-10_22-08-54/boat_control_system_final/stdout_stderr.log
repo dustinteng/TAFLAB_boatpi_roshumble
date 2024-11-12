@@ -1,0 +1,57 @@
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final
+[ 25%] [32mBuilding CXX object CMakeFiles/WaypointQueue.dir/src/WaypointQueue.cpp.o[0m
+[ 50%] [32m[1mLinking CXX static library libWaypointQueue.a[0m
+[ 50%] Built target WaypointQueue
+[35m[1mConsolidate compiler generated dependencies of target WaypointQueueNode[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o[0m
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:[m[K In member function ‘[01m[Kvoid WaypointQueueNode::ground_station_callback(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:47:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   47 | void WaypointQueueNode::ground_station_callback([01;35m[Kconst sensor_msgs::msg::NavSatFix::SharedPtr msg[m[K)
+      |                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:[m[K In member function ‘[01m[Kvoid WaypointQueueNode::calculated_waypoints_callback(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:53:100:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   53 | void WaypointQueueNode::calculated_waypoints_callback([01;35m[Kconst sensor_msgs::msg::NavSatFix::SharedPtr msg[m[K)
+      |                                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[100%] [32m[1mLinking CXX executable WaypointQueueNode[0m
+[100%] Built target WaypointQueueNode
+-- Install configuration: ""
+-- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/WaypointQueueNode
+-- Set runtime path of "/home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/WaypointQueueNode" to ""
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/package_run_dependencies/boat_control_system_final
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/parent_prefix_path/boat_control_system_final
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/ament_prefix_path.sh
+-- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/path.sh
+-- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/path.dsv
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.bash
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.sh
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.zsh
+-- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.dsv
+-- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/package.dsv
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/packages/boat_control_system_final
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/cmake/boat_control_system_finalConfig.cmake
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/cmake/boat_control_system_finalConfig-version.cmake
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/package.xml

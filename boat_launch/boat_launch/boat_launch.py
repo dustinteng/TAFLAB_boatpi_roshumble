@@ -36,6 +36,12 @@ def generate_launch_description():
         name='main_logic_node',
         output='screen',
     )
+    xbee_node = Node(
+        package='xbee_node',
+        executable='xbee_node',
+        name='xbee_node',
+        output='screen',
+    )
 
     return LaunchDescription([
         as5600_node,
@@ -43,5 +49,6 @@ def generate_launch_description():
         control_node,
         main_logic_node,
         gps_node,
+        xbee_node,
     ])
 

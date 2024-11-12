@@ -1,0 +1,22 @@
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:[m[K In constructor ‘[01m[KCoordinateCalculationsNode::CoordinateCalculationsNode()[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:13:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfinal_waypoint_publisher[m[K’ was not declared in this scope; did you mean ‘[01m[Kwaypoint_publisher_[m[K’?
+   13 |     [01;31m[Kfinal_waypoint_publisher[m[K = this->create_publisher<sensor_msgs::msg::NavSatFix>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kwaypoint_publisher_[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:23:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwind_subscriber_[m[K’ was not declared in this scope; did you mean ‘[01m[Kinit_subscriber_[m[K’?
+   23 |     [01;31m[Kwind_subscriber_[m[K = this->create_subscription<std_msgs::msg::Float32>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kinit_subscriber_[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:[m[K In constructor ‘[01m[KWaypointQueueNode::WaypointQueueNode()[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:25:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit_callback[m[K’ is not a member of ‘[01m[KWaypointQueueNode[m[K’
+   25 |         std::bind(&WaypointQueueNode::[01;31m[Kinit_callback[m[K, this, std::placeholders::_1));
+      |                                       [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:29:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmagnetometer_subscriber_[m[K’ was not declared in this scope
+   29 |     [01;31m[Kmagnetometer_subscriber_[m[K = this->create_subscription<std_msgs::msg::Float32>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/WaypointQueueNode.dir/build.make:76: CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/WaypointQueueNode.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/CoordinateCalculationsNode.dir/build.make:76: CMakeFiles/CoordinateCalculationsNode.dir/src/CoordinateCalculationsNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/CoordinateCalculationsNode.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -198,6 +198,58 @@ boat_control_system_final_uninstall/fast:
 .PHONY : boat_control_system_final_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named WaypointQueue
+
+# Build rule for target.
+WaypointQueue: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 WaypointQueue
+.PHONY : WaypointQueue
+
+# fast build rule for target.
+WaypointQueue/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaypointQueue.dir/build.make CMakeFiles/WaypointQueue.dir/build
+.PHONY : WaypointQueue/fast
+
+#=============================================================================
+# Target rules for targets named CoordinateCalculations
+
+# Build rule for target.
+CoordinateCalculations: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CoordinateCalculations
+.PHONY : CoordinateCalculations
+
+# fast build rule for target.
+CoordinateCalculations/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculations.dir/build.make CMakeFiles/CoordinateCalculations.dir/build
+.PHONY : CoordinateCalculations/fast
+
+#=============================================================================
+# Target rules for targets named CoordinateCalculationsNodeLib
+
+# Build rule for target.
+CoordinateCalculationsNodeLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CoordinateCalculationsNodeLib
+.PHONY : CoordinateCalculationsNodeLib
+
+# fast build rule for target.
+CoordinateCalculationsNodeLib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculationsNodeLib.dir/build.make CMakeFiles/CoordinateCalculationsNodeLib.dir/build
+.PHONY : CoordinateCalculationsNodeLib/fast
+
+#=============================================================================
+# Target rules for targets named CoordinateCalculationsNodeExec
+
+# Build rule for target.
+CoordinateCalculationsNodeExec: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CoordinateCalculationsNodeExec
+.PHONY : CoordinateCalculationsNodeExec
+
+# fast build rule for target.
+CoordinateCalculationsNodeExec/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculationsNodeExec.dir/build.make CMakeFiles/CoordinateCalculationsNodeExec.dir/build
+.PHONY : CoordinateCalculationsNodeExec/fast
+
+#=============================================================================
 # Target rules for targets named WaypointQueueNode
 
 # Build rule for target.
@@ -209,6 +261,81 @@ WaypointQueueNode: cmake_check_build_system
 WaypointQueueNode/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaypointQueueNode.dir/build.make CMakeFiles/WaypointQueueNode.dir/build
 .PHONY : WaypointQueueNode/fast
+
+src/CoordinateCalculationsNode.o: src/CoordinateCalculationsNode.cpp.o
+.PHONY : src/CoordinateCalculationsNode.o
+
+# target to build an object file
+src/CoordinateCalculationsNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculationsNodeLib.dir/build.make CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculationsNodeExec.dir/build.make CMakeFiles/CoordinateCalculationsNodeExec.dir/src/CoordinateCalculationsNode.cpp.o
+.PHONY : src/CoordinateCalculationsNode.cpp.o
+
+src/CoordinateCalculationsNode.i: src/CoordinateCalculationsNode.cpp.i
+.PHONY : src/CoordinateCalculationsNode.i
+
+# target to preprocess a source file
+src/CoordinateCalculationsNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculationsNodeLib.dir/build.make CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculationsNodeExec.dir/build.make CMakeFiles/CoordinateCalculationsNodeExec.dir/src/CoordinateCalculationsNode.cpp.i
+.PHONY : src/CoordinateCalculationsNode.cpp.i
+
+src/CoordinateCalculationsNode.s: src/CoordinateCalculationsNode.cpp.s
+.PHONY : src/CoordinateCalculationsNode.s
+
+# target to generate assembly for a file
+src/CoordinateCalculationsNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculationsNodeLib.dir/build.make CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculationsNodeExec.dir/build.make CMakeFiles/CoordinateCalculationsNodeExec.dir/src/CoordinateCalculationsNode.cpp.s
+.PHONY : src/CoordinateCalculationsNode.cpp.s
+
+src/Coordinate_Calculations.o: src/Coordinate_Calculations.cpp.o
+.PHONY : src/Coordinate_Calculations.o
+
+# target to build an object file
+src/Coordinate_Calculations.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculations.dir/build.make CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o
+.PHONY : src/Coordinate_Calculations.cpp.o
+
+src/Coordinate_Calculations.i: src/Coordinate_Calculations.cpp.i
+.PHONY : src/Coordinate_Calculations.i
+
+# target to preprocess a source file
+src/Coordinate_Calculations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculations.dir/build.make CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.i
+.PHONY : src/Coordinate_Calculations.cpp.i
+
+src/Coordinate_Calculations.s: src/Coordinate_Calculations.cpp.s
+.PHONY : src/Coordinate_Calculations.s
+
+# target to generate assembly for a file
+src/Coordinate_Calculations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculations.dir/build.make CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.s
+.PHONY : src/Coordinate_Calculations.cpp.s
+
+src/WaypointQueue.o: src/WaypointQueue.cpp.o
+.PHONY : src/WaypointQueue.o
+
+# target to build an object file
+src/WaypointQueue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaypointQueue.dir/build.make CMakeFiles/WaypointQueue.dir/src/WaypointQueue.cpp.o
+.PHONY : src/WaypointQueue.cpp.o
+
+src/WaypointQueue.i: src/WaypointQueue.cpp.i
+.PHONY : src/WaypointQueue.i
+
+# target to preprocess a source file
+src/WaypointQueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaypointQueue.dir/build.make CMakeFiles/WaypointQueue.dir/src/WaypointQueue.cpp.i
+.PHONY : src/WaypointQueue.cpp.i
+
+src/WaypointQueue.s: src/WaypointQueue.cpp.s
+.PHONY : src/WaypointQueue.s
+
+# target to generate assembly for a file
+src/WaypointQueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaypointQueue.dir/build.make CMakeFiles/WaypointQueue.dir/src/WaypointQueue.cpp.s
+.PHONY : src/WaypointQueue.cpp.s
 
 src/WaypointQueueNode.o: src/WaypointQueueNode.cpp.o
 .PHONY : src/WaypointQueueNode.o
@@ -249,7 +376,20 @@ help:
 	@echo "... test"
 	@echo "... boat_control_system_final_uninstall"
 	@echo "... uninstall"
+	@echo "... CoordinateCalculations"
+	@echo "... CoordinateCalculationsNodeExec"
+	@echo "... CoordinateCalculationsNodeLib"
+	@echo "... WaypointQueue"
 	@echo "... WaypointQueueNode"
+	@echo "... src/CoordinateCalculationsNode.o"
+	@echo "... src/CoordinateCalculationsNode.i"
+	@echo "... src/CoordinateCalculationsNode.s"
+	@echo "... src/Coordinate_Calculations.o"
+	@echo "... src/Coordinate_Calculations.i"
+	@echo "... src/Coordinate_Calculations.s"
+	@echo "... src/WaypointQueue.o"
+	@echo "... src/WaypointQueue.i"
+	@echo "... src/WaypointQueue.s"
 	@echo "... src/WaypointQueueNode.o"
 	@echo "... src/WaypointQueueNode.i"
 	@echo "... src/WaypointQueueNode.s"

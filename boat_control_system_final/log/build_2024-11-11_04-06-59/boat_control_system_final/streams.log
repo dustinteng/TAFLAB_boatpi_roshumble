@@ -1,0 +1,71 @@
+[0.066s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.265s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculations[0m
+[0.331s] [ 25%] Built target WaypointQueue
+[0.339s] [ 37%] [32mBuilding CXX object CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o[0m
+[0.463s] [ 62%] Built target WaypointQueueNode
+[3.491s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:23:86:[m[K [01;31m[Kerror: [m[K‘[01m[KSensor_msgs[m[K’ has not been declared
+[3.492s]    23 | float CoordinateCalculations::calculate_distance(sensor_msgs::msg::NavSatFix coord1, [01;31m[KSensor_msgs[m[K::msg::NavSatFix coord2)
+[3.493s]       |                                                                                      [01;31m[K^~~~~~~~~~~[m[K
+[3.495s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:23:114:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Kcoord2[m[K’
+[3.500s]    23 | float CoordinateCalculations::calculate_distance(sensor_msgs::msg::NavSatFix coord1, Sensor_msgs::msg::NavSatFix [01;31m[Kcoord2[m[K)
+[3.501s]       |                                                                                                                  [01;31m[K^~~~~~[m[K
+[3.502s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:23:7:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kfloat CoordinateCalculations::calculate_distance(sensor_msgs::msg::NavSatFix, int)[m[K’
+[3.503s]    23 | float [01;31m[KCoordinateCalculations[m[K::calculate_distance(sensor_msgs::msg::NavSatFix coord1, Sensor_msgs::msg::NavSatFix coord2)
+[3.503s]       |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.504s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:12[m[K:
+[3.505s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/Coordinate_Calculations.h:36:11:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kfloat CoordinateCalculations::calculate_distance(sensor_msgs::msg::NavSatFix, sensor_msgs::msg::NavSatFix)[m[K’
+[3.506s]    36 |     float [01;36m[Kcalculate_distance[m[K(sensor_msgs::msg::NavSatFix coord1, sensor_msgs::msg::NavSatFix coord2);
+[3.507s]       |           [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[3.508s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:12[m[K:
+[3.509s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/Coordinate_Calculations.h:16:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass CoordinateCalculations[m[K’ defined here
+[3.511s]    16 | class [01;36m[KCoordinateCalculations[m[K
+[3.511s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.512s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:36:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kfloat CoordinateCalculations::calculate_bearing[m[K’ is not a static data member of ‘[01m[Kclass CoordinateCalculations[m[K’
+[3.513s]    36 | float [01;31m[KCoordinateCalculations[m[K::calculate_bearing(Sensor_msgs::msg::NavSatFix curr_coord, Sensor_msgs::msg::NavSatFix tar_coord)
+[3.515s]       |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.516s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:36:49:[m[K [01;31m[Kerror: [m[K‘[01m[KSensor_msgs[m[K’ has not been declared
+[3.516s]    36 | float CoordinateCalculations::calculate_bearing([01;31m[KSensor_msgs[m[K::msg::NavSatFix curr_coord, Sensor_msgs::msg::NavSatFix tar_coord)
+[3.517s]       |                                                 [01;31m[K^~~~~~~~~~~[m[K
+[3.517s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:36:89:[m[K [01;31m[Kerror: [m[K‘[01m[KSensor_msgs[m[K’ has not been declared
+[3.518s]    36 | float CoordinateCalculations::calculate_bearing(Sensor_msgs::msg::NavSatFix curr_coord, [01;31m[KSensor_msgs[m[K::msg::NavSatFix tar_coord)
+[3.518s]       |                                                                                         [01;31m[K^~~~~~~~~~~[m[K
+[3.519s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:36:126:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.520s]    36 | float CoordinateCalculations::calculate_bearing(Sensor_msgs::msg::NavSatFix curr_coord, Sensor_msgs::msg::NavSatFix tar_coord[01;31m[K)[m[K
+[3.521s]       |                                                                                                                              [01;31m[K^[m[K
+[3.521s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:58:1:[m[K [01;31m[Kerror: [m[K‘[01m[KSensor_msgs[m[K’ does not name a type
+[3.522s]    58 | [01;31m[KSensor_msgs[m[K::msg::NavSatFix CoordinateCalculations::convert_to_position(Sensor_msgs::msg::NavSatFix position, float angle, float distance)
+[3.524s]       | [01;31m[K^~~~~~~~~~~[m[K
+[3.525s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:81:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::pair<std::__cxx11::basic_string<char>, float> CoordinateCalculations::calculate_directional_bearing[m[K’ is not a static data member of ‘[01m[Kclass CoordinateCalculations[m[K’
+[3.526s]    81 | std::pair<std::string, float> [01;31m[KCoordinateCalculations[m[K::calculate_directional_bearing(Sensor_msgs::msg::NavSatFix target_waypoint)
+[3.527s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.527s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:81:85:[m[K [01;31m[Kerror: [m[K‘[01m[KSensor_msgs[m[K’ has not been declared
+[3.527s]    81 | std::pair<std::string, float> CoordinateCalculations::calculate_directional_bearing([01;31m[KSensor_msgs[m[K::msg::NavSatFix target_waypoint)
+[3.530s]       |                                                                                     [01;31m[K^~~~~~~~~~~[m[K
+[3.531s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:82:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+[3.532s]    82 | [01;31m[K{[m[K
+[3.533s]       | [01;31m[K^[m[K
+[3.534s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Kfloat CoordinateCalculations::calculate_angle_to_wind()[m[K’:
+[3.534s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:118:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_avg_angle[m[K’ was not declared in this scope
+[3.535s]   118 |     float wind_direction = [01;31m[Kget_avg_angle[m[K();
+[3.536s]       |                            [01;31m[K^~~~~~~~~~~~~[m[K
+[3.558s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:119:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_heading_lis3mdl[m[K’ was not declared in this scope
+[3.559s]   119 |     float current_heading = [01;31m[Kget_heading_lis3mdl[m[K();
+[3.559s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.563s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K At global scope:
+[3.564s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:133:46:[m[K [01;31m[Kerror: [m[K‘[01m[KSensor_msgs[m[K’ does not name a type
+[3.565s]   133 | void CoordinateCalculations::plan_path(const [01;31m[KSensor_msgs[m[K::msg::NavSatFix& curr_position, const Sensor_msgs::msg::NavSatFix& next_waypoint)
+[3.565s]       |                                              [01;31m[K^~~~~~~~~~~[m[K
+[3.566s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:133:62:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[3.567s]   133 | void CoordinateCalculations::plan_path(const Sensor_msgs::msg[01;31m[K::[m[KNavSatFix& curr_position, const Sensor_msgs::msg::NavSatFix& next_waypoint)
+[3.567s]       |                                                              [01;31m[K^~[m[K
+[3.568s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:133:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[3.569s]   133 | void CoordinateCalculations::plan_path[34m[K([m[Kconst Sensor_msgs::msg[01;31m[K:[m[K[32m[K:[m[KNavSatFix& curr_position, const Sensor_msgs::msg::NavSatFix& next_waypoint)
+[3.569s]       |                                       [34m[K~[m[K                      [01;31m[K^[m[K[32m[K~[m[K
+[3.570s]       |                                                              [32m[K)[m[K
+[3.571s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:133:62:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+[3.571s]   133 | void CoordinateCalculations::plan_path(const Sensor_msgs::msg[01;31m[K::[m[KNavSatFix& curr_position, const Sensor_msgs::msg::NavSatFix& next_waypoint)
+[3.572s]       |                                                              [01;31m[K^~[m[K
+[3.970s] gmake[2]: *** [CMakeFiles/CoordinateCalculations.dir/build.make:76: CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o] Error 1
+[3.971s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/CoordinateCalculations.dir/all] Error 2
+[3.973s] gmake: *** [Makefile:146: all] Error 2
+[3.980s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

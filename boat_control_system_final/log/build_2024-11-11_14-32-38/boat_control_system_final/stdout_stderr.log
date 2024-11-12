@@ -1,0 +1,94 @@
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final
+[35m[1mConsolidate compiler generated dependencies of target WaypointQueue[0m
+[35m[1mConsolidate compiler generated dependencies of target CoordinateCalculations[0m
+[ 20%] Built target WaypointQueue
+[35m[1mConsolidate compiler generated dependencies of target WaypointQueueNode[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o[0m
+In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/Coordinate_Calculations.h:12[m[K,
+                 from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:12[m[K:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:71:33:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Ksensor_msgs::msg::NavSatFix CoordinateCalculationsNode::latest_gps_data_[m[K’
+   71 |     sensor_msgs::msg::NavSatFix [01;31m[Klatest_gps_data_[m[K;
+      |                                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:24:33:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Ksensor_msgs::msg::NavSatFix CoordinateCalculationsNode::latest_gps_data_[m[K’
+   24 |     sensor_msgs::msg::NavSatFix [01;36m[Klatest_gps_data_[m[K;
+      |                                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:72:28:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd_msgs::msg::Float32 CoordinateCalculationsNode::latest_magnetometer_data_[m[K’
+   72 |     std_msgs::msg::Float32 [01;31m[Klatest_magnetometer_data_[m[K;
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:25:28:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd_msgs::msg::Float32 CoordinateCalculationsNode::latest_magnetometer_data_[m[K’
+   25 |     std_msgs::msg::Float32 [01;36m[Klatest_magnetometer_data_[m[K;
+      |                            [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:73:28:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd_msgs::msg::Float32 CoordinateCalculationsNode::latest_wind_data_[m[K’
+   73 |     std_msgs::msg::Float32 [01;31m[Klatest_wind_data_[m[K;
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:26:28:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd_msgs::msg::Float32 CoordinateCalculationsNode::latest_wind_data_[m[K’
+   26 |     std_msgs::msg::Float32 [01;36m[Klatest_wind_data_[m[K;
+      |                            [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:74:33:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Ksensor_msgs::msg::NavSatFix CoordinateCalculationsNode::latest_waypoint_data_[m[K’
+   74 |     sensor_msgs::msg::NavSatFix [01;31m[Klatest_waypoint_data_[m[K;
+      |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:27:33:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Ksensor_msgs::msg::NavSatFix CoordinateCalculationsNode::latest_waypoint_data_[m[K’
+   27 |     sensor_msgs::msg::NavSatFix [01;36m[Klatest_waypoint_data_[m[K;
+      |                                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:80:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs::msg::NavSatFix CoordinateCalculationsNode::get_latest_waypoint()[m[K’ cannot be overloaded with ‘[01m[Ksensor_msgs::msg::NavSatFix CoordinateCalculationsNode::get_latest_waypoint()[m[K’
+   80 |     sensor_msgs::msg::NavSatFix [01;31m[Kget_latest_waypoint[m[K();
+      |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:21:33:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Ksensor_msgs::msg::NavSatFix CoordinateCalculationsNode::get_latest_waypoint()[m[K’
+   21 |     sensor_msgs::msg::NavSatFix [01;36m[Kget_latest_waypoint[m[K();
+      |                                 [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Ksensor_msgs::msg::NavSatFix CoordinateCalculations::convert_to_position(sensor_msgs::msg::NavSatFix, float, float)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:78:66:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{new_lat, new_long}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Ksensor_msgs::msg::NavSatFix[m[K’ {aka ‘[01m[Ksensor_msgs::msg::NavSatFix_<std::allocator<void> >[m[K’}
+   78 |     sensor_msgs::msg::NavSatFix new_position = {new_lat, new_long[01;31m[K}[m[K;
+      |                                                                  [01;31m[K^[m[K
+      |                                                                  [01;31m[K|[m[K
+      |                                                                  [01;31m[K<brace-enclosed initializer list>[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Kstd::pair<std::__cxx11::basic_string<char>, float> CoordinateCalculations::calculate_directional_bearing(sensor_msgs::msg::NavSatFix)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:85:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_magnetometer_heading[m[K’ was not declared in this scope
+   85 |     float current_heading = [01;31m[Kget_magnetometer_heading[m[K();
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:86:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_curr_pos[m[K’ was not declared in this scope
+   86 |     sensor_msgs::msg::NavSatFix current_position = [01;31m[Kget_curr_pos[m[K();
+      |                                                    [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Kfloat CoordinateCalculations::calculate_angle_to_wind()[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:120:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_wind_angle[m[K’ was not declared in this scope; did you mean ‘[01m[Kmax_upwind_angle[m[K’?
+  120 |     float wind_direction = [01;31m[Kget_wind_angle[m[K();
+      |                            [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                            [32m[Kmax_upwind_angle[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:121:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_magnetometer_heading[m[K’ was not declared in this scope
+  121 |     float current_heading = [01;31m[Kget_magnetometer_heading[m[K();
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Kvoid CoordinateCalculations::plan_path(const NavSatFix&, const NavSatFix&)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:138:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_wind_angle[m[K’ was not declared in this scope; did you mean ‘[01m[Kmax_upwind_angle[m[K’?
+  138 |     float wind_direction = [01;31m[Kget_wind_angle[m[K();  // Get current wind direction
+      |                            [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                            [32m[Kmax_upwind_angle[m[K
+gmake[2]: *** [CMakeFiles/CoordinateCalculations.dir/build.make:76: CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/CoordinateCalculations.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 50%] [32m[1mLinking CXX executable WaypointQueueNode[0m
+[ 50%] Built target WaypointQueueNode
+gmake: *** [Makefile:146: all] Error 2

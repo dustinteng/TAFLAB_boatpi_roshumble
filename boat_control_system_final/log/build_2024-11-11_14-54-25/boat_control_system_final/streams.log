@@ -1,0 +1,28 @@
+[0.070s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.270s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculations[0m
+[0.339s] [ 20%] Built target WaypointQueue
+[0.414s] [ 30%] [32mBuilding CXX object CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o[0m
+[0.474s] [ 50%] Built target WaypointQueueNode
+[16.768s] [ 60%] [32m[1mLinking CXX static library libCoordinateCalculations.a[0m
+[16.924s] [ 60%] Built target CoordinateCalculations
+[17.023s] [ 70%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o[0m
+[31.536s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:[m[K In function ‘[01m[Ksensor_msgs::msg::NavSatFix get_latest_waypoint()[m[K’:
+[31.537s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:106:12:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_waypoint_data_[m[K’ was not declared in this scope
+[31.538s]   106 |     return [01;31m[Klatest_waypoint_data_[m[K;
+[31.538s]       |            [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[31.560s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:[m[K In function ‘[01m[Kstd_msgs::msg::Float32 get_wind_angle()[m[K’:
+[31.561s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:113:12:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_wind_data_[m[K’ was not declared in this scope
+[31.562s]   113 |     return [01;31m[Klatest_wind_data_[m[K;
+[31.562s]       |            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[31.591s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:[m[K In function ‘[01m[Kstd_msgs::msg::Float32 get_magnetometer_heading()[m[K’:
+[31.592s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:118:12:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_magnetometer_data_[m[K’ was not declared in this scope
+[31.592s]   118 |     return [01;31m[Klatest_magnetometer_data_[m[K;
+[31.593s]       |            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[31.614s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:[m[K In function ‘[01m[Ksensor_msgs::msg::NavSatFix get_curr_pos()[m[K’:
+[31.615s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:123:12:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_gps_data_[m[K’ was not declared in this scope
+[31.615s]   123 |     return [01;31m[Klatest_gps_data_[m[K;
+[31.616s]       |            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[48.980s] gmake[2]: *** [CMakeFiles/CoordinateCalculationsNodeLib.dir/build.make:76: CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o] Error 1
+[48.985s] gmake[1]: *** [CMakeFiles/Makefile2:198: CMakeFiles/CoordinateCalculationsNodeLib.dir/all] Error 2
+[48.986s] gmake: *** [Makefile:146: all] Error 2
+[48.993s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

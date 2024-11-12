@@ -13,7 +13,7 @@ class BoatControlNode(Node):
             self.control_callback,
             10
         )
-
+                                                                           
         # Actuator control setup (placeholder for actual servo/ESC control logic)
         self.get_logger().info("BoatControlNode has been initialized and listening to /boatcontrol")
 
@@ -33,7 +33,7 @@ class BoatControlNode(Node):
         # Implement rudder servo control logic
         self.get_logger().info(f"Rudder set to: {value}")
 
-    def control_sail(self, value):
+    def control_sail(self, value): 
         # Implement sail servo control logic
         self.get_logger().info(f"Sail set to: {value}")
 

@@ -1,0 +1,57 @@
+[35m[1mConsolidate compiler generated dependencies of target WaypointQueue[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/WaypointQueue.dir/src/WaypointQueue.cpp.o[0m
+In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueue.cpp:15[m[K:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueue.hpp:24:10:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KWaypointQueue::[m[K’ on member ‘[01m[Kinitialize_autonomous_mode[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   24 |     void [01;31m[KWaypointQueue[m[K::initialize_autonomous_mode(std::shared_ptr<rclcpp::Node> node);
+      |          [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueue.cpp:13[m[K:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueue.cpp:[m[K In lambda function:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueue.cpp:35:25:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ is not captured
+   35 |             RCLCPP_INFO([01;31m[Knode[m[K->get_logger(), "Processing waypoint: [lat: %.6f, lon: %.6f, alt: %.2f]",
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueue.cpp:25:32:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+   25 |     auto timer_callback = [this[01;36m[K][m[K() {
+      |                                [01;36m[K^[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueue.cpp:17:78:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::shared_ptr<rclcpp::Node> node[m[K’ declared here
+   17 | void WaypointQueue::initialize_autonomous_mode([01;36m[Kstd::shared_ptr<rclcpp::Node> node[m[K)
+      |                                                [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueue.cpp:13[m[K:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueue.cpp:35:25:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ is not captured
+   35 |             RCLCPP_INFO([01;31m[Knode[m[K->get_logger(), "Processing waypoint: [lat: %.6f, lon: %.6f, alt: %.2f]",
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueue.cpp:25:32:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+   25 |     auto timer_callback = [this[01;36m[K][m[K() {
+      |                                [01;36m[K^[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueue.cpp:17:78:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::shared_ptr<rclcpp::Node> node[m[K’ declared here
+   17 | void WaypointQueue::initialize_autonomous_mode([01;36m[Kstd::shared_ptr<rclcpp::Node> node[m[K)
+      |                                                [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueue.cpp:[m[K In member function ‘[01m[Kvoid WaypointQueue::initialize_autonomous_mode(std::shared_ptr<rclcpp::Node>)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueue.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+   41 |     [01;31m[Ktimer_[m[K = node->create_wall_timer(std::chrono::seconds(1), timer_callback);
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Ktimer_t[m[K
+gmake[2]: *** [CMakeFiles/WaypointQueue.dir/build.make:76: CMakeFiles/WaypointQueue.dir/src/WaypointQueue.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/WaypointQueue.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

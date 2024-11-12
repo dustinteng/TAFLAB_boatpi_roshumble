@@ -1,0 +1,44 @@
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Ksensor_msgs::msg::NavSatFix CoordinateCalculations::convert_to_position(sensor_msgs::msg::NavSatFix, float, float)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:76:5:[m[K [01;31m[Kerror: [m[K‘[01m[KSensor_msgs[m[K’ has not been declared
+   76 |     [01;31m[KSensor_msgs[m[K::msg::NavSatFix new_position = {new_lat, new_long};
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:78:12:[m[K [01;31m[Kerror: [m[K‘[01m[Knew_position[m[K’ was not declared in this scope; did you mean ‘[01m[Kposition[m[K’?
+   78 |     return [01;31m[Knew_position[m[K;
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+      |            [32m[Kposition[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:73:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knew_lat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   73 |     float [01;35m[Knew_lat[m[K = new_lat_rad * RAD_TO_DEG;
+      |           [01;35m[K^~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:74:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knew_long[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   74 |     float [01;35m[Knew_long[m[K = new_lon_rad * RAD_TO_DEG;
+      |           [01;35m[K^~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Kstd::pair<std::__cxx11::basic_string<char>, float> CoordinateCalculations::calculate_directional_bearing(sensor_msgs::msg::NavSatFix)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:83:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_heading_lis3mdl[m[K’ was not declared in this scope
+   83 |     float current_heading = [01;31m[Kget_heading_lis3mdl[m[K();
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:84:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_curr_coordinate[m[K’ was not declared in this scope
+   84 |     sensor_msgs::msg::NavSatFix current_position = [01;31m[Kget_curr_coordinate[m[K();
+      |                                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Kfloat CoordinateCalculations::calculate_angle_to_wind()[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:118:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_avg_angle[m[K’ was not declared in this scope
+  118 |     float wind_direction = [01;31m[Kget_avg_angle[m[K();
+      |                            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:119:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_heading_lis3mdl[m[K’ was not declared in this scope
+  119 |     float current_heading = [01;31m[Kget_heading_lis3mdl[m[K();
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Kvoid CoordinateCalculations::plan_path(const NavSatFix&, const NavSatFix&)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:136:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_avg_angle[m[K’ was not declared in this scope
+  136 |     float wind_direction = [01;31m[Kget_avg_angle[m[K();  // Get current wind direction
+      |                            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:177:5:[m[K [01;31m[Kerror: [m[K‘[01m[KWaypointQueue[m[K’ has not been declared
+  177 |     [01;31m[KWaypointQueue[m[K::getInstance().add_front_waypoint(first_tack_waypoint);
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:178:5:[m[K [01;31m[Kerror: [m[K‘[01m[KWaypointQueue[m[K’ has not been declared
+  178 |     [01;31m[KWaypointQueue[m[K::getInstance().add_front_waypoint(second_tack_waypoint);
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:179:5:[m[K [01;31m[Kerror: [m[K‘[01m[KWaypointQueue[m[K’ has not been declared
+  179 |     [01;31m[KWaypointQueue[m[K::getInstance().add_front_waypoint(next_waypoint);  // Add original destination as the last waypoint
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/CoordinateCalculations.dir/build.make:76: CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/CoordinateCalculations.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

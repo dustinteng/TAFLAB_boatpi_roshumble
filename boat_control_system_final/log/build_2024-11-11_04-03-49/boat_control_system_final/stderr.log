@@ -1,0 +1,74 @@
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Kfloat CoordinateCalculations::calculate_optimal_sail_angle(float)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:26:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_rudder_servo[m[K’ was not declared in this scope
+   26 |         [01;31m[Kset_rudder_servo[m[K(70);
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:27:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_sail_servo[m[K’ was not declared in this scope
+   27 |         [01;31m[Kset_sail_servo[m[K(70);
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:28:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::this_thread[m[K’ has not been declared
+   28 |         std::[01;31m[Kthis_thread[m[K::sleep_for(std::chrono::milliseconds(100));
+      |              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:28:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::chrono[m[K’ has not been declared
+   28 |         std::this_thread::sleep_for(std::[01;31m[Kchrono[m[K::milliseconds(100));
+      |                                          [01;31m[K^~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K At global scope:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:47:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kfloat CoordinateCalculations::calculate_distance[m[K’ is not a static data member of ‘[01m[Kclass CoordinateCalculations[m[K’
+   47 | float [01;31m[KCoordinateCalculations[m[K::calculate_distance(Sensor_msgs::msg::NavSatFix coord1, Sensor_msgs::msg::NavSatFix coord2)
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:47:50:[m[K [01;31m[Kerror: [m[K‘[01m[KSensor_msgs[m[K’ has not been declared
+   47 | float CoordinateCalculations::calculate_distance([01;31m[KSensor_msgs[m[K::msg::NavSatFix coord1, Sensor_msgs::msg::NavSatFix coord2)
+      |                                                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:47:86:[m[K [01;31m[Kerror: [m[K‘[01m[KSensor_msgs[m[K’ has not been declared
+   47 | float CoordinateCalculations::calculate_distance(Sensor_msgs::msg::NavSatFix coord1, [01;31m[KSensor_msgs[m[K::msg::NavSatFix coord2)
+      |                                                                                      [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:47:120:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   47 | float CoordinateCalculations::calculate_distance(Sensor_msgs::msg::NavSatFix coord1, Sensor_msgs::msg::NavSatFix coord2[01;31m[K)[m[K
+      |                                                                                                                        [01;31m[K^[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:60:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kfloat CoordinateCalculations::calculate_bearing[m[K’ is not a static data member of ‘[01m[Kclass CoordinateCalculations[m[K’
+   60 | float [01;31m[KCoordinateCalculations[m[K::calculate_bearing(Sensor_msgs::msg::NavSatFix curr_coord, Sensor_msgs::msg::NavSatFix tar_coord)
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:60:49:[m[K [01;31m[Kerror: [m[K‘[01m[KSensor_msgs[m[K’ has not been declared
+   60 | float CoordinateCalculations::calculate_bearing([01;31m[KSensor_msgs[m[K::msg::NavSatFix curr_coord, Sensor_msgs::msg::NavSatFix tar_coord)
+      |                                                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:60:89:[m[K [01;31m[Kerror: [m[K‘[01m[KSensor_msgs[m[K’ has not been declared
+   60 | float CoordinateCalculations::calculate_bearing(Sensor_msgs::msg::NavSatFix curr_coord, [01;31m[KSensor_msgs[m[K::msg::NavSatFix tar_coord)
+      |                                                                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:60:126:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   60 | float CoordinateCalculations::calculate_bearing(Sensor_msgs::msg::NavSatFix curr_coord, Sensor_msgs::msg::NavSatFix tar_coord[01;31m[K)[m[K
+      |                                                                                                                              [01;31m[K^[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:82:1:[m[K [01;31m[Kerror: [m[K‘[01m[KSensor_msgs[m[K’ does not name a type
+   82 | [01;31m[KSensor_msgs[m[K::msg::NavSatFix CoordinateCalculations::convert_to_position(Sensor_msgs::msg::NavSatFix position, float angle, float distance)
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:105:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::pair<std::__cxx11::basic_string<char>, float> CoordinateCalculations::calculate_directional_bearing[m[K’ is not a static data member of ‘[01m[Kclass CoordinateCalculations[m[K’
+  105 | std::pair<std::string, float> [01;31m[KCoordinateCalculations[m[K::calculate_directional_bearing(Sensor_msgs::msg::NavSatFix target_waypoint)
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:105:85:[m[K [01;31m[Kerror: [m[K‘[01m[KSensor_msgs[m[K’ has not been declared
+  105 | std::pair<std::string, float> CoordinateCalculations::calculate_directional_bearing([01;31m[KSensor_msgs[m[K::msg::NavSatFix target_waypoint)
+      |                                                                                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:106:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+  106 | [01;31m[K{[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Kfloat CoordinateCalculations::calculate_angle_to_wind()[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:142:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_avg_angle[m[K’ was not declared in this scope
+  142 |     float wind_direction = [01;31m[Kget_avg_angle[m[K();
+      |                            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:143:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_heading_lis3mdl[m[K’ was not declared in this scope
+  143 |     float current_heading = [01;31m[Kget_heading_lis3mdl[m[K();
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K At global scope:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:157:46:[m[K [01;31m[Kerror: [m[K‘[01m[KSensor_msgs[m[K’ does not name a type
+  157 | void CoordinateCalculations::plan_path(const [01;31m[KSensor_msgs[m[K::msg::NavSatFix& curr_position, const Sensor_msgs::msg::NavSatFix& next_waypoint)
+      |                                              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:157:62:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  157 | void CoordinateCalculations::plan_path(const Sensor_msgs::msg[01;31m[K::[m[KNavSatFix& curr_position, const Sensor_msgs::msg::NavSatFix& next_waypoint)
+      |                                                              [01;31m[K^~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:157:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  157 | void CoordinateCalculations::plan_path[34m[K([m[Kconst Sensor_msgs::msg[01;31m[K:[m[K[32m[K:[m[KNavSatFix& curr_position, const Sensor_msgs::msg::NavSatFix& next_waypoint)
+      |                                       [34m[K~[m[K                      [01;31m[K^[m[K[32m[K~[m[K
+      |                                                              [32m[K)[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:157:62:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+  157 | void CoordinateCalculations::plan_path(const Sensor_msgs::msg[01;31m[K::[m[KNavSatFix& curr_position, const Sensor_msgs::msg::NavSatFix& next_waypoint)
+      |                                                              [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/CoordinateCalculations.dir/build.make:76: CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/CoordinateCalculations.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,1047 @@
+[0.000000] (-) TimerEvent: {}
+[0.001280] (boat_control_system_final) JobQueued: {'identifier': 'boat_control_system_final', 'dependencies': OrderedDict()}
+[0.002881] (boat_control_system_final) JobStarted: {'identifier': 'boat_control_system_final'}
+[0.068959] (boat_control_system_final) JobProgress: {'identifier': 'boat_control_system_final', 'progress': 'cmake'}
+[0.073276] (boat_control_system_final) JobProgress: {'identifier': 'boat_control_system_final', 'progress': 'build'}
+[0.077153] (boat_control_system_final) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final', '--', '-j4', '-l4'], 'cwd': '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'boat'), ('SSH_CLIENT', '10.41.245.123 55176 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/boat'), ('TERM_PROGRAM_VERSION', '1.95.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-5fd80ab5-852c-4c70-a948-40f0a7f5a53e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'boat'), ('_', '/home/boat/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/remote-cli:/home/boat/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/boat/.local/bin:/home/boat/.local/bin:/home/boat/.local/bin:/home/boat/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-15c79811d2.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.41.245.123 55176 10.41.221.43 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098754] (-) TimerEvent: {}
+[0.202240] (-) TimerEvent: {}
+[0.303179] (-) TimerEvent: {}
+[0.319874] (boat_control_system_final) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target WaypointQueue\x1b[0m\n'}
+[0.403379] (-) TimerEvent: {}
+[0.441905] (boat_control_system_final) StdoutLine: {'line': b'[ 50%] Built target WaypointQueue\n'}
+[0.503639] (-) TimerEvent: {}
+[0.575839] (boat_control_system_final) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o\x1b[0m\n'}
+[0.603845] (-) TimerEvent: {}
+[0.704708] (-) TimerEvent: {}
+[0.805746] (-) TimerEvent: {}
+[0.907146] (-) TimerEvent: {}
+[1.008055] (-) TimerEvent: {}
+[1.108889] (-) TimerEvent: {}
+[1.209708] (-) TimerEvent: {}
+[1.310727] (-) TimerEvent: {}
+[1.411558] (-) TimerEvent: {}
+[1.512369] (-) TimerEvent: {}
+[1.613194] (-) TimerEvent: {}
+[1.714053] (-) TimerEvent: {}
+[1.814929] (-) TimerEvent: {}
+[1.915778] (-) TimerEvent: {}
+[2.016656] (-) TimerEvent: {}
+[2.117467] (-) TimerEvent: {}
+[2.218293] (-) TimerEvent: {}
+[2.319120] (-) TimerEvent: {}
+[2.420042] (-) TimerEvent: {}
+[2.521013] (-) TimerEvent: {}
+[2.621912] (-) TimerEvent: {}
+[2.722930] (-) TimerEvent: {}
+[2.823931] (-) TimerEvent: {}
+[2.924785] (-) TimerEvent: {}
+[3.025924] (-) TimerEvent: {}
+[3.126842] (-) TimerEvent: {}
+[3.227735] (-) TimerEvent: {}
+[3.328672] (-) TimerEvent: {}
+[3.429665] (-) TimerEvent: {}
+[3.530759] (-) TimerEvent: {}
+[3.631904] (-) TimerEvent: {}
+[3.732790] (-) TimerEvent: {}
+[3.833652] (-) TimerEvent: {}
+[3.934583] (-) TimerEvent: {}
+[4.035567] (-) TimerEvent: {}
+[4.136412] (-) TimerEvent: {}
+[4.237306] (-) TimerEvent: {}
+[4.338140] (-) TimerEvent: {}
+[4.439043] (-) TimerEvent: {}
+[4.539933] (-) TimerEvent: {}
+[4.640781] (-) TimerEvent: {}
+[4.741628] (-) TimerEvent: {}
+[4.842717] (-) TimerEvent: {}
+[4.943653] (-) TimerEvent: {}
+[5.044535] (-) TimerEvent: {}
+[5.145549] (-) TimerEvent: {}
+[5.246451] (-) TimerEvent: {}
+[5.347317] (-) TimerEvent: {}
+[5.448199] (-) TimerEvent: {}
+[5.549071] (-) TimerEvent: {}
+[5.649929] (-) TimerEvent: {}
+[5.750778] (-) TimerEvent: {}
+[5.851656] (-) TimerEvent: {}
+[5.952702] (-) TimerEvent: {}
+[6.053596] (-) TimerEvent: {}
+[6.154451] (-) TimerEvent: {}
+[6.255325] (-) TimerEvent: {}
+[6.356210] (-) TimerEvent: {}
+[6.457094] (-) TimerEvent: {}
+[6.557992] (-) TimerEvent: {}
+[6.658844] (-) TimerEvent: {}
+[6.759696] (-) TimerEvent: {}
+[6.860548] (-) TimerEvent: {}
+[6.961380] (-) TimerEvent: {}
+[7.062219] (-) TimerEvent: {}
+[7.163035] (-) TimerEvent: {}
+[7.264007] (-) TimerEvent: {}
+[7.364883] (-) TimerEvent: {}
+[7.465733] (-) TimerEvent: {}
+[7.566603] (-) TimerEvent: {}
+[7.667570] (-) TimerEvent: {}
+[7.768452] (-) TimerEvent: {}
+[7.869306] (-) TimerEvent: {}
+[7.970154] (-) TimerEvent: {}
+[8.071029] (-) TimerEvent: {}
+[8.171899] (-) TimerEvent: {}
+[8.272802] (-) TimerEvent: {}
+[8.373680] (-) TimerEvent: {}
+[8.474673] (-) TimerEvent: {}
+[8.575572] (-) TimerEvent: {}
+[8.676447] (-) TimerEvent: {}
+[8.777336] (-) TimerEvent: {}
+[8.878188] (-) TimerEvent: {}
+[8.979035] (-) TimerEvent: {}
+[9.079962] (-) TimerEvent: {}
+[9.180794] (-) TimerEvent: {}
+[9.281643] (-) TimerEvent: {}
+[9.382537] (-) TimerEvent: {}
+[9.483740] (-) TimerEvent: {}
+[9.584651] (-) TimerEvent: {}
+[9.685499] (-) TimerEvent: {}
+[9.786384] (-) TimerEvent: {}
+[9.887300] (-) TimerEvent: {}
+[9.988202] (-) TimerEvent: {}
+[10.089109] (-) TimerEvent: {}
+[10.190011] (-) TimerEvent: {}
+[10.290955] (-) TimerEvent: {}
+[10.391846] (-) TimerEvent: {}
+[10.492710] (-) TimerEvent: {}
+[10.593542] (-) TimerEvent: {}
+[10.694447] (-) TimerEvent: {}
+[10.795366] (-) TimerEvent: {}
+[10.896329] (-) TimerEvent: {}
+[10.997287] (-) TimerEvent: {}
+[11.098150] (-) TimerEvent: {}
+[11.199039] (-) TimerEvent: {}
+[11.299971] (-) TimerEvent: {}
+[11.400852] (-) TimerEvent: {}
+[11.501715] (-) TimerEvent: {}
+[11.602617] (-) TimerEvent: {}
+[11.703474] (-) TimerEvent: {}
+[11.804386] (-) TimerEvent: {}
+[11.905215] (-) TimerEvent: {}
+[12.006111] (-) TimerEvent: {}
+[12.106990] (-) TimerEvent: {}
+[12.207876] (-) TimerEvent: {}
+[12.308721] (-) TimerEvent: {}
+[12.357274] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.358448] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:38:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBool\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.359015] (boat_control_system_final) StderrLine: {'line': b'   38 |     rclcpp::Subscription<std_msgs::msg::\x1b[01;31m\x1b[KBool\x1b[m\x1b[K>::SharedPtr executing_subscriber_;\n'}
+[12.359402] (boat_control_system_final) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[12.359855] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:38:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[12.360230] (boat_control_system_final) StderrLine: {'line': b'   38 |     rclcpp::Subscription<std_msgs::msg::Bool\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr executing_subscriber_;\n'}
+[12.360589] (boat_control_system_final) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[12.361074] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:38:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[12.361649] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:38:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[12.362156] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:38:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 5 is invalid\n'}
+[12.362535] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:38:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[12.362897] (boat_control_system_final) StderrLine: {'line': b'   38 |     rclcpp::Subscription<std_msgs::msg::Bool>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K executing_subscriber_;\n'}
+[12.363315] (boat_control_system_final) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[12.364237] (boat_control_system_final) StderrLine: {'line': b'      |                                                         \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[12.372097] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:38:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kexecuting_subscriber_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[12.373680] (boat_control_system_final) StderrLine: {'line': b'   38 |     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr \x1b[01;31m\x1b[Kexecuting_subscriber_\x1b[m\x1b[K;\n'}
+[12.374278] (boat_control_system_final) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.374868] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:46:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBool\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[12.375451] (boat_control_system_final) StderrLine: {'line': b'   46 |     void executing_callback(const std_msgs::msg::\x1b[01;31m\x1b[KBool\x1b[m\x1b[K::SharedPtr msg);\n'}
+[12.376189] (boat_control_system_final) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[12.376914] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:46:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.377690] (boat_control_system_final) StderrLine: {'line': b'   46 |     void executing_callback(const std_msgs::msg::Bool::SharedPtr \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K);\n'}
+[12.378680] (boat_control_system_final) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[12.379267] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:46:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.379968] (boat_control_system_final) StderrLine: {'line': b'   46 |     void executing_callback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst std_msgs::msg::Bool::SharedPtr\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[Kmsg\x1b[m\x1b[K);\n'}
+[12.380549] (boat_control_system_final) StderrLine: {'line': b'      |                            \x1b[34m\x1b[K~\x1b[m\x1b[K                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~\x1b[m\x1b[K\n'}
+[12.381068] (boat_control_system_final) StderrLine: {'line': b'      |                                                                 \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[12.381571] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:46:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[12.382143] (boat_control_system_final) StderrLine: {'line': b'   46 |     void executing_callback(const std_msgs::msg::Bool::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K msg);\n'}
+[12.382648] (boat_control_system_final) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[12.383206] (boat_control_system_final) StderrLine: {'line': b'      |                                                                 \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[12.383859] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:46:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[12.384469] (boat_control_system_final) StderrLine: {'line': b'   46 |     void executing_callback(const std_msgs::msg::Bool::SharedPtr \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K);\n'}
+[12.384964] (boat_control_system_final) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[12.408921] (-) TimerEvent: {}
+[12.490846] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KWaypointQueueNode::WaypointQueueNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.492247] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:41:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kexecuting_subscriber_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.493182] (boat_control_system_final) StderrLine: {'line': b'   41 |     \x1b[01;31m\x1b[Kexecuting_subscriber_\x1b[m\x1b[K = this->create_subscription<std_msgs::msg::Bool>(\n'}
+[12.493722] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.494249] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:41:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBool\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.494773] (boat_control_system_final) StderrLine: {'line': b'   41 |     executing_subscriber_ = this->create_subscription<std_msgs::msg::\x1b[01;31m\x1b[KBool\x1b[m\x1b[K>(\n'}
+[12.495274] (boat_control_system_final) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[12.500330] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:41:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KWaypointQueueNode::create_subscription<<expression error> >(const char [22], int, std::_Bind_helper<false, void (WaypointQueueNode::*)(...), WaypointQueueNode*, const std::_Placeholder<1>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.501516] (boat_control_system_final) StderrLine: {'line': b'   41 |     executing_subscriber_ = \x1b[01;31m\x1b[Kthis->create_subscription<std_msgs::msg::Bool>(\x1b[m\x1b[K\n'}
+[12.502048] (boat_control_system_final) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[12.502553] (boat_control_system_final) StderrLine: {'line': b'   42 | \x1b[01;31m\x1b[K        "/boat_executing_state",\x1b[m\x1b[K\n'}
+[12.503014] (boat_control_system_final) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                                           \n'}
+[12.503461] (boat_control_system_final) StderrLine: {'line': b'   43 | \x1b[01;31m\x1b[K        10,\x1b[m\x1b[K\n'}
+[12.504206] (boat_control_system_final) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~\x1b[m\x1b[K                                                                \n'}
+[12.504709] (boat_control_system_final) StderrLine: {'line': b'   44 | \x1b[01;31m\x1b[K        std::bind(&WaypointQueueNode::executing_callback, this, std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[12.505205] (boat_control_system_final) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.505718] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321\x1b[m\x1b[K,\n'}
+[12.506198] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[12.506744] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[12.507220] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.507836] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.508361] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.508912] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.509481] (-) TimerEvent: {}
+[12.510098] (boat_control_system_final) StderrLine: {'line': b'   92 | \x1b[01;36m\x1b[KNode\x1b[m\x1b[K::create_subscription(\n'}
+[12.510783] (boat_control_system_final) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[12.511282] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.511888] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:41:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[12.512470] (boat_control_system_final) StderrLine: {'line': b'   41 |     executing_subscriber_ = \x1b[01;31m\x1b[Kthis->create_subscription<std_msgs::msg::Bool>(\x1b[m\x1b[K\n'}
+[12.513786] (boat_control_system_final) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[12.514493] (boat_control_system_final) StderrLine: {'line': b'   42 | \x1b[01;31m\x1b[K        "/boat_executing_state",\x1b[m\x1b[K\n'}
+[12.515049] (boat_control_system_final) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                                           \n'}
+[12.515801] (boat_control_system_final) StderrLine: {'line': b'   43 | \x1b[01;31m\x1b[K        10,\x1b[m\x1b[K\n'}
+[12.516805] (boat_control_system_final) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~\x1b[m\x1b[K                                                                \n'}
+[12.517744] (boat_control_system_final) StderrLine: {'line': b'   44 | \x1b[01;31m\x1b[K        std::bind(&WaypointQueueNode::executing_callback, this, std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[12.518291] (boat_control_system_final) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.523539] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid WaypointQueueNode::calculated_waypoints_callback(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.524225] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:65:100:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.524849] (boat_control_system_final) StderrLine: {'line': b'   65 | void WaypointQueueNode::calculated_waypoints_callback(\x1b[01;35m\x1b[Kconst sensor_msgs::msg::NavSatFix::SharedPtr msg\x1b[m\x1b[K)\n'}
+[12.525328] (boat_control_system_final) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.534050] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid WaypointQueueNode::init_callback(std_msgs::msg::Int16_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.536549] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator!=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[12.537195] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(\x1b[32m\x1b[Kmsg\x1b[m\x1b[K \x1b[01;31m\x1b[K!=\x1b[m\x1b[K \x1b[34m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.537872] (boat_control_system_final) StderrLine: {'line': b'      |        \x1b[32m\x1b[K~~~\x1b[m\x1b[K \x1b[01;31m\x1b[K^~\x1b[m\x1b[K \x1b[34m\x1b[K~\x1b[m\x1b[K\n'}
+[12.539241] (boat_control_system_final) StderrLine: {'line': b'      |        \x1b[32m\x1b[K|\x1b[m\x1b[K      \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[12.540131] (boat_control_system_final) StderrLine: {'line': b'      |        \x1b[32m\x1b[K|\x1b[m\x1b[K      \x1b[34m\x1b[Kint\x1b[m\x1b[K\n'}
+[12.540645] (boat_control_system_final) StderrLine: {'line': b'      |        \x1b[32m\x1b[Kconst SharedPtr {aka const std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >}\x1b[m\x1b[K\n'}
+[12.541074] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Koperator!=(int, int)\x1b[m\x1b[K\xe2\x80\x99 (built-in)\n'}
+[12.541474] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(\x1b[01;36m\x1b[Kmsg != 1\x1b[m\x1b[K)\n'}
+[12.541850] (boat_control_system_final) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~~^~~~\x1b[m\x1b[K\n'}
+[12.542285] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.542806] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[12.543290] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[12.544037] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.547918] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.550369] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.551558] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:496:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.554837] (boat_control_system_final) StderrLine: {'line': b'  496 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)\n'}
+[12.555622] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.556954] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:496:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.564714] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::pair<_T1, _T2>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.565309] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.565762] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.566260] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[12.566731] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[12.567208] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.567854] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.568343] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.568800] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:432:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> constexpr bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.569297] (boat_control_system_final) StderrLine: {'line': b'  432 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const reverse_iterator<_Iterator>& __x,\n'}
+[12.569809] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.570284] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:432:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.570744] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.571703] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.573325] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.573927] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[12.574496] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[12.574986] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.575455] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.576189] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.576700] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:471:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.577255] (boat_control_system_final) StderrLine: {'line': b'  471 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const reverse_iterator<_IteratorL>& __x,\n'}
+[12.577789] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.578352] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:471:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.578897] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.579413] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.579990] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.580498] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[12.581001] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[12.581553] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.582068] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.582587] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.583096] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1602:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.583728] (boat_control_system_final) StderrLine: {'line': b' 1602 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const move_iterator<_IteratorL>& __x,\n'}
+[12.584356] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.584936] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1602:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.585463] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.586090] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.586619] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.587126] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[12.587682] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[12.588504] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.589254] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.589767] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.590270] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1661:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> constexpr bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.590804] (boat_control_system_final) StderrLine: {'line': b' 1661 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const move_iterator<_Iterator>& __x,\n'}
+[12.591436] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.592003] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1661:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.592487] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.593006] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.594315] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.595069] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:64\x1b[m\x1b[K,\n'}
+[12.595804] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.596444] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.597158] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.597869] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:225:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _T1, class _T2> bool std::operator!=(const std::allocator<_Tp1>&, const std::allocator<_T2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.598554] (boat_control_system_final) StderrLine: {'line': b'  225 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const allocator<_T1>&, const allocator<_T2>&)\n'}
+[12.599163] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.599883] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:225:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.600471] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::allocator<_Tp1>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.601120] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.601723] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.602306] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[12.602985] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[12.603597] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[12.604272] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.604874] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.605442] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.606020] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:305:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, long unsigned int _Nm> bool std::operator!=(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.606597] (boat_control_system_final) StderrLine: {'line': b'  305 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)\n'}
+[12.607258] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.608065] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:305:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.608673] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::array<_Tp, _Nm>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.609431] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.610001] (-) TimerEvent: {}
+[12.610652] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.611535] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[12.612263] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[12.613262] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.613955] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.614605] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.615220] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1579:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _TElements, class ... _UElements> constexpr bool std::operator!=(const std::tuple<_Tps ...>&, const std::tuple<_UTypes ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.617550] (boat_control_system_final) StderrLine: {'line': b' 1579 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const tuple<_TElements...>& __t,\n'}
+[12.618473] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.619712] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1579:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.620515] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::tuple<_Tps ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.621128] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.621622] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.622139] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[12.622720] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.623224] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.623845] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.624371] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:774:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.624966] (boat_control_system_final) StderrLine: {'line': b'  774 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const unique_ptr<_Tp, _Dp>& __x,\n'}
+[12.625459] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.625958] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:774:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.626490] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.627328] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.628113] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.628795] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[12.630847] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.631526] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.632280] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.632870] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:781:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Dp> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.633385] (boat_control_system_final) StderrLine: {'line': b'  781 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept\n'}
+[12.634174] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.635547] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:781:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.636195] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.636842] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.637389] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.637878] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[12.638356] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.638841] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.639395] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.639986] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:787:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Dp> bool std::operator!=(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.640503] (boat_control_system_final) StderrLine: {'line': b'  787 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept\n'}
+[12.640985] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.641464] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:787:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.641930] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.642434] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.642913] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.643446] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iosfwd:40\x1b[m\x1b[K,\n'}
+[12.644013] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:52\x1b[m\x1b[K,\n'}
+[12.644503] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[12.644997] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.645478] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.645973] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.646453] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/postypes.h:227:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.646943] (boat_control_system_final) StderrLine: {'line': b'  227 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)\n'}
+[12.647462] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.648092] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/postypes.h:227:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.648581] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::fpos<_StateT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.649094] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.649676] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.650158] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:53\x1b[m\x1b[K,\n'}
+[12.650634] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[12.651120] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.651661] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.652249] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.652740] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1441:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.653247] (boat_control_system_final) StderrLine: {'line': b' 1441 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const __shared_ptr<_Tp1, _Lp>& __a,\n'}
+[12.653736] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.654216] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1441:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.654753] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__shared_ptr<_Tp2, _Lp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.655327] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.656692] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.657412] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:53\x1b[m\x1b[K,\n'}
+[12.658063] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[12.658734] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.659345] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.659930] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.660442] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1447:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.660969] (boat_control_system_final) StderrLine: {'line': b' 1447 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept\n'}
+[12.661491] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.662145] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1447:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.662749] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K1\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kstd::nullptr_t\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.663326] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.663909] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.664426] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:53\x1b[m\x1b[K,\n'}
+[12.664941] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[12.665463] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.665974] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.666481] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.667031] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1452:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.667624] (boat_control_system_final) StderrLine: {'line': b' 1452 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept\n'}
+[12.668206] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.668706] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1452:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.669196] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__shared_ptr<_Tp, _Lp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.669720] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.670224] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.670718] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[12.671205] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.672871] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.673466] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.673975] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:470:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> bool std::operator!=(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.674562] (boat_control_system_final) StderrLine: {'line': b'  470 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept\n'}
+[12.675066] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.675613] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:470:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.676177] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.676804] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.677330] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.677846] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[12.678350] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.678900] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.679419] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.680016] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:476:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> bool std::operator!=(const std::shared_ptr<_Tp>&, std::nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.680557] (boat_control_system_final) StderrLine: {'line': b'  476 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const shared_ptr<_Tp>& __a, nullptr_t) noexcept\n'}
+[12.681082] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.681649] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:476:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.682147] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K1\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kstd::nullptr_t\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.682682] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.683162] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.683716] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[12.684228] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.684720] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.685269] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.685763] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:482:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> bool std::operator!=(std::nullptr_t, const std::shared_ptr<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.686304] (boat_control_system_final) StderrLine: {'line': b'  482 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(nullptr_t, const shared_ptr<_Tp>& __a) noexcept\n'}
+[12.686804] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.687723] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:482:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.688293] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.688807] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.689309] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.689797] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:48\x1b[m\x1b[K,\n'}
+[12.690307] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[12.690785] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[12.691310] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[12.692664] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[12.693357] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[12.694023] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[12.694664] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.696279] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.697197] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.697828] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:570:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator!=(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.698355] (boat_control_system_final) StderrLine: {'line': b'  570 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(basic_string_view<_CharT, _Traits> __x,\n'}
+[12.698868] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.699369] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:570:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.700041] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_string_view<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.700662] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.701207] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.701715] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:48\x1b[m\x1b[K,\n'}
+[12.702221] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[12.702760] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[12.703249] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[12.703808] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[12.704312] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[12.704813] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[12.705360] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.705907] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.706410] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.706892] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:576:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator!=(std::basic_string_view<_CharT, _Traits>, std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.707419] (boat_control_system_final) StderrLine: {'line': b'  576 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(basic_string_view<_CharT, _Traits> __x,\n'}
+[12.708029] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.708552] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:576:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.709067] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_string_view<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.709579] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.710053] (-) TimerEvent: {}
+[12.710529] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.711154] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:48\x1b[m\x1b[K,\n'}
+[12.711870] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[12.712415] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[12.712923] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[12.713411] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[12.713900] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[12.714383] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[12.714909] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.715386] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.716014] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.716514] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:583:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator!=(std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.717043] (boat_control_system_final) StderrLine: {'line': b'  583 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(__type_identity_t<basic_string_view<_CharT, _Traits>> __x,\n'}
+[12.717581] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.718070] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:583:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.718560] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_string_view<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.719062] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.719636] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.720253] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[12.720967] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[12.722171] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[12.722825] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[12.723439] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[12.724027] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[12.724527] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.725186] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.725748] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.726339] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6302:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.726876] (boat_control_system_final) StderrLine: {'line': b' 6302 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[12.727362] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.727915] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6302:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.728422] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.728949] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.729463] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.729961] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[12.730494] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[12.730987] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[12.731603] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[12.732189] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[12.732687] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[12.733173] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.733685] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.734186] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.734679] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6315:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.735298] (boat_control_system_final) StderrLine: {'line': b' 6315 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const _CharT* __lhs,\n'}
+[12.735934] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.736455] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6315:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.736967] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.737843] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.738371] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.738865] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[12.739364] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[12.740187] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[12.740810] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[12.741291] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[12.741768] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[12.742272] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.742777] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.743273] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.743847] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6327:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.744360] (boat_control_system_final) StderrLine: {'line': b' 6327 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[12.744972] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.745560] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6327:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.746043] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.746644] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.747162] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.747762] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/future:47\x1b[m\x1b[K,\n'}
+[12.748291] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[12.748792] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.749310] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.749873] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.750393] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:737:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Res, class ... _Args> bool std::operator!=(const std::function<_Res(_ArgTypes ...)>&, std::nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.750966] (boat_control_system_final) StderrLine: {'line': b'  737 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const function<_Res(_Args...)>& __f, nullptr_t) noexcept\n'}
+[12.751923] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.752481] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:737:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.752996] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::function<_Res(_ArgTypes ...)>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.753515] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.754025] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.754523] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/future:47\x1b[m\x1b[K,\n'}
+[12.755069] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[12.755578] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.756111] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.756611] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.757118] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:743:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Res, class ... _Args> bool std::operator!=(std::nullptr_t, const std::function<_Res(_ArgTypes ...)>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.757633] (boat_control_system_final) StderrLine: {'line': b'  743 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(nullptr_t, const function<_Res(_Args...)>& __f) noexcept\n'}
+[12.758206] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.758688] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:743:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.759175] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::function<_Res(_ArgTypes ...)>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.759826] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.760403] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.760949] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/set:61\x1b[m\x1b[K,\n'}
+[12.761499] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21\x1b[m\x1b[K,\n'}
+[12.762002] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.762499] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.763051] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.763617] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.764163] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:1030:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator!=(const std::set<_Key, _Compare, _Allocator>&, const std::set<_Key, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.764791] (boat_control_system_final) StderrLine: {'line': b' 1030 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const set<_Key, _Compare, _Alloc>& __x,\n'}
+[12.765293] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.765861] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:1030:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.766350] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::set<_Key, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.766869] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.767384] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.767979] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/set:62\x1b[m\x1b[K,\n'}
+[12.768482] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21\x1b[m\x1b[K,\n'}
+[12.769071] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.769632] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.770154] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.770662] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.771162] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_multiset.h:1016:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator!=(const std::multiset<_Key, _Compare, _Allocator>&, const std::multiset<_Key, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.771805] (boat_control_system_final) StderrLine: {'line': b' 1016 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const multiset<_Key, _Compare, _Alloc>& __x,\n'}
+[12.772378] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.772873] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_multiset.h:1016:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.773389] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::multiset<_Key, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.773897] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.774399] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.774873] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/unordered_map:47\x1b[m\x1b[K,\n'}
+[12.775378] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:23\x1b[m\x1b[K,\n'}
+[12.775923] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.776404] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.776885] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.777384] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.777879] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unordered_map.h:2141:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Tp, class _Hash, class _Pred, class _Alloc> bool std::operator!=(const std::unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&, const std::unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.778461] (boat_control_system_final) StderrLine: {'line': b' 2141 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,\n'}
+[12.779012] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.779705] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unordered_map.h:2141:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.780281] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.780801] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.781300] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.781856] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/unordered_map:47\x1b[m\x1b[K,\n'}
+[12.782398] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:23\x1b[m\x1b[K,\n'}
+[12.782867] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.783391] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.783971] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.784508] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.784974] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unordered_map.h:2155:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Tp, class _Hash, class _Pred, class _Alloc> bool std::operator!=(const std::unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&, const std::unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.785489] (boat_control_system_final) StderrLine: {'line': b' 2155 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,\n'}
+[12.785992] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.786518] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unordered_map.h:2155:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.787085] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.787790] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.788346] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.788926] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/vector:67\x1b[m\x1b[K,\n'}
+[12.789420] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:62\x1b[m\x1b[K,\n'}
+[12.789910] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[12.790427] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[12.790905] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[12.791388] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.791977] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.792492] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.792970] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.793451] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.793961] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1937:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Alloc> bool std::operator!=(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.794465] (boat_control_system_final) StderrLine: {'line': b' 1937 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)\n'}
+[12.794972] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.795466] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1937:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.796102] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<_Tp, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.796662] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.797170] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.797663] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/locale_facets.h:48\x1b[m\x1b[K,\n'}
+[12.798140] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/basic_ios.h:37\x1b[m\x1b[K,\n'}
+[12.798636] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/ios:44\x1b[m\x1b[K,\n'}
+[12.799157] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/ostream:38\x1b[m\x1b[K,\n'}
+[12.799725] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/iostream:39\x1b[m\x1b[K,\n'}
+[12.800311] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[12.800794] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.801294] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.801873] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.802384] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.802931] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.803436] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/streambuf_iterator.h:232:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.804186] (boat_control_system_final) StderrLine: {'line': b'  232 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const istreambuf_iterator<_CharT, _Traits>& __a,\n'}
+[12.804696] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.805190] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/streambuf_iterator.h:232:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.805702] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::istreambuf_iterator<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.806232] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.806711] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.808110] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/list:63\x1b[m\x1b[K,\n'}
+[12.808831] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:23\x1b[m\x1b[K,\n'}
+[12.809344] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.810063] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.810846] (-) TimerEvent: {}
+[12.811358] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.812031] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.812564] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.813132] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_list.h:2092:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Alloc> bool std::operator!=(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.813691] (boat_control_system_final) StderrLine: {'line': b' 2092 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)\n'}
+[12.814178] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.814640] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_list.h:2092:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.815086] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::list<_Tp, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.815667] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.816232] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.816709] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/map:61\x1b[m\x1b[K,\n'}
+[12.817138] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24\x1b[m\x1b[K,\n'}
+[12.817640] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.818089] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.818581] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.819029] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.819522] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.820123] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_map.h:1508:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.820787] (boat_control_system_final) StderrLine: {'line': b' 1508 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const map<_Key, _Tp, _Compare, _Alloc>& __x,\n'}
+[12.821350] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.821872] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_map.h:1508:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.823357] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::map<_Key, _Tp, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.824134] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.824660] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.825141] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/map:62\x1b[m\x1b[K,\n'}
+[12.825613] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24\x1b[m\x1b[K,\n'}
+[12.826075] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.826537] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.827007] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.827525] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.828143] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.828610] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_multimap.h:1173:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.829090] (boat_control_system_final) StderrLine: {'line': b' 1173 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,\n'}
+[12.829579] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.830036] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_multimap.h:1173:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.830491] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::multimap<_Key, _Tp, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.830968] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.831431] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.831952] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/unordered_set:47\x1b[m\x1b[K,\n'}
+[12.832474] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:26\x1b[m\x1b[K,\n'}
+[12.832991] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34\x1b[m\x1b[K,\n'}
+[12.833442] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.833992] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.834532] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.835014] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.835475] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.836092] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unordered_set.h:1811:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Value, class _Hash, class _Pred, class _Alloc> bool std::operator!=(const std::unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>&, const std::unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.836603] (boat_control_system_final) StderrLine: {'line': b' 1811 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const unordered_set<_Value, _Hash, _Pred, _Alloc>& __x,\n'}
+[12.837083] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.837704] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unordered_set.h:1811:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.838376] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.839084] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.839619] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.840156] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/unordered_set:47\x1b[m\x1b[K,\n'}
+[12.840623] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:26\x1b[m\x1b[K,\n'}
+[12.841127] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34\x1b[m\x1b[K,\n'}
+[12.841584] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.842081] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.842549] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.843022] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.843430] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.843952] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unordered_set.h:1825:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Value, class _Hash, class _Pred, class _Alloc> bool std::operator!=(const std::unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>&, const std::unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.844492] (boat_control_system_final) StderrLine: {'line': b' 1825 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const unordered_multiset<_Value, _Hash, _Pred, _Alloc>& __x,\n'}
+[12.844936] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.845359] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unordered_set.h:1825:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.845790] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.846606] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.847107] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.847665] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23\x1b[m\x1b[K,\n'}
+[12.848192] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.848678] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.849124] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.849554] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.849994] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.850412] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.850834] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.851281] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.851878] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.852355] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.852840] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.853263] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1054:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr std::__optional_ne_t<_Tp, _Up> std::operator!=(const std::optional<_Tp>&, const std::optional<_Up>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.853798] (boat_control_system_final) StderrLine: {'line': b' 1054 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)\n'}
+[12.854248] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.854668] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1054:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.855157] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.855741] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.856246] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.856740] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23\x1b[m\x1b[K,\n'}
+[12.857285] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.857835] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.858399] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.858919] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.859406] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.860050] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.860554] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.861032] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.861504] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.862019] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.862565] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.863069] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1121:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr bool std::operator!=(const std::optional<_Tp>&, std::nullopt_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.863637] (boat_control_system_final) StderrLine: {'line': b' 1121 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const optional<_Tp>& __lhs, nullopt_t) noexcept\n'}
+[12.864302] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.864789] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1121:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.865284] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.865848] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.866367] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.866855] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23\x1b[m\x1b[K,\n'}
+[12.867414] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.867974] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.868487] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.868962] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.869423] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.869902] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.870416] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.870896] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.871361] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.871950] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.872530] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.873039] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1126:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr bool std::operator!=(std::nullopt_t, const std::optional<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.873528] (boat_control_system_final) StderrLine: {'line': b' 1126 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(nullopt_t, const optional<_Tp>& __rhs) noexcept\n'}
+[12.874015] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.874543] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1126:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.875048] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.875671] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.876223] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.876727] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23\x1b[m\x1b[K,\n'}
+[12.877299] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.877799] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.878348] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.878870] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.879364] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.879933] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.880422] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.880909] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.881383] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.881916] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.882391] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.882880] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1185:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr std::__optional_ne_t<_Tp, _Up> std::operator!=(const std::optional<_Tp>&, const _Up&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.883361] (boat_control_system_final) StderrLine: {'line': b' 1185 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const optional<_Tp>& __lhs, const _Up& __rhs)\n'}
+[12.883965] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.884464] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1185:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.885029] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.885626] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.886116] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.886584] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23\x1b[m\x1b[K,\n'}
+[12.887138] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.887683] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.888195] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.888673] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.889171] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.889655] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.890122] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.890599] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.891112] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.891691] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.892238] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.893039] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1191:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr std::__optional_ne_t<_Up, _Tp> std::operator!=(const _Up&, const std::optional<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.893676] (boat_control_system_final) StderrLine: {'line': b' 1191 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const _Up& __lhs, const optional<_Tp>& __rhs)\n'}
+[12.894179] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.895055] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1191:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.895864] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.896485] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.897085] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.898068] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28\x1b[m\x1b[K,\n'}
+[12.898715] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.899281] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.899902] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.900410] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.900919] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.901419] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.901939] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.902442] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.902921] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.903433] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.903995] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.904532] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1233:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _Types> constexpr bool std::operator!=(const std::variant<_Types ...>&, const std::variant<_Types ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.905048] (boat_control_system_final) StderrLine: {'line': b' 1233 |   \x1b[01;36m\x1b[K_VARIANT_RELATION_FUNCTION_TEMPLATE\x1b[m\x1b[K(!=, not_equal)\n'}
+[12.905552] (boat_control_system_final) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.906029] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1233:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.906547] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::variant<_Types ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.907062] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.907632] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.908164] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/deque:67\x1b[m\x1b[K,\n'}
+[12.908664] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:9\x1b[m\x1b[K,\n'}
+[12.909165] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.909778] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_deque.h:2292:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Alloc> bool std::operator!=(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.910291] (boat_control_system_final) StderrLine: {'line': b' 2292 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const deque<_Tp, _Alloc>& __x, const deque<_Tp, _Alloc>& __y)\n'}
+[12.910785] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.911285] (-) TimerEvent: {}
+[12.911867] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_deque.h:2292:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.912496] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:74:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::deque<_Tp, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.913056] (boat_control_system_final) StderrLine: {'line': b'   74 |     if(msg != \x1b[01;36m\x1b[K1\x1b[m\x1b[K)\n'}
+[12.913552] (boat_control_system_final) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[12.914024] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[12.914520] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[12.915020] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[12.915570] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.916157] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.916657] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.917161] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:416:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::operator!=(const std::error_code&, const std::error_code&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.917674] (boat_control_system_final) StderrLine: {'line': b'  416 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const error_code& __lhs, const error_code& __rhs) noexcept\n'}
+[12.918245] (boat_control_system_final) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.918758] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:416:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::error_code&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.919306] (boat_control_system_final) StderrLine: {'line': b'  416 |   operator!=(\x1b[01;36m\x1b[Kconst error_code& __lhs\x1b[m\x1b[K, const error_code& __rhs) noexcept\n'}
+[12.919878] (boat_control_system_final) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[12.920584] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:421:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::operator!=(const std::error_code&, const std::error_condition&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.921216] (boat_control_system_final) StderrLine: {'line': b'  421 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const error_code& __lhs, const error_condition& __rhs) noexcept\n'}
+[12.921809] (boat_control_system_final) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.923266] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:421:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::error_code&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.923991] (boat_control_system_final) StderrLine: {'line': b'  421 |   operator!=(\x1b[01;36m\x1b[Kconst error_code& __lhs\x1b[m\x1b[K, const error_condition& __rhs) noexcept\n'}
+[12.924544] (boat_control_system_final) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[12.925041] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:426:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::operator!=(const std::error_condition&, const std::error_code&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.925543] (boat_control_system_final) StderrLine: {'line': b'  426 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const error_condition& __lhs, const error_code& __rhs) noexcept\n'}
+[12.926057] (boat_control_system_final) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.926548] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:426:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::error_condition&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.927045] (boat_control_system_final) StderrLine: {'line': b'  426 |   operator!=(\x1b[01;36m\x1b[Kconst error_condition& __lhs\x1b[m\x1b[K, const error_code& __rhs) noexcept\n'}
+[12.927596] (boat_control_system_final) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[12.928150] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:431:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::operator!=(const std::error_condition&, const std::error_condition&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.928675] (boat_control_system_final) StderrLine: {'line': b'  431 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(const error_condition& __lhs,\n'}
+[12.929168] (boat_control_system_final) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.929757] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:431:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::error_condition&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.930285] (boat_control_system_final) StderrLine: {'line': b'  431 |   operator!=(\x1b[01;36m\x1b[Kconst error_condition& __lhs\x1b[m\x1b[K,\n'}
+[12.930779] (boat_control_system_final) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[12.931347] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:22\x1b[m\x1b[K,\n'}
+[12.931871] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.932342] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.932842] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.933336] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.933827] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/thread:66:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::operator!=(std::thread::id, std::thread::id)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.934327] (boat_control_system_final) StderrLine: {'line': b'   66 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(thread::id __x, thread::id __y) noexcept\n'}
+[12.934853] (boat_control_system_final) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.935344] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/thread:66:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::thread::id\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.936053] (boat_control_system_final) StderrLine: {'line': b'   66 |   operator!=(\x1b[01;36m\x1b[Kthread::id __x\x1b[m\x1b[K, thread::id __y) noexcept\n'}
+[12.936587] (boat_control_system_final) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.937148] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28\x1b[m\x1b[K,\n'}
+[12.937625] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.938105] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.939011] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.939594] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.940200] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.940761] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.941253] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.941746] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.942209] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.942742] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:4\x1b[m\x1b[K,\n'}
+[12.943229] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:2\x1b[m\x1b[K:\n'}
+[12.943806] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1271:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr bool std::operator!=(std::monostate, std::monostate)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.944325] (boat_control_system_final) StderrLine: {'line': b' 1271 |   constexpr bool \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K!=(monostate, monostate) noexcept { return false; }\n'}
+[12.944837] (boat_control_system_final) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.945324] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1271:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int16_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::monostate\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.945909] (boat_control_system_final) StderrLine: {'line': b' 1271 |   constexpr bool operator!=(\x1b[01;36m\x1b[Kmonostate\x1b[m\x1b[K, monostate) noexcept { return false; }\n'}
+[12.946391] (boat_control_system_final) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[12.946870] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:\x1b[m\x1b[K At global scope:\n'}
+[12.947417] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:81:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBool\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[12.948069] (boat_control_system_final) StderrLine: {'line': b'   81 | void WaypointQueueNode::executing_callback(const std_msgs::msg::\x1b[01;31m\x1b[KBool\x1b[m\x1b[K::SharedPtr msg)\n'}
+[12.948579] (boat_control_system_final) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[12.949091] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:81:81:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.949571] (boat_control_system_final) StderrLine: {'line': b'   81 | void WaypointQueueNode::executing_callback(const std_msgs::msg::Bool::SharedPtr \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K)\n'}
+[12.950061] (boat_control_system_final) StderrLine: {'line': b'      |                                                                                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[12.950555] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:81:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.951038] (boat_control_system_final) StderrLine: {'line': b'   81 | void WaypointQueueNode::executing_callback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst std_msgs::msg::Bool::SharedPtr\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[Kmsg\x1b[m\x1b[K)\n'}
+[12.951611] (boat_control_system_final) StderrLine: {'line': b'      |                                           \x1b[34m\x1b[K~\x1b[m\x1b[K                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~\x1b[m\x1b[K\n'}
+[12.952294] (boat_control_system_final) StderrLine: {'line': b'      |                                                                                \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[12.952800] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:81:81:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.953290] (boat_control_system_final) StderrLine: {'line': b'   81 | void WaypointQueueNode::executing_callback(const std_msgs::msg::Bool::SharedPtr \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K)\n'}
+[12.953793] (boat_control_system_final) StderrLine: {'line': b'      |                                                                                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[13.011562] (-) TimerEvent: {}
+[13.112402] (-) TimerEvent: {}
+[13.213278] (-) TimerEvent: {}
+[13.314073] (-) TimerEvent: {}
+[13.414948] (-) TimerEvent: {}
+[13.515999] (-) TimerEvent: {}
+[13.616874] (-) TimerEvent: {}
+[13.717699] (-) TimerEvent: {}
+[13.818542] (-) TimerEvent: {}
+[13.919465] (-) TimerEvent: {}
+[14.020354] (-) TimerEvent: {}
+[14.121198] (-) TimerEvent: {}
+[14.222090] (-) TimerEvent: {}
+[14.322995] (-) TimerEvent: {}
+[14.423884] (-) TimerEvent: {}
+[14.524740] (-) TimerEvent: {}
+[14.625598] (-) TimerEvent: {}
+[14.726452] (-) TimerEvent: {}
+[14.827346] (-) TimerEvent: {}
+[14.928237] (-) TimerEvent: {}
+[15.029089] (-) TimerEvent: {}
+[15.129940] (-) TimerEvent: {}
+[15.230874] (-) TimerEvent: {}
+[15.331749] (-) TimerEvent: {}
+[15.432604] (-) TimerEvent: {}
+[15.533532] (-) TimerEvent: {}
+[15.634491] (-) TimerEvent: {}
+[15.735369] (-) TimerEvent: {}
+[15.836263] (-) TimerEvent: {}
+[15.937184] (-) TimerEvent: {}
+[16.038102] (-) TimerEvent: {}
+[16.138968] (-) TimerEvent: {}
+[16.239846] (-) TimerEvent: {}
+[16.340676] (-) TimerEvent: {}
+[16.441533] (-) TimerEvent: {}
+[16.542376] (-) TimerEvent: {}
+[16.643228] (-) TimerEvent: {}
+[16.744104] (-) TimerEvent: {}
+[16.844936] (-) TimerEvent: {}
+[16.945879] (-) TimerEvent: {}
+[17.046797] (-) TimerEvent: {}
+[17.147707] (-) TimerEvent: {}
+[17.248580] (-) TimerEvent: {}
+[17.349475] (-) TimerEvent: {}
+[17.450349] (-) TimerEvent: {}
+[17.551222] (-) TimerEvent: {}
+[17.652132] (-) TimerEvent: {}
+[17.752978] (-) TimerEvent: {}
+[17.853823] (-) TimerEvent: {}
+[17.955356] (-) TimerEvent: {}
+[18.056221] (-) TimerEvent: {}
+[18.157096] (-) TimerEvent: {}
+[18.257955] (-) TimerEvent: {}
+[18.358839] (-) TimerEvent: {}
+[18.459762] (-) TimerEvent: {}
+[18.560653] (-) TimerEvent: {}
+[18.661589] (-) TimerEvent: {}
+[18.762515] (-) TimerEvent: {}
+[18.863593] (-) TimerEvent: {}
+[18.964524] (-) TimerEvent: {}
+[19.065495] (-) TimerEvent: {}
+[19.166380] (-) TimerEvent: {}
+[19.267339] (-) TimerEvent: {}
+[19.368257] (-) TimerEvent: {}
+[19.469107] (-) TimerEvent: {}
+[19.570055] (-) TimerEvent: {}
+[19.670894] (-) TimerEvent: {}
+[19.771755] (-) TimerEvent: {}
+[19.872566] (-) TimerEvent: {}
+[19.973406] (-) TimerEvent: {}
+[20.074251] (-) TimerEvent: {}
+[20.175127] (-) TimerEvent: {}
+[20.276018] (-) TimerEvent: {}
+[20.376866] (-) TimerEvent: {}
+[20.477697] (-) TimerEvent: {}
+[20.578548] (-) TimerEvent: {}
+[20.679446] (-) TimerEvent: {}
+[20.780326] (-) TimerEvent: {}
+[20.881176] (-) TimerEvent: {}
+[20.982054] (-) TimerEvent: {}
+[21.082927] (-) TimerEvent: {}
+[21.183891] (-) TimerEvent: {}
+[21.284733] (-) TimerEvent: {}
+[21.385619] (-) TimerEvent: {}
+[21.486419] (-) TimerEvent: {}
+[21.587215] (-) TimerEvent: {}
+[21.688065] (-) TimerEvent: {}
+[21.788904] (-) TimerEvent: {}
+[21.889755] (-) TimerEvent: {}
+[21.990622] (-) TimerEvent: {}
+[22.091572] (-) TimerEvent: {}
+[22.192393] (-) TimerEvent: {}
+[22.293241] (-) TimerEvent: {}
+[22.394069] (-) TimerEvent: {}
+[22.494937] (-) TimerEvent: {}
+[22.595806] (-) TimerEvent: {}
+[22.696634] (-) TimerEvent: {}
+[22.797497] (-) TimerEvent: {}
+[22.898347] (-) TimerEvent: {}
+[22.999337] (-) TimerEvent: {}
+[23.100212] (-) TimerEvent: {}
+[23.201047] (-) TimerEvent: {}
+[23.301957] (-) TimerEvent: {}
+[23.402868] (-) TimerEvent: {}
+[23.503794] (-) TimerEvent: {}
+[23.604599] (-) TimerEvent: {}
+[23.705486] (-) TimerEvent: {}
+[23.806655] (-) TimerEvent: {}
+[23.907452] (-) TimerEvent: {}
+[24.008281] (-) TimerEvent: {}
+[24.109052] (-) TimerEvent: {}
+[24.209875] (-) TimerEvent: {}
+[24.310667] (-) TimerEvent: {}
+[24.411472] (-) TimerEvent: {}
+[24.512353] (-) TimerEvent: {}
+[24.613416] (-) TimerEvent: {}
+[24.714370] (-) TimerEvent: {}
+[24.815243] (-) TimerEvent: {}
+[24.916159] (-) TimerEvent: {}
+[25.017038] (-) TimerEvent: {}
+[25.117893] (-) TimerEvent: {}
+[25.218753] (-) TimerEvent: {}
+[25.319655] (-) TimerEvent: {}
+[25.420521] (-) TimerEvent: {}
+[25.521370] (-) TimerEvent: {}
+[25.622213] (-) TimerEvent: {}
+[25.723081] (-) TimerEvent: {}
+[25.773031] (boat_control_system_final) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/WaypointQueueNode.dir/build.make:76: CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o] Error 1\n'}
+[25.774223] (boat_control_system_final) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/WaypointQueueNode.dir/all] Error 2\n'}
+[25.775631] (boat_control_system_final) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[25.782230] (boat_control_system_final) CommandEnded: {'returncode': 2}
+[25.823300] (-) TimerEvent: {}
+[25.924203] (-) TimerEvent: {}
+[26.024743] (boat_control_system_final) JobEnded: {'identifier': 'boat_control_system_final', 'rc': 2}
+[26.080653] (-) TimerEvent: {}
+[26.081392] (-) EventReactorShutdown: {}
