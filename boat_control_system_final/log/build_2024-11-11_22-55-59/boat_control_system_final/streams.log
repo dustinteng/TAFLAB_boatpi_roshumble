@@ -1,0 +1,23 @@
+[0.066s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.290s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculations[0m
+[0.378s] [ 20%] Built target WaypointQueue
+[0.425s] [ 40%] Built target CoordinateCalculations
+[0.546s] [ 60%] Built target WaypointQueueNode
+[0.561s] [ 70%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o[0m
+[61.070s] [ 80%] [32m[1mLinking CXX static library libCoordinateCalculationsNodeLib.a[0m
+[62.833s] [ 80%] Built target CoordinateCalculationsNodeLib
+[62.897s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculationsNodeExec[0m
+[63.013s] [ 90%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeExec.dir/src/CoordinateCalculationsNode.cpp.o[0m
+[129.976s] [100%] [32m[1mLinking CXX executable CoordinateCalculationsNodeExec[0m
+[133.003s] /usr/bin/ld: CMakeFiles/CoordinateCalculationsNodeExec.dir/src/CoordinateCalculationsNode.cpp.o: in function `CoordinateCalculationsNode::waypointCallback(std::shared_ptr<sensor_msgs::msg::NavSatFix_<std::allocator<void> > >)':
+[133.004s] CoordinateCalculationsNode.cpp:(.text+0xb0c): undefined reference to `CoordinateCalculations::getInstance()'
+[133.241s] /usr/bin/ld: libCoordinateCalculations.a(Coordinate_Calculations.cpp.o): in function `CoordinateCalculations::plan_path(sensor_msgs::msg::NavSatFix_<std::allocator<void> > const&, sensor_msgs::msg::NavSatFix_<std::allocator<void> > const&)':
+[133.241s] Coordinate_Calculations.cpp:(.text+0x7a4): undefined reference to `CoordinateCalculations::getInstance()'
+[133.242s] /usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x854): undefined reference to `CoordinateCalculations::getInstance()'
+[133.242s] /usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x954): undefined reference to `CoordinateCalculations::getInstance()'
+[133.242s] /usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x99c): undefined reference to `CoordinateCalculations::getInstance()'
+[133.417s] collect2: error: ld returned 1 exit status
+[133.427s] gmake[2]: *** [CMakeFiles/CoordinateCalculationsNodeExec.dir/build.make:178: CoordinateCalculationsNodeExec] Error 1
+[133.428s] gmake[1]: *** [CMakeFiles/Makefile2:226: CMakeFiles/CoordinateCalculationsNodeExec.dir/all] Error 2
+[133.430s] gmake: *** [Makefile:146: all] Error 2
+[133.440s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

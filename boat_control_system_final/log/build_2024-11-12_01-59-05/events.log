@@ -1,0 +1,387 @@
+[0.000000] (-) TimerEvent: {}
+[0.001733] (boat_control_system_final) JobQueued: {'identifier': 'boat_control_system_final', 'dependencies': OrderedDict()}
+[0.002407] (boat_control_system_final) JobStarted: {'identifier': 'boat_control_system_final'}
+[0.050031] (boat_control_system_final) JobProgress: {'identifier': 'boat_control_system_final', 'progress': 'cmake'}
+[0.053968] (boat_control_system_final) JobProgress: {'identifier': 'boat_control_system_final', 'progress': 'build'}
+[0.057897] (boat_control_system_final) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final', '--', '-j4', '-l4'], 'cwd': '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'boat'), ('SSH_CLIENT', '10.136.128.231 56713 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/boat'), ('TERM_PROGRAM_VERSION', '1.95.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e1156e86-b755-4fab-9937-a89aa8c9bb16.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'boat'), ('_', '/home/boat/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/remote-cli:/home/boat/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/boat/.local/bin:/home/boat/.local/bin:/home/boat/.local/bin:/home/boat/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-15c79811d2.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.136.128.231 56713 10.41.221.43 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098963] (-) TimerEvent: {}
+[0.199797] (-) TimerEvent: {}
+[0.300610] (-) TimerEvent: {}
+[0.341434] (boat_control_system_final) StdoutLine: {'line': b'[ 16%] Built target WaypointQueue\n'}
+[0.348743] (boat_control_system_final) StdoutLine: {'line': b'[ 33%] Built target CoordinateCalculations\n'}
+[0.401131] (-) TimerEvent: {}
+[0.430259] (boat_control_system_final) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target RudderServoControlNode\x1b[0m\n'}
+[0.474959] (boat_control_system_final) StdoutLine: {'line': b'[ 50%] Built target WaypointQueueNode\n'}
+[0.496712] (boat_control_system_final) StdoutLine: {'line': b'[ 66%] Built target CoordinateCalculationsNodeLib\n'}
+[0.501333] (-) TimerEvent: {}
+[0.547871] (boat_control_system_final) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o\x1b[0m\n'}
+[0.601554] (-) TimerEvent: {}
+[0.630089] (boat_control_system_final) StdoutLine: {'line': b'[ 91%] Built target CoordinateCalculationsNodeExec\n'}
+[0.701823] (-) TimerEvent: {}
+[0.802941] (-) TimerEvent: {}
+[0.903826] (-) TimerEvent: {}
+[1.004634] (-) TimerEvent: {}
+[1.105632] (-) TimerEvent: {}
+[1.206957] (-) TimerEvent: {}
+[1.307766] (-) TimerEvent: {}
+[1.408681] (-) TimerEvent: {}
+[1.509748] (-) TimerEvent: {}
+[1.610598] (-) TimerEvent: {}
+[1.711375] (-) TimerEvent: {}
+[1.812113] (-) TimerEvent: {}
+[1.912876] (-) TimerEvent: {}
+[2.013654] (-) TimerEvent: {}
+[2.114420] (-) TimerEvent: {}
+[2.215266] (-) TimerEvent: {}
+[2.316004] (-) TimerEvent: {}
+[2.416733] (-) TimerEvent: {}
+[2.517559] (-) TimerEvent: {}
+[2.618425] (-) TimerEvent: {}
+[2.719324] (-) TimerEvent: {}
+[2.820196] (-) TimerEvent: {}
+[2.921096] (-) TimerEvent: {}
+[3.021922] (-) TimerEvent: {}
+[3.122762] (-) TimerEvent: {}
+[3.223696] (-) TimerEvent: {}
+[3.324588] (-) TimerEvent: {}
+[3.426276] (-) TimerEvent: {}
+[3.527272] (-) TimerEvent: {}
+[3.628238] (-) TimerEvent: {}
+[3.729386] (-) TimerEvent: {}
+[3.830338] (-) TimerEvent: {}
+[3.931283] (-) TimerEvent: {}
+[4.032182] (-) TimerEvent: {}
+[4.133322] (-) TimerEvent: {}
+[4.234215] (-) TimerEvent: {}
+[4.335097] (-) TimerEvent: {}
+[4.436142] (-) TimerEvent: {}
+[4.536989] (-) TimerEvent: {}
+[4.637812] (-) TimerEvent: {}
+[4.738852] (-) TimerEvent: {}
+[4.840067] (-) TimerEvent: {}
+[4.940864] (-) TimerEvent: {}
+[5.041731] (-) TimerEvent: {}
+[5.142669] (-) TimerEvent: {}
+[5.243544] (-) TimerEvent: {}
+[5.344356] (-) TimerEvent: {}
+[5.445175] (-) TimerEvent: {}
+[5.546032] (-) TimerEvent: {}
+[5.646877] (-) TimerEvent: {}
+[5.747798] (-) TimerEvent: {}
+[5.848629] (-) TimerEvent: {}
+[5.949515] (-) TimerEvent: {}
+[6.050450] (-) TimerEvent: {}
+[6.151318] (-) TimerEvent: {}
+[6.252197] (-) TimerEvent: {}
+[6.353115] (-) TimerEvent: {}
+[6.453958] (-) TimerEvent: {}
+[6.554817] (-) TimerEvent: {}
+[6.655685] (-) TimerEvent: {}
+[6.756555] (-) TimerEvent: {}
+[6.857382] (-) TimerEvent: {}
+[6.958229] (-) TimerEvent: {}
+[7.059084] (-) TimerEvent: {}
+[7.159956] (-) TimerEvent: {}
+[7.260776] (-) TimerEvent: {}
+[7.361564] (-) TimerEvent: {}
+[7.462433] (-) TimerEvent: {}
+[7.563360] (-) TimerEvent: {}
+[7.664362] (-) TimerEvent: {}
+[7.765223] (-) TimerEvent: {}
+[7.866076] (-) TimerEvent: {}
+[7.966968] (-) TimerEvent: {}
+[8.067938] (-) TimerEvent: {}
+[8.168817] (-) TimerEvent: {}
+[8.269697] (-) TimerEvent: {}
+[8.370615] (-) TimerEvent: {}
+[8.471489] (-) TimerEvent: {}
+[8.572308] (-) TimerEvent: {}
+[8.673158] (-) TimerEvent: {}
+[8.774033] (-) TimerEvent: {}
+[8.874998] (-) TimerEvent: {}
+[8.975950] (-) TimerEvent: {}
+[9.076780] (-) TimerEvent: {}
+[9.177660] (-) TimerEvent: {}
+[9.278512] (-) TimerEvent: {}
+[9.379383] (-) TimerEvent: {}
+[9.480213] (-) TimerEvent: {}
+[9.581042] (-) TimerEvent: {}
+[9.682041] (-) TimerEvent: {}
+[9.782892] (-) TimerEvent: {}
+[9.883767] (-) TimerEvent: {}
+[9.984656] (-) TimerEvent: {}
+[10.085494] (-) TimerEvent: {}
+[10.186359] (-) TimerEvent: {}
+[10.287294] (-) TimerEvent: {}
+[10.388121] (-) TimerEvent: {}
+[10.488944] (-) TimerEvent: {}
+[10.589821] (-) TimerEvent: {}
+[10.690667] (-) TimerEvent: {}
+[10.791599] (-) TimerEvent: {}
+[10.892548] (-) TimerEvent: {}
+[10.993515] (-) TimerEvent: {}
+[11.094362] (-) TimerEvent: {}
+[11.195200] (-) TimerEvent: {}
+[11.296059] (-) TimerEvent: {}
+[11.396907] (-) TimerEvent: {}
+[11.497830] (-) TimerEvent: {}
+[11.598728] (-) TimerEvent: {}
+[11.699605] (-) TimerEvent: {}
+[11.800437] (-) TimerEvent: {}
+[11.901257] (-) TimerEvent: {}
+[12.002127] (-) TimerEvent: {}
+[12.103084] (-) TimerEvent: {}
+[12.203928] (-) TimerEvent: {}
+[12.304881] (-) TimerEvent: {}
+[12.405819] (-) TimerEvent: {}
+[12.506679] (-) TimerEvent: {}
+[12.607585] (-) TimerEvent: {}
+[12.708453] (-) TimerEvent: {}
+[12.720862] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RudderServoControlNode::turnBoat(sensor_msgs::msg::NavSatFix)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.722862] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:123:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator-\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::string\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99})\n'}
+[12.723574] (boat_control_system_final) StderrLine: {'line': b'  123 |         if (abs(\x1b[32m\x1b[Kcurrent_heading\x1b[m\x1b[K \x1b[01;31m\x1b[K-\x1b[m\x1b[K \x1b[34m\x1b[Kturn_direction\x1b[m\x1b[K) > 10.0f) {\n'}
+[12.724101] (boat_control_system_final) StderrLine: {'line': b'      |                 \x1b[32m\x1b[K~~~~~~~~~~~~~~~\x1b[m\x1b[K \x1b[01;31m\x1b[K^\x1b[m\x1b[K \x1b[34m\x1b[K~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.724592] (boat_control_system_final) StderrLine: {'line': b'      |                 \x1b[32m\x1b[K|\x1b[m\x1b[K                 \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[12.725676] (boat_control_system_final) StderrLine: {'line': b'      |                 \x1b[32m\x1b[Kfloat\x1b[m\x1b[K             \x1b[34m\x1b[Kstd::string {aka std::__cxx11::basic_string<char>}\x1b[m\x1b[K\n'}
+[12.726151] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[12.726602] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:61\x1b[m\x1b[K,\n'}
+[12.727055] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:8\x1b[m\x1b[K,\n'}
+[12.727602] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:7\x1b[m\x1b[K,\n'}
+[12.728096] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:6\x1b[m\x1b[K:\n'}
+[12.728910] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:577:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.729480] (boat_control_system_final) StderrLine: {'line': b'  577 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const reverse_iterator<_IteratorL>& __x,\n'}
+[12.729958] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.730409] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:577:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.730876] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:123:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.731416] (boat_control_system_final) StderrLine: {'line': b'  123 |         if (abs(current_heading - \x1b[01;36m\x1b[Kturn_direction\x1b[m\x1b[K) > 10.0f) {\n'}
+[12.731919] (boat_control_system_final) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.732378] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[12.732865] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:61\x1b[m\x1b[K,\n'}
+[12.733320] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:8\x1b[m\x1b[K,\n'}
+[12.733781] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:7\x1b[m\x1b[K,\n'}
+[12.735147] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:6\x1b[m\x1b[K:\n'}
+[12.735909] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1693:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.737250] (boat_control_system_final) StderrLine: {'line': b' 1693 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const move_iterator<_IteratorL>& __x,\n'}
+[12.737830] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.738318] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1693:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.738802] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:123:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.739359] (boat_control_system_final) StderrLine: {'line': b'  123 |         if (abs(current_heading - \x1b[01;36m\x1b[Kturn_direction\x1b[m\x1b[K) > 10.0f) {\n'}
+[12.739916] (boat_control_system_final) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.740363] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[12.740809] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:61\x1b[m\x1b[K,\n'}
+[12.741330] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:8\x1b[m\x1b[K,\n'}
+[12.741807] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:7\x1b[m\x1b[K,\n'}
+[12.742343] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:6\x1b[m\x1b[K:\n'}
+[12.742844] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1255:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR, class _Container> decltype ((__lhs.base() - __rhs.base())) __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.743357] (boat_control_system_final) StderrLine: {'line': b' 1255 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const __normal_iterator<_IteratorL, _Container>& __lhs,\n'}
+[12.743851] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.744291] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1255:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.744725] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:123:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst __gnu_cxx::__normal_iterator<_IteratorL, _Container>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.745235] (boat_control_system_final) StderrLine: {'line': b'  123 |         if (abs(current_heading - \x1b[01;36m\x1b[Kturn_direction\x1b[m\x1b[K) > 10.0f) {\n'}
+[12.745690] (boat_control_system_final) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.746155] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[12.746607] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:61\x1b[m\x1b[K,\n'}
+[12.747058] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:8\x1b[m\x1b[K,\n'}
+[12.747642] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:7\x1b[m\x1b[K,\n'}
+[12.748141] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:6\x1b[m\x1b[K:\n'}
+[12.748609] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1268:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator, class _Container> typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.749114] (boat_control_system_final) StderrLine: {'line': b' 1268 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const __normal_iterator<_Iterator, _Container>& __lhs,\n'}
+[12.749585] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.750036] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1268:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.750576] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:123:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst __gnu_cxx::__normal_iterator<_Iterator, _Container>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.751057] (boat_control_system_final) StderrLine: {'line': b'  123 |         if (abs(current_heading - \x1b[01;36m\x1b[Kturn_direction\x1b[m\x1b[K) > 10.0f) {\n'}
+[12.751624] (boat_control_system_final) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.752110] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[12.752703] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[12.753362] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.754036] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.754518] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.755513] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.757510] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.758380] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.759076] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.759652] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.760184] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.760671] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:9\x1b[m\x1b[K,\n'}
+[12.761130] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:16\x1b[m\x1b[K:\n'}
+[12.761569] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:125:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%f\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99, but argument 6 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::string\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.762120] (boat_control_system_final) StderrLine: {'line': b'  125 |             RCLCPP_WARN(this->get_logger(), \x1b[01;35m\x1b[K"Correcting for significant drift: Current heading %.2f, Desired heading %.2f"\x1b[m\x1b[K, current_heading, turn_direction);\n'}
+[12.762670] (boat_control_system_final) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.763123] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:125:121:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[12.763651] (boat_control_system_final) StderrLine: {'line': b'  125 |             RCLCPP_WARN(this->get_logger(), "Correcting for significant drift: Current heading %.2f, Desired heading \x1b[01;36m\x1b[K%.2f\x1b[m\x1b[K", current_heading, turn_direction);\n'}
+[12.764094] (boat_control_system_final) StderrLine: {'line': b'      |                                                                                                                      \x1b[01;36m\x1b[K~~~^\x1b[m\x1b[K\n'}
+[12.764544] (boat_control_system_final) StderrLine: {'line': b'      |                                                                                                                         \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[12.764976] (boat_control_system_final) StderrLine: {'line': b'      |                                                                                                                         \x1b[01;36m\x1b[Kdouble\x1b[m\x1b[K\n'}
+[12.808664] (-) TimerEvent: {}
+[12.909564] (-) TimerEvent: {}
+[13.010423] (-) TimerEvent: {}
+[13.111295] (-) TimerEvent: {}
+[13.212142] (-) TimerEvent: {}
+[13.313119] (-) TimerEvent: {}
+[13.414005] (-) TimerEvent: {}
+[13.514823] (-) TimerEvent: {}
+[13.615707] (-) TimerEvent: {}
+[13.716573] (-) TimerEvent: {}
+[13.817396] (-) TimerEvent: {}
+[13.918262] (-) TimerEvent: {}
+[14.019084] (-) TimerEvent: {}
+[14.120025] (-) TimerEvent: {}
+[14.220915] (-) TimerEvent: {}
+[14.321778] (-) TimerEvent: {}
+[14.422637] (-) TimerEvent: {}
+[14.523505] (-) TimerEvent: {}
+[14.624377] (-) TimerEvent: {}
+[14.725244] (-) TimerEvent: {}
+[14.826050] (-) TimerEvent: {}
+[14.926877] (-) TimerEvent: {}
+[15.027729] (-) TimerEvent: {}
+[15.128601] (-) TimerEvent: {}
+[15.229583] (-) TimerEvent: {}
+[15.330415] (-) TimerEvent: {}
+[15.431326] (-) TimerEvent: {}
+[15.532158] (-) TimerEvent: {}
+[15.632987] (-) TimerEvent: {}
+[15.733907] (-) TimerEvent: {}
+[15.834905] (-) TimerEvent: {}
+[15.935944] (-) TimerEvent: {}
+[16.036854] (-) TimerEvent: {}
+[16.138022] (-) TimerEvent: {}
+[16.238855] (-) TimerEvent: {}
+[16.339701] (-) TimerEvent: {}
+[16.440511] (-) TimerEvent: {}
+[16.541325] (-) TimerEvent: {}
+[16.642190] (-) TimerEvent: {}
+[16.743066] (-) TimerEvent: {}
+[16.843903] (-) TimerEvent: {}
+[16.944736] (-) TimerEvent: {}
+[17.045563] (-) TimerEvent: {}
+[17.146377] (-) TimerEvent: {}
+[17.247303] (-) TimerEvent: {}
+[17.348091] (-) TimerEvent: {}
+[17.448887] (-) TimerEvent: {}
+[17.549730] (-) TimerEvent: {}
+[17.650605] (-) TimerEvent: {}
+[17.751443] (-) TimerEvent: {}
+[17.852267] (-) TimerEvent: {}
+[17.953122] (-) TimerEvent: {}
+[18.053970] (-) TimerEvent: {}
+[18.154792] (-) TimerEvent: {}
+[18.255756] (-) TimerEvent: {}
+[18.356675] (-) TimerEvent: {}
+[18.457544] (-) TimerEvent: {}
+[18.558501] (-) TimerEvent: {}
+[18.659397] (-) TimerEvent: {}
+[18.760249] (-) TimerEvent: {}
+[18.861066] (-) TimerEvent: {}
+[18.961969] (-) TimerEvent: {}
+[19.062825] (-) TimerEvent: {}
+[19.163743] (-) TimerEvent: {}
+[19.264576] (-) TimerEvent: {}
+[19.365408] (-) TimerEvent: {}
+[19.466280] (-) TimerEvent: {}
+[19.567117] (-) TimerEvent: {}
+[19.668000] (-) TimerEvent: {}
+[19.768849] (-) TimerEvent: {}
+[19.869715] (-) TimerEvent: {}
+[19.970578] (-) TimerEvent: {}
+[20.071404] (-) TimerEvent: {}
+[20.172240] (-) TimerEvent: {}
+[20.273118] (-) TimerEvent: {}
+[20.374065] (-) TimerEvent: {}
+[20.474897] (-) TimerEvent: {}
+[20.575748] (-) TimerEvent: {}
+[20.676596] (-) TimerEvent: {}
+[20.777464] (-) TimerEvent: {}
+[20.878279] (-) TimerEvent: {}
+[20.979115] (-) TimerEvent: {}
+[21.079978] (-) TimerEvent: {}
+[21.180843] (-) TimerEvent: {}
+[21.281663] (-) TimerEvent: {}
+[21.382477] (-) TimerEvent: {}
+[21.483306] (-) TimerEvent: {}
+[21.584109] (-) TimerEvent: {}
+[21.684911] (-) TimerEvent: {}
+[21.785733] (-) TimerEvent: {}
+[21.886522] (-) TimerEvent: {}
+[21.987384] (-) TimerEvent: {}
+[22.088163] (-) TimerEvent: {}
+[22.188987] (-) TimerEvent: {}
+[22.289806] (-) TimerEvent: {}
+[22.390709] (-) TimerEvent: {}
+[22.491569] (-) TimerEvent: {}
+[22.592380] (-) TimerEvent: {}
+[22.693239] (-) TimerEvent: {}
+[22.794060] (-) TimerEvent: {}
+[22.894884] (-) TimerEvent: {}
+[22.995748] (-) TimerEvent: {}
+[23.096571] (-) TimerEvent: {}
+[23.197463] (-) TimerEvent: {}
+[23.298258] (-) TimerEvent: {}
+[23.399055] (-) TimerEvent: {}
+[23.499928] (-) TimerEvent: {}
+[23.600786] (-) TimerEvent: {}
+[23.701620] (-) TimerEvent: {}
+[23.802436] (-) TimerEvent: {}
+[23.903293] (-) TimerEvent: {}
+[24.004126] (-) TimerEvent: {}
+[24.104971] (-) TimerEvent: {}
+[24.205827] (-) TimerEvent: {}
+[24.306708] (-) TimerEvent: {}
+[24.407562] (-) TimerEvent: {}
+[24.508403] (-) TimerEvent: {}
+[24.609215] (-) TimerEvent: {}
+[24.710022] (-) TimerEvent: {}
+[24.810884] (-) TimerEvent: {}
+[24.911752] (-) TimerEvent: {}
+[25.012616] (-) TimerEvent: {}
+[25.113417] (-) TimerEvent: {}
+[25.214233] (-) TimerEvent: {}
+[25.315056] (-) TimerEvent: {}
+[25.415950] (-) TimerEvent: {}
+[25.516824] (-) TimerEvent: {}
+[25.617654] (-) TimerEvent: {}
+[25.718458] (-) TimerEvent: {}
+[25.819313] (-) TimerEvent: {}
+[25.920193] (-) TimerEvent: {}
+[26.021005] (-) TimerEvent: {}
+[26.121823] (-) TimerEvent: {}
+[26.222649] (-) TimerEvent: {}
+[26.323460] (-) TimerEvent: {}
+[26.424331] (-) TimerEvent: {}
+[26.525188] (-) TimerEvent: {}
+[26.625997] (-) TimerEvent: {}
+[26.726755] (-) TimerEvent: {}
+[26.827520] (-) TimerEvent: {}
+[26.928336] (-) TimerEvent: {}
+[27.029137] (-) TimerEvent: {}
+[27.129949] (-) TimerEvent: {}
+[27.230710] (-) TimerEvent: {}
+[27.331481] (-) TimerEvent: {}
+[27.432290] (-) TimerEvent: {}
+[27.533066] (-) TimerEvent: {}
+[27.633883] (-) TimerEvent: {}
+[27.734759] (-) TimerEvent: {}
+[27.835705] (-) TimerEvent: {}
+[27.936528] (-) TimerEvent: {}
+[28.037329] (-) TimerEvent: {}
+[28.138157] (-) TimerEvent: {}
+[28.239014] (-) TimerEvent: {}
+[28.339962] (-) TimerEvent: {}
+[28.440780] (-) TimerEvent: {}
+[28.541678] (-) TimerEvent: {}
+[28.642567] (-) TimerEvent: {}
+[28.743463] (-) TimerEvent: {}
+[28.844339] (-) TimerEvent: {}
+[28.945173] (-) TimerEvent: {}
+[29.046006] (-) TimerEvent: {}
+[29.146874] (-) TimerEvent: {}
+[29.247862] (-) TimerEvent: {}
+[29.273905] (boat_control_system_final) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/RudderServoControlNode.dir/build.make:76: CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o] Error 1\n'}
+[29.275050] (boat_control_system_final) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:281: CMakeFiles/RudderServoControlNode.dir/all] Error 2\n'}
+[29.276334] (boat_control_system_final) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[29.282932] (boat_control_system_final) CommandEnded: {'returncode': 2}
+[29.348022] (-) TimerEvent: {}
+[29.448780] (-) TimerEvent: {}
+[29.549456] (-) TimerEvent: {}
+[29.581923] (boat_control_system_final) JobEnded: {'identifier': 'boat_control_system_final', 'rc': 2}
+[29.595299] (-) EventReactorShutdown: {}

@@ -1,0 +1,483 @@
+[0.000000] (-) TimerEvent: {}
+[0.001819] (boat_control_system_final) JobQueued: {'identifier': 'boat_control_system_final', 'dependencies': OrderedDict()}
+[0.002502] (boat_control_system_final) JobStarted: {'identifier': 'boat_control_system_final'}
+[0.050883] (boat_control_system_final) JobProgress: {'identifier': 'boat_control_system_final', 'progress': 'cmake'}
+[0.054933] (boat_control_system_final) JobProgress: {'identifier': 'boat_control_system_final', 'progress': 'build'}
+[0.058537] (boat_control_system_final) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final', '--', '-j4', '-l4'], 'cwd': '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'boat'), ('SSH_CLIENT', '10.136.128.231 56713 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/boat'), ('TERM_PROGRAM_VERSION', '1.95.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e1156e86-b755-4fab-9937-a89aa8c9bb16.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'boat'), ('_', '/home/boat/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/remote-cli:/home/boat/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/boat/.local/bin:/home/boat/.local/bin:/home/boat/.local/bin:/home/boat/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-15c79811d2.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.136.128.231 56713 10.41.221.43 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098999] (-) TimerEvent: {}
+[0.199822] (-) TimerEvent: {}
+[0.276239] (boat_control_system_final) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target CoordinateCalculations\x1b[0m\n'}
+[0.300080] (-) TimerEvent: {}
+[0.350085] (boat_control_system_final) StdoutLine: {'line': b'[ 20%] Built target WaypointQueue\n'}
+[0.394702] (boat_control_system_final) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o\x1b[0m\n'}
+[0.400305] (-) TimerEvent: {}
+[0.478234] (boat_control_system_final) StdoutLine: {'line': b'[ 50%] Built target WaypointQueueNode\n'}
+[0.500519] (-) TimerEvent: {}
+[0.601390] (-) TimerEvent: {}
+[0.702398] (-) TimerEvent: {}
+[0.803265] (-) TimerEvent: {}
+[0.904065] (-) TimerEvent: {}
+[1.004828] (-) TimerEvent: {}
+[1.105625] (-) TimerEvent: {}
+[1.206457] (-) TimerEvent: {}
+[1.307920] (-) TimerEvent: {}
+[1.409085] (-) TimerEvent: {}
+[1.509866] (-) TimerEvent: {}
+[1.610811] (-) TimerEvent: {}
+[1.711600] (-) TimerEvent: {}
+[1.812378] (-) TimerEvent: {}
+[1.913145] (-) TimerEvent: {}
+[2.013915] (-) TimerEvent: {}
+[2.114646] (-) TimerEvent: {}
+[2.215430] (-) TimerEvent: {}
+[2.316208] (-) TimerEvent: {}
+[2.417108] (-) TimerEvent: {}
+[2.518280] (-) TimerEvent: {}
+[2.619181] (-) TimerEvent: {}
+[2.720137] (-) TimerEvent: {}
+[2.820943] (-) TimerEvent: {}
+[2.921790] (-) TimerEvent: {}
+[3.022646] (-) TimerEvent: {}
+[3.123463] (-) TimerEvent: {}
+[3.224337] (-) TimerEvent: {}
+[3.325195] (-) TimerEvent: {}
+[3.426145] (-) TimerEvent: {}
+[3.527082] (-) TimerEvent: {}
+[3.627954] (-) TimerEvent: {}
+[3.728830] (-) TimerEvent: {}
+[3.829770] (-) TimerEvent: {}
+[3.930675] (-) TimerEvent: {}
+[4.031533] (-) TimerEvent: {}
+[4.132817] (-) TimerEvent: {}
+[4.234223] (-) TimerEvent: {}
+[4.335103] (-) TimerEvent: {}
+[4.436082] (-) TimerEvent: {}
+[4.537210] (-) TimerEvent: {}
+[4.638038] (-) TimerEvent: {}
+[4.738876] (-) TimerEvent: {}
+[4.839773] (-) TimerEvent: {}
+[4.940760] (-) TimerEvent: {}
+[5.041649] (-) TimerEvent: {}
+[5.142499] (-) TimerEvent: {}
+[5.243344] (-) TimerEvent: {}
+[5.344179] (-) TimerEvent: {}
+[5.445068] (-) TimerEvent: {}
+[5.546052] (-) TimerEvent: {}
+[5.646950] (-) TimerEvent: {}
+[5.747790] (-) TimerEvent: {}
+[5.848616] (-) TimerEvent: {}
+[5.949532] (-) TimerEvent: {}
+[6.050358] (-) TimerEvent: {}
+[6.151203] (-) TimerEvent: {}
+[6.252060] (-) TimerEvent: {}
+[6.352918] (-) TimerEvent: {}
+[6.453724] (-) TimerEvent: {}
+[6.554676] (-) TimerEvent: {}
+[6.655577] (-) TimerEvent: {}
+[6.756587] (-) TimerEvent: {}
+[6.857399] (-) TimerEvent: {}
+[6.958341] (-) TimerEvent: {}
+[7.059194] (-) TimerEvent: {}
+[7.160032] (-) TimerEvent: {}
+[7.260863] (-) TimerEvent: {}
+[7.361778] (-) TimerEvent: {}
+[7.462587] (-) TimerEvent: {}
+[7.563383] (-) TimerEvent: {}
+[7.664199] (-) TimerEvent: {}
+[7.765045] (-) TimerEvent: {}
+[7.865899] (-) TimerEvent: {}
+[7.966734] (-) TimerEvent: {}
+[8.067617] (-) TimerEvent: {}
+[8.168459] (-) TimerEvent: {}
+[8.269299] (-) TimerEvent: {}
+[8.370160] (-) TimerEvent: {}
+[8.470982] (-) TimerEvent: {}
+[8.571832] (-) TimerEvent: {}
+[8.672670] (-) TimerEvent: {}
+[8.773553] (-) TimerEvent: {}
+[8.874376] (-) TimerEvent: {}
+[8.975270] (-) TimerEvent: {}
+[9.076109] (-) TimerEvent: {}
+[9.176957] (-) TimerEvent: {}
+[9.277776] (-) TimerEvent: {}
+[9.378680] (-) TimerEvent: {}
+[9.479514] (-) TimerEvent: {}
+[9.580388] (-) TimerEvent: {}
+[9.681248] (-) TimerEvent: {}
+[9.782753] (-) TimerEvent: {}
+[9.883647] (-) TimerEvent: {}
+[9.984571] (-) TimerEvent: {}
+[10.085414] (-) TimerEvent: {}
+[10.186327] (-) TimerEvent: {}
+[10.287133] (-) TimerEvent: {}
+[10.387962] (-) TimerEvent: {}
+[10.488847] (-) TimerEvent: {}
+[10.589782] (-) TimerEvent: {}
+[10.690652] (-) TimerEvent: {}
+[10.791511] (-) TimerEvent: {}
+[10.892357] (-) TimerEvent: {}
+[10.993213] (-) TimerEvent: {}
+[11.094158] (-) TimerEvent: {}
+[11.194995] (-) TimerEvent: {}
+[11.295805] (-) TimerEvent: {}
+[11.396651] (-) TimerEvent: {}
+[11.497475] (-) TimerEvent: {}
+[11.598336] (-) TimerEvent: {}
+[11.699179] (-) TimerEvent: {}
+[11.799973] (-) TimerEvent: {}
+[11.900819] (-) TimerEvent: {}
+[12.001716] (-) TimerEvent: {}
+[12.102566] (-) TimerEvent: {}
+[12.203418] (-) TimerEvent: {}
+[12.304250] (-) TimerEvent: {}
+[12.405125] (-) TimerEvent: {}
+[12.506085] (-) TimerEvent: {}
+[12.606881] (-) TimerEvent: {}
+[12.707730] (-) TimerEvent: {}
+[12.808561] (-) TimerEvent: {}
+[12.909357] (-) TimerEvent: {}
+[13.010331] (-) TimerEvent: {}
+[13.111164] (-) TimerEvent: {}
+[13.211982] (-) TimerEvent: {}
+[13.312787] (-) TimerEvent: {}
+[13.413686] (-) TimerEvent: {}
+[13.514498] (-) TimerEvent: {}
+[13.615302] (-) TimerEvent: {}
+[13.716246] (-) TimerEvent: {}
+[13.817353] (-) TimerEvent: {}
+[13.918241] (-) TimerEvent: {}
+[14.019160] (-) TimerEvent: {}
+[14.119995] (-) TimerEvent: {}
+[14.220948] (-) TimerEvent: {}
+[14.258434] (boat_control_system_final) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX static library libCoordinateCalculations.a\x1b[0m\n'}
+[14.321189] (-) TimerEvent: {}
+[14.402851] (boat_control_system_final) StdoutLine: {'line': b'[ 60%] Built target CoordinateCalculations\n'}
+[14.421368] (-) TimerEvent: {}
+[14.461186] (boat_control_system_final) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target CoordinateCalculationsNodeLib\x1b[0m\n'}
+[14.521568] (-) TimerEvent: {}
+[14.569833] (boat_control_system_final) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o\x1b[0m\n'}
+[14.621757] (-) TimerEvent: {}
+[14.722577] (-) TimerEvent: {}
+[14.823502] (-) TimerEvent: {}
+[14.924578] (-) TimerEvent: {}
+[15.025417] (-) TimerEvent: {}
+[15.126237] (-) TimerEvent: {}
+[15.226977] (-) TimerEvent: {}
+[15.327726] (-) TimerEvent: {}
+[15.428513] (-) TimerEvent: {}
+[15.529259] (-) TimerEvent: {}
+[15.630024] (-) TimerEvent: {}
+[15.730797] (-) TimerEvent: {}
+[15.831535] (-) TimerEvent: {}
+[15.932290] (-) TimerEvent: {}
+[16.033027] (-) TimerEvent: {}
+[16.133819] (-) TimerEvent: {}
+[16.234612] (-) TimerEvent: {}
+[16.335351] (-) TimerEvent: {}
+[16.436141] (-) TimerEvent: {}
+[16.536947] (-) TimerEvent: {}
+[16.637825] (-) TimerEvent: {}
+[16.738697] (-) TimerEvent: {}
+[16.839537] (-) TimerEvent: {}
+[16.940440] (-) TimerEvent: {}
+[17.041284] (-) TimerEvent: {}
+[17.142314] (-) TimerEvent: {}
+[17.243246] (-) TimerEvent: {}
+[17.344237] (-) TimerEvent: {}
+[17.445110] (-) TimerEvent: {}
+[17.546075] (-) TimerEvent: {}
+[17.646905] (-) TimerEvent: {}
+[17.747740] (-) TimerEvent: {}
+[17.848564] (-) TimerEvent: {}
+[17.949606] (-) TimerEvent: {}
+[18.050426] (-) TimerEvent: {}
+[18.151294] (-) TimerEvent: {}
+[18.252255] (-) TimerEvent: {}
+[18.353109] (-) TimerEvent: {}
+[18.453979] (-) TimerEvent: {}
+[18.554773] (-) TimerEvent: {}
+[18.655568] (-) TimerEvent: {}
+[18.756401] (-) TimerEvent: {}
+[18.857317] (-) TimerEvent: {}
+[18.958265] (-) TimerEvent: {}
+[19.059243] (-) TimerEvent: {}
+[19.160075] (-) TimerEvent: {}
+[19.260975] (-) TimerEvent: {}
+[19.361858] (-) TimerEvent: {}
+[19.462745] (-) TimerEvent: {}
+[19.563679] (-) TimerEvent: {}
+[19.664552] (-) TimerEvent: {}
+[19.765375] (-) TimerEvent: {}
+[19.866233] (-) TimerEvent: {}
+[19.967048] (-) TimerEvent: {}
+[20.067900] (-) TimerEvent: {}
+[20.168778] (-) TimerEvent: {}
+[20.269689] (-) TimerEvent: {}
+[20.370533] (-) TimerEvent: {}
+[20.471342] (-) TimerEvent: {}
+[20.572146] (-) TimerEvent: {}
+[20.673062] (-) TimerEvent: {}
+[20.773920] (-) TimerEvent: {}
+[20.874736] (-) TimerEvent: {}
+[20.975570] (-) TimerEvent: {}
+[21.076468] (-) TimerEvent: {}
+[21.177300] (-) TimerEvent: {}
+[21.278189] (-) TimerEvent: {}
+[21.379045] (-) TimerEvent: {}
+[21.479875] (-) TimerEvent: {}
+[21.580727] (-) TimerEvent: {}
+[21.681655] (-) TimerEvent: {}
+[21.782547] (-) TimerEvent: {}
+[21.883377] (-) TimerEvent: {}
+[21.984229] (-) TimerEvent: {}
+[22.085052] (-) TimerEvent: {}
+[22.185929] (-) TimerEvent: {}
+[22.286734] (-) TimerEvent: {}
+[22.387550] (-) TimerEvent: {}
+[22.488414] (-) TimerEvent: {}
+[22.589230] (-) TimerEvent: {}
+[22.690109] (-) TimerEvent: {}
+[22.790951] (-) TimerEvent: {}
+[22.891800] (-) TimerEvent: {}
+[22.992695] (-) TimerEvent: {}
+[23.093612] (-) TimerEvent: {}
+[23.194481] (-) TimerEvent: {}
+[23.295330] (-) TimerEvent: {}
+[23.396180] (-) TimerEvent: {}
+[23.497249] (-) TimerEvent: {}
+[23.598148] (-) TimerEvent: {}
+[23.699028] (-) TimerEvent: {}
+[23.799890] (-) TimerEvent: {}
+[23.900727] (-) TimerEvent: {}
+[24.001604] (-) TimerEvent: {}
+[24.102425] (-) TimerEvent: {}
+[24.203327] (-) TimerEvent: {}
+[24.304271] (-) TimerEvent: {}
+[24.405119] (-) TimerEvent: {}
+[24.506054] (-) TimerEvent: {}
+[24.607074] (-) TimerEvent: {}
+[24.707941] (-) TimerEvent: {}
+[24.808795] (-) TimerEvent: {}
+[24.909663] (-) TimerEvent: {}
+[25.010543] (-) TimerEvent: {}
+[25.111383] (-) TimerEvent: {}
+[25.212225] (-) TimerEvent: {}
+[25.313046] (-) TimerEvent: {}
+[25.414023] (-) TimerEvent: {}
+[25.514802] (-) TimerEvent: {}
+[25.615615] (-) TimerEvent: {}
+[25.716456] (-) TimerEvent: {}
+[25.817245] (-) TimerEvent: {}
+[25.918164] (-) TimerEvent: {}
+[26.018983] (-) TimerEvent: {}
+[26.119880] (-) TimerEvent: {}
+[26.188437] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid CoordinateCalculationsNode::waypointCallback(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[26.190153] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:84:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kqualified-id in declaration before \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[26.190888] (boat_control_system_final) StderrLine: {'line': b'   84 | void CoordinateCalculationsNode::gpsCallback\x1b[01;31m\x1b[K(\x1b[m\x1b[Kconst sensor_msgs::msg::NavSatFix::SharedPtr msg)\n'}
+[26.191388] (boat_control_system_final) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[26.191866] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:92:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kqualified-id in declaration before \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[26.192335] (boat_control_system_final) StderrLine: {'line': b'   92 | void CoordinateCalculationsNode::windCallback\x1b[01;31m\x1b[K(\x1b[m\x1b[Kconst std_msgs::msg::Float32::SharedPtr msg)\n'}
+[26.192792] (boat_control_system_final) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[26.193243] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:100:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kqualified-id in declaration before \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[26.193798] (boat_control_system_final) StderrLine: {'line': b'  100 | void CoordinateCalculationsNode::magnetometerCallback\x1b[01;31m\x1b[K(\x1b[m\x1b[Kconst std_msgs::msg::Float32::SharedPtr msg)\n'}
+[26.194280] (boat_control_system_final) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[26.194791] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:114:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kqualified-id in declaration before \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[26.195441] (boat_control_system_final) StderrLine: {'line': b'  114 | void CoordinateCalculationsNode::initCallback\x1b[01;31m\x1b[K(\x1b[m\x1b[Kconst std_msgs::msg::Int16::SharedPtr msg)\n'}
+[26.195990] (boat_control_system_final) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[26.196448] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:122:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kqualified-id in declaration before \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[26.196900] (boat_control_system_final) StderrLine: {'line': b'  122 | sensor_msgs::msg::NavSatFix CoordinateCalculationsNode::get_latest_waypoint\x1b[01;31m\x1b[K(\x1b[m\x1b[K)\n'}
+[26.197368] (boat_control_system_final) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[26.197932] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:129:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kqualified-id in declaration before \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[26.198407] (boat_control_system_final) StderrLine: {'line': b'  129 | std_msgs::msg::Float32 CoordinateCalculationsNode::get_wind_angle\x1b[01;31m\x1b[K(\x1b[m\x1b[K)\n'}
+[26.198866] (boat_control_system_final) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[26.199327] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:134:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kqualified-id in declaration before \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[26.199810] (boat_control_system_final) StderrLine: {'line': b'  134 | std_msgs::msg::Float32 CoordinateCalculationsNode::get_magnetometer_heading\x1b[01;31m\x1b[K(\x1b[m\x1b[K)\n'}
+[26.200253] (boat_control_system_final) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[26.200746] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:139:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kqualified-id in declaration before \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[26.201219] (boat_control_system_final) StderrLine: {'line': b'  139 | sensor_msgs::msg::NavSatFix CoordinateCalculationsNode::get_curr_pos\x1b[01;31m\x1b[K(\x1b[m\x1b[K)\n'}
+[26.201733] (boat_control_system_final) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[26.202204] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:145:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[26.202721] (boat_control_system_final) StderrLine: {'line': b'  145 | \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[26.203170] (boat_control_system_final) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[26.203612] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:150:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 at end of input\n'}
+[26.204137] (boat_control_system_final) StderrLine: {'line': b'  150 | }\n'}
+[26.204613] (boat_control_system_final) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[26.205038] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:61:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.205589] (boat_control_system_final) StderrLine: {'line': b'   61 | \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[26.206241] (boat_control_system_final) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[26.220090] (-) TimerEvent: {}
+[26.320875] (-) TimerEvent: {}
+[26.421855] (-) TimerEvent: {}
+[26.522668] (-) TimerEvent: {}
+[26.623603] (-) TimerEvent: {}
+[26.724445] (-) TimerEvent: {}
+[26.825266] (-) TimerEvent: {}
+[26.926158] (-) TimerEvent: {}
+[27.027001] (-) TimerEvent: {}
+[27.127854] (-) TimerEvent: {}
+[27.228745] (-) TimerEvent: {}
+[27.329645] (-) TimerEvent: {}
+[27.430477] (-) TimerEvent: {}
+[27.531272] (-) TimerEvent: {}
+[27.632075] (-) TimerEvent: {}
+[27.732891] (-) TimerEvent: {}
+[27.833720] (-) TimerEvent: {}
+[27.934572] (-) TimerEvent: {}
+[28.035409] (-) TimerEvent: {}
+[28.136259] (-) TimerEvent: {}
+[28.237086] (-) TimerEvent: {}
+[28.337969] (-) TimerEvent: {}
+[28.438792] (-) TimerEvent: {}
+[28.539589] (-) TimerEvent: {}
+[28.640413] (-) TimerEvent: {}
+[28.741311] (-) TimerEvent: {}
+[28.842164] (-) TimerEvent: {}
+[28.942963] (-) TimerEvent: {}
+[29.043815] (-) TimerEvent: {}
+[29.144699] (-) TimerEvent: {}
+[29.245595] (-) TimerEvent: {}
+[29.346390] (-) TimerEvent: {}
+[29.447203] (-) TimerEvent: {}
+[29.548064] (-) TimerEvent: {}
+[29.648903] (-) TimerEvent: {}
+[29.749879] (-) TimerEvent: {}
+[29.850726] (-) TimerEvent: {}
+[29.951601] (-) TimerEvent: {}
+[30.052501] (-) TimerEvent: {}
+[30.153349] (-) TimerEvent: {}
+[30.254215] (-) TimerEvent: {}
+[30.355054] (-) TimerEvent: {}
+[30.455876] (-) TimerEvent: {}
+[30.556698] (-) TimerEvent: {}
+[30.657628] (-) TimerEvent: {}
+[30.758478] (-) TimerEvent: {}
+[30.859280] (-) TimerEvent: {}
+[30.960082] (-) TimerEvent: {}
+[31.060970] (-) TimerEvent: {}
+[31.161823] (-) TimerEvent: {}
+[31.262649] (-) TimerEvent: {}
+[31.363494] (-) TimerEvent: {}
+[31.464330] (-) TimerEvent: {}
+[31.565227] (-) TimerEvent: {}
+[31.666062] (-) TimerEvent: {}
+[31.766883] (-) TimerEvent: {}
+[31.867748] (-) TimerEvent: {}
+[31.968621] (-) TimerEvent: {}
+[32.069625] (-) TimerEvent: {}
+[32.170491] (-) TimerEvent: {}
+[32.271424] (-) TimerEvent: {}
+[32.372473] (-) TimerEvent: {}
+[32.473355] (-) TimerEvent: {}
+[32.574240] (-) TimerEvent: {}
+[32.675057] (-) TimerEvent: {}
+[32.775862] (-) TimerEvent: {}
+[32.876702] (-) TimerEvent: {}
+[32.977690] (-) TimerEvent: {}
+[33.078506] (-) TimerEvent: {}
+[33.179334] (-) TimerEvent: {}
+[33.280270] (-) TimerEvent: {}
+[33.381101] (-) TimerEvent: {}
+[33.481984] (-) TimerEvent: {}
+[33.582788] (-) TimerEvent: {}
+[33.683622] (-) TimerEvent: {}
+[33.784435] (-) TimerEvent: {}
+[33.885285] (-) TimerEvent: {}
+[33.986184] (-) TimerEvent: {}
+[34.087045] (-) TimerEvent: {}
+[34.187999] (-) TimerEvent: {}
+[34.289255] (-) TimerEvent: {}
+[34.390179] (-) TimerEvent: {}
+[34.490996] (-) TimerEvent: {}
+[34.591812] (-) TimerEvent: {}
+[34.692625] (-) TimerEvent: {}
+[34.793456] (-) TimerEvent: {}
+[34.894303] (-) TimerEvent: {}
+[34.995182] (-) TimerEvent: {}
+[35.096011] (-) TimerEvent: {}
+[35.196820] (-) TimerEvent: {}
+[35.297648] (-) TimerEvent: {}
+[35.398469] (-) TimerEvent: {}
+[35.499335] (-) TimerEvent: {}
+[35.600172] (-) TimerEvent: {}
+[35.700961] (-) TimerEvent: {}
+[35.801926] (-) TimerEvent: {}
+[35.902737] (-) TimerEvent: {}
+[36.003651] (-) TimerEvent: {}
+[36.104561] (-) TimerEvent: {}
+[36.205460] (-) TimerEvent: {}
+[36.306394] (-) TimerEvent: {}
+[36.407284] (-) TimerEvent: {}
+[36.508196] (-) TimerEvent: {}
+[36.609046] (-) TimerEvent: {}
+[36.709978] (-) TimerEvent: {}
+[36.810919] (-) TimerEvent: {}
+[36.911834] (-) TimerEvent: {}
+[37.012856] (-) TimerEvent: {}
+[37.113737] (-) TimerEvent: {}
+[37.214682] (-) TimerEvent: {}
+[37.315519] (-) TimerEvent: {}
+[37.416444] (-) TimerEvent: {}
+[37.517369] (-) TimerEvent: {}
+[37.618482] (-) TimerEvent: {}
+[37.719426] (-) TimerEvent: {}
+[37.820359] (-) TimerEvent: {}
+[37.921346] (-) TimerEvent: {}
+[38.022272] (-) TimerEvent: {}
+[38.123113] (-) TimerEvent: {}
+[38.224019] (-) TimerEvent: {}
+[38.324853] (-) TimerEvent: {}
+[38.425734] (-) TimerEvent: {}
+[38.526699] (-) TimerEvent: {}
+[38.627508] (-) TimerEvent: {}
+[38.728333] (-) TimerEvent: {}
+[38.829192] (-) TimerEvent: {}
+[38.930064] (-) TimerEvent: {}
+[39.030897] (-) TimerEvent: {}
+[39.131710] (-) TimerEvent: {}
+[39.232521] (-) TimerEvent: {}
+[39.333361] (-) TimerEvent: {}
+[39.434213] (-) TimerEvent: {}
+[39.535031] (-) TimerEvent: {}
+[39.635899] (-) TimerEvent: {}
+[39.736760] (-) TimerEvent: {}
+[39.837618] (-) TimerEvent: {}
+[39.938524] (-) TimerEvent: {}
+[40.039408] (-) TimerEvent: {}
+[40.140263] (-) TimerEvent: {}
+[40.241143] (-) TimerEvent: {}
+[40.342063] (-) TimerEvent: {}
+[40.443003] (-) TimerEvent: {}
+[40.543806] (-) TimerEvent: {}
+[40.644619] (-) TimerEvent: {}
+[40.745413] (-) TimerEvent: {}
+[40.846198] (-) TimerEvent: {}
+[40.946934] (-) TimerEvent: {}
+[41.047676] (-) TimerEvent: {}
+[41.148509] (-) TimerEvent: {}
+[41.249281] (-) TimerEvent: {}
+[41.350126] (-) TimerEvent: {}
+[41.451167] (-) TimerEvent: {}
+[41.551990] (-) TimerEvent: {}
+[41.652826] (-) TimerEvent: {}
+[41.753690] (-) TimerEvent: {}
+[41.854508] (-) TimerEvent: {}
+[41.955344] (-) TimerEvent: {}
+[42.056215] (-) TimerEvent: {}
+[42.157060] (-) TimerEvent: {}
+[42.257923] (-) TimerEvent: {}
+[42.358829] (-) TimerEvent: {}
+[42.459689] (-) TimerEvent: {}
+[42.560579] (-) TimerEvent: {}
+[42.661469] (-) TimerEvent: {}
+[42.762348] (-) TimerEvent: {}
+[42.863212] (-) TimerEvent: {}
+[42.964172] (-) TimerEvent: {}
+[42.984178] (boat_control_system_final) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/CoordinateCalculationsNodeLib.dir/build.make:76: CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o] Error 1\n'}
+[42.985265] (boat_control_system_final) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:198: CMakeFiles/CoordinateCalculationsNodeLib.dir/all] Error 2\n'}
+[42.986388] (boat_control_system_final) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[42.994376] (boat_control_system_final) CommandEnded: {'returncode': 2}
+[43.064339] (-) TimerEvent: {}
+[43.165700] (-) TimerEvent: {}
+[43.266686] (-) TimerEvent: {}
+[43.281365] (boat_control_system_final) JobEnded: {'identifier': 'boat_control_system_final', 'rc': 2}
+[43.293264] (-) EventReactorShutdown: {}

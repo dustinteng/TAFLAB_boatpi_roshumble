@@ -1,0 +1,31 @@
+[0.063s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.344s] [ 14%] Built target WaypointQueue
+[0.362s] [ 28%] Built target CoordinateCalculations
+[0.407s] [35m[1mConsolidate compiler generated dependencies of target RudderServoControlNodeLib[0m
+[0.475s] [ 42%] Built target WaypointQueueNode
+[0.513s] [ 57%] Built target RudderServoControlNodeLib
+[0.645s] [ 64%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o[0m
+[65.163s] [ 71%] [32m[1mLinking CXX static library libCoordinateCalculationsNodeLib.a[0m
+[67.427s] [ 71%] Built target CoordinateCalculationsNodeLib
+[67.490s] [35m[1mConsolidate compiler generated dependencies of target RudderServoControlNodeExec[0m
+[67.560s] [ 78%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeExec.dir/src/CoordinateCalculationsNode.cpp.o[0m
+[67.601s] [ 85%] [32mBuilding CXX object CMakeFiles/RudderServoControlNodeExec.dir/src/RudderServoControlNode.cpp.o[0m
+[134.768s] [ 92%] [32m[1mLinking CXX executable RudderServoControlNodeExec[0m
+[134.884s] [100%] [32m[1mLinking CXX executable CoordinateCalculationsNodeExec[0m
+[136.291s] /usr/bin/ld: libCoordinateCalculationsNodeLib.a(CoordinateCalculationsNode.cpp.o): in function `main':
+[136.333s] CoordinateCalculationsNode.cpp:(.text+0x1630): multiple definition of `main'; CMakeFiles/RudderServoControlNodeExec.dir/src/RudderServoControlNode.cpp.o:RudderServoControlNode.cpp:(.text+0x218c): first defined here
+[139.975s] /usr/bin/ld: libCoordinateCalculations.a(Coordinate_Calculations.cpp.o): in function `CoordinateCalculations::calculate_directional_bearing[abi:cxx11](sensor_msgs::msg::NavSatFix_<std::allocator<void> >)':
+[139.976s] Coordinate_Calculations.cpp:(.text+0x528): undefined reference to `RudderServoControlNode::RudderServoControlNode()'
+[139.979s] /usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x530): undefined reference to `RudderServoControlNode::get_magnetometer_heading()'
+[139.983s] /usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x544): undefined reference to `RudderServoControlNode::get_curr_pos()'
+[139.984s] /usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x668): undefined reference to `RudderServoControlNode::~RudderServoControlNode()'
+[139.986s] /usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x6c8): undefined reference to `RudderServoControlNode::~RudderServoControlNode()'
+[140.187s] collect2: error: ld returned 1 exit status
+[140.197s] gmake[2]: *** [CMakeFiles/CoordinateCalculationsNodeExec.dir/build.make:182: CoordinateCalculationsNodeExec] Error 1
+[140.200s] gmake[1]: *** [CMakeFiles/Makefile2:229: CMakeFiles/CoordinateCalculationsNodeExec.dir/all] Error 2
+[140.202s] gmake[1]: *** Waiting for unfinished jobs....
+[141.803s] collect2: error: ld returned 1 exit status
+[141.809s] gmake[2]: *** [CMakeFiles/RudderServoControlNodeExec.dir/build.make:183: RudderServoControlNodeExec] Error 1
+[141.810s] gmake[1]: *** [CMakeFiles/Makefile2:310: CMakeFiles/RudderServoControlNodeExec.dir/all] Error 2
+[141.811s] gmake: *** [Makefile:146: all] Error 2
+[141.835s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

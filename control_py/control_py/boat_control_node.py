@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Float32MultiArray  # or another message type that fits your control data
+from taflab_msgs.msg import ControlData  # Import ControlData message
 
 class BoatControlNode(Node):
     def __init__(self):
@@ -8,7 +8,7 @@ class BoatControlNode(Node):
         
         # Subscriber to listen to /boatcontrol topic
         self.subscription = self.create_subscription(
-            Float32MultiArray,  # Assume we receive an array with values for each actuator
+            ControlData,  # Update to use ControlData message type
             '/boatcontrol',
             self.control_callback,
             10
@@ -18,22 +18,21 @@ class BoatControlNode(Node):
         self.get_logger().info("BoatControlNode has been initialized and listening to /boatcontrol")
 
     def control_callback(self, msg):
-        # Example message structure: [rudder_value, sail_value, esc_value]
-        if len(msg.data) == 3:
-            rudder_value, sail_value, esc_value = msg.data
+        # Access control data directly from the message fields
+        rudder_value = msg.servo_rudder
+        sail_value = msg.servo_sail
+        throttle_value = msg.esc
 
-            # Control the actuators based on received values
-            self.control_rudder(rudder_value)
-            self.control_sail(sail_value)
-            self.control_esc(esc_value)
-        else:
-            self.get_logger().error("Received incorrect data format on /boatcontrol")
+        # Control the actuators based on received values
+        self.control_rudder(rudder_value)
+        self.control_sail(sail_value)
+        self.control_esc(throttle_value)
 
     def control_rudder(self, value):
         # Implement rudder servo control logic
         self.get_logger().info(f"Rudder set to: {value}")
 
-    def control_sail(self, value): 
+    def control_sail(self, value):
         # Implement sail servo control logic
         self.get_logger().info(f"Sail set to: {value}")
 

@@ -1,0 +1,18 @@
+[ 16%] Built target WaypointQueue
+[ 33%] Built target CoordinateCalculations
+[35m[1mConsolidate compiler generated dependencies of target RudderServoControlNode[0m
+[ 50%] Built target CoordinateCalculationsNodeLib
+[ 66%] Built target WaypointQueueNode
+[ 75%] [32mBuilding CXX object CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o[0m
+[ 91%] Built target CoordinateCalculationsNodeExec
+In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:15[m[K:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[KDatatypes[m[K’ does not name a type
+   41 |     [01;31m[KDatatypes[m[K::Coordinate get_next_waypoint(); // If Datatypes is defined elsewhere, include necessary files
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K In member function ‘[01m[Kvoid RudderServoControlNode::executeWaypoints()[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:130:22:[m[K [01;31m[Kerror: [m[K‘[01m[KcalculateBearing[m[K’ was not declared in this scope
+  130 |             turnBoat([01;31m[KcalculateBearing[m[K(getCurrCoordinate(), next_waypoint.latitude)); // Assuming `calculateBearing` returns a heading in degrees
+      |                      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/RudderServoControlNode.dir/build.make:76: CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:281: CMakeFiles/RudderServoControlNode.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

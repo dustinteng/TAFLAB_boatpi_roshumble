@@ -1,0 +1,17 @@
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K In member function ‘[01m[Kvoid RudderServoControlNode::turnBoat(sensor_msgs::msg::NavSatFix)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:130:48:[m[K [01;31m[Kerror: [m[K‘[01m[KRudderControlHelper[m[K’ has not been declared
+  130 |         std::tie(turn_direction, turn_angle) = [01;31m[KRudderControlHelper[m[K::getInstance().calculate_directional_bearing(target_position);
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:132:39:[m[K [01;31m[Kerror: [m[K‘[01m[KRudderControlHelper[m[K’ has not been declared
+  132 |         float desired_angle_heading = [01;31m[KRudderControlHelper[m[K::getInstance().calculate_bearing(get_curr_pos(),target_position);
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K In member function ‘[01m[Kvoid RudderServoControlNode::executeWaypoints()[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:177:17:[m[K [01;31m[Kerror: [m[K‘[01m[KRudderControlHelper[m[K’ has not been declared
+  177 |             if ([01;31m[KRudderControlHelper[m[K::getInstance().calculate_distance(curr_position, latest_waypoint_data_) <= 0.05)
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:194:20:[m[K [01;31m[Kerror: [m[K‘[01m[KRudderControlHelper[m[K’ has not been declared
+  194 |             while ([01;31m[KRudderControlHelper[m[K::getInstance().calculate_distance(get_curr_pos(), next_waypoint) > 0.05)
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/RudderServoControlNodeLib.dir/build.make:76: CMakeFiles/RudderServoControlNodeLib.dir/src/RudderServoControlNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:257: CMakeFiles/RudderServoControlNodeLib.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

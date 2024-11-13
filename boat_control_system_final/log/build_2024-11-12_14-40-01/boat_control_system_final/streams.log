@@ -1,0 +1,19 @@
+[0.073s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.277s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculations[0m
+[0.348s] [  6%] [32mBuilding CXX object CMakeFiles/RudderControlHelper.dir/src/RudderControlHelper.cpp.o[0m
+[0.432s] [ 18%] Built target WaypointQueue
+[0.483s] [ 31%] Built target CoordinateCalculations
+[0.548s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculationsNodeLib[0m
+[0.568s] [ 43%] Built target WaypointQueueNodeExec
+[0.697s] [ 50%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o[0m
+[1.456s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderControlHelper.cpp:12:10:[m[K [01;31m[Kfatal error: [m[KRudderControlHelper.hpp: No such file or directory
+[1.456s]    12 | #include [01;31m[K"RudderControlHelper.hpp"[m[K
+[1.457s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.457s] compilation terminated.
+[1.466s] gmake[2]: *** [CMakeFiles/RudderControlHelper.dir/build.make:76: CMakeFiles/RudderControlHelper.dir/src/RudderControlHelper.cpp.o] Error 1
+[1.468s] gmake[1]: *** [CMakeFiles/Makefile2:203: CMakeFiles/RudderControlHelper.dir/all] Error 2
+[1.468s] gmake[1]: *** Waiting for unfinished jobs....
+[63.728s] [ 56%] [32m[1mLinking CXX static library libCoordinateCalculationsNodeLib.a[0m
+[65.598s] [ 56%] Built target CoordinateCalculationsNodeLib
+[65.605s] gmake: *** [Makefile:146: all] Error 2
+[65.612s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

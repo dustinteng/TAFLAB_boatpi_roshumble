@@ -1,0 +1,48 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:9[m[K,
+                 from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:16[m[K:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K In member function ‘[01m[Kvoid RudderServoControlNode::turnBoat(sensor_msgs::msg::NavSatFix)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:125:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 6 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  125 |             RCLCPP_WARN(this->get_logger(), [01;35m[K"Correcting for significant drift: Current heading %.2f, Desired heading %.2f"[m[K, current_heading, turn_direction);
+      |                                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:125:121:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  125 |             RCLCPP_WARN(this->get_logger(), "Correcting for significant drift: Current heading %.2f, Desired heading [01;36m[K%.2f[m[K", current_heading, turn_direction);
+      |                                                                                                                      [01;36m[K~~~^[m[K
+      |                                                                                                                         [01;36m[K|[m[K
+      |                                                                                                                         [01;36m[Kdouble[m[K
+/usr/bin/ld: CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o: in function `RudderServoControlNode::RudderServoControlNode()':
+RudderServoControlNode.cpp:(.text+0x2a4): undefined reference to `RudderServoControlNode::executingStateCallback(std::shared_ptr<std_msgs::msg::Bool_<std::allocator<void> > >)'
+/usr/bin/ld: RudderServoControlNode.cpp:(.text+0x2a8): undefined reference to `RudderServoControlNode::executingStateCallback(std::shared_ptr<std_msgs::msg::Bool_<std::allocator<void> > >)'
+/usr/bin/ld: CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o: in function `RudderServoControlNode::turnBoat(sensor_msgs::msg::NavSatFix_<std::allocator<void> >)':
+RudderServoControlNode.cpp:(.text+0x12fc): undefined reference to `RudderServoControlNode::getCurrentHeading()'
+/usr/bin/ld: CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o: in function `RudderServoControlNode::executeWaypoints()':
+RudderServoControlNode.cpp:(.text+0x1594): undefined reference to `RudderServoControlNode::getCurrCoordinate()'
+/usr/bin/ld: RudderServoControlNode.cpp:(.text+0x15b0): undefined reference to `RudderServoControlNode::calculateDistance(sensor_msgs::msg::NavSatFix_<std::allocator<void> > const&, sensor_msgs::msg::NavSatFix_<std::allocator<void> > const&)'
+/usr/bin/ld: RudderServoControlNode.cpp:(.text+0x15d8): undefined reference to `RudderServoControlNode::getAvgAngle()'
+/usr/bin/ld: RudderServoControlNode.cpp:(.text+0x1684): undefined reference to `RudderServoControlNode::getCurrCoordinate()'
+/usr/bin/ld: RudderServoControlNode.cpp:(.text+0x169c): undefined reference to `RudderServoControlNode::calculateDistance(sensor_msgs::msg::NavSatFix_<std::allocator<void> > const&, sensor_msgs::msg::NavSatFix_<std::allocator<void> > const&)'
+/usr/bin/ld: libCoordinateCalculations.a(Coordinate_Calculations.cpp.o): in function `CoordinateCalculations::calculate_directional_bearing[abi:cxx11](sensor_msgs::msg::NavSatFix_<std::allocator<void> >)':
+Coordinate_Calculations.cpp:(.text+0x528): undefined reference to `CoordinateCalculationsNode::CoordinateCalculationsNode()'
+/usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x530): undefined reference to `CoordinateCalculationsNode::get_magnetometer_heading()'
+/usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x544): undefined reference to `CoordinateCalculationsNode::get_curr_pos()'
+/usr/bin/ld: libCoordinateCalculations.a(Coordinate_Calculations.cpp.o): in function `CoordinateCalculations::calculate_angle_to_wind()':
+Coordinate_Calculations.cpp:(.text+0x71c): undefined reference to `CoordinateCalculationsNode::CoordinateCalculationsNode()'
+/usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x724): undefined reference to `CoordinateCalculationsNode::get_wind_angle()'
+/usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x730): undefined reference to `CoordinateCalculationsNode::get_magnetometer_heading()'
+/usr/bin/ld: libCoordinateCalculations.a(Coordinate_Calculations.cpp.o): in function `CoordinateCalculations::plan_path(sensor_msgs::msg::NavSatFix_<std::allocator<void> > const&, sensor_msgs::msg::NavSatFix_<std::allocator<void> > const&)':
+Coordinate_Calculations.cpp:(.text+0x80c): undefined reference to `CoordinateCalculationsNode::CoordinateCalculationsNode()'
+/usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x860): undefined reference to `CoordinateCalculationsNode::get_wind_angle()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/RudderServoControlNode.dir/build.make:177: RudderServoControlNode] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:281: CMakeFiles/RudderServoControlNode.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

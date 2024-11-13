@@ -43,21 +43,21 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/WaypointQueueNode" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/WaypointQueueNode")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/WaypointQueueNodeExec" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/WaypointQueueNodeExec")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/WaypointQueueNode"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/WaypointQueueNodeExec"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final" TYPE EXECUTABLE FILES "/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final/WaypointQueueNode")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/WaypointQueueNode" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/WaypointQueueNode")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final" TYPE EXECUTABLE FILES "/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final/WaypointQueueNodeExec")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/WaypointQueueNodeExec" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/WaypointQueueNodeExec")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/WaypointQueueNode"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/WaypointQueueNodeExec"
          OLD_RPATH "/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/WaypointQueueNode")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/WaypointQueueNodeExec")
     endif()
   endif()
 endif()
@@ -83,15 +83,23 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final" TYPE STATIC_LIBRARY FILES "/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final/libCoordinateCalculationsNodeLib.a")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final" TYPE STATIC_LIBRARY FILES "/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final/libCoordinateCalculations.a")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final" TYPE STATIC_LIBRARY FILES "/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final/libWaypointQueue.a")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/RudderServoControlNodeExec" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/RudderServoControlNodeExec")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/RudderServoControlNodeExec"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final" TYPE EXECUTABLE FILES "/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final/RudderServoControlNodeExec")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/RudderServoControlNodeExec" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/RudderServoControlNodeExec")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/RudderServoControlNodeExec"
+         OLD_RPATH "/opt/ros/humble/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/boat_control_system_final/RudderServoControlNodeExec")
+    endif()
+  endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

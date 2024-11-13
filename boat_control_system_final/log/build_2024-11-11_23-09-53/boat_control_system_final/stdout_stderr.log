@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target CoordinateCalculations[0m
+[ 20%] Built target WaypointQueue
+[ 40%] Built target CoordinateCalculations
+[35m[1mConsolidate compiler generated dependencies of target CoordinateCalculationsNodeLib[0m
+[ 60%] Built target WaypointQueueNode
+[ 70%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o[0m
+[ 80%] [32m[1mLinking CXX static library libCoordinateCalculationsNodeLib.a[0m
+[ 80%] Built target CoordinateCalculationsNodeLib
+[35m[1mConsolidate compiler generated dependencies of target CoordinateCalculationsNodeExec[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeExec.dir/src/CoordinateCalculationsNode.cpp.o[0m
+[100%] [32m[1mLinking CXX executable CoordinateCalculationsNodeExec[0m
+/usr/bin/ld: libCoordinateCalculations.a(Coordinate_Calculations.cpp.o): in function `CoordinateCalculations::getInstance()':
+Coordinate_Calculations.cpp:(.text+0x5c): undefined reference to `CoordinateCalculations::CoordinateCalculations()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/CoordinateCalculationsNodeExec.dir/build.make:178: CoordinateCalculationsNodeExec] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:226: CMakeFiles/CoordinateCalculationsNodeExec.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,35 @@
+[0.068s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.345s] [ 16%] Built target WaypointQueue
+[0.361s] [ 33%] Built target CoordinateCalculations
+[0.458s] [35m[1mConsolidate compiler generated dependencies of target RudderServoControlNode[0m
+[0.539s] [ 50%] Built target WaypointQueueNode
+[0.546s] [ 66%] Built target CoordinateCalculationsNodeLib
+[0.587s] [ 75%] [32mBuilding CXX object CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o[0m
+[0.684s] [ 91%] Built target CoordinateCalculationsNodeExec
+[12.741s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:88:39:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Ksensor_msgs::msg::NavSatFix_[m[K’ not permitted in this context
+[12.742s]    88 | void RudderServoControlNode::turnBoat([01;31m[Ksensor_msgs[m[K::msg::NavSatFix_ target_position)
+[12.742s]       |                                       [01;31m[K^~~~~~~~~~~[m[K
+[12.743s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:88:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid RudderServoControlNode::turnBoat(...)[m[K’
+[12.744s]    88 | void [01;31m[KRudderServoControlNode[m[K::turnBoat(sensor_msgs::msg::NavSatFix_ target_position)
+[12.744s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.745s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:16[m[K:
+[12.745s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:34:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid RudderServoControlNode::turnBoat(float)[m[K’
+[12.746s]    34 |     void [01;36m[KturnBoat[m[K(float desired_angle_heading);
+[12.746s]       |          [01;36m[K^~~~~~~~[m[K
+[12.746s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:17:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass RudderServoControlNode[m[K’ defined here
+[12.747s]    17 | class [01;36m[KRudderServoControlNode[m[K : public rclcpp::Node
+[12.747s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.748s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K In member function ‘[01m[Kvoid RudderServoControlNode::executeWaypoints()[m[K’:
+[12.749s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:156:22:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Ksensor_msgs::msg::NavSatFix_<std::allocator<void> >[m[K’ to ‘[01m[Kfloat[m[K’
+[12.749s]   156 |             turnBoat([01;31m[Knext_waypoint[m[K);
+[12.749s]       |                      [01;31m[K^~~~~~~~~~~~~[m[K
+[12.750s]       |                      [01;31m[K|[m[K
+[12.750s]       |                      [01;31m[Ksensor_msgs::msg::NavSatFix_<std::allocator<void> >[m[K
+[12.751s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:16[m[K:
+[12.751s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:34:25:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid RudderServoControlNode::turnBoat(float)[m[K’
+[12.752s]    34 |     void turnBoat([01;36m[Kfloat desired_angle_heading[m[K);
+[12.752s]       |                   [01;36m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[29.251s] gmake[2]: *** [CMakeFiles/RudderServoControlNode.dir/build.make:76: CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o] Error 1
+[29.251s] gmake[1]: *** [CMakeFiles/Makefile2:281: CMakeFiles/RudderServoControlNode.dir/all] Error 2
+[29.252s] gmake: *** [Makefile:146: all] Error 2
+[29.260s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

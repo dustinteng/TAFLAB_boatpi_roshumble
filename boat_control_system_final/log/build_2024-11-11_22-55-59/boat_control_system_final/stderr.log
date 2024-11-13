@@ -1,0 +1,11 @@
+/usr/bin/ld: CMakeFiles/CoordinateCalculationsNodeExec.dir/src/CoordinateCalculationsNode.cpp.o: in function `CoordinateCalculationsNode::waypointCallback(std::shared_ptr<sensor_msgs::msg::NavSatFix_<std::allocator<void> > >)':
+CoordinateCalculationsNode.cpp:(.text+0xb0c): undefined reference to `CoordinateCalculations::getInstance()'
+/usr/bin/ld: libCoordinateCalculations.a(Coordinate_Calculations.cpp.o): in function `CoordinateCalculations::plan_path(sensor_msgs::msg::NavSatFix_<std::allocator<void> > const&, sensor_msgs::msg::NavSatFix_<std::allocator<void> > const&)':
+Coordinate_Calculations.cpp:(.text+0x7a4): undefined reference to `CoordinateCalculations::getInstance()'
+/usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x854): undefined reference to `CoordinateCalculations::getInstance()'
+/usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x954): undefined reference to `CoordinateCalculations::getInstance()'
+/usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x99c): undefined reference to `CoordinateCalculations::getInstance()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/CoordinateCalculationsNodeExec.dir/build.make:178: CoordinateCalculationsNodeExec] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:226: CMakeFiles/CoordinateCalculationsNodeExec.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

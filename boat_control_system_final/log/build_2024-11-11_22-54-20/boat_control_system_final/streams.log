@@ -1,0 +1,16 @@
+[0.068s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.276s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculations[0m
+[0.343s] [ 20%] Built target WaypointQueue
+[0.407s] [ 30%] [32mBuilding CXX object CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o[0m
+[0.478s] [ 50%] Built target WaypointQueueNode
+[15.084s] [ 60%] [32m[1mLinking CXX static library libCoordinateCalculations.a[0m
+[15.227s] [ 60%] Built target CoordinateCalculations
+[15.353s] [ 70%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o[0m
+[17.246s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:10:10:[m[K [01;31m[Kfatal error: [m[KCoordinateCalculations.h: No such file or directory
+[17.247s]    10 | #include [01;31m[K"CoordinateCalculations.h"[m[K
+[17.247s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[17.248s] compilation terminated.
+[17.259s] gmake[2]: *** [CMakeFiles/CoordinateCalculationsNodeLib.dir/build.make:76: CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o] Error 1
+[17.260s] gmake[1]: *** [CMakeFiles/Makefile2:198: CMakeFiles/CoordinateCalculationsNodeLib.dir/all] Error 2
+[17.261s] gmake: *** [Makefile:146: all] Error 2
+[17.270s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

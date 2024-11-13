@@ -16,6 +16,8 @@
 #include <std_msgs/msg/bool.hpp>
 #include <std_msgs/msg/float32.hpp>
 
+#include "RudderServoControlNode.hpp"
+
 #include <deque>
 
 class CoordinateCalculationsNode : public rclcpp::Node
@@ -63,13 +65,14 @@ private:
     // rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr executing_subscriber_;
 
 
+    //Main Function used to process waypoints recieved from Waypoint queue
+    void waypointCallback(const sensor_msgs::msg::NavSatFix::SharedPtr msg);
     //Defining callback function to update member variables
     void gpsCallback(const sensor_msgs::msg::NavSatFix::SharedPtr msg);
     // void calculated_waypoints_callback(const sensor_msgs::msg::NavSatFix::SharedPtr msg);
     void initCallback(const std_msgs::msg::Int16::SharedPtr msg);
     void magnetometerCallback(const std_msgs::msg::Float32::SharedPtr msg);
     void windCallback(const std_msgs::msg::Float32::SharedPtr msg);
-    void waypointCallback(const sensor_msgs::msg::NavSatFix::SharedPtr msg);
 
     // Member Variables used to store latest data
     sensor_msgs::msg::NavSatFix latest_gps_data_;

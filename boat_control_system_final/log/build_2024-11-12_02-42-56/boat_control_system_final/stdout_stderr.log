@@ -1,0 +1,55 @@
+[ 16%] Built target WaypointQueue
+[ 33%] Built target CoordinateCalculations
+[35m[1mConsolidate compiler generated dependencies of target RudderServoControlNode[0m
+[ 50%] Built target CoordinateCalculationsNodeLib
+[ 66%] Built target WaypointQueueNode
+[ 75%] [32mBuilding CXX object CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o[0m
+[ 91%] Built target CoordinateCalculationsNodeExec
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:9[m[K,
+                 from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:16[m[K:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K In function ‘[01m[Kvoid executingStateCallback(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:118:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  118 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Received Wind angle heading data: [angle: %.6f]",
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:118:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:118:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  118 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received Wind angle heading data: [angle: %.6f]",
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:118:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  118 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received Wind angle heading data: [angle: %.6f]",
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:118:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  118 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received Wind angle heading data: [angle: %.6f]",
+      |     [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:9[m[K,
+                 from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:16[m[K:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:118:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  118 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Received Wind angle heading data: [angle: %.6f]",
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:118:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  118 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Received Wind angle heading data: [angle: %.6f]",
+      |                 [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/RudderServoControlNode.dir/build.make:76: CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:281: CMakeFiles/RudderServoControlNode.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

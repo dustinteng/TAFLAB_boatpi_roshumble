@@ -43,6 +43,27 @@ def generate_launch_description():
         output='screen',
     )
 
+    rudder_control = Node(
+        package='boat_control_system_final',
+        executable='waypoint_queue_node_exec',
+        name='waypoint_queue_node_exec',
+        output='screen',
+    )
+
+    rudder_control = Node(
+        package='boat_control_system_final',
+        executable='coordinate_calculations_node_exec',
+        name='coordinate_calculations_node_exec',
+        output='screen',
+    )
+
+    rudder_control = Node(
+        package='boat_control_system_final',
+        executable='rudder_servo_control_node',
+        name='rudder_servo_control_node',
+        output='screen',
+    )
+
     return LaunchDescription([
         as5600_node,
         lis3mdl_node,

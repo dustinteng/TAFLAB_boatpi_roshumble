@@ -1,0 +1,30 @@
+[0.067s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.350s] [ 16%] Built target WaypointQueue
+[0.360s] [ 33%] Built target CoordinateCalculations
+[0.427s] [35m[1mConsolidate compiler generated dependencies of target RudderServoControlNode[0m
+[0.484s] [ 50%] Built target WaypointQueueNode
+[0.506s] [ 66%] Built target CoordinateCalculationsNodeLib
+[0.540s] [ 75%] [32mBuilding CXX object CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o[0m
+[0.668s] [ 91%] Built target CoordinateCalculationsNodeExec
+[61.080s] [100%] [32m[1mLinking CXX executable RudderServoControlNode[0m
+[64.106s] /usr/bin/ld: CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o: in function `RudderServoControlNode::RudderServoControlNode()':
+[64.107s] RudderServoControlNode.cpp:(.text+0x3b0): undefined reference to `RudderServoControlNode::executingStateCallback(std::shared_ptr<std_msgs::msg::Bool_<std::allocator<void> > >)'
+[64.108s] /usr/bin/ld: RudderServoControlNode.cpp:(.text+0x3b4): undefined reference to `RudderServoControlNode::executingStateCallback(std::shared_ptr<std_msgs::msg::Bool_<std::allocator<void> > >)'
+[64.111s] /usr/bin/ld: RudderServoControlNode.cpp:(.text+0x4a0): undefined reference to `RudderServoControlNode::windCallback(std::shared_ptr<std_msgs::msg::Float32_<std::allocator<void> > >)'
+[64.113s] /usr/bin/ld: RudderServoControlNode.cpp:(.text+0x4a4): undefined reference to `RudderServoControlNode::windCallback(std::shared_ptr<std_msgs::msg::Float32_<std::allocator<void> > >)'
+[64.349s] /usr/bin/ld: libCoordinateCalculations.a(Coordinate_Calculations.cpp.o): in function `CoordinateCalculations::calculate_directional_bearing[abi:cxx11](sensor_msgs::msg::NavSatFix_<std::allocator<void> >)':
+[64.350s] Coordinate_Calculations.cpp:(.text+0x528): undefined reference to `CoordinateCalculationsNode::CoordinateCalculationsNode()'
+[64.351s] /usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x530): undefined reference to `CoordinateCalculationsNode::get_magnetometer_heading()'
+[64.351s] /usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x544): undefined reference to `CoordinateCalculationsNode::get_curr_pos()'
+[64.351s] /usr/bin/ld: libCoordinateCalculations.a(Coordinate_Calculations.cpp.o): in function `CoordinateCalculations::calculate_angle_to_wind()':
+[64.352s] Coordinate_Calculations.cpp:(.text+0x71c): undefined reference to `CoordinateCalculationsNode::CoordinateCalculationsNode()'
+[64.352s] /usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x724): undefined reference to `CoordinateCalculationsNode::get_wind_angle()'
+[64.352s] /usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x730): undefined reference to `CoordinateCalculationsNode::get_magnetometer_heading()'
+[64.353s] /usr/bin/ld: libCoordinateCalculations.a(Coordinate_Calculations.cpp.o): in function `CoordinateCalculations::plan_path(sensor_msgs::msg::NavSatFix_<std::allocator<void> > const&, sensor_msgs::msg::NavSatFix_<std::allocator<void> > const&)':
+[64.354s] Coordinate_Calculations.cpp:(.text+0x80c): undefined reference to `CoordinateCalculationsNode::CoordinateCalculationsNode()'
+[64.354s] /usr/bin/ld: Coordinate_Calculations.cpp:(.text+0x860): undefined reference to `CoordinateCalculationsNode::get_wind_angle()'
+[64.525s] collect2: error: ld returned 1 exit status
+[64.531s] gmake[2]: *** [CMakeFiles/RudderServoControlNode.dir/build.make:177: RudderServoControlNode] Error 1
+[64.532s] gmake[1]: *** [CMakeFiles/Makefile2:281: CMakeFiles/RudderServoControlNode.dir/all] Error 2
+[64.533s] gmake: *** [Makefile:146: all] Error 2
+[64.543s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

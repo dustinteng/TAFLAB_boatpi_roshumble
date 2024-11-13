@@ -224,6 +224,19 @@ CoordinateCalculations/fast:
 .PHONY : CoordinateCalculations/fast
 
 #=============================================================================
+# Target rules for targets named RudderControlHelper
+
+# Build rule for target.
+RudderControlHelper: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RudderControlHelper
+.PHONY : RudderControlHelper
+
+# fast build rule for target.
+RudderControlHelper/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderControlHelper.dir/build.make CMakeFiles/RudderControlHelper.dir/build
+.PHONY : RudderControlHelper/fast
+
+#=============================================================================
 # Target rules for targets named CoordinateCalculationsNodeLib
 
 # Build rule for target.
@@ -235,6 +248,19 @@ CoordinateCalculationsNodeLib: cmake_check_build_system
 CoordinateCalculationsNodeLib/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculationsNodeLib.dir/build.make CMakeFiles/CoordinateCalculationsNodeLib.dir/build
 .PHONY : CoordinateCalculationsNodeLib/fast
+
+#=============================================================================
+# Target rules for targets named RudderServoControlNodeLib
+
+# Build rule for target.
+RudderServoControlNodeLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RudderServoControlNodeLib
+.PHONY : RudderServoControlNodeLib
+
+# fast build rule for target.
+RudderServoControlNodeLib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderServoControlNodeLib.dir/build.make CMakeFiles/RudderServoControlNodeLib.dir/build
+.PHONY : RudderServoControlNodeLib/fast
 
 #=============================================================================
 # Target rules for targets named CoordinateCalculationsNodeExec
@@ -250,17 +276,30 @@ CoordinateCalculationsNodeExec/fast:
 .PHONY : CoordinateCalculationsNodeExec/fast
 
 #=============================================================================
-# Target rules for targets named WaypointQueueNode
+# Target rules for targets named RudderServoControlNodeExec
 
 # Build rule for target.
-WaypointQueueNode: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 WaypointQueueNode
-.PHONY : WaypointQueueNode
+RudderServoControlNodeExec: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RudderServoControlNodeExec
+.PHONY : RudderServoControlNodeExec
 
 # fast build rule for target.
-WaypointQueueNode/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaypointQueueNode.dir/build.make CMakeFiles/WaypointQueueNode.dir/build
-.PHONY : WaypointQueueNode/fast
+RudderServoControlNodeExec/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderServoControlNodeExec.dir/build.make CMakeFiles/RudderServoControlNodeExec.dir/build
+.PHONY : RudderServoControlNodeExec/fast
+
+#=============================================================================
+# Target rules for targets named WaypointQueueNodeExec
+
+# Build rule for target.
+WaypointQueueNodeExec: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 WaypointQueueNodeExec
+.PHONY : WaypointQueueNodeExec
+
+# fast build rule for target.
+WaypointQueueNodeExec/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaypointQueueNodeExec.dir/build.make CMakeFiles/WaypointQueueNodeExec.dir/build
+.PHONY : WaypointQueueNodeExec/fast
 
 src/CoordinateCalculationsNode.o: src/CoordinateCalculationsNode.cpp.o
 .PHONY : src/CoordinateCalculationsNode.o
@@ -313,6 +352,57 @@ src/Coordinate_Calculations.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculations.dir/build.make CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.s
 .PHONY : src/Coordinate_Calculations.cpp.s
 
+src/RudderControlHelper.o: src/RudderControlHelper.cpp.o
+.PHONY : src/RudderControlHelper.o
+
+# target to build an object file
+src/RudderControlHelper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderControlHelper.dir/build.make CMakeFiles/RudderControlHelper.dir/src/RudderControlHelper.cpp.o
+.PHONY : src/RudderControlHelper.cpp.o
+
+src/RudderControlHelper.i: src/RudderControlHelper.cpp.i
+.PHONY : src/RudderControlHelper.i
+
+# target to preprocess a source file
+src/RudderControlHelper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderControlHelper.dir/build.make CMakeFiles/RudderControlHelper.dir/src/RudderControlHelper.cpp.i
+.PHONY : src/RudderControlHelper.cpp.i
+
+src/RudderControlHelper.s: src/RudderControlHelper.cpp.s
+.PHONY : src/RudderControlHelper.s
+
+# target to generate assembly for a file
+src/RudderControlHelper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderControlHelper.dir/build.make CMakeFiles/RudderControlHelper.dir/src/RudderControlHelper.cpp.s
+.PHONY : src/RudderControlHelper.cpp.s
+
+src/RudderServoControlNode.o: src/RudderServoControlNode.cpp.o
+.PHONY : src/RudderServoControlNode.o
+
+# target to build an object file
+src/RudderServoControlNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderServoControlNodeLib.dir/build.make CMakeFiles/RudderServoControlNodeLib.dir/src/RudderServoControlNode.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderServoControlNodeExec.dir/build.make CMakeFiles/RudderServoControlNodeExec.dir/src/RudderServoControlNode.cpp.o
+.PHONY : src/RudderServoControlNode.cpp.o
+
+src/RudderServoControlNode.i: src/RudderServoControlNode.cpp.i
+.PHONY : src/RudderServoControlNode.i
+
+# target to preprocess a source file
+src/RudderServoControlNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderServoControlNodeLib.dir/build.make CMakeFiles/RudderServoControlNodeLib.dir/src/RudderServoControlNode.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderServoControlNodeExec.dir/build.make CMakeFiles/RudderServoControlNodeExec.dir/src/RudderServoControlNode.cpp.i
+.PHONY : src/RudderServoControlNode.cpp.i
+
+src/RudderServoControlNode.s: src/RudderServoControlNode.cpp.s
+.PHONY : src/RudderServoControlNode.s
+
+# target to generate assembly for a file
+src/RudderServoControlNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderServoControlNodeLib.dir/build.make CMakeFiles/RudderServoControlNodeLib.dir/src/RudderServoControlNode.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderServoControlNodeExec.dir/build.make CMakeFiles/RudderServoControlNodeExec.dir/src/RudderServoControlNode.cpp.s
+.PHONY : src/RudderServoControlNode.cpp.s
+
 src/WaypointQueue.o: src/WaypointQueue.cpp.o
 .PHONY : src/WaypointQueue.o
 
@@ -342,7 +432,7 @@ src/WaypointQueueNode.o: src/WaypointQueueNode.cpp.o
 
 # target to build an object file
 src/WaypointQueueNode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaypointQueueNode.dir/build.make CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaypointQueueNodeExec.dir/build.make CMakeFiles/WaypointQueueNodeExec.dir/src/WaypointQueueNode.cpp.o
 .PHONY : src/WaypointQueueNode.cpp.o
 
 src/WaypointQueueNode.i: src/WaypointQueueNode.cpp.i
@@ -350,7 +440,7 @@ src/WaypointQueueNode.i: src/WaypointQueueNode.cpp.i
 
 # target to preprocess a source file
 src/WaypointQueueNode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaypointQueueNode.dir/build.make CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaypointQueueNodeExec.dir/build.make CMakeFiles/WaypointQueueNodeExec.dir/src/WaypointQueueNode.cpp.i
 .PHONY : src/WaypointQueueNode.cpp.i
 
 src/WaypointQueueNode.s: src/WaypointQueueNode.cpp.s
@@ -358,7 +448,7 @@ src/WaypointQueueNode.s: src/WaypointQueueNode.cpp.s
 
 # target to generate assembly for a file
 src/WaypointQueueNode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaypointQueueNode.dir/build.make CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaypointQueueNodeExec.dir/build.make CMakeFiles/WaypointQueueNodeExec.dir/src/WaypointQueueNode.cpp.s
 .PHONY : src/WaypointQueueNode.cpp.s
 
 # Help Target
@@ -379,14 +469,23 @@ help:
 	@echo "... CoordinateCalculations"
 	@echo "... CoordinateCalculationsNodeExec"
 	@echo "... CoordinateCalculationsNodeLib"
+	@echo "... RudderControlHelper"
+	@echo "... RudderServoControlNodeExec"
+	@echo "... RudderServoControlNodeLib"
 	@echo "... WaypointQueue"
-	@echo "... WaypointQueueNode"
+	@echo "... WaypointQueueNodeExec"
 	@echo "... src/CoordinateCalculationsNode.o"
 	@echo "... src/CoordinateCalculationsNode.i"
 	@echo "... src/CoordinateCalculationsNode.s"
 	@echo "... src/Coordinate_Calculations.o"
 	@echo "... src/Coordinate_Calculations.i"
 	@echo "... src/Coordinate_Calculations.s"
+	@echo "... src/RudderControlHelper.o"
+	@echo "... src/RudderControlHelper.i"
+	@echo "... src/RudderControlHelper.s"
+	@echo "... src/RudderServoControlNode.o"
+	@echo "... src/RudderServoControlNode.i"
+	@echo "... src/RudderServoControlNode.s"
 	@echo "... src/WaypointQueue.o"
 	@echo "... src/WaypointQueue.i"
 	@echo "... src/WaypointQueue.s"

@@ -7,13 +7,16 @@ from std_msgs.msg import Float32
 AS5600_ADDRESS = 0x36
 RAW_ANGLE_REGISTER = 0x0C
 
+
+
+
 class AS5600Node(Node):
     def __init__(self):
         super().__init__('as5600_node')
         self.bus = SMBus(1)  # Raspberry Pi I2C bus
         self.angle_publisher = self.create_publisher(Float32, 'as5600_angle', 10)
         self.timer = self.create_timer(0.1, self.read_angle)  # Publish every 0.1 seconds
-
+        #self.olderdata array - save older 10. here to filter sensors
     def read_angle(self):
         try:
             # Read 2 bytes of the raw angle
@@ -31,8 +34,10 @@ class AS5600Node(Node):
                 self.get_logger().warn(f"Unexpected angle value: {angle_degrees} degrees")
 
             # Publish the angle
+            #if self.angle_data < ## 
             self.angle_publisher.publish(Float32(data=angle_degrees))
             # self.get_logger().info(f"Published angle: {angle_degrees:.2f} degrees")
+            #
 
         except Exception as e:
             self.get_logger().error(f"Error reading angle: {e}")

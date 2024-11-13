@@ -1,0 +1,14 @@
+[ 16%] Built target WaypointQueue
+[ 25%] [32mBuilding CXX object CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o[0m
+[ 41%] Built target WaypointQueueNode
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Kstd::pair<std::__cxx11::basic_string<char>, float> CoordinateCalculations::calculate_directional_bearing(sensor_msgs::msg::NavSatFix)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:94:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRudderServoControlNode[m[K’ was not declared in this scope
+   94 |     [01;31m[KRudderServoControlNode[m[K node_instance;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:95:29:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_instance[m[K’ was not declared in this scope; did you mean ‘[01m[KgetInstance[m[K’?
+   95 |     float current_heading = [01;31m[Knode_instance[m[K.get_magnetometer_heading().data;
+      |                             [01;31m[K^~~~~~~~~~~~~[m[K
+      |                             [32m[KgetInstance[m[K
+gmake[2]: *** [CMakeFiles/CoordinateCalculations.dir/build.make:76: CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:173: CMakeFiles/CoordinateCalculations.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

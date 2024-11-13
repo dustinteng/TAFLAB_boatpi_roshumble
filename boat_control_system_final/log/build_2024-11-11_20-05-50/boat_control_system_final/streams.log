@@ -1,0 +1,184 @@
+[0.069s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.249s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.006s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.267s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.285s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.328s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.392s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.477s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.695s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.706s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.854s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.152s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.359s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.576s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.578s] -- Configured cppcheck include dirs: /home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final
+[4.579s] -- Configured cppcheck exclude dirs and/or files: 
+[4.686s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.889s] -- Added test 'lint_cmake' to check CMake code style
+[4.996s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.804s] -- Added test 'uncrustify' to check C / C++ code style
+[5.805s] -- Configured uncrustify additional arguments: 
+[5.910s] -- Added test 'xmllint' to check XML markup files
+[5.920s] -- Configuring done
+[6.112s] -- Generating done
+[6.128s] -- Build files have been written to: /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final
+[6.252s] [35m[1mConsolidate compiler generated dependencies of target WaypointQueue[0m
+[6.253s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculations[0m
+[6.370s] [ 16%] Built target WaypointQueue
+[6.374s] [ 33%] Built target CoordinateCalculations
+[6.479s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculationsNodeLib[0m
+[6.483s] [35m[1mConsolidate compiler generated dependencies of target WaypointQueueNode[0m
+[6.592s] [ 41%] [32mBuilding CXX object CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o[0m
+[6.675s] [ 58%] Built target CoordinateCalculationsNodeLib
+[6.688s] [ 75%] Built target WaypointQueueNode
+[6.728s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculationsNodeExec[0m
+[6.847s] [ 91%] Built target CoordinateCalculationsNodeExec
+[18.698s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K In constructor ‘[01m[KRudderServoControlNode::RudderServoControlNode()[m[K’:
+[18.698s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:28:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfinal_waypoint_subscriber_[m[K’ was not declared in this scope
+[18.699s]    28 |     [01;31m[Kfinal_waypoint_subscriber_[m[K = this->create_subscription<sensor_msgs::msg::NavSatFix>(
+[18.700s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[18.700s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:31:44:[m[K [01;31m[Kerror: [m[K‘[01m[KfinalWaypointCallback[m[K’ is not a member of ‘[01m[KRudderServoControlNode[m[K’
+[18.701s]    31 |         std::bind(&RudderServoControlNode::[01;31m[KfinalWaypointCallback[m[K, this, std::placeholders::_1));
+[18.702s]       |                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[18.743s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K At global scope:
+[18.744s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:53:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid RudderServoControlNode::finalWaypointCallback(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’
+[18.745s]    53 | void [01;31m[KRudderServoControlNode[m[K::finalWaypointCallback(const sensor_msgs::msg::NavSatFix::SharedPtr msg)
+[18.747s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[18.747s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:53:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid RudderServoControlNode::finalWaypointCallback(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’
+[18.748s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:14[m[K:
+[18.749s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:18:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass RudderServoControlNode[m[K’ defined here
+[18.749s]    18 | class [01;36m[KRudderServoControlNode[m[K : public rclcpp::Node
+[18.750s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[18.788s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K In member function ‘[01m[Kvoid RudderServoControlNode::turnBoat(float, bool)[m[K’:
+[18.789s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:77:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kspeed_needed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.790s]    77 | void RudderServoControlNode::turnBoat(float desired_angle_heading, [01;35m[Kbool speed_needed[m[K)
+[18.790s]       |                                                                    [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[18.791s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K At global scope:
+[18.792s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:103:6:[m[K [01;31m[Kerror: [m[K‘[01m[KWaypointQueue[m[K’ has not been declared
+[18.792s]   103 | void [01;31m[KWaypointQueue[m[K::execute_waypoints()
+[18.793s]       |      [01;31m[K^~~~~~~~~~~~~[m[K
+[18.812s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K In function ‘[01m[Kvoid execute_waypoints()[m[K’:
+[18.813s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:106:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kautonomous_mode[m[K’ was not declared in this scope
+[18.814s]   106 |     while ([01;31m[Kautonomous_mode[m[K)
+[18.814s]       |            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[18.833s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:109:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kservo_queue_[m[K’ was not declared in this scope
+[18.834s]   109 |         if ([01;31m[Kservo_queue_[m[K.empty())
+[18.835s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[18.836s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:112:13:[m[K [01;31m[Kerror: [m[K‘[01m[KDatatypes[m[K’ has not been declared
+[18.836s]   112 |             [01;31m[KDatatypes[m[K::Coordinate curr_position = get_curr_coordinate();
+[18.837s]       |             [01;31m[K^~~~~~~~~[m[K
+[18.858s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:115:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurr_position[m[K’ was not declared in this scope
+[18.863s]   115 |             if (CoordinateCalculations::getInstance().calculate_distance([01;31m[Kcurr_position[m[K, previous_waypoint) <= 0.05)
+[18.864s]       |                                                                          [01;31m[K^~~~~~~~~~~~~[m[K
+[18.887s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:115:89:[m[K [01;31m[Kerror: [m[K‘[01m[Kprevious_waypoint[m[K’ was not declared in this scope
+[18.888s]   115 |             if (CoordinateCalculations::getInstance().calculate_distance(curr_position, [01;31m[Kprevious_waypoint[m[K) <= 0.05)
+[18.889s]       |                                                                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[18.908s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:118:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_avg_angle[m[K’ was not declared in this scope
+[18.909s]   118 |                 set_rudder_servo([01;31m[Kget_avg_angle[m[K());
+[18.910s]       |                                  [01;31m[K^~~~~~~~~~~~~[m[K
+[18.932s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:118:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_rudder_servo[m[K’ was not declared in this scope
+[18.933s]   118 |                 [01;31m[Kset_rudder_servo[m[K(get_avg_angle());
+[18.933s]       |                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[18.955s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:119:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_sail_servo[m[K’ was not declared in this scope
+[18.956s]   119 |                 [01;31m[Kset_sail_servo[m[K(get_avg_angle());
+[18.957s]       |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[18.957s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:126:9:[m[K [01;31m[Kerror: [m[K‘[01m[KDatatypes[m[K’ has not been declared
+[18.958s]   126 |         [01;31m[KDatatypes[m[K::Coordinate next_waypoint = get_next_waypoint();
+[18.959s]       |         [01;31m[K^~~~~~~~~[m[K
+[18.960s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:127:9:[m[K [01;31m[Kerror: [m[K‘[01m[KDatatypes[m[K’ has not been declared
+[18.960s]   127 |         [01;31m[KDatatypes[m[K::Coordinate curr_position = get_curr_coordinate();
+[18.961s]       |         [01;31m[K^~~~~~~~~[m[K
+[18.976s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:128:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_avg_angle[m[K’ was not declared in this scope
+[18.977s]   128 |         float wind_direction = [01;31m[Kget_avg_angle[m[K();  // Get current wind direction
+[18.978s]       |                                [01;31m[K^~~~~~~~~~~~~[m[K
+[18.994s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:131:21:[m[K [01;31m[Kerror: [m[K‘[01m[KDatatypes[m[K’ was not declared in this scope
+[18.995s]   131 |         std::vector<[01;31m[KDatatypes[m[K::Coordinate> tack_waypoints =
+[18.996s]       |                     [01;31m[K^~~~~~~~~[m[K
+[18.996s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:131:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[18.997s]   131 |         std::vector<Datatypes::Coordinate[01;31m[K>[m[K tack_waypoints =
+[18.998s]       |                                          [01;31m[K^[m[K
+[18.998s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:131:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[18.999s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:132:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CoordinateCalculations[m[K’ has no member named ‘[01m[Kcalculate_tacking_waypoints[m[K’
+[19.000s]   132 |             CoordinateCalculations::getInstance().[01;31m[Kcalculate_tacking_waypoints[m[K(curr_position, next_waypoint, wind_direction, max_upwind_angle);
+[19.001s]       |                                                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.016s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:132:79:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurr_position[m[K’ was not declared in this scope
+[19.017s]   132 |             CoordinateCalculations::getInstance().calculate_tacking_waypoints([01;31m[Kcurr_position[m[K, next_waypoint, wind_direction, max_upwind_angle);
+[19.018s]       |                                                                               [01;31m[K^~~~~~~~~~~~~[m[K
+[19.035s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:132:94:[m[K [01;31m[Kerror: [m[K‘[01m[Knext_waypoint[m[K’ was not declared in this scope
+[19.036s]   132 |             CoordinateCalculations::getInstance().calculate_tacking_waypoints(curr_position, [01;31m[Knext_waypoint[m[K, wind_direction, max_upwind_angle);
+[19.037s]       |                                                                                              [01;31m[K^~~~~~~~~~~~~[m[K
+[19.064s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:132:125:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_upwind_angle[m[K’ was not declared in this scope
+[19.065s]   132 |             CoordinateCalculations::getInstance().calculate_tacking_waypoints(curr_position, next_waypoint, wind_direction, [01;31m[Kmax_upwind_angle[m[K);
+[19.066s]       |                                                                                                                             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[19.067s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:134:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kbegin[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::begin[m[K’?
+[19.072s]   134 |         for (const auto& waypoint : [01;31m[Ktack_waypoints[m[K) {
+[19.073s]       |                                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[19.074s]       |                                     [32m[Kstd::begin[m[K
+[19.074s] In file included from [01m[K/usr/include/c++/11/array:41[m[K,
+[19.075s]                  from [01m[K/usr/include/c++/11/tuple:39[m[K,
+[19.076s]                  from [01m[K/usr/include/c++/11/functional:54[m[K,
+[19.077s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[19.078s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[19.078s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:8[m[K,
+[19.079s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:7[m[K,
+[19.080s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:6[m[K:
+[19.081s] [01m[K/usr/include/c++/11/bits/range_access.h:108:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::begin[m[K’ declared here
+[19.082s]   108 |   template<typename _Tp> const _Tp* [01;36m[Kbegin[m[K(const valarray<_Tp>&) noexcept;
+[19.082s]       |                                     [01;36m[K^~~~~[m[K
+[19.083s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:134:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kend[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::end[m[K’?
+[19.088s]   134 |         for (const auto& waypoint : [01;31m[Ktack_waypoints[m[K) {
+[19.089s]       |                                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[19.090s]       |                                     [32m[Kstd::end[m[K
+[19.090s] In file included from [01m[K/usr/include/c++/11/array:41[m[K,
+[19.091s]                  from [01m[K/usr/include/c++/11/tuple:39[m[K,
+[19.092s]                  from [01m[K/usr/include/c++/11/functional:54[m[K,
+[19.092s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[19.093s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[19.093s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:8[m[K,
+[19.094s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:7[m[K,
+[19.095s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:6[m[K:
+[19.095s] [01m[K/usr/include/c++/11/bits/range_access.h:110:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::end[m[K’ declared here
+[19.096s]   110 |   template<typename _Tp> const _Tp* [01;36m[Kend[m[K(const valarray<_Tp>&) noexcept;
+[19.097s]       |                                     [01;36m[K^~~[m[K
+[19.107s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:135:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kadd_front_waypoint[m[K’ was not declared in this scope
+[19.108s]   135 |             [01;31m[Kadd_front_waypoint[m[K(waypoint);
+[19.109s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[19.117s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:139:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints[m[K’ was not declared in this scope
+[19.117s]   139 |         while (autonomous_mode && ![01;31m[Kwaypoints[m[K.empty())
+[19.118s]       |                                    [01;31m[K^~~~~~~~~[m[K
+[19.144s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:142:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_curr_coordinate[m[K’ was not declared in this scope
+[19.144s]   142 |             curr_position = [01;31m[Kget_curr_coordinate[m[K();
+[19.146s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[19.171s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:143:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_next_waypoint[m[K’ was not declared in this scope
+[19.172s]   143 |             next_waypoint = [01;31m[Kget_next_waypoint[m[K();
+[19.172s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[19.193s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:156:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ksteering_boat[m[K’ was not declared in this scope
+[19.194s]   156 |             [01;31m[Ksteering_boat[m[K(bearing_to_waypoint);
+[19.194s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[19.211s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:163:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints[m[K’ was not declared in this scope
+[19.212s]   163 |         if ([01;31m[Kwaypoints[m[K.empty() && CoordinateCalculations::getInstance().calculate_distance(curr_position, next_waypoint) <= 0.05)
+[19.213s]       |             [01;31m[K^~~~~~~~~[m[K
+[19.238s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:165:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_rudder_servo[m[K’ was not declared in this scope
+[19.240s]   165 |             [01;31m[Kset_rudder_servo[m[K(get_avg_angle());  // Point the rudder into the wind to idle
+[19.241s]       |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[19.285s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K In member function ‘[01m[Kvoid RudderServoControlNode::executeWaypoints()[m[K’:
+[19.286s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:178:50:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_waypoint_data_[m[K’ was not declared in this scope; did you mean ‘[01m[Klatest_gps_data_[m[K’?
+[19.287s]   178 |             if (calculateDistance(curr_position, [01;31m[Klatest_waypoint_data_[m[K) <= 0.05)
+[19.289s]       |                                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[19.290s]       |                                                  [32m[Klatest_gps_data_[m[K
+[19.291s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K At global scope:
+[19.292s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:192:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid RudderServoControlNode::setRudderServo(float)[m[K’
+[19.293s]   192 | void [01;31m[KRudderServoControlNode[m[K::setRudderServo(float angle)
+[19.294s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.295s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:14[m[K:
+[19.304s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:31:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid RudderServoControlNode::setRudderServo(int)[m[K’
+[19.305s]    31 |     void [01;36m[KsetRudderServo[m[K(int angle);
+[19.306s]       |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[19.307s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:18:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass RudderServoControlNode[m[K’ defined here
+[19.307s]    18 | class [01;36m[KRudderServoControlNode[m[K : public rclcpp::Node
+[19.308s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[33.373s] gmake[2]: *** [CMakeFiles/RudderServoControlNode.dir/build.make:76: CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o] Error 1
+[33.374s] gmake[1]: *** [CMakeFiles/Makefile2:281: CMakeFiles/RudderServoControlNode.dir/all] Error 2
+[33.375s] gmake: *** [Makefile:146: all] Error 2
+[33.382s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

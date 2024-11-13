@@ -1,0 +1,21 @@
+[0.069s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.347s] [ 16%] Built target WaypointQueue
+[0.351s] [ 25%] [32mBuilding CXX object CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o[0m
+[0.476s] [ 41%] Built target WaypointQueueNode
+[14.257s] [ 50%] [32m[1mLinking CXX static library libCoordinateCalculations.a[0m
+[14.396s] [ 50%] Built target CoordinateCalculations
+[14.450s] [35m[1mConsolidate compiler generated dependencies of target RudderServoControlNode[0m
+[14.523s] [ 58%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o[0m
+[14.560s] [ 66%] [32mBuilding CXX object CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o[0m
+[14.677s] [ 75%] [32m[1mLinking CXX executable RudderServoControlNode[0m
+[15.165s] /usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+[15.166s] (.text+0x1c): undefined reference to `main'
+[15.167s] /usr/bin/ld: (.text+0x20): undefined reference to `main'
+[15.179s] collect2: error: ld returned 1 exit status
+[15.188s] gmake[2]: *** [CMakeFiles/RudderServoControlNode.dir/build.make:177: RudderServoControlNode] Error 1
+[15.190s] gmake[1]: *** [CMakeFiles/Makefile2:281: CMakeFiles/RudderServoControlNode.dir/all] Error 2
+[15.191s] gmake[1]: *** Waiting for unfinished jobs....
+[76.154s] [ 83%] [32m[1mLinking CXX static library libCoordinateCalculationsNodeLib.a[0m
+[78.526s] [ 83%] Built target CoordinateCalculationsNodeLib
+[78.531s] gmake: *** [Makefile:146: all] Error 2
+[78.538s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

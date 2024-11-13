@@ -1,0 +1,174 @@
+[0.000000] (-) TimerEvent: {}
+[0.001750] (boat_control_system_final) JobQueued: {'identifier': 'boat_control_system_final', 'dependencies': OrderedDict()}
+[0.002438] (boat_control_system_final) JobStarted: {'identifier': 'boat_control_system_final'}
+[0.049787] (boat_control_system_final) JobProgress: {'identifier': 'boat_control_system_final', 'progress': 'cmake'}
+[0.053844] (boat_control_system_final) JobProgress: {'identifier': 'boat_control_system_final', 'progress': 'build'}
+[0.057975] (boat_control_system_final) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final', '--', '-j4', '-l4'], 'cwd': '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'boat'), ('SSH_CLIENT', '10.136.128.231 56713 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/boat'), ('TERM_PROGRAM_VERSION', '1.95.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e1156e86-b755-4fab-9937-a89aa8c9bb16.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'boat'), ('_', '/home/boat/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/remote-cli:/home/boat/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/boat/.local/bin:/home/boat/.local/bin:/home/boat/.local/bin:/home/boat/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-15c79811d2.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.136.128.231 56713 10.41.221.43 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098963] (-) TimerEvent: {}
+[0.199819] (-) TimerEvent: {}
+[0.271188] (boat_control_system_final) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target CoordinateCalculations\x1b[0m\n'}
+[0.300860] (-) TimerEvent: {}
+[0.337795] (boat_control_system_final) StdoutLine: {'line': b'[ 16%] Built target WaypointQueue\n'}
+[0.382376] (boat_control_system_final) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o\x1b[0m\n'}
+[0.401081] (-) TimerEvent: {}
+[0.472196] (boat_control_system_final) StdoutLine: {'line': b'[ 41%] Built target WaypointQueueNode\n'}
+[0.501251] (-) TimerEvent: {}
+[0.603370] (-) TimerEvent: {}
+[0.704612] (-) TimerEvent: {}
+[0.805647] (-) TimerEvent: {}
+[0.906588] (-) TimerEvent: {}
+[1.007763] (-) TimerEvent: {}
+[1.108506] (-) TimerEvent: {}
+[1.209254] (-) TimerEvent: {}
+[1.309988] (-) TimerEvent: {}
+[1.410746] (-) TimerEvent: {}
+[1.511540] (-) TimerEvent: {}
+[1.612263] (-) TimerEvent: {}
+[1.713019] (-) TimerEvent: {}
+[1.813755] (-) TimerEvent: {}
+[1.914489] (-) TimerEvent: {}
+[2.015324] (-) TimerEvent: {}
+[2.116073] (-) TimerEvent: {}
+[2.216853] (-) TimerEvent: {}
+[2.317632] (-) TimerEvent: {}
+[2.418440] (-) TimerEvent: {}
+[2.519316] (-) TimerEvent: {}
+[2.620153] (-) TimerEvent: {}
+[2.720958] (-) TimerEvent: {}
+[2.821775] (-) TimerEvent: {}
+[2.922668] (-) TimerEvent: {}
+[3.023627] (-) TimerEvent: {}
+[3.124461] (-) TimerEvent: {}
+[3.225398] (-) TimerEvent: {}
+[3.326225] (-) TimerEvent: {}
+[3.427152] (-) TimerEvent: {}
+[3.528131] (-) TimerEvent: {}
+[3.629200] (-) TimerEvent: {}
+[3.730203] (-) TimerEvent: {}
+[3.831086] (-) TimerEvent: {}
+[3.932021] (-) TimerEvent: {}
+[4.032882] (-) TimerEvent: {}
+[4.133766] (-) TimerEvent: {}
+[4.234728] (-) TimerEvent: {}
+[4.335620] (-) TimerEvent: {}
+[4.436693] (-) TimerEvent: {}
+[4.537612] (-) TimerEvent: {}
+[4.638556] (-) TimerEvent: {}
+[4.739373] (-) TimerEvent: {}
+[4.840253] (-) TimerEvent: {}
+[4.941168] (-) TimerEvent: {}
+[5.042755] (-) TimerEvent: {}
+[5.143620] (-) TimerEvent: {}
+[5.244459] (-) TimerEvent: {}
+[5.345301] (-) TimerEvent: {}
+[5.446190] (-) TimerEvent: {}
+[5.547025] (-) TimerEvent: {}
+[5.647869] (-) TimerEvent: {}
+[5.748718] (-) TimerEvent: {}
+[5.849529] (-) TimerEvent: {}
+[5.950349] (-) TimerEvent: {}
+[6.051184] (-) TimerEvent: {}
+[6.152064] (-) TimerEvent: {}
+[6.252965] (-) TimerEvent: {}
+[6.353789] (-) TimerEvent: {}
+[6.454604] (-) TimerEvent: {}
+[6.555533] (-) TimerEvent: {}
+[6.656404] (-) TimerEvent: {}
+[6.757214] (-) TimerEvent: {}
+[6.858016] (-) TimerEvent: {}
+[6.958835] (-) TimerEvent: {}
+[7.059653] (-) TimerEvent: {}
+[7.160543] (-) TimerEvent: {}
+[7.261372] (-) TimerEvent: {}
+[7.362200] (-) TimerEvent: {}
+[7.463056] (-) TimerEvent: {}
+[7.564019] (-) TimerEvent: {}
+[7.664872] (-) TimerEvent: {}
+[7.765732] (-) TimerEvent: {}
+[7.866581] (-) TimerEvent: {}
+[7.967496] (-) TimerEvent: {}
+[8.068423] (-) TimerEvent: {}
+[8.169240] (-) TimerEvent: {}
+[8.270069] (-) TimerEvent: {}
+[8.370912] (-) TimerEvent: {}
+[8.471818] (-) TimerEvent: {}
+[8.572610] (-) TimerEvent: {}
+[8.673395] (-) TimerEvent: {}
+[8.774225] (-) TimerEvent: {}
+[8.875098] (-) TimerEvent: {}
+[8.975979] (-) TimerEvent: {}
+[9.076789] (-) TimerEvent: {}
+[9.177690] (-) TimerEvent: {}
+[9.278526] (-) TimerEvent: {}
+[9.379620] (-) TimerEvent: {}
+[9.480672] (-) TimerEvent: {}
+[9.581615] (-) TimerEvent: {}
+[9.682524] (-) TimerEvent: {}
+[9.783383] (-) TimerEvent: {}
+[9.884241] (-) TimerEvent: {}
+[9.985072] (-) TimerEvent: {}
+[10.085910] (-) TimerEvent: {}
+[10.186779] (-) TimerEvent: {}
+[10.287669] (-) TimerEvent: {}
+[10.388525] (-) TimerEvent: {}
+[10.489439] (-) TimerEvent: {}
+[10.590373] (-) TimerEvent: {}
+[10.691292] (-) TimerEvent: {}
+[10.792163] (-) TimerEvent: {}
+[10.892994] (-) TimerEvent: {}
+[10.993835] (-) TimerEvent: {}
+[11.094749] (-) TimerEvent: {}
+[11.195628] (-) TimerEvent: {}
+[11.296451] (-) TimerEvent: {}
+[11.397260] (-) TimerEvent: {}
+[11.498107] (-) TimerEvent: {}
+[11.598948] (-) TimerEvent: {}
+[11.699788] (-) TimerEvent: {}
+[11.800588] (-) TimerEvent: {}
+[11.901407] (-) TimerEvent: {}
+[12.002371] (-) TimerEvent: {}
+[12.103200] (-) TimerEvent: {}
+[12.204083] (-) TimerEvent: {}
+[12.304856] (-) TimerEvent: {}
+[12.343791] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<std::__cxx11::basic_string<char>, float> CoordinateCalculations::calculate_directional_bearing(sensor_msgs::msg::NavSatFix)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.344892] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:96:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Float32 RudderServoControlNode::get_magnetometer_heading()\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[12.345463] (boat_control_system_final) StderrLine: {'line': b'   96 |     float current_heading = \x1b[01;31m\x1b[Knode_instance.get_magnetometer_heading()\x1b[m\x1b[K.data;\n'}
+[12.345950] (boat_control_system_final) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[12.346429] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:15\x1b[m\x1b[K:\n'}
+[12.346889] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:41:28:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[12.347374] (boat_control_system_final) StderrLine: {'line': b'   41 |     std_msgs::msg::Float32 \x1b[01;36m\x1b[Kget_magnetometer_heading\x1b[m\x1b[K();\n'}
+[12.347944] (boat_control_system_final) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.348416] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:97:78:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::NavSatFix RudderServoControlNode::get_curr_pos()\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[12.348867] (boat_control_system_final) StderrLine: {'line': b'   97 |     sensor_msgs::msg::NavSatFix current_position = \x1b[01;31m\x1b[Knode_instance.get_curr_pos()\x1b[m\x1b[K;\n'}
+[12.349310] (boat_control_system_final) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[12.349756] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:15\x1b[m\x1b[K:\n'}
+[12.350195] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:42:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[12.350655] (boat_control_system_final) StderrLine: {'line': b'   42 |     sensor_msgs::msg::NavSatFix \x1b[01;36m\x1b[Kget_curr_pos\x1b[m\x1b[K();\n'}
+[12.351131] (boat_control_system_final) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.405071] (-) TimerEvent: {}
+[12.505891] (-) TimerEvent: {}
+[12.606737] (-) TimerEvent: {}
+[12.707752] (-) TimerEvent: {}
+[12.808563] (-) TimerEvent: {}
+[12.909389] (-) TimerEvent: {}
+[13.010251] (-) TimerEvent: {}
+[13.111069] (-) TimerEvent: {}
+[13.211967] (-) TimerEvent: {}
+[13.312857] (-) TimerEvent: {}
+[13.413712] (-) TimerEvent: {}
+[13.514579] (-) TimerEvent: {}
+[13.615388] (-) TimerEvent: {}
+[13.716279] (-) TimerEvent: {}
+[13.817129] (-) TimerEvent: {}
+[13.918263] (-) TimerEvent: {}
+[14.019519] (-) TimerEvent: {}
+[14.120341] (-) TimerEvent: {}
+[14.189819] (boat_control_system_final) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/CoordinateCalculations.dir/build.make:76: CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o] Error 1\n'}
+[14.192059] (boat_control_system_final) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:173: CMakeFiles/CoordinateCalculations.dir/all] Error 2\n'}
+[14.193854] (boat_control_system_final) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[14.199214] (boat_control_system_final) CommandEnded: {'returncode': 2}
+[14.220534] (-) TimerEvent: {}
+[14.321405] (-) TimerEvent: {}
+[14.422269] (-) TimerEvent: {}
+[14.489407] (boat_control_system_final) JobEnded: {'identifier': 'boat_control_system_final', 'rc': 2}
+[14.501584] (-) EventReactorShutdown: {}

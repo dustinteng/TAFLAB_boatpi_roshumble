@@ -1,3 +1,11 @@
+// Filename: WaypointQueueNode.hpp
+// Author: Kieran Pereira
+// Last Modified: 11/11/2024
+// Description: Header file for the WaypointQueueNode class, which implements a ROS2 node 
+//              for managing waypoints, receiving GPS and calculated coordinates, and 
+//              handling initialization and execution states for autonomous navigation.
+
+
 #ifndef BOAT_CONTROL_SYSTEM_FINAL_WAYPOINTQUEUENODE_HPP_
 #define BOAT_CONTROL_SYSTEM_FINAL_WAYPOINTQUEUENODE_HPP_
 

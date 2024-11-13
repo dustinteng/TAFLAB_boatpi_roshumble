@@ -1,0 +1,34 @@
+[0.073s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.344s] [ 16%] Built target WaypointQueue
+[0.346s] [ 33%] Built target CoordinateCalculations
+[0.430s] [35m[1mConsolidate compiler generated dependencies of target RudderServoControlNode[0m
+[0.479s] [ 50%] Built target CoordinateCalculationsNodeLib
+[0.488s] [ 66%] Built target WaypointQueueNode
+[0.533s] [ 75%] [32mBuilding CXX object CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o[0m
+[0.621s] [ 91%] Built target CoordinateCalculationsNodeExec
+[12.728s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K In member function ‘[01m[Kvoid RudderServoControlNode::turnBoat(sensor_msgs::msg::NavSatFix)[m[K’:
+[12.728s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:157:57:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} to ‘[01m[Kfloat[m[K’ in initialization
+[12.729s]   157 |         float current_heading = [01;31m[Kget_magnetometer_heading()[m[K;
+[12.729s]       |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[12.730s]       |                                                         [01;31m[K|[m[K
+[12.731s]       |                                                         [01;31m[Kstd_msgs::msg::Float32 {aka std_msgs::msg::Float32_<std::allocator<void> >}[m[K
+[12.771s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K In member function ‘[01m[Kvoid RudderServoControlNode::executeWaypoints()[m[K’:
+[12.772s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:177:17:[m[K [01;31m[Kerror: [m[K‘[01m[KcalculateDistance[m[K’ was not declared in this scope
+[12.772s]   177 |             if ([01;31m[KcalculateDistance[m[K(curr_position, latest_waypoint_data_) <= 0.05)
+[12.773s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.773s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:179:46:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} to ‘[01m[Kfloat[m[K’
+[12.774s]   179 |                 setRudderServo([01;31m[Kget_wind_angle()[m[K);  // Set rudder to idle if near the destination
+[12.775s]       |                                [01;31m[K~~~~~~~~~~~~~~^~[m[K
+[12.775s]       |                                              [01;31m[K|[m[K
+[12.776s]       |                                              [01;31m[Kstd_msgs::msg::Float32 {aka std_msgs::msg::Float32_<std::allocator<void> >}[m[K
+[12.776s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:16[m[K:
+[12.777s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:38:31:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid RudderServoControlNode::setRudderServo(float)[m[K’
+[12.777s]    38 |     void setRudderServo([01;36m[Kfloat angle[m[K);
+[12.778s]       |                         [01;36m[K~~~~~~^~~~~[m[K
+[12.811s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:194:20:[m[K [01;31m[Kerror: [m[K‘[01m[KcalculateDistance[m[K’ was not declared in this scope
+[12.812s]   194 |             while ([01;31m[KcalculateDistance[m[K(get_curr_pos(), next_waypoint) > 0.05)
+[12.813s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[29.449s] gmake[2]: *** [CMakeFiles/RudderServoControlNode.dir/build.make:76: CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o] Error 1
+[29.450s] gmake[1]: *** [CMakeFiles/Makefile2:281: CMakeFiles/RudderServoControlNode.dir/all] Error 2
+[29.451s] gmake: *** [Makefile:146: all] Error 2
+[29.460s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

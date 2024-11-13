@@ -5,14 +5,21 @@
 //              to navigation, including path planning and data processing for GPS, wind, 
 //              and magnetometer inputs.
 
+#include <vector>
+#include <chrono>
+#include <thread>
 
-#include "CoordinateCalculationsNode.hpp"
-#include "WaypointQueue.hpp"
 #include <std_msgs/msg/string.hpp>
 #include <sensor_msgs/msg/nav_sat_fix.hpp>
 #include <std_msgs/msg/int16.hpp>
 #include <std_msgs/msg/bool.hpp>
 #include <std_msgs/msg/float32.hpp>
+
+#include "CoordinateCalculationsNode.hpp"
+#include "Coordinate_Calculations.h"
+#include "WaypointQueue.hpp"
+#include "RudderServoControlNode.hpp"
+
 
 CoordinateCalculationsNode::CoordinateCalculationsNode() : Node("coordinate_calculations_node")
 {
@@ -53,6 +60,30 @@ CoordinateCalculationsNode::CoordinateCalculationsNode() : Node("coordinate_calc
     RCLCPP_INFO(this->get_logger(), "Subscribers and publisher initialized.");
 }
 
+// Main Callback function used for handling data from WaypointQueueNode
+void CoordinateCalculationsNode::waypointCallback(const sensor_msgs::msg::NavSatFix::SharedPtr msg)
+{
+    latest_waypoint_data_ = *msg;
+    std::vector<sensor_msgs::msg::NavSatFix> waypoints = CoordinateCalculations::getInstance().plan_path(get_curr_pos(),latest_waypoint_data_);
+
+    while (!waypoints.empty()) 
+    {
+        // Access the first element of the vector
+        sensor_msgs::msg::NavSatFix current_waypoint = waypoints.front();
+        // Publish the current waypoint
+        final_waypoint_publisher_->publish(current_waypoint);
+
+        // Remove the first element from the vector
+        waypoints.erase(waypoints.begin());
+
+        // Log the waypoint being published
+        RCLCPP_INFO(this->get_logger(), "Published waypoint to RudderServoControlNode: [lat: %.6f, lon: %.6f, alt: %.2f]",
+                    current_waypoint.latitude, current_waypoint.longitude, current_waypoint.altitude);
+
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    }
+}
+
 // GPS callback function
 void CoordinateCalculationsNode::gpsCallback(const sensor_msgs::msg::NavSatFix::SharedPtr msg)
 {
@@ -75,20 +106,6 @@ void CoordinateCalculationsNode::magnetometerCallback(const std_msgs::msg::Float
     latest_magnetometer_data_ = *msg;  // Update the latest Magnetometer data
     RCLCPP_INFO(this->get_logger(), "Received Magnetometer heading data: [heading: %.6f]",
                 msg->data);
-}
-
-// //
-// void WaypointQueueNode::calculated_waypoints_callback(const sensor_msgs::msg::NavSatFix::SharedPtr msg)
-// {
-//     // Process calculated waypoint data
-//     RCLCPP_INFO(this->get_logger(), "Received calculated waypoint.");
-// }
-
-void CoordinateCalculationsNode::waypointCallback(const sensor_msgs::msg::NavSatFix::SharedPtr msg)
-{
-    latest_waypoint_data_ = *msg;
-    RCLCPP_INFO(this->get_logger(), "Received latest waypoint data: [lat: %.6f, lon: %.6f, alt: %.2f]",
-                msg->latitude, msg->longitude, msg->altitude);
 }
 
 void CoordinateCalculationsNode::initCallback(const std_msgs::msg::Int16::SharedPtr msg)

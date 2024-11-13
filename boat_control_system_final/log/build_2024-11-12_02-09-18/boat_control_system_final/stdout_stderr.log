@@ -1,0 +1,17 @@
+[ 16%] Built target WaypointQueue
+[ 33%] Built target CoordinateCalculations
+[35m[1mConsolidate compiler generated dependencies of target RudderServoControlNode[0m
+[ 50%] Built target CoordinateCalculationsNodeLib
+[ 66%] Built target WaypointQueueNode
+[ 75%] [32mBuilding CXX object CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o[0m
+[ 91%] Built target CoordinateCalculationsNodeExec
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K In member function ‘[01m[Kvoid RudderServoControlNode::turnBoat(sensor_msgs::msg::NavSatFix)[m[K’:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:97:95:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_curr_pos[m[K’ was not declared in this scope
+   97 |         float desired_angle_heading = CoordinateCalculations::getInstance().calculate_bearing([01;31m[Kget_curr_pos[m[K(),target_position)
+      |                                                                                               [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:107:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  107 |         } [01;31m[Kelse[m[K if (turn_angle > 5.0f) {
+      |           [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/RudderServoControlNode.dir/build.make:76: CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:281: CMakeFiles/RudderServoControlNode.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

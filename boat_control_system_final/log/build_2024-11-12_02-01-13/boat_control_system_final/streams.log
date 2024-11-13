@@ -1,0 +1,87 @@
+[0.067s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.349s] [ 16%] Built target WaypointQueue
+[0.351s] [ 33%] Built target CoordinateCalculations
+[0.435s] [35m[1mConsolidate compiler generated dependencies of target RudderServoControlNode[0m
+[0.501s] [ 50%] Built target CoordinateCalculationsNodeLib
+[0.508s] [ 66%] Built target WaypointQueueNode
+[0.570s] [ 75%] [32mBuilding CXX object CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o[0m
+[0.655s] [ 91%] Built target CoordinateCalculationsNodeExec
+[12.709s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K In member function ‘[01m[Kvoid RudderServoControlNode::turnBoat(sensor_msgs::msg::NavSatFix)[m[K’:
+[12.709s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:123:33:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator-[m[K’ (operand types are ‘[01m[Kfloat[m[K’ and ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’})
+[12.710s]   123 |         if (abs([32m[Kcurrent_heading[m[K [01;31m[K-[m[K [34m[Kturn_direction[m[K) > 10.0f) {
+[12.710s]       |                 [32m[K~~~~~~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~~~~~~~~~~~[m[K
+[12.711s]       |                 [32m[K|[m[K                 [34m[K|[m[K
+[12.712s]       |                 [32m[Kfloat[m[K             [34m[Kstd::string {aka std::__cxx11::basic_string<char>}[m[K
+[12.713s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[12.714s]                  from [01m[K/usr/include/c++/11/algorithm:61[m[K,
+[12.715s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:8[m[K,
+[12.715s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:7[m[K,
+[12.716s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:6[m[K:
+[12.716s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:577:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)[m[K’
+[12.717s]   577 |     [01;36m[Koperator[m[K-(const reverse_iterator<_IteratorL>& __x,
+[12.717s]       |     [01;36m[K^~~~~~~~[m[K
+[12.718s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:577:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.718s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:123:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’ and ‘[01m[Kfloat[m[K’
+[12.719s]   123 |         if (abs(current_heading - [01;36m[Kturn_direction[m[K) > 10.0f) {
+[12.719s]       |                                   [01;36m[K^~~~~~~~~~~~~~[m[K
+[12.720s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[12.720s]                  from [01m[K/usr/include/c++/11/algorithm:61[m[K,
+[12.720s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:8[m[K,
+[12.721s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:7[m[K,
+[12.721s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:6[m[K:
+[12.722s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1693:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)[m[K’
+[12.722s]  1693 |     [01;36m[Koperator[m[K-(const move_iterator<_IteratorL>& __x,
+[12.723s]       |     [01;36m[K^~~~~~~~[m[K
+[12.723s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1693:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.724s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:123:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’ and ‘[01m[Kfloat[m[K’
+[12.724s]   123 |         if (abs(current_heading - [01;36m[Kturn_direction[m[K) > 10.0f) {
+[12.725s]       |                                   [01;36m[K^~~~~~~~~~~~~~[m[K
+[12.725s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[12.726s]                  from [01m[K/usr/include/c++/11/algorithm:61[m[K,
+[12.726s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:8[m[K,
+[12.727s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:7[m[K,
+[12.727s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:6[m[K:
+[12.728s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1255:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR, class _Container> decltype ((__lhs.base() - __rhs.base())) __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)[m[K’
+[12.728s]  1255 |     [01;36m[Koperator[m[K-(const __normal_iterator<_IteratorL, _Container>& __lhs,
+[12.729s]       |     [01;36m[K^~~~~~~~[m[K
+[12.729s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1255:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.730s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:123:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst __gnu_cxx::__normal_iterator<_IteratorL, _Container>[m[K’ and ‘[01m[Kfloat[m[K’
+[12.730s]   123 |         if (abs(current_heading - [01;36m[Kturn_direction[m[K) > 10.0f) {
+[12.731s]       |                                   [01;36m[K^~~~~~~~~~~~~~[m[K
+[12.731s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[12.732s]                  from [01m[K/usr/include/c++/11/algorithm:61[m[K,
+[12.732s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:8[m[K,
+[12.733s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:7[m[K,
+[12.734s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:6[m[K:
+[12.735s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1268:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator, class _Container> typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)[m[K’
+[12.735s]  1268 |     [01;36m[Koperator[m[K-(const __normal_iterator<_Iterator, _Container>& __lhs,
+[12.736s]       |     [01;36m[K^~~~~~~~[m[K
+[12.736s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1268:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.737s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:123:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst __gnu_cxx::__normal_iterator<_Iterator, _Container>[m[K’ and ‘[01m[Kfloat[m[K’
+[12.737s]   123 |         if (abs(current_heading - [01;36m[Kturn_direction[m[K) > 10.0f) {
+[12.738s]       |                                   [01;36m[K^~~~~~~~~~~~~~[m[K
+[12.738s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[12.739s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.739s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.740s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.740s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.741s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.741s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.742s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.742s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.743s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.743s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.744s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:9[m[K,
+[12.744s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:16[m[K:
+[12.745s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:125:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 6 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[12.745s]   125 |             RCLCPP_WARN(this->get_logger(), [01;35m[K"Correcting for significant drift: Current heading %.2f, Desired heading %.2f"[m[K, current_heading, turn_direction);
+[12.746s]       |                                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.746s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:125:121:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[12.747s]   125 |             RCLCPP_WARN(this->get_logger(), "Correcting for significant drift: Current heading %.2f, Desired heading [01;36m[K%.2f[m[K", current_heading, turn_direction);
+[12.747s]       |                                                                                                                      [01;36m[K~~~^[m[K
+[12.748s]       |                                                                                                                         [01;36m[K|[m[K
+[12.748s]       |                                                                                                                         [01;36m[Kdouble[m[K
+[29.210s] gmake[2]: *** [CMakeFiles/RudderServoControlNode.dir/build.make:76: CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o] Error 1
+[29.212s] gmake[1]: *** [CMakeFiles/Makefile2:281: CMakeFiles/RudderServoControlNode.dir/all] Error 2
+[29.213s] gmake: *** [Makefile:146: all] Error 2
+[29.220s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

@@ -1,6 +1,6 @@
 // Filename: Coordinate_Calculations.h
 // Author: Kieran Pereira
-// Last Modified: 10/11/2024
+// Last Modified: 11/11/2024
 // Description: A script containing all relevant functions to do coordinate calculations (including tacking path planning)
 
 #ifndef TACKING_PATH_PLANNER_H
@@ -67,7 +67,16 @@ public:
      **/
     float calculate_angle_to_wind();
 
-    void plan_path(const sensor_msgs::msg::NavSatFix& curr_position, const sensor_msgs::msg::NavSatFix& next_waypoint);
+    /**
+    @brief Calculates and returns a list of waypoints required to reach the target waypoint, including intermediate waypoints for tacking if necessary.
+    This function determines if tacking is needed based on the angle between the wind direction and the destination bearing. If tacking is required, 
+    it calculates and returns two intermediate waypoints. If tacking is not needed, it returns the original destination as the only waypoint.
+    @param curr_position The current position of the boat as a `sensor_msgs::msg::NavSatFix`.
+    @param next_waypoint The target waypoint as a `sensor_msgs::msg::NavSatFix`.
+    @return std::vector<sensor_msgs::msg::NavSatFix> A vector containing either one waypoint (the original destination) or two intermediate waypoints plus the destination.
+    @note The function assumes that relevant data such as the wind direction and heading are retrieved from other methods in the class or passed as parameters.
+    **/
+    std::vector<sensor_msgs::msg::NavSatFix> plan_path(const sensor_msgs::msg::NavSatFix& curr_position, const sensor_msgs::msg::NavSatFix& next_waypoint);
 
     // Static Method to access single instance
     static CoordinateCalculations& getInstance();

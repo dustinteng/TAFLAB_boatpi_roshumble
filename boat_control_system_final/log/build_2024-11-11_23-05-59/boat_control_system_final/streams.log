@@ -1,0 +1,46 @@
+[0.071s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.343s] [ 20%] Built target WaypointQueue
+[0.351s] [ 30%] [32mBuilding CXX object CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o[0m
+[0.472s] [ 50%] Built target WaypointQueueNode
+[14.331s] [ 60%] [32m[1mLinking CXX static library libCoordinateCalculations.a[0m
+[14.477s] [ 60%] Built target CoordinateCalculations
+[14.535s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculationsNodeLib[0m
+[14.642s] [ 70%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o[0m
+[27.487s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:[m[K In member function ‘[01m[Kvoid CoordinateCalculationsNode::waypointCallback(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’:
+[27.487s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:84:45:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+[27.488s]    84 | void CoordinateCalculationsNode::gpsCallback[01;31m[K([m[Kconst sensor_msgs::msg::NavSatFix::SharedPtr msg)
+[27.489s]       |                                             [01;31m[K^[m[K
+[27.489s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:92:46:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+[27.490s]    92 | void CoordinateCalculationsNode::windCallback[01;31m[K([m[Kconst std_msgs::msg::Float32::SharedPtr msg)
+[27.491s]       |                                              [01;31m[K^[m[K
+[27.491s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:100:54:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+[27.492s]   100 | void CoordinateCalculationsNode::magnetometerCallback[01;31m[K([m[Kconst std_msgs::msg::Float32::SharedPtr msg)
+[27.493s]       |                                                      [01;31m[K^[m[K
+[27.493s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:114:46:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+[27.494s]   114 | void CoordinateCalculationsNode::initCallback[01;31m[K([m[Kconst std_msgs::msg::Int16::SharedPtr msg)
+[27.494s]       |                                              [01;31m[K^[m[K
+[27.495s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:122:76:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+[27.495s]   122 | sensor_msgs::msg::NavSatFix CoordinateCalculationsNode::get_latest_waypoint[01;31m[K([m[K)
+[27.504s]       |                                                                            [01;31m[K^[m[K
+[27.505s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:129:66:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+[27.505s]   129 | std_msgs::msg::Float32 CoordinateCalculationsNode::get_wind_angle[01;31m[K([m[K)
+[27.506s]       |                                                                  [01;31m[K^[m[K
+[27.507s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:134:76:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+[27.507s]   134 | std_msgs::msg::Float32 CoordinateCalculationsNode::get_magnetometer_heading[01;31m[K([m[K)
+[27.513s]       |                                                                            [01;31m[K^[m[K
+[27.514s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:139:69:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+[27.515s]   139 | sensor_msgs::msg::NavSatFix CoordinateCalculationsNode::get_curr_pos[01;31m[K([m[K)
+[27.515s]       |                                                                     [01;31m[K^[m[K
+[27.516s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:145:1:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[27.517s]   145 | [01;31m[K{[m[K
+[27.517s]       | [01;31m[K^[m[K
+[27.518s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:150:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[27.518s]   150 | }
+[27.519s]       |  [01;31m[K^[m[K
+[27.519s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:61:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[27.520s]    61 | [01;36m[K{[m[K
+[27.521s]       | [01;36m[K^[m[K
+[45.292s] gmake[2]: *** [CMakeFiles/CoordinateCalculationsNodeLib.dir/build.make:76: CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o] Error 1
+[45.293s] gmake[1]: *** [CMakeFiles/Makefile2:198: CMakeFiles/CoordinateCalculationsNodeLib.dir/all] Error 2
+[45.294s] gmake: *** [Makefile:146: all] Error 2
+[45.303s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

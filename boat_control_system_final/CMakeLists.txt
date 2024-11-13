@@ -11,49 +11,58 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
-# Adding include files
+# Include directories
 include_directories(include/boat_control_system_final)
 
-# Add the libraries for the source files
+# Add libraries for source files
 add_library(WaypointQueue src/WaypointQueue.cpp)
 ament_target_dependencies(WaypointQueue rclcpp sensor_msgs)
 
+# Add library for CoordinateCalculations
 add_library(CoordinateCalculations src/Coordinate_Calculations.cpp)
 ament_target_dependencies(CoordinateCalculations rclcpp sensor_msgs std_msgs)
 
-# Ensure that CoordinateCalculationsNode links to both libraries
+# Add library for RudderControlHelper
+add_library(RudderControlHelper src/RudderControlHelper.cpp)
+ament_target_dependencies(RudderControlHelper rclcpp sensor_msgs std_msgs)
+
+# Create a library for CoordinateCalculationsNode without a main function
 add_library(CoordinateCalculationsNodeLib src/CoordinateCalculationsNode.cpp)
 ament_target_dependencies(CoordinateCalculationsNodeLib rclcpp sensor_msgs std_msgs)
 target_link_libraries(CoordinateCalculationsNodeLib CoordinateCalculations WaypointQueue)
 
-# Add the executable for the CoordinateCalculationsNode
-add_executable(CoordinateCalculationsNodeExec src/CoordinateCalculationsNode.cpp)
-target_link_libraries(CoordinateCalculationsNodeExec CoordinateCalculationsNodeLib CoordinateCalculations WaypointQueue)
+# Create a library for RudderServoControlNode without a main function
+add_library(RudderServoControlNodeLib src/RudderServoControlNode.cpp)
+ament_target_dependencies(RudderServoControlNodeLib rclcpp sensor_msgs std_msgs)
+target_link_libraries(RudderServoControlNodeLib RudderControlHelper WaypointQueue)
 
-# Add the executable for the WaypointQueueNode
-add_executable(WaypointQueueNode src/WaypointQueueNode.cpp)
-ament_target_dependencies(WaypointQueueNode rclcpp sensor_msgs std_msgs)
-target_link_libraries(WaypointQueueNode WaypointQueue)
+# Add the executable for CoordinateCalculationsNode with the main function
+add_executable(coordinate_calculations_node_exec src/CoordinateCalculationsNode.cpp)
+target_link_libraries(coordinate_calculations_node_exec CoordinateCalculationsNodeLib)
+coordinate_calculations_node_exec
+# Add the executable for RudderServoControlNode with the main function
+add_executable(rudder_servo_control_exec src/RudderServoControlNode.cpp)
+target_link_libraries(rudder_servo_control_exec RudderServoControlNodeLib)
+
+
+
+# Add the executable for WaypointQueueNode
+add_executable(waypoint_queue_node_exec src/WaypointQueueNode.cpp)
+ament_target_dependencies(waypoint_queue_node_exec rclcpp sensor_msgs std_msgs)
+target_link_libraries(waypoint_queue_node_exec WaypointQueue)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
-  # the following line skips the linter which checks for copyrights
-  # comment the line when a copyright and license is added to all source files
   set(ament_cmake_copyright_FOUND TRUE)
-  # the following line skips cpplint (only works in a git repo)
-  # comment the line when this package is in a git repo and when
-  # a copyright and license is added to all source files
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
 
 # Install the targets
 install(TARGETS
-  WaypointQueueNode
-  CoordinateCalculationsNodeExec
-  CoordinateCalculationsNodeLib
-  CoordinateCalculations
-  WaypointQueue
+  waypoint_queue_node_exec
+  coordinate_calculations_node_exec
+  rudder_servo_control_exec
   DESTINATION lib/${PROJECT_NAME}
 )
 

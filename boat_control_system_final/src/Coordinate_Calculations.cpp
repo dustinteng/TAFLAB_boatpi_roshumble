@@ -13,12 +13,20 @@
 #include "WaypointQueue.hpp"
 #include "CoordinateCalculationsNode.hpp"
 
+
 using namespace std;
 
 const unsigned int EARTH_RADIUS = 6371000.0; // Earth radius in meters
 const float DEG_TO_RAD = (M_PI / 180.0f);
 const float RAD_TO_DEG = (180.0f / M_PI);
 const float IRONS_DEGREE = 30;
+
+CoordinateCalculations& CoordinateCalculations::getInstance() 
+{
+    // Create a static instance of the class
+    static CoordinateCalculations instance;
+    return instance;
+}
 
 
 // Calculating distance between two coordinate points using the Haversine Formula
@@ -136,10 +144,12 @@ float CoordinateCalculations::calculate_angle_to_wind()
 }
 
 
-void CoordinateCalculations::plan_path(const sensor_msgs::msg::NavSatFix& curr_position, const sensor_msgs::msg::NavSatFix& next_waypoint)
+std::vector<sensor_msgs::msg::NavSatFix> CoordinateCalculations::plan_path(const sensor_msgs::msg::NavSatFix& curr_position, const sensor_msgs::msg::NavSatFix& next_waypoint)
 {
     CoordinateCalculationsNode node_instance;
-    float destination_bearing = CoordinateCalculations::getInstance().calculate_bearing(curr_position, next_waypoint);
+    std::vector<sensor_msgs::msg::NavSatFix> waypoints;
+
+    float destination_bearing = calculate_bearing(curr_position, next_waypoint);
     float wind_direction = node_instance.get_wind_angle().data;  // Get current wind direction
 
     // Calculate angle between wind direction and destination bearing
@@ -152,37 +162,46 @@ void CoordinateCalculations::plan_path(const sensor_msgs::msg::NavSatFix& curr_p
     // Check if tacking is needed by comparing with the max allowable upwind angle
     if (angle_to_wind > max_upwind_angle) 
     {
+        // Tacking is required, so calculate intermediate waypoints
+        float tack_distance = calculate_distance(curr_position, next_waypoint) / cos(max_upwind_angle * M_PI / 180.0);
+        float first_tack_angle, second_tack_angle;
 
+        // Determine tack direction based on wind and destination bearings
+        float bearing_difference = wind_direction - destination_bearing;
+        if (bearing_difference < 0) 
+        {
+            bearing_difference += 360;  // Normalize bearing difference to 0-360
+        }
+
+        // Set tack angles based on which direction the boat should tack first
+        if (bearing_difference < 180) 
+        {
+            first_tack_angle = destination_bearing + max_upwind_angle;
+            second_tack_angle = destination_bearing - max_upwind_angle;
+        } 
+        else 
+        {
+            first_tack_angle = destination_bearing - max_upwind_angle;
+            second_tack_angle = destination_bearing + max_upwind_angle;
+        }
+
+        // Calculate the two tack waypoints and add them to the vector
+        sensor_msgs::msg::NavSatFix first_tack_waypoint = convert_to_position(curr_position, first_tack_angle, tack_distance / 2);
+        sensor_msgs::msg::NavSatFix second_tack_waypoint = convert_to_position(first_tack_waypoint, second_tack_angle, tack_distance / 2);
+        
+        waypoints.push_back(first_tack_waypoint);
+        waypoints.push_back(second_tack_waypoint);
+    }
+    else
+    {
+        // If no tacking is required, only add the original destination waypoint
+        waypoints.push_back(next_waypoint);
     }
 
-    // Tacking is required, so calculate intermediate waypoints
-    float tack_distance = CoordinateCalculations::getInstance().calculate_distance(curr_position, next_waypoint) / cos(max_upwind_angle * M_PI / 180.0);
-    float first_tack_angle, second_tack_angle;
+    return waypoints;
+}
 
-    // Determine tack direction based on wind and destination bearings
-    float bearing_difference = wind_direction - destination_bearing;
-    if (bearing_difference < 0) 
-    {
-        bearing_difference += 360;  // Normalize bearing difference to 0-360
-    }
-
-    // Set tack angles based on which direction the boat should tack first
-    if (bearing_difference < 180) 
-    {
-        first_tack_angle = destination_bearing + max_upwind_angle;
-        second_tack_angle = destination_bearing - max_upwind_angle;
-    } 
-    else 
-    {
-        first_tack_angle = destination_bearing - max_upwind_angle;
-        second_tack_angle = destination_bearing + max_upwind_angle;
-    }
-
-    // Calculate and add tack waypoints
-    sensor_msgs::msg::NavSatFix first_tack_waypoint = CoordinateCalculations::getInstance().convert_to_position(curr_position, first_tack_angle, tack_distance / 2);
-    sensor_msgs::msg::NavSatFix second_tack_waypoint = CoordinateCalculations::getInstance().convert_to_position(first_tack_waypoint, second_tack_angle, tack_distance / 2);
-    WaypointQueue::getInstance().add_front_waypoint(first_tack_waypoint);
-    WaypointQueue::getInstance().add_front_waypoint(second_tack_waypoint);
-    WaypointQueue::getInstance().add_front_waypoint(next_waypoint);  // Add original destination as the last waypoint
-
+//Constructor used by getInstance
+CoordinateCalculations::CoordinateCalculations() {
+    // Initialize any member variables if needed
 }

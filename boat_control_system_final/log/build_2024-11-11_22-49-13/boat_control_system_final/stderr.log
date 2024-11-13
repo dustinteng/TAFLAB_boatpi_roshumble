@@ -1,0 +1,14 @@
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:139:42:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kstd::vector<sensor_msgs::msg::NavSatFix_<std::allocator<void> > > CoordinateCalculations::plan_path(const NavSatFix&, const NavSatFix&)[m[K’
+  139 | std::vector<sensor_msgs::msg::NavSatFix> [01;31m[KCoordinateCalculations[m[K::plan_path(const sensor_msgs::msg::NavSatFix& curr_position, const sensor_msgs::msg::NavSatFix& next_waypoint)
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:12[m[K:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/Coordinate_Calculations.h:70:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid CoordinateCalculations::plan_path(const NavSatFix&, const NavSatFix&)[m[K’
+   70 |     void [01;36m[Kplan_path[m[K(const sensor_msgs::msg::NavSatFix& curr_position, const sensor_msgs::msg::NavSatFix& next_waypoint);
+      |          [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:12[m[K:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/Coordinate_Calculations.h:17:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass CoordinateCalculations[m[K’ defined here
+   17 | class [01;36m[KCoordinateCalculations[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/CoordinateCalculations.dir/build.make:76: CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/CoordinateCalculations.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

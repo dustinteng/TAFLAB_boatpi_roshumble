@@ -1,0 +1,14 @@
+/usr/bin/ld: CMakeFiles/RudderServoControlNodeExec.dir/src/RudderServoControlNode.cpp.o: in function `RudderServoControlNode::turnBoat(sensor_msgs::msg::NavSatFix_<std::allocator<void> >)':
+RudderServoControlNode.cpp:(.text+0x1690): undefined reference to `CoordinateCalculations::getInstance()'
+/usr/bin/ld: RudderServoControlNode.cpp:(.text+0x16b8): undefined reference to `CoordinateCalculations::calculate_directional_bearing[abi:cxx11](sensor_msgs::msg::NavSatFix_<std::allocator<void> >)'
+/usr/bin/ld: RudderServoControlNode.cpp:(.text+0x16ec): undefined reference to `CoordinateCalculations::getInstance()'
+/usr/bin/ld: RudderServoControlNode.cpp:(.text+0x1724): undefined reference to `CoordinateCalculations::calculate_bearing(sensor_msgs::msg::NavSatFix_<std::allocator<void> >, sensor_msgs::msg::NavSatFix_<std::allocator<void> >)'
+/usr/bin/ld: CMakeFiles/RudderServoControlNodeExec.dir/src/RudderServoControlNode.cpp.o: in function `RudderServoControlNode::executeWaypoints()':
+RudderServoControlNode.cpp:(.text+0x1b20): undefined reference to `CoordinateCalculations::getInstance()'
+/usr/bin/ld: RudderServoControlNode.cpp:(.text+0x1b58): undefined reference to `CoordinateCalculations::calculate_distance(sensor_msgs::msg::NavSatFix_<std::allocator<void> >, sensor_msgs::msg::NavSatFix_<std::allocator<void> >)'
+/usr/bin/ld: RudderServoControlNode.cpp:(.text+0x1c30): undefined reference to `CoordinateCalculations::getInstance()'
+/usr/bin/ld: RudderServoControlNode.cpp:(.text+0x1c68): undefined reference to `CoordinateCalculations::calculate_distance(sensor_msgs::msg::NavSatFix_<std::allocator<void> >, sensor_msgs::msg::NavSatFix_<std::allocator<void> >)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/RudderServoControlNodeExec.dir/build.make:178: RudderServoControlNodeExec] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:313: CMakeFiles/RudderServoControlNodeExec.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
