@@ -15,6 +15,8 @@ find_package(rosidl_default_generators REQUIRED)
 # message generation
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ControlData.msg"
+  "msg/CalibrationData.msg" 
+
 )
 
 # export dependencies

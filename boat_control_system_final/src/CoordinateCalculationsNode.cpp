@@ -11,7 +11,6 @@
 
 #include <std_msgs/msg/string.hpp>
 #include <sensor_msgs/msg/nav_sat_fix.hpp>
-#include <std_msgs/msg/int16.hpp>
 #include <std_msgs/msg/bool.hpp>
 #include <std_msgs/msg/float32.hpp>
 
@@ -41,7 +40,7 @@ CoordinateCalculationsNode::CoordinateCalculationsNode() : Node("coordinate_calc
 
     // Subscription for Magnetometer Heading Data
     magnetometer_subscriber_ = this->create_subscription<std_msgs::msg::Float32>(
-        "/magnetometer_data", 
+        "/as5600_angle", 
         10,
         std::bind(&CoordinateCalculationsNode::magnetometerCallback, this, std::placeholders::_1));
 
@@ -52,7 +51,7 @@ CoordinateCalculationsNode::CoordinateCalculationsNode() : Node("coordinate_calc
         std::bind(&CoordinateCalculationsNode::waypointCallback, this, std::placeholders::_1));
 
     // Subscription for Initialisation data
-    init_subscriber_ = this->create_subscription<std_msgs::msg::Int16>(
+    init_subscriber_ = this->create_subscription<std_msgs::msg::String>(
         "/auto_init", 
         10,
         std::bind(&CoordinateCalculationsNode::initCallback, this, std::placeholders::_1));
@@ -108,7 +107,7 @@ void CoordinateCalculationsNode::magnetometerCallback(const std_msgs::msg::Float
                 msg->data);
 }
 
-void CoordinateCalculationsNode::initCallback(const std_msgs::msg::Int16::SharedPtr msg)
+void CoordinateCalculationsNode::initCallback(const std_msgs::msg::String::SharedPtr msg)
 {
     // Process initialisation data
 

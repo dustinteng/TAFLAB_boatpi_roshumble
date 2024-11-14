@@ -1,36 +1,5 @@
+
 import rclpy
-from rclpy.node import Node
-from sensor_msgs.msg import NavSatFix
-import serial
-import pynmea2
-
-class GPSNode(Node):
-    def __init__(self):
-        super().__init__('gps_node')
-        
-        # Parameters /dev/ttyS0 or /dev/ttyAMA0
-        self.declare_parameter('port', '/dev/ttyAMA0')
-        self.declare_parameter('baudrate', 9600)
-        
-        port = self.get_parameter('port').get_parameter_value().string_value
-        baudrate = self.get_parameter('baudrate').get_parameter_value().integer_value
-
-        # Initialize Serial Connection
-        try:
-            self.serial = serial.Serial(port, baudrate, timeout=1)
-            self.get_logger().info(f"Connected to GPS module on {port} at {baudrate} baud.")
-        except serial.SerialException as e:
-            self.get_logger().error(f"Error opening serial port: {e}")
-            rclpy.shutdown()
-            return
-        
-        # Publisher
-        self.gps_pub = self.create_publisher(NavSatFix, 'gps/fix', 10)
-        
-        # Timer for periodic reading
-        self.timer = self.create_timer(1.0, self.read_gps_data)
-        
-    import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import NavSatFix
 import serial

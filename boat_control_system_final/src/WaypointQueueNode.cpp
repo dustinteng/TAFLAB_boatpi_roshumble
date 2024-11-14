@@ -10,7 +10,6 @@
 #include "WaypointQueue.hpp"
 #include <std_msgs/msg/string.hpp>  // Include standard message type
 #include <sensor_msgs/msg/nav_sat_fix.hpp>
-#include <std_msgs/msg/int16.hpp>
 #include <std_msgs/msg/bool.hpp>
 
 WaypointQueueNode::WaypointQueueNode() : Node("waypoint_queue_node")
@@ -27,7 +26,7 @@ WaypointQueueNode::WaypointQueueNode() : Node("waypoint_queue_node")
         std::bind(&WaypointQueueNode::ground_station_callback, this, std::placeholders::_1));
 
     // Subscription for Initialisation data
-    init_subscriber_ = this->create_subscription<std_msgs::msg::Int16>(
+    init_subscriber_ = this->create_subscription<std_msgs::msg::String>(
         "/auto_init", 
         10,
         std::bind(&WaypointQueueNode::initCallback, this, std::placeholders::_1));
@@ -51,7 +50,7 @@ void WaypointQueueNode::ground_station_callback(const sensor_msgs::msg::NavSatFi
     RCLCPP_INFO(this->get_logger(), "Received waypoint from ground station.");
 }
 
-void WaypointQueueNode::initCallback(const std_msgs::msg::Int16::SharedPtr msg)
+void WaypointQueueNode::initCallback(const std_msgs::msg::String::SharedPtr msg)
 {
     // Process initialisation data
     if(msg->data != 1)

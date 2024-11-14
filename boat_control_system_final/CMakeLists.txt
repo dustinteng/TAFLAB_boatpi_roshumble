@@ -37,19 +37,26 @@ ament_target_dependencies(RudderServoControlNodeLib rclcpp sensor_msgs std_msgs)
 target_link_libraries(RudderServoControlNodeLib RudderControlHelper WaypointQueue)
 
 # Add the executable for CoordinateCalculationsNode with the main function
-add_executable(coordinate_calculations_node_exec src/CoordinateCalculationsNode.cpp)
-target_link_libraries(coordinate_calculations_node_exec CoordinateCalculationsNodeLib)
-coordinate_calculations_node_exec
+add_executable(coordinate_calculations_node src/CoordinateCalculationsNode.cpp)
+target_link_libraries(coordinate_calculations_node CoordinateCalculationsNodeLib)
+
+
 # Add the executable for RudderServoControlNode with the main function
-add_executable(rudder_servo_control_exec src/RudderServoControlNode.cpp)
-target_link_libraries(rudder_servo_control_exec RudderServoControlNodeLib)
+add_executable(rudder_servo_control_node src/RudderServoControlNode.cpp)
+target_link_libraries(rudder_servo_control_node RudderServoControlNodeLib)
 
+# Add executable for sail servo control
+add_executable(sail_servo_control_node src/SailServoControlNode.cpp)
+target_link_libraries(sail_servo_control_node SailServoControlNodeLib)
 
+# Add a library for SailServoControlNode
+add_library(SailServoControlNodeLib src/SailServoControlNode.cpp)
+ament_target_dependencies(SailServoControlNodeLib rclcpp sensor_msgs std_msgs)
 
 # Add the executable for WaypointQueueNode
-add_executable(waypoint_queue_node_exec src/WaypointQueueNode.cpp)
-ament_target_dependencies(waypoint_queue_node_exec rclcpp sensor_msgs std_msgs)
-target_link_libraries(waypoint_queue_node_exec WaypointQueue)
+add_executable(waypoint_queue_node src/WaypointQueueNode.cpp)
+ament_target_dependencies(waypoint_queue_node rclcpp sensor_msgs std_msgs)
+target_link_libraries(waypoint_queue_node WaypointQueue)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -60,9 +67,10 @@ endif()
 
 # Install the targets
 install(TARGETS
-  waypoint_queue_node_exec
-  coordinate_calculations_node_exec
-  rudder_servo_control_exec
+  waypoint_queue_node
+  coordinate_calculations_node
+  rudder_servo_control_node
+  sail_servo_control_node 
   DESTINATION lib/${PROJECT_NAME}
 )
 

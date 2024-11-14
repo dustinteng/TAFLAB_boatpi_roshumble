@@ -51,7 +51,7 @@ RudderServoControlNode::RudderServoControlNode() : Node("rudder_servo_control_no
 
     // Subscription for Magnetometer Heading Data
     magnetometer_subscriber_ = this->create_subscription<std_msgs::msg::Float32>(
-        "/magnetometer_data",
+        "/as5600_angle",
         10,
         std::bind(&RudderServoControlNode::magnetometerCallback, this, std::placeholders::_1));
 
@@ -63,6 +63,7 @@ RudderServoControlNode::RudderServoControlNode() : Node("rudder_servo_control_no
 
 RudderServoControlNode::~RudderServoControlNode()
 {
+    
     if (execution_thread_.joinable())
     {
         execution_thread_.join();

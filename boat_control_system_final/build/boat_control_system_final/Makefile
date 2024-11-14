@@ -263,43 +263,69 @@ RudderServoControlNodeLib/fast:
 .PHONY : RudderServoControlNodeLib/fast
 
 #=============================================================================
-# Target rules for targets named CoordinateCalculationsNodeExec
+# Target rules for targets named coordinate_calculations_node
 
 # Build rule for target.
-CoordinateCalculationsNodeExec: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CoordinateCalculationsNodeExec
-.PHONY : CoordinateCalculationsNodeExec
+coordinate_calculations_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 coordinate_calculations_node
+.PHONY : coordinate_calculations_node
 
 # fast build rule for target.
-CoordinateCalculationsNodeExec/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculationsNodeExec.dir/build.make CMakeFiles/CoordinateCalculationsNodeExec.dir/build
-.PHONY : CoordinateCalculationsNodeExec/fast
+coordinate_calculations_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coordinate_calculations_node.dir/build.make CMakeFiles/coordinate_calculations_node.dir/build
+.PHONY : coordinate_calculations_node/fast
 
 #=============================================================================
-# Target rules for targets named RudderServoControlNodeExec
+# Target rules for targets named rudder_servo_control_node
 
 # Build rule for target.
-RudderServoControlNodeExec: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RudderServoControlNodeExec
-.PHONY : RudderServoControlNodeExec
+rudder_servo_control_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rudder_servo_control_node
+.PHONY : rudder_servo_control_node
 
 # fast build rule for target.
-RudderServoControlNodeExec/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderServoControlNodeExec.dir/build.make CMakeFiles/RudderServoControlNodeExec.dir/build
-.PHONY : RudderServoControlNodeExec/fast
+rudder_servo_control_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rudder_servo_control_node.dir/build.make CMakeFiles/rudder_servo_control_node.dir/build
+.PHONY : rudder_servo_control_node/fast
 
 #=============================================================================
-# Target rules for targets named WaypointQueueNodeExec
+# Target rules for targets named sail_servo_control_node
 
 # Build rule for target.
-WaypointQueueNodeExec: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 WaypointQueueNodeExec
-.PHONY : WaypointQueueNodeExec
+sail_servo_control_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sail_servo_control_node
+.PHONY : sail_servo_control_node
 
 # fast build rule for target.
-WaypointQueueNodeExec/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaypointQueueNodeExec.dir/build.make CMakeFiles/WaypointQueueNodeExec.dir/build
-.PHONY : WaypointQueueNodeExec/fast
+sail_servo_control_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sail_servo_control_node.dir/build.make CMakeFiles/sail_servo_control_node.dir/build
+.PHONY : sail_servo_control_node/fast
+
+#=============================================================================
+# Target rules for targets named SailServoControlNodeLib
+
+# Build rule for target.
+SailServoControlNodeLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SailServoControlNodeLib
+.PHONY : SailServoControlNodeLib
+
+# fast build rule for target.
+SailServoControlNodeLib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SailServoControlNodeLib.dir/build.make CMakeFiles/SailServoControlNodeLib.dir/build
+.PHONY : SailServoControlNodeLib/fast
+
+#=============================================================================
+# Target rules for targets named waypoint_queue_node
+
+# Build rule for target.
+waypoint_queue_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 waypoint_queue_node
+.PHONY : waypoint_queue_node
+
+# fast build rule for target.
+waypoint_queue_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_queue_node.dir/build.make CMakeFiles/waypoint_queue_node.dir/build
+.PHONY : waypoint_queue_node/fast
 
 src/CoordinateCalculationsNode.o: src/CoordinateCalculationsNode.cpp.o
 .PHONY : src/CoordinateCalculationsNode.o
@@ -307,7 +333,7 @@ src/CoordinateCalculationsNode.o: src/CoordinateCalculationsNode.cpp.o
 # target to build an object file
 src/CoordinateCalculationsNode.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculationsNodeLib.dir/build.make CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculationsNodeExec.dir/build.make CMakeFiles/CoordinateCalculationsNodeExec.dir/src/CoordinateCalculationsNode.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coordinate_calculations_node.dir/build.make CMakeFiles/coordinate_calculations_node.dir/src/CoordinateCalculationsNode.cpp.o
 .PHONY : src/CoordinateCalculationsNode.cpp.o
 
 src/CoordinateCalculationsNode.i: src/CoordinateCalculationsNode.cpp.i
@@ -316,7 +342,7 @@ src/CoordinateCalculationsNode.i: src/CoordinateCalculationsNode.cpp.i
 # target to preprocess a source file
 src/CoordinateCalculationsNode.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculationsNodeLib.dir/build.make CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculationsNodeExec.dir/build.make CMakeFiles/CoordinateCalculationsNodeExec.dir/src/CoordinateCalculationsNode.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coordinate_calculations_node.dir/build.make CMakeFiles/coordinate_calculations_node.dir/src/CoordinateCalculationsNode.cpp.i
 .PHONY : src/CoordinateCalculationsNode.cpp.i
 
 src/CoordinateCalculationsNode.s: src/CoordinateCalculationsNode.cpp.s
@@ -325,7 +351,7 @@ src/CoordinateCalculationsNode.s: src/CoordinateCalculationsNode.cpp.s
 # target to generate assembly for a file
 src/CoordinateCalculationsNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculationsNodeLib.dir/build.make CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoordinateCalculationsNodeExec.dir/build.make CMakeFiles/CoordinateCalculationsNodeExec.dir/src/CoordinateCalculationsNode.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coordinate_calculations_node.dir/build.make CMakeFiles/coordinate_calculations_node.dir/src/CoordinateCalculationsNode.cpp.s
 .PHONY : src/CoordinateCalculationsNode.cpp.s
 
 src/Coordinate_Calculations.o: src/Coordinate_Calculations.cpp.o
@@ -382,7 +408,7 @@ src/RudderServoControlNode.o: src/RudderServoControlNode.cpp.o
 # target to build an object file
 src/RudderServoControlNode.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderServoControlNodeLib.dir/build.make CMakeFiles/RudderServoControlNodeLib.dir/src/RudderServoControlNode.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderServoControlNodeExec.dir/build.make CMakeFiles/RudderServoControlNodeExec.dir/src/RudderServoControlNode.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rudder_servo_control_node.dir/build.make CMakeFiles/rudder_servo_control_node.dir/src/RudderServoControlNode.cpp.o
 .PHONY : src/RudderServoControlNode.cpp.o
 
 src/RudderServoControlNode.i: src/RudderServoControlNode.cpp.i
@@ -391,7 +417,7 @@ src/RudderServoControlNode.i: src/RudderServoControlNode.cpp.i
 # target to preprocess a source file
 src/RudderServoControlNode.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderServoControlNodeLib.dir/build.make CMakeFiles/RudderServoControlNodeLib.dir/src/RudderServoControlNode.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderServoControlNodeExec.dir/build.make CMakeFiles/RudderServoControlNodeExec.dir/src/RudderServoControlNode.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rudder_servo_control_node.dir/build.make CMakeFiles/rudder_servo_control_node.dir/src/RudderServoControlNode.cpp.i
 .PHONY : src/RudderServoControlNode.cpp.i
 
 src/RudderServoControlNode.s: src/RudderServoControlNode.cpp.s
@@ -400,8 +426,35 @@ src/RudderServoControlNode.s: src/RudderServoControlNode.cpp.s
 # target to generate assembly for a file
 src/RudderServoControlNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderServoControlNodeLib.dir/build.make CMakeFiles/RudderServoControlNodeLib.dir/src/RudderServoControlNode.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RudderServoControlNodeExec.dir/build.make CMakeFiles/RudderServoControlNodeExec.dir/src/RudderServoControlNode.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rudder_servo_control_node.dir/build.make CMakeFiles/rudder_servo_control_node.dir/src/RudderServoControlNode.cpp.s
 .PHONY : src/RudderServoControlNode.cpp.s
+
+src/SailServoControlNode.o: src/SailServoControlNode.cpp.o
+.PHONY : src/SailServoControlNode.o
+
+# target to build an object file
+src/SailServoControlNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sail_servo_control_node.dir/build.make CMakeFiles/sail_servo_control_node.dir/src/SailServoControlNode.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SailServoControlNodeLib.dir/build.make CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o
+.PHONY : src/SailServoControlNode.cpp.o
+
+src/SailServoControlNode.i: src/SailServoControlNode.cpp.i
+.PHONY : src/SailServoControlNode.i
+
+# target to preprocess a source file
+src/SailServoControlNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sail_servo_control_node.dir/build.make CMakeFiles/sail_servo_control_node.dir/src/SailServoControlNode.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SailServoControlNodeLib.dir/build.make CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.i
+.PHONY : src/SailServoControlNode.cpp.i
+
+src/SailServoControlNode.s: src/SailServoControlNode.cpp.s
+.PHONY : src/SailServoControlNode.s
+
+# target to generate assembly for a file
+src/SailServoControlNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sail_servo_control_node.dir/build.make CMakeFiles/sail_servo_control_node.dir/src/SailServoControlNode.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SailServoControlNodeLib.dir/build.make CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.s
+.PHONY : src/SailServoControlNode.cpp.s
 
 src/WaypointQueue.o: src/WaypointQueue.cpp.o
 .PHONY : src/WaypointQueue.o
@@ -432,7 +485,7 @@ src/WaypointQueueNode.o: src/WaypointQueueNode.cpp.o
 
 # target to build an object file
 src/WaypointQueueNode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaypointQueueNodeExec.dir/build.make CMakeFiles/WaypointQueueNodeExec.dir/src/WaypointQueueNode.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_queue_node.dir/build.make CMakeFiles/waypoint_queue_node.dir/src/WaypointQueueNode.cpp.o
 .PHONY : src/WaypointQueueNode.cpp.o
 
 src/WaypointQueueNode.i: src/WaypointQueueNode.cpp.i
@@ -440,7 +493,7 @@ src/WaypointQueueNode.i: src/WaypointQueueNode.cpp.i
 
 # target to preprocess a source file
 src/WaypointQueueNode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaypointQueueNodeExec.dir/build.make CMakeFiles/WaypointQueueNodeExec.dir/src/WaypointQueueNode.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_queue_node.dir/build.make CMakeFiles/waypoint_queue_node.dir/src/WaypointQueueNode.cpp.i
 .PHONY : src/WaypointQueueNode.cpp.i
 
 src/WaypointQueueNode.s: src/WaypointQueueNode.cpp.s
@@ -448,7 +501,7 @@ src/WaypointQueueNode.s: src/WaypointQueueNode.cpp.s
 
 # target to generate assembly for a file
 src/WaypointQueueNode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaypointQueueNodeExec.dir/build.make CMakeFiles/WaypointQueueNodeExec.dir/src/WaypointQueueNode.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_queue_node.dir/build.make CMakeFiles/waypoint_queue_node.dir/src/WaypointQueueNode.cpp.s
 .PHONY : src/WaypointQueueNode.cpp.s
 
 # Help Target
@@ -467,13 +520,15 @@ help:
 	@echo "... boat_control_system_final_uninstall"
 	@echo "... uninstall"
 	@echo "... CoordinateCalculations"
-	@echo "... CoordinateCalculationsNodeExec"
 	@echo "... CoordinateCalculationsNodeLib"
 	@echo "... RudderControlHelper"
-	@echo "... RudderServoControlNodeExec"
 	@echo "... RudderServoControlNodeLib"
+	@echo "... SailServoControlNodeLib"
 	@echo "... WaypointQueue"
-	@echo "... WaypointQueueNodeExec"
+	@echo "... coordinate_calculations_node"
+	@echo "... rudder_servo_control_node"
+	@echo "... sail_servo_control_node"
+	@echo "... waypoint_queue_node"
 	@echo "... src/CoordinateCalculationsNode.o"
 	@echo "... src/CoordinateCalculationsNode.i"
 	@echo "... src/CoordinateCalculationsNode.s"
@@ -486,6 +541,9 @@ help:
 	@echo "... src/RudderServoControlNode.o"
 	@echo "... src/RudderServoControlNode.i"
 	@echo "... src/RudderServoControlNode.s"
+	@echo "... src/SailServoControlNode.o"
+	@echo "... src/SailServoControlNode.i"
+	@echo "... src/SailServoControlNode.s"
 	@echo "... src/WaypointQueue.o"
 	@echo "... src/WaypointQueue.i"
 	@echo "... src/WaypointQueue.s"

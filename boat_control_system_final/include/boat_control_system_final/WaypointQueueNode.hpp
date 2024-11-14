@@ -12,7 +12,6 @@
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/string.hpp>
 #include <sensor_msgs/msg/nav_sat_fix.hpp>
-#include <std_msgs/msg/int16.hpp>
 #include <std_msgs/msg/bool.hpp>
 
 
@@ -42,7 +41,7 @@ private:
     rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr gps_subscriber_;
 
     // Creating Subscriber for autonomous mode init
-    rclcpp::Subscription<std_msgs::msg::Int16>::SharedPtr init_subscriber_;
+    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr init_subscriber_;
 
     // Creating Subscriber to see if boat is ready to execute a new waypoint
     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr executing_subscriber_;
@@ -52,7 +51,7 @@ private:
     void gpsCallback(const sensor_msgs::msg::NavSatFix::SharedPtr msg);
     void ground_station_callback(const sensor_msgs::msg::NavSatFix::SharedPtr msg);
     // void calculated_waypoints_callback(const sensor_msgs::msg::NavSatFix::SharedPtr msg);
-    void initCallback(const std_msgs::msg::Int16::SharedPtr msg);
+    void initCallback(const std_msgs::msg::String::SharedPtr msg);
     void executing_callback(const std_msgs::msg::Bool::SharedPtr msg);
 
     // Member Variables used to store latest data
