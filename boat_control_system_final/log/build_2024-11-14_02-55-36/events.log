@@ -1,0 +1,382 @@
+[0.000000] (-) TimerEvent: {}
+[0.001877] (boat_control_system_final) JobQueued: {'identifier': 'boat_control_system_final', 'dependencies': OrderedDict()}
+[0.002611] (boat_control_system_final) JobStarted: {'identifier': 'boat_control_system_final'}
+[0.051236] (boat_control_system_final) JobProgress: {'identifier': 'boat_control_system_final', 'progress': 'cmake'}
+[0.055323] (boat_control_system_final) JobProgress: {'identifier': 'boat_control_system_final', 'progress': 'build'}
+[0.058917] (boat_control_system_final) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final', '--', '-j4', '-l4'], 'cwd': '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'boat'), ('SSH_CLIENT', '10.41.180.99 64293 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/boat'), ('TERM_PROGRAM_VERSION', '1.95.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f90c2743-b06a-4cd9-90c8-d885754b3d80.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'boat'), ('_', '/home/boat/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/boat/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/remote-cli:/home/boat/.local/bin:/opt/ros/humble/bin:/home/boat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/boat/.local/bin:/home/boat/.local/bin:/home/boat/.local/bin:/home/boat/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-36d9368e1f.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.41.180.99 64293 10.41.221.43 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099013] (-) TimerEvent: {}
+[0.199881] (-) TimerEvent: {}
+[0.289677] (boat_control_system_final) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target CoordinateCalculations\x1b[0m\n'}
+[0.294620] (boat_control_system_final) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target RudderControlHelper\x1b[0m\n'}
+[0.300125] (-) TimerEvent: {}
+[0.333207] (boat_control_system_final) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target SailServoControlNodeLib\x1b[0m\n'}
+[0.400867] (-) TimerEvent: {}
+[0.454937] (boat_control_system_final) StdoutLine: {'line': b'[ 10%] Built target WaypointQueue\n'}
+[0.490390] (boat_control_system_final) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o\x1b[0m\n'}
+[0.491351] (boat_control_system_final) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o\x1b[0m\n'}
+[0.501246] (-) TimerEvent: {}
+[0.505904] (boat_control_system_final) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/RudderControlHelper.dir/src/RudderControlHelper.cpp.o\x1b[0m\n'}
+[0.601494] (-) TimerEvent: {}
+[0.703010] (-) TimerEvent: {}
+[0.711846] (boat_control_system_final) StdoutLine: {'line': b'[ 35%] Built target waypoint_queue_node\n'}
+[0.803253] (-) TimerEvent: {}
+[0.905485] (-) TimerEvent: {}
+[1.006276] (-) TimerEvent: {}
+[1.107173] (-) TimerEvent: {}
+[1.208136] (-) TimerEvent: {}
+[1.309063] (-) TimerEvent: {}
+[1.410230] (-) TimerEvent: {}
+[1.511085] (-) TimerEvent: {}
+[1.615355] (-) TimerEvent: {}
+[1.716134] (-) TimerEvent: {}
+[1.817047] (-) TimerEvent: {}
+[1.920366] (-) TimerEvent: {}
+[2.021189] (-) TimerEvent: {}
+[2.122640] (-) TimerEvent: {}
+[2.223997] (-) TimerEvent: {}
+[2.325404] (-) TimerEvent: {}
+[2.427429] (-) TimerEvent: {}
+[2.528758] (-) TimerEvent: {}
+[2.630406] (-) TimerEvent: {}
+[2.732682] (-) TimerEvent: {}
+[2.834646] (-) TimerEvent: {}
+[2.936877] (-) TimerEvent: {}
+[3.037868] (-) TimerEvent: {}
+[3.138826] (-) TimerEvent: {}
+[3.239753] (-) TimerEvent: {}
+[3.340798] (-) TimerEvent: {}
+[3.442273] (-) TimerEvent: {}
+[3.543214] (-) TimerEvent: {}
+[3.644225] (-) TimerEvent: {}
+[3.745286] (-) TimerEvent: {}
+[3.846211] (-) TimerEvent: {}
+[3.947081] (-) TimerEvent: {}
+[4.048047] (-) TimerEvent: {}
+[4.149028] (-) TimerEvent: {}
+[4.250046] (-) TimerEvent: {}
+[4.350992] (-) TimerEvent: {}
+[4.454278] (-) TimerEvent: {}
+[4.555186] (-) TimerEvent: {}
+[4.656101] (-) TimerEvent: {}
+[4.757104] (-) TimerEvent: {}
+[4.858232] (-) TimerEvent: {}
+[4.959224] (-) TimerEvent: {}
+[5.060225] (-) TimerEvent: {}
+[5.161190] (-) TimerEvent: {}
+[5.262203] (-) TimerEvent: {}
+[5.363460] (-) TimerEvent: {}
+[5.464466] (-) TimerEvent: {}
+[5.565566] (-) TimerEvent: {}
+[5.666483] (-) TimerEvent: {}
+[5.767389] (-) TimerEvent: {}
+[5.868643] (-) TimerEvent: {}
+[5.969628] (-) TimerEvent: {}
+[6.072105] (-) TimerEvent: {}
+[6.174219] (-) TimerEvent: {}
+[6.275290] (-) TimerEvent: {}
+[6.376279] (-) TimerEvent: {}
+[6.477328] (-) TimerEvent: {}
+[6.578357] (-) TimerEvent: {}
+[6.679424] (-) TimerEvent: {}
+[6.781135] (-) TimerEvent: {}
+[6.882322] (-) TimerEvent: {}
+[6.983511] (-) TimerEvent: {}
+[7.084733] (-) TimerEvent: {}
+[7.186073] (-) TimerEvent: {}
+[7.287115] (-) TimerEvent: {}
+[7.388367] (-) TimerEvent: {}
+[7.489410] (-) TimerEvent: {}
+[7.590367] (-) TimerEvent: {}
+[7.691314] (-) TimerEvent: {}
+[7.792258] (-) TimerEvent: {}
+[7.893110] (-) TimerEvent: {}
+[7.994106] (-) TimerEvent: {}
+[8.095091] (-) TimerEvent: {}
+[8.196078] (-) TimerEvent: {}
+[8.297050] (-) TimerEvent: {}
+[8.397934] (-) TimerEvent: {}
+[8.498927] (-) TimerEvent: {}
+[8.599859] (-) TimerEvent: {}
+[8.700767] (-) TimerEvent: {}
+[8.801712] (-) TimerEvent: {}
+[8.902648] (-) TimerEvent: {}
+[9.004076] (-) TimerEvent: {}
+[9.105032] (-) TimerEvent: {}
+[9.205972] (-) TimerEvent: {}
+[9.306939] (-) TimerEvent: {}
+[9.407852] (-) TimerEvent: {}
+[9.508898] (-) TimerEvent: {}
+[9.609842] (-) TimerEvent: {}
+[9.710780] (-) TimerEvent: {}
+[9.811807] (-) TimerEvent: {}
+[9.913333] (-) TimerEvent: {}
+[10.014225] (-) TimerEvent: {}
+[10.115509] (-) TimerEvent: {}
+[10.216541] (-) TimerEvent: {}
+[10.317515] (-) TimerEvent: {}
+[10.418402] (-) TimerEvent: {}
+[10.519347] (-) TimerEvent: {}
+[10.620252] (-) TimerEvent: {}
+[10.721142] (-) TimerEvent: {}
+[10.822032] (-) TimerEvent: {}
+[10.922963] (-) TimerEvent: {}
+[11.023952] (-) TimerEvent: {}
+[11.124881] (-) TimerEvent: {}
+[11.225934] (-) TimerEvent: {}
+[11.327097] (-) TimerEvent: {}
+[11.428191] (-) TimerEvent: {}
+[11.529157] (-) TimerEvent: {}
+[11.630158] (-) TimerEvent: {}
+[11.731050] (-) TimerEvent: {}
+[11.831984] (-) TimerEvent: {}
+[11.932989] (-) TimerEvent: {}
+[12.034063] (-) TimerEvent: {}
+[12.135049] (-) TimerEvent: {}
+[12.235944] (-) TimerEvent: {}
+[12.336884] (-) TimerEvent: {}
+[12.437826] (-) TimerEvent: {}
+[12.538736] (-) TimerEvent: {}
+[12.639694] (-) TimerEvent: {}
+[12.740685] (-) TimerEvent: {}
+[12.841602] (-) TimerEvent: {}
+[12.942590] (-) TimerEvent: {}
+[13.043501] (-) TimerEvent: {}
+[13.144413] (-) TimerEvent: {}
+[13.245372] (-) TimerEvent: {}
+[13.346347] (-) TimerEvent: {}
+[13.447417] (-) TimerEvent: {}
+[13.548399] (-) TimerEvent: {}
+[13.649325] (-) TimerEvent: {}
+[13.750321] (-) TimerEvent: {}
+[13.851395] (-) TimerEvent: {}
+[13.952630] (-) TimerEvent: {}
+[14.053659] (-) TimerEvent: {}
+[14.154717] (-) TimerEvent: {}
+[14.255886] (-) TimerEvent: {}
+[14.356932] (-) TimerEvent: {}
+[14.457948] (-) TimerEvent: {}
+[14.558966] (-) TimerEvent: {}
+[14.659963] (-) TimerEvent: {}
+[14.760984] (-) TimerEvent: {}
+[14.862038] (-) TimerEvent: {}
+[14.963075] (-) TimerEvent: {}
+[15.064040] (-) TimerEvent: {}
+[15.164991] (-) TimerEvent: {}
+[15.266109] (-) TimerEvent: {}
+[15.367152] (-) TimerEvent: {}
+[15.468167] (-) TimerEvent: {}
+[15.569273] (-) TimerEvent: {}
+[15.670223] (-) TimerEvent: {}
+[15.771204] (-) TimerEvent: {}
+[15.872285] (-) TimerEvent: {}
+[15.973348] (-) TimerEvent: {}
+[16.074909] (-) TimerEvent: {}
+[16.176001] (-) TimerEvent: {}
+[16.277029] (-) TimerEvent: {}
+[16.378081] (-) TimerEvent: {}
+[16.436401] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:18\x1b[m\x1b[K,\n'}
+[16.437537] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/Coordinate_Calculations.h:12\x1b[m\x1b[K,\n'}
+[16.438525] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:12\x1b[m\x1b[K:\n'}
+[16.439402] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:66:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[16.440274] (boat_control_system_final) StderrLine: {'line': b'   66 |     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr \x1b[01;31m\x1b[Kinit_subscriber_\x1b[m\x1b[K\n'}
+[16.441120] (boat_control_system_final) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.441946] (boat_control_system_final) StderrLine: {'line': b'      |                                                                            \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[16.451709] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:13\x1b[m\x1b[K:\n'}
+[16.452701] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:36:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[16.453721] (boat_control_system_final) StderrLine: {'line': b'   36 |     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr \x1b[01;31m\x1b[Kreached_subscriber_\x1b[m\x1b[K\n'}
+[16.454559] (boat_control_system_final) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.455332] (boat_control_system_final) StderrLine: {'line': b'      |                                                                             \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[16.482276] (-) TimerEvent: {}
+[16.586260] (-) TimerEvent: {}
+[16.658538] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SailServoControlNode::stateCallback(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.661099] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:51:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Bool\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Bool_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Bool_<std::allocator<void> >::_data_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kbool\x1b[m\x1b[K\xe2\x80\x99})\n'}
+[16.662479] (boat_control_system_final) StderrLine: {'line': b'   51 |     latest_state_ = msg->\x1b[01;31m\x1b[Kdata\x1b[m\x1b[K;  // Update the latest state data\n'}
+[16.665024] (boat_control_system_final) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[16.674834] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp:7\x1b[m\x1b[K,\n'}
+[16.676126] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:11\x1b[m\x1b[K,\n'}
+[16.677388] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:13\x1b[m\x1b[K:\n'}
+[16.678929] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:32:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std_msgs::msg::Bool_<std::allocator<void> >& std_msgs::msg::Bool_<std::allocator<void> >::operator=(const std_msgs::msg::Bool_<std::allocator<void> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.684901] (boat_control_system_final) StderrLine: {'line': b'   32 | struct \x1b[01;36m\x1b[KBool_\x1b[m\x1b[K\n'}
+[16.686285] (boat_control_system_final) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[16.687164] (-) TimerEvent: {}
+[16.702392] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:32:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Bool_<std::allocator<void> >::_data_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kbool\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std_msgs::msg::Bool_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.703537] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:32:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std_msgs::msg::Bool_<std::allocator<void> >& std_msgs::msg::Bool_<std::allocator<void> >::operator=(std_msgs::msg::Bool_<std::allocator<void> >&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.704530] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:32:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Bool_<std::allocator<void> >::_data_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kbool\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Bool_<std::allocator<void> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.708215] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint SailServoControlNode::getOptimalSailPosition(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.713941] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:113:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[16.715055] (boat_control_system_final) StderrLine: {'line': b'  113 |         return -1\n'}
+[16.715920] (boat_control_system_final) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[16.716780] (boat_control_system_final) StderrLine: {'line': b'      |                  \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[16.717608] (boat_control_system_final) StderrLine: {'line': b'  114 |     \x1b[32m\x1b[K}\x1b[m\x1b[Kelse{\n'}
+[16.719458] (boat_control_system_final) StderrLine: {'line': b'      |     \x1b[32m\x1b[K~\x1b[m\x1b[K             \n'}
+[16.787443] (-) TimerEvent: {}
+[16.888427] (-) TimerEvent: {}
+[16.899973] (boat_control_system_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderControlHelper.hpp:12\x1b[m\x1b[K,\n'}
+[16.900858] (boat_control_system_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/src/RudderControlHelper.cpp:12\x1b[m\x1b[K:\n'}
+[16.901599] (boat_control_system_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:66:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[16.902467] (boat_control_system_final) StderrLine: {'line': b'   66 |     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr \x1b[01;31m\x1b[Kinit_subscriber_\x1b[m\x1b[K\n'}
+[16.903158] (boat_control_system_final) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.903796] (boat_control_system_final) StderrLine: {'line': b'      |                                                                            \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[16.988711] (-) TimerEvent: {}
+[17.090715] (-) TimerEvent: {}
+[17.192673] (-) TimerEvent: {}
+[17.298263] (-) TimerEvent: {}
+[17.399378] (-) TimerEvent: {}
+[17.502267] (-) TimerEvent: {}
+[17.606942] (-) TimerEvent: {}
+[17.709868] (-) TimerEvent: {}
+[17.822242] (-) TimerEvent: {}
+[17.923441] (-) TimerEvent: {}
+[18.027074] (-) TimerEvent: {}
+[18.129475] (-) TimerEvent: {}
+[18.231739] (-) TimerEvent: {}
+[18.342255] (-) TimerEvent: {}
+[18.446225] (-) TimerEvent: {}
+[18.550231] (-) TimerEvent: {}
+[18.651221] (-) TimerEvent: {}
+[18.758262] (-) TimerEvent: {}
+[18.859349] (-) TimerEvent: {}
+[18.962728] (-) TimerEvent: {}
+[19.064302] (-) TimerEvent: {}
+[19.165920] (-) TimerEvent: {}
+[19.267690] (-) TimerEvent: {}
+[19.369422] (-) TimerEvent: {}
+[19.471742] (-) TimerEvent: {}
+[19.574222] (-) TimerEvent: {}
+[19.686230] (-) TimerEvent: {}
+[19.787389] (-) TimerEvent: {}
+[19.894287] (-) TimerEvent: {}
+[19.996513] (-) TimerEvent: {}
+[20.042191] (boat_control_system_final) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/CoordinateCalculations.dir/build.make:76: CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o] Error 1\n'}
+[20.043185] (boat_control_system_final) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:181: CMakeFiles/CoordinateCalculations.dir/all] Error 2\n'}
+[20.044072] (boat_control_system_final) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[20.096768] (-) TimerEvent: {}
+[20.197803] (-) TimerEvent: {}
+[20.299484] (-) TimerEvent: {}
+[20.401059] (-) TimerEvent: {}
+[20.502534] (-) TimerEvent: {}
+[20.550934] (boat_control_system_final) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/RudderControlHelper.dir/build.make:76: CMakeFiles/RudderControlHelper.dir/src/RudderControlHelper.cpp.o] Error 1\n'}
+[20.551995] (boat_control_system_final) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:207: CMakeFiles/RudderControlHelper.dir/all] Error 2\n'}
+[20.602717] (-) TimerEvent: {}
+[20.704116] (-) TimerEvent: {}
+[20.805085] (-) TimerEvent: {}
+[20.905985] (-) TimerEvent: {}
+[21.006905] (-) TimerEvent: {}
+[21.107781] (-) TimerEvent: {}
+[21.208695] (-) TimerEvent: {}
+[21.309581] (-) TimerEvent: {}
+[21.410514] (-) TimerEvent: {}
+[21.511377] (-) TimerEvent: {}
+[21.612314] (-) TimerEvent: {}
+[21.713238] (-) TimerEvent: {}
+[21.814181] (-) TimerEvent: {}
+[21.915136] (-) TimerEvent: {}
+[22.016156] (-) TimerEvent: {}
+[22.117007] (-) TimerEvent: {}
+[22.217917] (-) TimerEvent: {}
+[22.318859] (-) TimerEvent: {}
+[22.419775] (-) TimerEvent: {}
+[22.520669] (-) TimerEvent: {}
+[22.621573] (-) TimerEvent: {}
+[22.722511] (-) TimerEvent: {}
+[22.823420] (-) TimerEvent: {}
+[22.924291] (-) TimerEvent: {}
+[23.025169] (-) TimerEvent: {}
+[23.126109] (-) TimerEvent: {}
+[23.227231] (-) TimerEvent: {}
+[23.328192] (-) TimerEvent: {}
+[23.429078] (-) TimerEvent: {}
+[23.529956] (-) TimerEvent: {}
+[23.630851] (-) TimerEvent: {}
+[23.731679] (-) TimerEvent: {}
+[23.832507] (-) TimerEvent: {}
+[23.933321] (-) TimerEvent: {}
+[24.034189] (-) TimerEvent: {}
+[24.134997] (-) TimerEvent: {}
+[24.235797] (-) TimerEvent: {}
+[24.336625] (-) TimerEvent: {}
+[24.437446] (-) TimerEvent: {}
+[24.538322] (-) TimerEvent: {}
+[24.639173] (-) TimerEvent: {}
+[24.739987] (-) TimerEvent: {}
+[24.840831] (-) TimerEvent: {}
+[24.941648] (-) TimerEvent: {}
+[25.042590] (-) TimerEvent: {}
+[25.143477] (-) TimerEvent: {}
+[25.244366] (-) TimerEvent: {}
+[25.345424] (-) TimerEvent: {}
+[25.446367] (-) TimerEvent: {}
+[25.547209] (-) TimerEvent: {}
+[25.648041] (-) TimerEvent: {}
+[25.748888] (-) TimerEvent: {}
+[25.849714] (-) TimerEvent: {}
+[25.950571] (-) TimerEvent: {}
+[26.051381] (-) TimerEvent: {}
+[26.152200] (-) TimerEvent: {}
+[26.253011] (-) TimerEvent: {}
+[26.353847] (-) TimerEvent: {}
+[26.454695] (-) TimerEvent: {}
+[26.555494] (-) TimerEvent: {}
+[26.656285] (-) TimerEvent: {}
+[26.757207] (-) TimerEvent: {}
+[26.858098] (-) TimerEvent: {}
+[26.958905] (-) TimerEvent: {}
+[27.059722] (-) TimerEvent: {}
+[27.160514] (-) TimerEvent: {}
+[27.261334] (-) TimerEvent: {}
+[27.362187] (-) TimerEvent: {}
+[27.463039] (-) TimerEvent: {}
+[27.563858] (-) TimerEvent: {}
+[27.664703] (-) TimerEvent: {}
+[27.765519] (-) TimerEvent: {}
+[27.866547] (-) TimerEvent: {}
+[27.967854] (-) TimerEvent: {}
+[28.068725] (-) TimerEvent: {}
+[28.169595] (-) TimerEvent: {}
+[28.270463] (-) TimerEvent: {}
+[28.371281] (-) TimerEvent: {}
+[28.472089] (-) TimerEvent: {}
+[28.572926] (-) TimerEvent: {}
+[28.673780] (-) TimerEvent: {}
+[28.774625] (-) TimerEvent: {}
+[28.875438] (-) TimerEvent: {}
+[28.976292] (-) TimerEvent: {}
+[29.077177] (-) TimerEvent: {}
+[29.177984] (-) TimerEvent: {}
+[29.278801] (-) TimerEvent: {}
+[29.379553] (-) TimerEvent: {}
+[29.480348] (-) TimerEvent: {}
+[29.581169] (-) TimerEvent: {}
+[29.681960] (-) TimerEvent: {}
+[29.782858] (-) TimerEvent: {}
+[29.883646] (-) TimerEvent: {}
+[29.984504] (-) TimerEvent: {}
+[30.085304] (-) TimerEvent: {}
+[30.186081] (-) TimerEvent: {}
+[30.286828] (-) TimerEvent: {}
+[30.387560] (-) TimerEvent: {}
+[30.488398] (-) TimerEvent: {}
+[30.589161] (-) TimerEvent: {}
+[30.689919] (-) TimerEvent: {}
+[30.790725] (-) TimerEvent: {}
+[30.891555] (-) TimerEvent: {}
+[30.992401] (-) TimerEvent: {}
+[31.093196] (-) TimerEvent: {}
+[31.194066] (-) TimerEvent: {}
+[31.294891] (-) TimerEvent: {}
+[31.395740] (-) TimerEvent: {}
+[31.496701] (-) TimerEvent: {}
+[31.597649] (-) TimerEvent: {}
+[31.698565] (-) TimerEvent: {}
+[31.799380] (-) TimerEvent: {}
+[31.900210] (-) TimerEvent: {}
+[31.987402] (boat_control_system_final) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/SailServoControlNodeLib.dir/build.make:76: CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o] Error 1\n'}
+[31.988269] (boat_control_system_final) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/SailServoControlNodeLib.dir/all] Error 2\n'}
+[31.989122] (boat_control_system_final) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[31.995969] (boat_control_system_final) CommandEnded: {'returncode': 2}
+[32.001703] (-) TimerEvent: {}
+[32.103117] (-) TimerEvent: {}
+[32.204363] (-) TimerEvent: {}
+[32.305043] (-) TimerEvent: {}
+[32.344440] (boat_control_system_final) JobEnded: {'identifier': 'boat_control_system_final', 'rc': 2}
+[32.356659] (-) EventReactorShutdown: {}

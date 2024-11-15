@@ -78,9 +78,9 @@ def generate_launch_description():
         main_logic_node,
         gps_node,
         xbee_node,
-        # waypoint_queue,
-        # coordinate_calculations,
-        # rudder_control,
-        # sail_control,
+        waypoint_queue,
+        coordinate_calculations,
+        rudder_control,
+        sail_control,
     ])
 

@@ -13,6 +13,7 @@
 #include "SailServoControlNode.hpp"
 #include <std_msgs/msg/float32.hpp>
 #include <rclcpp/rclcpp.hpp>
+#include <std_msgs/msg/bool.hpp>
 
 SailServoControlNode::SailServoControlNode() : Node("sail_servo_control_node")
 {
@@ -26,6 +27,12 @@ SailServoControlNode::SailServoControlNode() : Node("sail_servo_control_node")
         10,
         std::bind(&SailServoControlNode::windCallback, this, std::placeholders::_1));
 
+    // Subscription to check if the boat has reached its final waypoint (and if so needes to set its sail to neutral)
+    reached_subscriber_ = this->create_subscription<std_msgs::msg::Bool>(
+        "/reached_state", 
+        10,
+        std::bind(&SailServoControlNode::stateCallback, this, std::placeholders::_1));
+
     RCLCPP_INFO(this->get_logger(), "SailServoControlNode initialized and ready.");
 
     SailServoControlNode::loadSailData();
@@ -36,8 +43,19 @@ void SailServoControlNode::windCallback(const std_msgs::msg::Float32::SharedPtr 
 {
     latest_wind_data_ = *msg;  // Update the latest wind angle data
     setSailServo(getOptimalSailPosition(latest_wind_data_.data));  // Use the `data` field
+
+    if (shouldLog("wind")) 
+    {
     RCLCPP_INFO(this->get_logger(), "Wind data received. Setting sail servo to angle: %.2f", msg->data);
+    }
 }
+
+void SailServoControlNode::stateCallback(const std_msgs::msg::Bool::SharedPtr msg)
+{
+    latest_state_.data = msg->data;  // Update the latest state data
+    RCLCPP_INFO(this->get_logger(), "State Received. Boat has %s its final waypoint.", msg->data ? "reached" : "not reached");
+}
+
 
 // Set the sail servo angle
 void SailServoControlNode::setSailServo(float angle)
@@ -92,24 +110,51 @@ int SailServoControlNode::interpolateSailPosition(int windAngle, const SailData&
 
 int SailServoControlNode::getOptimalSailPosition(int windAngle)
 {
-    // Check if exact match exists
-    for(const auto& data : sailData)
+    if(SailServoControlNode::latest_state_.data) // If the boat has reached its last waypoint, set the sail directly towards the wind
     {
-        if (data.windAngle == windAngle) {
-            return data.optimalSailPosition;
+        setSailServo(latest_wind_data_.data);
+        return -1;
+    }else{    
+        // Check if exact match exists
+        for(const auto& data : sailData)
+        {
+            if (data.windAngle == windAngle) {
+                return data.optimalSailPosition;
+            }
         }
+
+        // If no exact match, find the closest two angles for interpolation
+        for(size_t i = 0; i < sailData.size() - 1; ++i)
+        {
+            if(sailData[i].windAngle < windAngle && sailData[i + 1].windAngle > windAngle)
+            {
+                return interpolateSailPosition(windAngle, sailData[i], sailData[i + 1]);
+            }
+        }
+        return -1;
+    }
+}
+
+
+
+
+
+bool SailServoControlNode::shouldLog(const std::string& topic_name)
+{
+    // Increment the message count for the topic
+    message_counters_[topic_name]++;
+
+    // Check if the message count reaches the specified log interval
+    if (message_counters_[topic_name] >= log_count_interval_) {
+        message_counters_[topic_name] = 0; // Reset the counter for this topic
+        return true; // Log this message
     }
 
-    // If no exact match, find the closest two angles for interpolation
-    for(size_t i = 0; i < sailData.size() - 1; ++i)
-    {
-        if(sailData[i].windAngle < windAngle && sailData[i + 1].windAngle > windAngle)
-        {
-            return interpolateSailPosition(windAngle, sailData[i], sailData[i + 1]);
-        }
-    }
-    return -1;
+    return false; // Do not log this message
 }
+
+
+
 
 
 int main(int argc, char **argv)

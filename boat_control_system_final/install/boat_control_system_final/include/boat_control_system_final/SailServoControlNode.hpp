@@ -8,22 +8,35 @@
 
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/float32.hpp>
+#include <std_msgs/msg/bool.hpp>
+#include <vector>
+#include <string>
 
-class SailServoControlNode : public rclcpp::Node
-{
+struct SailData {
+    int windAngle;
+    int optimalSailPosition;
+};
+
+class SailServoControlNode : public rclcpp::Node {
 public:
     SailServoControlNode();
     void setSailServo(float angle);
 
 private:
     void windCallback(const std_msgs::msg::Float32::SharedPtr msg);
+    void loadSailData();
+    void stateCallback(const std_msgs::msg::Bool::SharedPtr msg);
+    int interpolateSailPosition(int windAngle, const SailData& lower, const SailData& upper);
+    int getOptimalSailPosition(int windAngle);
 
     // Member variables
-    std_msgs::msg::Float32 latest_wind_data_;
+    std::vector<SailData> sailData;
     rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr sail_angle_publisher_;
     rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr wind_subscriber_;
-
-    bool autonomous_mode_;
+    rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr reached_subscriber_;
+    std_msgs::msg::Float32 latest_wind_data_;
+    std_msgs::msg::Bool latest_state_;
+    std::string filename = "boat_control_system_final/SailAngleData.csv"; 
 };
 
 #endif // BOAT_CONTROL_SYSTEM_FINAL_SAILSERVOCONTROLNODE_HPP_

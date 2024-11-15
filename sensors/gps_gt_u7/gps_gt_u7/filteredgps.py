@@ -4,7 +4,7 @@ from sensor_msgs.msg import NavSatFix
 import serial
 import pynmea2
 from collections import Counter
-from datetime import datetime, timedelta
+import time
 
 class GPSNode(Node):
     def __init__(self):
@@ -64,12 +64,12 @@ class GPSNode(Node):
         min_lon, max_lon = -180.0, 180.0
 
         # Record current time
-        current_time = datetime.now()
+        current_time = time.time()
 
         # Remove outdated data from history
         self.gps_history = [
             (lat, lon, ts) for lat, lon, ts in self.gps_history 
-            if ts > current_time - timedelta(seconds=10)
+            if ts > current_time - 7
         ]
 
         # Add new data to history

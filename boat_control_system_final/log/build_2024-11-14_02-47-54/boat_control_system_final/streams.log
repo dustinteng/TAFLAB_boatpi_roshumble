@@ -1,0 +1,39 @@
+[0.067s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.358s] [  5%] [32mBuilding CXX object CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o[0m
+[0.369s] [ 10%] [32mBuilding CXX object CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o[0m
+[0.415s] [ 25%] Built target WaypointQueue
+[0.421s] [ 25%] [32mBuilding CXX object CMakeFiles/RudderControlHelper.dir/src/RudderControlHelper.cpp.o[0m
+[0.559s] [ 35%] Built target waypoint_queue_node
+[2.306s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:13[m[K:
+[2.307s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:11:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/Bool.hpp: No such file or directory
+[2.308s]    11 | #include [01;31m[K<std_msgs/msg/Bool.hpp>[m[K
+[2.309s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.309s] compilation terminated.
+[2.327s] gmake[2]: *** [CMakeFiles/SailServoControlNodeLib.dir/build.make:76: CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o] Error 1
+[2.329s] gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/SailServoControlNodeLib.dir/all] Error 2
+[2.333s] gmake[1]: *** Waiting for unfinished jobs....
+[13.139s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderControlHelper.hpp:12[m[K,
+[13.140s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderControlHelper.cpp:12[m[K:
+[13.141s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:40:44:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+[13.141s]    40 |     void initCallback(const std_msgs::msg::[01;31m[KString[m[K::SharedPtr msg);
+[13.142s]       |                                            [01;31m[K^~~~~~[m[K
+[13.143s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:40:62:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+[13.151s]    40 |     void initCallback(const std_msgs::msg::String::SharedPtr [01;31m[Kmsg[m[K);
+[13.152s]       |                                                              [01;31m[K^~~[m[K
+[13.153s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:40:61:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+[13.154s]    40 |     void initCallback[34m[K([m[Kconst std_msgs::msg::String::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K);
+[13.154s]       |                      [34m[K~[m[K                                      [01;31m[K^[m[K[32m[K~~~[m[K
+[13.162s]       |                                                             [32m[K)[m[K
+[13.166s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:40:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[13.169s]    40 |     void initCallback(const std_msgs::msg::String::[01;31m[KSharedPtr[m[K msg);
+[13.173s]       |                                                    [01;31m[K^~~~~~~~~[m[K
+[13.177s]       |                                                             [32m[K;[m[K
+[13.181s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:40:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+[13.185s]    40 |     void initCallback(const std_msgs::msg::String::SharedPtr [01;31m[Kmsg[m[K);
+[13.188s]       |                                                              [01;31m[K^~~[m[K
+[15.661s] gmake[2]: *** [CMakeFiles/RudderControlHelper.dir/build.make:76: CMakeFiles/RudderControlHelper.dir/src/RudderControlHelper.cpp.o] Error 1
+[15.661s] gmake[1]: *** [CMakeFiles/Makefile2:207: CMakeFiles/RudderControlHelper.dir/all] Error 2
+[16.071s] [ 40%] [32m[1mLinking CXX static library libCoordinateCalculations.a[0m
+[16.219s] [ 40%] Built target CoordinateCalculations
+[16.223s] gmake: *** [Makefile:146: all] Error 2
+[16.231s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

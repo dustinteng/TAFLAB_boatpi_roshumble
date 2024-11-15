@@ -35,7 +35,7 @@ WaypointQueueNode::WaypointQueueNode() : Node("waypoint_queue_node")
 
     // Subscription for Initialisation data
     executing_subscriber_ = this->create_subscription<std_msgs::msg::Bool>(
-        "/boat_executing_state", 
+        "/executing_state", 
         10,
         std::bind(&WaypointQueueNode::executing_callback, this, std::placeholders::_1));
 
@@ -46,14 +46,14 @@ void WaypointQueueNode::ground_station_callback(const sensor_msgs::msg::NavSatFi
 {
     // Process ground station waypoint data
     sensor_msgs::msg::NavSatFix new_waypoint = *msg;
-    
     RCLCPP_INFO(this->get_logger(), "Received waypoint from ground station.");
+
 }
 
 void WaypointQueueNode::initCallback(const std_msgs::msg::String::SharedPtr msg)
 {
     // Process initialisation data
-    if(msg->data != 1)
+    if(msg->data == "False")
     {
         WaypointQueue::getInstance().close_autonomous_mode();
     }

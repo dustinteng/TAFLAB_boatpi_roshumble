@@ -50,12 +50,6 @@ CoordinateCalculationsNode::CoordinateCalculationsNode() : Node("coordinate_calc
         10,
         std::bind(&CoordinateCalculationsNode::waypointCallback, this, std::placeholders::_1));
 
-    // Subscription for Initialisation data
-    init_subscriber_ = this->create_subscription<std_msgs::msg::String>(
-        "/auto_init", 
-        10,
-        std::bind(&CoordinateCalculationsNode::initCallback, this, std::placeholders::_1));
-
     RCLCPP_INFO(this->get_logger(), "Subscribers and publisher initialized.");
 }
 
@@ -74,7 +68,7 @@ void CoordinateCalculationsNode::waypointCallback(const sensor_msgs::msg::NavSat
 
         // Remove the first element from the vector
         waypoints.erase(waypoints.begin());
-
+        
         // Log the waypoint being published
         RCLCPP_INFO(this->get_logger(), "Published waypoint to RudderServoControlNode: [lat: %.6f, lon: %.6f, alt: %.2f]",
                     current_waypoint.latitude, current_waypoint.longitude, current_waypoint.altitude);
@@ -86,33 +80,36 @@ void CoordinateCalculationsNode::waypointCallback(const sensor_msgs::msg::NavSat
 // GPS callback function
 void CoordinateCalculationsNode::gpsCallback(const sensor_msgs::msg::NavSatFix::SharedPtr msg)
 {
-    latest_gps_data_ = *msg;  // Update the latest GPS data
-    RCLCPP_INFO(this->get_logger(), "Received GPS data: [lat: %.6f, lon: %.6f, alt: %.2f]",
+
+    latest_gps_data_ = *msg;
+
+    if (shouldLog("gps")) 
+    {
+        RCLCPP_INFO(this->get_logger(), "Received GPS data: [lat: %.6f, lon: %.6f, alt: %.2f]",
                 msg->latitude, msg->longitude, msg->altitude);
+    }
 }
 
 // Wind Angle callback function
 void CoordinateCalculationsNode::windCallback(const std_msgs::msg::Float32::SharedPtr msg)
 {
     latest_wind_data_ = *msg;  // Update the latest wind angle data
+    if (shouldLog("wind")) 
+    {
     RCLCPP_INFO(this->get_logger(), "Received Wind angle heading data: [angle: %.6f]",
                 msg->data);
+    }
 }
 
 // Magnetometer heading callback function
 void CoordinateCalculationsNode::magnetometerCallback(const std_msgs::msg::Float32::SharedPtr msg)
 {
     latest_magnetometer_data_ = *msg;  // Update the latest Magnetometer data
+    if (shouldLog("magnetometer")) 
+    {
     RCLCPP_INFO(this->get_logger(), "Received Magnetometer heading data: [heading: %.6f]",
                 msg->data);
-}
-
-void CoordinateCalculationsNode::initCallback(const std_msgs::msg::String::SharedPtr msg)
-{
-    // Process initialisation data
-
-    RCLCPP_INFO(this->get_logger(), "Received init message with data: %d", 
-                msg->data);
+    }
 }
 
 sensor_msgs::msg::NavSatFix CoordinateCalculationsNode::get_latest_waypoint()
@@ -136,6 +133,22 @@ sensor_msgs::msg::NavSatFix CoordinateCalculationsNode::get_curr_pos()
 {
     return CoordinateCalculationsNode::latest_gps_data_;
 }
+
+
+bool CoordinateCalculationsNode::shouldLog(const std::string& topic_name)
+{
+    // Increment the message count for the topic
+    message_counters_[topic_name]++;
+
+    // Check if the message count reaches the specified log interval
+    if (message_counters_[topic_name] >= log_count_interval_) {
+        message_counters_[topic_name] = 0; // Reset the counter for this topic
+        return true; // Log this message
+    }
+
+    return false; // Do not log this message
+}
+
 
 int main(int argc, char **argv)
 {

@@ -1,0 +1,39 @@
+[0.069s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.308s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculations[0m
+[0.313s] [35m[1mConsolidate compiler generated dependencies of target RudderControlHelper[0m
+[0.358s] [35m[1mConsolidate compiler generated dependencies of target SailServoControlNodeLib[0m
+[0.400s] [ 10%] Built target WaypointQueue
+[0.452s] [ 15%] [32mBuilding CXX object CMakeFiles/RudderControlHelper.dir/src/RudderControlHelper.cpp.o[0m
+[0.534s] [ 20%] [32mBuilding CXX object CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o[0m
+[0.586s] [ 25%] [32mBuilding CXX object CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o[0m
+[0.632s] [ 35%] Built target waypoint_queue_node
+[15.651s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:[m[K In member function ‘[01m[Kvoid SailServoControlNode::stateCallback(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[15.655s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:51:26:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::Bool[m[K’ {aka ‘[01m[Kstd_msgs::msg::Bool_<std::allocator<void> >[m[K’} and ‘[01m[Kstd_msgs::msg::Bool_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kbool[m[K’})
+[15.659s]    51 |     latest_state_ = msg->[01;31m[Kdata[m[K;  // Update the latest state data
+[15.662s]       |                          [01;31m[K^~~~[m[K
+[15.666s] In file included from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp:7[m[K,
+[15.670s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:11[m[K,
+[15.674s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:13[m[K:
+[15.678s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std_msgs::msg::Bool_<std::allocator<void> >& std_msgs::msg::Bool_<std::allocator<void> >::operator=(const std_msgs::msg::Bool_<std::allocator<void> >&)[m[K’
+[15.681s]    32 | struct [01;36m[KBool_[m[K
+[15.685s]       |        [01;36m[K^~~~~[m[K
+[15.689s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Bool_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kbool[m[K’} to ‘[01m[Kconst std_msgs::msg::Bool_<std::allocator<void> >&[m[K’
+[15.693s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std_msgs::msg::Bool_<std::allocator<void> >& std_msgs::msg::Bool_<std::allocator<void> >::operator=(std_msgs::msg::Bool_<std::allocator<void> >&&)[m[K’
+[15.697s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Bool_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kbool[m[K’} to ‘[01m[Kstd_msgs::msg::Bool_<std::allocator<void> >&&[m[K’
+[18.507s] [ 40%] [32m[1mLinking CXX static library libCoordinateCalculations.a[0m
+[18.544s] [ 45%] [32m[1mLinking CXX static library libRudderControlHelper.a[0m
+[18.670s] [ 45%] Built target CoordinateCalculations
+[18.699s] [ 45%] Built target RudderControlHelper
+[18.735s] [35m[1mConsolidate compiler generated dependencies of target CoordinateCalculationsNodeLib[0m
+[18.773s] [35m[1mConsolidate compiler generated dependencies of target RudderServoControlNodeLib[0m
+[18.854s] [ 50%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o[0m
+[18.891s] [ 55%] [32mBuilding CXX object CMakeFiles/RudderServoControlNodeLib.dir/src/RudderServoControlNode.cpp.o[0m
+[32.660s] gmake[2]: *** [CMakeFiles/SailServoControlNodeLib.dir/build.make:76: CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o] Error 1
+[32.663s] gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/SailServoControlNodeLib.dir/all] Error 2
+[32.663s] gmake[1]: *** Waiting for unfinished jobs....
+[76.214s] [ 60%] [32m[1mLinking CXX static library libCoordinateCalculationsNodeLib.a[0m
+[77.933s] [ 60%] Built target CoordinateCalculationsNodeLib
+[90.090s] [ 65%] [32m[1mLinking CXX static library libRudderServoControlNodeLib.a[0m
+[91.925s] [ 65%] Built target RudderServoControlNodeLib
+[91.929s] gmake: *** [Makefile:146: all] Error 2
+[91.937s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

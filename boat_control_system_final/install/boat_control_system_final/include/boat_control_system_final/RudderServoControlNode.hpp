@@ -11,6 +11,7 @@
 #include <mutex>
 
 #include <rclcpp/rclcpp.hpp>
+#include <std_msgs/msg/string.hpp>
 #include <std_msgs/msg/float32.hpp>
 #include <std_msgs/msg/bool.hpp>
 #include <sensor_msgs/msg/nav_sat_fix.hpp>
@@ -36,8 +37,8 @@ private:
     void finalWaypointCallback(const sensor_msgs::msg::NavSatFix::SharedPtr msg);
     void gpsCallback(const sensor_msgs::msg::NavSatFix::SharedPtr msg);
     void magnetometerCallback(const std_msgs::msg::Float32::SharedPtr msg);
-    void executingStateCallback(const std_msgs::msg::Bool::SharedPtr msg);
     void windCallback(const std_msgs::msg::Float32::SharedPtr msg);
+    void initCallback(const std_msgs::msg::String::SharedPtr msg);
 
     // Helper function for turning the boat toward a desired heading
     void turnBoat(sensor_msgs::msg::NavSatFix target_position);
@@ -56,11 +57,15 @@ private:
 
     // Publishers and subscribers
     rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr rudder_angle_publisher_;
+    rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr executing_state_publisher_;
+    
     rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr final_waypoint_subscriber_;
     rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr gps_subscriber_;
     rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr magnetometer_subscriber_;
-    rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr executing_state_subscriber_;
     rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr wind_subscriber_;
+    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr init_subscriber_;
+
+    std_msgs::msg::Bool zero_sail_state_needed;
 
     // Thread for waypoint execution
     std::thread execution_thread_;

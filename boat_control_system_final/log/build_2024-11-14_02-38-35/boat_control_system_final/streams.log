@@ -1,0 +1,155 @@
+[0.066s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.280s] [35m[1mConsolidate compiler generated dependencies of target SailServoControlNodeLib[0m
+[0.402s] [ 10%] Built target WaypointQueue
+[0.410s] [ 20%] Built target RudderControlHelper
+[0.454s] [ 30%] Built target CoordinateCalculations
+[0.475s] [ 35%] [32mBuilding CXX object CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o[0m
+[0.521s] [35m[1mConsolidate compiler generated dependencies of target RudderServoControlNodeLib[0m
+[0.563s] [ 45%] Built target waypoint_queue_node
+[0.619s] [ 55%] Built target CoordinateCalculationsNodeLib
+[0.631s] [ 60%] [32mBuilding CXX object CMakeFiles/RudderServoControlNodeLib.dir/src/RudderServoControlNode.cpp.o[0m
+[0.691s] [35m[1mConsolidate compiler generated dependencies of target coordinate_calculations_node[0m
+[0.817s] [ 70%] Built target coordinate_calculations_node
+[14.360s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:13[m[K:
+[14.360s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:27:45:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+[14.361s]    27 |     void stateCallback(const std_msgs::msg::[01;31m[KBool[m[K::SharedPtr msg);
+[14.362s]       |                                             [01;31m[K^~~~[m[K
+[14.363s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:27:61:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+[14.369s]    27 |     void stateCallback(const std_msgs::msg::Bool::SharedPtr [01;31m[Kmsg[m[K);
+[14.373s]       |                                                             [01;31m[K^~~[m[K
+[14.374s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:27:60:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+[14.375s]    27 |     void stateCallback[34m[K([m[Kconst std_msgs::msg::Bool::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K);
+[14.376s]       |                       [34m[K~[m[K                                    [01;31m[K^[m[K[32m[K~~~[m[K
+[14.382s]       |                                                            [32m[K)[m[K
+[14.383s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:27:51:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[14.384s]    27 |     void stateCallback(const std_msgs::msg::Bool::[01;31m[KSharedPtr[m[K msg);
+[14.385s]       |                                                   [01;31m[K^~~~~~~~~[m[K
+[14.393s]       |                                                            [32m[K;[m[K
+[14.394s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:27:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+[14.394s]    27 |     void stateCallback(const std_msgs::msg::Bool::SharedPtr [01;31m[Kmsg[m[K);
+[14.395s]       |                                                             [01;31m[K^~~[m[K
+[14.602s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:36:20:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+[14.603s]    36 |     std_msgs::msg::[01;31m[KBool[m[K latest_state_;
+[14.603s]       |                    [01;31m[K^~~~[m[K
+[14.698s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:[m[K In constructor ‘[01m[KSailServoControlNode::SailServoControlNode()[m[K’:
+[14.699s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:31:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kreached_subscriber_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwind_subscriber_[m[K’?
+[14.700s]    31 |     [01;31m[Kreached_subscriber_[m[K = this->create_subscription<std_msgs::msg::Bool>(
+[14.700s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[14.701s]       |     [32m[Kwind_subscriber_[m[K
+[14.898s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K In constructor ‘[01m[KRudderServoControlNode::RudderServoControlNode()[m[K’:
+[14.899s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:56:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit_subscriber_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwind_subscriber_[m[K’?
+[14.900s]    56 |     [01;31m[Kinit_subscriber_[m[K = this->create_subscription<std_msgs::msg::String>(
+[14.901s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[14.901s]       |     [32m[Kwind_subscriber_[m[K
+[14.902s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:59:20:[m[K [01;31m[Kerror: [m[K‘[01m[KWaypointQueueNode[m[K’ has not been declared
+[14.903s]    59 |         std::bind(&[01;31m[KWaypointQueueNode[m[K::initCallback, this, std::placeholders::_1));
+[14.904s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[14.938s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K At global scope:
+[14.939s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:114:6:[m[K [01;31m[Kerror: [m[K‘[01m[KWaypointQueueNode[m[K’ has not been declared
+[14.940s]   114 | void [01;31m[KWaypointQueueNode[m[K::initCallback(const std_msgs::msg::String::SharedPtr msg)
+[14.940s]       |      [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[14.941s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:[m[K At global scope:
+[14.942s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:49:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid SailServoControlNode::stateCallback(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’
+[14.943s]    49 | void [01;31m[KSailServoControlNode[m[K::stateCallback(const std_msgs::msg::Bool::SharedPtr msg)
+[14.943s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[14.944s] In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:13[m[K:
+[14.945s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:27:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid SailServoControlNode::stateCallback(...)[m[K’
+[14.946s]    27 |     void [01;36m[KstateCallback[m[K(const std_msgs::msg::Bool::SharedPtr msg);
+[14.947s]       |          [01;36m[K^~~~~~~~~~~~~[m[K
+[14.947s] [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:19:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass SailServoControlNode[m[K’ defined here
+[14.949s]    19 | class [01;36m[KSailServoControlNode[m[K : public rclcpp::Node {
+[14.950s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[14.951s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:[m[K In member function ‘[01m[Kint SailServoControlNode::getOptimalSailPosition(int)[m[K’:
+[14.951s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:110:30:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_state_[m[K’ is not a member of ‘[01m[KSailServoControlNode[m[K’
+[14.952s]   110 |     if(SailServoControlNode::[01;31m[Klatest_state_[m[K.data) // If the boat has reached its last waypoint, set the sail directly towards the wind
+[14.953s]       |                              [01;31m[K^~~~~~~~~~~~~[m[K
+[14.954s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:112:44:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_state_[m[K’ is not a member of ‘[01m[KSailServoControlNode[m[K’
+[14.955s]   112 |         setSailServo(SailServoControlNode::[01;31m[Klatest_state_[m[K.data);
+[14.955s]       |                                            [01;31m[K^~~~~~~~~~~~~[m[K
+[14.972s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K In function ‘[01m[Kvoid initCallback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[14.973s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:119:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kservo_queue_[m[K’ was not declared in this scope
+[14.974s]   119 |         [01;31m[Kservo_queue_[m[K.clear();
+[14.975s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[14.976s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[14.977s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[14.977s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[14.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[14.979s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[14.979s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[14.980s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[14.981s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[14.982s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[14.982s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[14.983s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:13[m[K,
+[14.984s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:17[m[K:
+[14.984s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:121:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[14.985s]   121 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Received init message with data: %d", msg->data);
+[14.986s]       |                 [01;31m[K^~~~[m[K
+[14.993s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:121:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[14.996s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:121:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[14.996s]   121 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received init message with data: %d", msg->data);
+[14.998s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[15.000s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:121:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[15.001s]   121 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received init message with data: %d", msg->data);
+[15.002s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[15.002s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:121:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[15.003s]   121 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received init message with data: %d", msg->data);
+[15.004s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[15.004s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[15.005s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[15.006s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[15.007s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[15.007s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[15.008s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[15.009s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[15.010s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[15.010s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[15.011s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[15.012s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[15.012s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:13[m[K,
+[15.013s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:17[m[K:
+[15.014s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:121:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[15.015s]   121 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Received init message with data: %d", msg->data);
+[15.015s]       |                 [01;31m[K^~~~[m[K
+[15.016s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:121:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[15.017s]   121 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Received init message with data: %d", msg->data);
+[15.018s]       |                 [01;31m[K^~~~[m[K
+[17.172s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:39[m[K,
+[17.173s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[17.174s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[17.175s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[17.175s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[17.176s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[17.177s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[17.178s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.178s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.179s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.180s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:9[m[K,
+[17.181s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:13[m[K:
+[17.182s] /opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp: In instantiation of ‘[01m[Kstruct rclcpp::function_traits::function_traits<std::_Bind<void (SailServoControlNode::*(SailServoControlNode*, std::_Placeholder<1>))(...)> >[m[K’:
+[17.183s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:380:10:[m[K   recursively required by substitution of ‘[01m[Ktemplate<class MessageT, class CallbackT> struct rclcpp::detail::SubscriptionCallbackTypeHelper<MessageT, CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>, const rclcpp::MessageInfo&)> >::value, void>::type> [with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; CallbackT = std::_Bind<void (SailServoControlNode::*(SailServoControlNode*, std::_Placeholder<1>))(...)>][m[K’
+[17.184s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:380:10:[m[K   required from ‘[01m[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::set(CallbackT) [with CallbackT = std::_Bind<void (SailServoControlNode::*(SailServoControlNode*, std::_Placeholder<1>))(...)>; MessageT = std_msgs::msg::Bool_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[17.185s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_factory.hpp:94:32:[m[K   required from ‘[01m[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<ROSMessageType> >) [with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; CallbackT = std::_Bind<void (SailServoControlNode::*(SailServoControlNode*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Bool_<std::allocator<void> >, std_msgs::msg::Bool_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> >; ROSMessageType = std_msgs::msg::Bool_<std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[17.186s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:122:63:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::create_subscription(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; CallbackT = std::_Bind<void (SailServoControlNode::*(SailServoControlNode*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Bool_<std::allocator<void> >, std_msgs::msg::Bool_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; ROSMessageType = std_msgs::msg::Bool_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[17.186s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:191:76:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; CallbackT = std::_Bind<void (SailServoControlNode::*(SailServoControlNode*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Bool_<std::allocator<void> >, std_msgs::msg::Bool_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[17.187s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:99:47:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; CallbackT = std::_Bind<void (SailServoControlNode::*(SailServoControlNode*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Bool_<std::allocator<void> >, std_msgs::msg::Bool_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[17.188s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:31:73:[m[K   required from here
+[17.189s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:51:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+[17.189s]    51 |   using [01;31m[Karguments[m[K = typename tuple_tail<
+[17.190s]       |         [01;31m[K^~~~~~~~~[m[K
+[17.191s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+[17.191s]    57 |   using [01;31m[Kargument_type[m[K = typename std::tuple_element<N, arguments>::type;
+[17.192s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[17.193s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+[17.194s]    59 |   using [01;31m[Kreturn_type[m[K = typename function_traits<decltype( &FunctionT::operator())>::return_type;
+[17.194s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[28.822s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:132:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[28.823s]   132 | [01;35m[K}[m[K
+[28.824s]       | [01;35m[K^[m[K
+[28.990s] gmake[2]: *** [CMakeFiles/SailServoControlNodeLib.dir/build.make:76: CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o] Error 1
+[28.991s] gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/SailServoControlNodeLib.dir/all] Error 2
+[28.992s] gmake[1]: *** Waiting for unfinished jobs....
+[30.128s] gmake[2]: *** [CMakeFiles/RudderServoControlNodeLib.dir/build.make:76: CMakeFiles/RudderServoControlNodeLib.dir/src/RudderServoControlNode.cpp.o] Error 1
+[30.129s] gmake[1]: *** [CMakeFiles/Makefile2:261: CMakeFiles/RudderServoControlNodeLib.dir/all] Error 2
+[30.130s] gmake: *** [Makefile:146: all] Error 2
+[30.137s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

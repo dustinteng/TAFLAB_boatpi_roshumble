@@ -34,12 +34,6 @@ private:
     // Creating Subscription to recieve target waypoints from the ground station
     rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr ground_station_subscriber_;
 
-    // Creating Subscriber to recieve calculated waypoints from coordinate_calculations
-    rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr calculated_waypoint_subscriber_;
-    
-    // Creating Subscriber for GPS Messages
-    rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr gps_subscriber_;
-
     // Creating Subscriber for autonomous mode init
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr init_subscriber_;
 

@@ -57,9 +57,6 @@ private:
     // Creating Subscriber for GPS Messages
     rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr gps_subscriber_;
 
-    // Creating Subscriber for autonomous mode init
-    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr init_subscriber_;
-
     // // Creating Subscriber to see if boat is ready to execute a new waypoint
     // rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr executing_subscriber_;
 
@@ -68,11 +65,13 @@ private:
     void waypointCallback(const sensor_msgs::msg::NavSatFix::SharedPtr msg);
     //Defining callback function to update member variables
     void gpsCallback(const sensor_msgs::msg::NavSatFix::SharedPtr msg);
-    // void calculated_waypoints_callback(const sensor_msgs::msg::NavSatFix::SharedPtr msg);
-    void initCallback(const std_msgs::msg::String::SharedPtr msg);
     void magnetometerCallback(const std_msgs::msg::Float32::SharedPtr msg);
     void windCallback(const std_msgs::msg::Float32::SharedPtr msg);
 
+    bool shouldLog(const std::string& topic_name);
+    const int log_count_interval_ = 10;
+    std::unordered_map<std::string, int> message_counters_;
+    
     // Member Variables used to store latest data
     sensor_msgs::msg::NavSatFix latest_gps_data_;
     std_msgs::msg::Float32 latest_magnetometer_data_;

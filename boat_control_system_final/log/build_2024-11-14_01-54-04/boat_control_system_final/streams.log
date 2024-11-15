@@ -1,0 +1,793 @@
+[0.073s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.367s] [ 20%] Built target SailServoControlNodeLib
+[0.372s] [ 20%] Built target WaypointQueue
+[0.375s] [ 30%] Built target CoordinateCalculations
+[0.380s] [ 40%] Built target RudderControlHelper
+[0.447s] [35m[1mConsolidate compiler generated dependencies of target waypoint_queue_node[0m
+[0.524s] [35m[1mConsolidate compiler generated dependencies of target RudderServoControlNodeLib[0m
+[0.555s] [ 45%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o[0m
+[0.582s] [ 55%] Built target sail_servo_control_node
+[0.636s] [ 60%] [32mBuilding CXX object CMakeFiles/waypoint_queue_node.dir/src/WaypointQueueNode.cpp.o[0m
+[0.684s] [ 65%] [32mBuilding CXX object CMakeFiles/RudderServoControlNodeLib.dir/src/RudderServoControlNode.cpp.o[0m
+[16.528s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:[m[K In member function ‘[01m[Kvoid WaypointQueueNode::initCallback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[16.536s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:18:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator!=[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} and ‘[01m[Kint[m[K’)
+[16.541s]    56 |     if([32m[Kmsg->data[m[K [01;31m[K!=[m[K [34m[K1[m[K)
+[16.546s]       |        [32m[K~~~~~~~~~[m[K [01;31m[K^~[m[K [34m[K~[m[K
+[16.552s]       |             [32m[K|[m[K       [34m[K|[m[K
+[16.559s]       |             [32m[K|[m[K       [34m[Kint[m[K
+[16.563s]       |             [32m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type {aka std::__cxx11::basic_string<char>}[m[K
+[16.566s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[16.570s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[16.571s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.571s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[16.572s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[16.573s] [01m[K/usr/include/c++/11/bits/stl_pair.h:496:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)[m[K’
+[16.583s]   496 |     [01;36m[Koperator[m[K!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+[16.584s]       |     [01;36m[K^~~~~~~~[m[K
+[16.585s] [01m[K/usr/include/c++/11/bits/stl_pair.h:496:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.591s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::pair<_T1, _T2>[m[K’
+[16.592s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[16.592s]       |                     [01;36m[K^[m[K
+[16.597s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[16.598s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[16.599s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.600s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[16.606s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[16.610s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:432:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)[m[K’
+[16.613s]   432 |     [01;36m[Koperator[m[K!=(const reverse_iterator<_Iterator>& __x,
+[16.617s]       |     [01;36m[K^~~~~~~~[m[K
+[16.621s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:432:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.625s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[16.629s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[16.634s]       |                     [01;36m[K^[m[K
+[16.639s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[16.643s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[16.647s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.654s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[16.654s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[16.655s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:471:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)[m[K’
+[16.656s]   471 |     [01;36m[Koperator[m[K!=(const reverse_iterator<_IteratorL>& __x,
+[16.657s]       |     [01;36m[K^~~~~~~~[m[K
+[16.666s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:471:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.669s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[16.673s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[16.677s]       |                     [01;36m[K^[m[K
+[16.680s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[16.684s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[16.687s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.691s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[16.695s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[16.699s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1602:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)[m[K’
+[16.703s]  1602 |     [01;36m[Koperator[m[K!=(const move_iterator<_IteratorL>& __x,
+[16.706s]       |     [01;36m[K^~~~~~~~[m[K
+[16.710s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1602:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.714s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[16.719s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[16.725s]       |                     [01;36m[K^[m[K
+[16.729s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[16.732s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[16.736s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.741s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[16.745s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[16.749s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1661:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)[m[K’
+[16.752s]  1661 |     [01;36m[Koperator[m[K!=(const move_iterator<_Iterator>& __x,
+[16.756s]       |     [01;36m[K^~~~~~~~[m[K
+[16.760s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1661:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.763s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[16.768s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[16.771s]       |                     [01;36m[K^[m[K
+[16.775s] In file included from [01m[K/usr/include/c++/11/memory:64[m[K,
+[16.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.782s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[16.790s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[16.791s] [01m[K/usr/include/c++/11/bits/allocator.h:225:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> bool std::operator!=(const std::allocator<_Tp1>&, const std::allocator<_T2>&)[m[K’
+[16.792s]   225 |     [01;36m[Koperator[m[K!=(const allocator<_T1>&, const allocator<_T2>&)
+[16.793s]       |     [01;36m[K^~~~~~~~[m[K
+[16.810s] [01m[K/usr/include/c++/11/bits/allocator.h:225:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.811s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::allocator<_Tp1>[m[K’
+[16.812s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[16.812s]       |                     [01;36m[K^[m[K
+[16.825s] In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+[16.826s]                  from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+[16.827s]                  from [01m[K/usr/include/c++/11/memory:76[m[K,
+[16.828s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.828s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[16.829s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[16.830s] [01m[K/usr/include/c++/11/array:305:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, long unsigned int _Nm> bool std::operator!=(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)[m[K’
+[16.831s]   305 |     [01;36m[Koperator[m[K!=(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+[16.831s]       |     [01;36m[K^~~~~~~~[m[K
+[16.832s] [01m[K/usr/include/c++/11/array:305:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.847s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+[16.848s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[16.849s]       |                     [01;36m[K^[m[K
+[16.850s] In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+[16.850s]                  from [01m[K/usr/include/c++/11/memory:76[m[K,
+[16.851s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.851s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[16.852s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[16.853s] [01m[K/usr/include/c++/11/tuple:1579:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _TElements, class ... _UElements> constexpr bool std::operator!=(const std::tuple<_Tps ...>&, const std::tuple<_UTypes ...>&)[m[K’
+[16.863s]  1579 |     [01;36m[Koperator[m[K!=(const tuple<_TElements...>& __t,
+[16.864s]       |     [01;36m[K^~~~~~~~[m[K
+[16.865s] [01m[K/usr/include/c++/11/tuple:1579:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.865s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::tuple<_Tps ...>[m[K’
+[16.866s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[16.867s]       |                     [01;36m[K^[m[K
+[16.868s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[16.868s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.869s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[16.882s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[16.883s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:774:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)[m[K’
+[16.884s]   774 |     [01;36m[Koperator[m[K!=(const unique_ptr<_Tp, _Dp>& __x,
+[16.885s]       |     [01;36m[K^~~~~~~~[m[K
+[16.886s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:774:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.886s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[16.887s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[16.888s]       |                     [01;36m[K^[m[K
+[16.888s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[16.889s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.898s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[16.899s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[16.900s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:781:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)[m[K’
+[16.901s]   781 |     [01;36m[Koperator[m[K!=(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+[16.901s]       |     [01;36m[K^~~~~~~~[m[K
+[16.902s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:781:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.903s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[16.904s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[16.904s]       |                     [01;36m[K^[m[K
+[16.905s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[16.918s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.918s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[16.919s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[16.920s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:787:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator!=(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)[m[K’
+[16.921s]   787 |     [01;36m[Koperator[m[K!=(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+[16.921s]       |     [01;36m[K^~~~~~~~[m[K
+[16.922s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:787:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.923s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’ and ‘[01m[Kint[m[K’
+[16.923s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[16.924s]       |                     [01;36m[K^[m[K
+[16.925s] In file included from [01m[K/usr/include/c++/11/iosfwd:40[m[K,
+[16.929s]                  from [01m[K/usr/include/c++/11/bits/shared_ptr.h:52[m[K,
+[16.930s]                  from [01m[K/usr/include/c++/11/memory:77[m[K,
+[16.931s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.931s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[16.932s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[16.934s] [01m[K/usr/include/c++/11/bits/postypes.h:227:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)[m[K’
+[16.934s]   227 |     [01;36m[Koperator[m[K!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+[16.935s]       |     [01;36m[K^~~~~~~~[m[K
+[16.936s] [01m[K/usr/include/c++/11/bits/postypes.h:227:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.937s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::fpos<_StateT>[m[K’
+[16.937s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[16.938s]       |                     [01;36m[K^[m[K
+[16.939s] In file included from [01m[K/usr/include/c++/11/bits/shared_ptr.h:53[m[K,
+[16.939s]                  from [01m[K/usr/include/c++/11/memory:77[m[K,
+[16.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.941s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[16.954s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[16.956s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1441:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)[m[K’
+[16.957s]  1441 |     [01;36m[Koperator[m[K!=(const __shared_ptr<_Tp1, _Lp>& __a,
+[16.958s]       |     [01;36m[K^~~~~~~~[m[K
+[16.959s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1441:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.959s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp1, _Lp>[m[K’
+[16.960s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[16.961s]       |                     [01;36m[K^[m[K
+[16.962s] In file included from [01m[K/usr/include/c++/11/bits/shared_ptr.h:53[m[K,
+[16.963s]                  from [01m[K/usr/include/c++/11/memory:77[m[K,
+[16.963s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.964s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[16.965s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[16.974s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1447:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)[m[K’
+[16.974s]  1447 |     [01;36m[Koperator[m[K!=(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+[16.975s]       |     [01;36m[K^~~~~~~~[m[K
+[16.976s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1447:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.976s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’
+[16.977s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[16.978s]       |                     [01;36m[K^[m[K
+[16.979s] In file included from [01m[K/usr/include/c++/11/bits/shared_ptr.h:53[m[K,
+[16.979s]                  from [01m[K/usr/include/c++/11/memory:77[m[K,
+[16.980s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.980s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[16.985s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[16.986s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1452:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)[m[K’
+[16.987s]  1452 |     [01;36m[Koperator[m[K!=(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+[16.988s]       |     [01;36m[K^~~~~~~~[m[K
+[16.993s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1452:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.994s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’ and ‘[01m[Kint[m[K’
+[16.995s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[16.996s]       |                     [01;36m[K^[m[K
+[17.010s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[17.011s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.011s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.012s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.013s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:470:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> bool std::operator!=(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)[m[K’
+[17.014s]   470 |     [01;36m[Koperator[m[K!=(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+[17.015s]       |     [01;36m[K^~~~~~~~[m[K
+[17.016s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:470:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.017s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+[17.018s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.018s]       |                     [01;36m[K^[m[K
+[17.026s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[17.027s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.028s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.029s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.030s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:476:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator!=(const std::shared_ptr<_Tp>&, std::nullptr_t)[m[K’
+[17.031s]   476 |     [01;36m[Koperator[m[K!=(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+[17.031s]       |     [01;36m[K^~~~~~~~[m[K
+[17.032s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:476:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.045s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+[17.046s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.047s]       |                     [01;36m[K^[m[K
+[17.048s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[17.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.050s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.051s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.052s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:482:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator!=(std::nullptr_t, const std::shared_ptr<_Tp>&)[m[K’
+[17.052s]   482 |     [01;36m[Koperator[m[K!=(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+[17.061s]       |     [01;36m[K^~~~~~~~[m[K
+[17.063s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:482:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.064s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[17.065s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.066s]       |                     [01;36m[K^[m[K
+[17.067s] In file included from [01m[K/usr/include/c++/11/bits/basic_string.h:48[m[K,
+[17.067s]                  from [01m[K/usr/include/c++/11/string:55[m[K,
+[17.068s]                  from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[17.069s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[17.078s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[17.079s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[17.080s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[17.081s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.081s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.082s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.083s] [01m[K/usr/include/c++/11/string_view:570:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator!=(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)[m[K’
+[17.084s]   570 |     [01;36m[Koperator[m[K!=(basic_string_view<_CharT, _Traits> __x,
+[17.085s]       |     [01;36m[K^~~~~~~~[m[K
+[17.097s] [01m[K/usr/include/c++/11/string_view:570:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.098s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+[17.099s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.100s]       |                     [01;36m[K^[m[K
+[17.101s] In file included from [01m[K/usr/include/c++/11/bits/basic_string.h:48[m[K,
+[17.102s]                  from [01m[K/usr/include/c++/11/string:55[m[K,
+[17.102s]                  from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[17.103s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[17.104s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[17.104s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[17.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[17.114s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.115s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.116s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.117s] [01m[K/usr/include/c++/11/string_view:576:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator!=(std::basic_string_view<_CharT, _Traits>, std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >)[m[K’
+[17.117s]   576 |     [01;36m[Koperator[m[K!=(basic_string_view<_CharT, _Traits> __x,
+[17.118s]       |     [01;36m[K^~~~~~~~[m[K
+[17.119s] [01m[K/usr/include/c++/11/string_view:576:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.120s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+[17.121s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.130s]       |                     [01;36m[K^[m[K
+[17.130s] In file included from [01m[K/usr/include/c++/11/bits/basic_string.h:48[m[K,
+[17.131s]                  from [01m[K/usr/include/c++/11/string:55[m[K,
+[17.132s]                  from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[17.132s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[17.133s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[17.134s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[17.134s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[17.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.146s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.147s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.148s] [01m[K/usr/include/c++/11/string_view:583:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator!=(std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)[m[K’
+[17.149s]   583 |     [01;36m[Koperator[m[K!=(__type_identity_t<basic_string_view<_CharT, _Traits>> __x,
+[17.150s]       |     [01;36m[K^~~~~~~~[m[K
+[17.151s] [01m[K/usr/include/c++/11/string_view:583:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.151s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’ and ‘[01m[Kint[m[K’
+[17.152s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.153s]       |                     [01;36m[K^[m[K
+[17.162s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[17.163s]                  from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[17.164s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[17.164s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[17.165s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[17.166s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[17.167s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.167s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.168s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.169s] [01m[K/usr/include/c++/11/bits/basic_string.h:6302:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[17.174s]  6302 |     [01;36m[Koperator[m[K!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[17.175s]       |     [01;36m[K^~~~~~~~[m[K
+[17.176s] [01m[K/usr/include/c++/11/bits/basic_string.h:6302:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.177s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kint[m[K’
+[17.186s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.186s]       |                     [01;36m[K^[m[K
+[17.187s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[17.188s]                  from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[17.188s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[17.190s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[17.190s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[17.191s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[17.192s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.193s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.199s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.200s] [01m[K/usr/include/c++/11/bits/basic_string.h:6315:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[17.200s]  6315 |     [01;36m[Koperator[m[K!=(const _CharT* __lhs,
+[17.201s]       |     [01;36m[K^~~~~~~~[m[K
+[17.202s] [01m[K/usr/include/c++/11/bits/basic_string.h:6315:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.203s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’
+[17.203s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.204s]       |                     [01;36m[K^[m[K
+[17.205s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[17.206s]                  from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[17.206s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[17.207s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[17.208s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[17.208s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[17.221s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.222s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.222s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.223s] [01m[K/usr/include/c++/11/bits/basic_string.h:6327:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)[m[K’
+[17.224s]  6327 |     [01;36m[Koperator[m[K!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[17.224s]       |     [01;36m[K^~~~~~~~[m[K
+[17.225s] [01m[K/usr/include/c++/11/bits/basic_string.h:6327:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.226s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kint[m[K’
+[17.226s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.227s]       |                     [01;36m[K^[m[K
+[17.228s] In file included from [01m[K/usr/include/c++/11/future:47[m[K,
+[17.228s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[17.229s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.230s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.231s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.231s] [01m[K/usr/include/c++/11/bits/std_function.h:737:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Res, class ... _Args> bool std::operator!=(const std::function<_Res(_ArgTypes ...)>&, std::nullptr_t)[m[K’
+[17.232s]   737 |     [01;36m[Koperator[m[K!=(const function<_Res(_Args...)>& __f, nullptr_t) noexcept
+[17.233s]       |     [01;36m[K^~~~~~~~[m[K
+[17.246s] [01m[K/usr/include/c++/11/bits/std_function.h:737:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.247s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::function<_Res(_ArgTypes ...)>[m[K’
+[17.247s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.248s]       |                     [01;36m[K^[m[K
+[17.249s] In file included from [01m[K/usr/include/c++/11/future:47[m[K,
+[17.250s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[17.250s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.251s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.252s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.252s] [01m[K/usr/include/c++/11/bits/std_function.h:743:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Res, class ... _Args> bool std::operator!=(std::nullptr_t, const std::function<_Res(_ArgTypes ...)>&)[m[K’
+[17.253s]   743 |     [01;36m[Koperator[m[K!=(nullptr_t, const function<_Res(_Args...)>& __f) noexcept
+[17.254s]       |     [01;36m[K^~~~~~~~[m[K
+[17.254s] [01m[K/usr/include/c++/11/bits/std_function.h:743:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.255s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::function<_Res(_ArgTypes ...)>[m[K’ and ‘[01m[Kint[m[K’
+[17.256s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.256s]       |                     [01;36m[K^[m[K
+[17.281s] In file included from [01m[K/usr/include/c++/11/set:61[m[K,
+[17.283s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21[m[K,
+[17.283s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.284s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.284s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.285s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.286s] [01m[K/usr/include/c++/11/bits/stl_set.h:1030:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator!=(const std::set<_Key, _Compare, _Allocator>&, const std::set<_Key, _Compare, _Allocator>&)[m[K’
+[17.286s]  1030 |     [01;36m[Koperator[m[K!=(const set<_Key, _Compare, _Alloc>& __x,
+[17.287s]       |     [01;36m[K^~~~~~~~[m[K
+[17.288s] [01m[K/usr/include/c++/11/bits/stl_set.h:1030:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.289s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::set<_Key, _Compare, _Allocator>[m[K’
+[17.290s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.291s]       |                     [01;36m[K^[m[K
+[17.292s] In file included from [01m[K/usr/include/c++/11/set:62[m[K,
+[17.292s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21[m[K,
+[17.293s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.293s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.294s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.295s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.295s] [01m[K/usr/include/c++/11/bits/stl_multiset.h:1016:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator!=(const std::multiset<_Key, _Compare, _Allocator>&, const std::multiset<_Key, _Compare, _Allocator>&)[m[K’
+[17.296s]  1016 |     [01;36m[Koperator[m[K!=(const multiset<_Key, _Compare, _Alloc>& __x,
+[17.296s]       |     [01;36m[K^~~~~~~~[m[K
+[17.297s] [01m[K/usr/include/c++/11/bits/stl_multiset.h:1016:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.297s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::multiset<_Key, _Compare, _Allocator>[m[K’
+[17.298s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.299s]       |                     [01;36m[K^[m[K
+[17.299s] In file included from [01m[K/usr/include/c++/11/unordered_map:47[m[K,
+[17.299s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+[17.300s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.301s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.314s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.314s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.315s] [01m[K/usr/include/c++/11/bits/unordered_map.h:2141:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Hash, class _Pred, class _Alloc> bool std::operator!=(const std::unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&, const std::unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+[17.316s]  2141 |     [01;36m[Koperator[m[K!=(const unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+[17.317s]       |     [01;36m[K^~~~~~~~[m[K
+[17.317s] [01m[K/usr/include/c++/11/bits/unordered_map.h:2141:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.318s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>[m[K’
+[17.319s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.320s]       |                     [01;36m[K^[m[K
+[17.320s] In file included from [01m[K/usr/include/c++/11/unordered_map:47[m[K,
+[17.333s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+[17.334s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.335s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.336s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.336s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.337s] [01m[K/usr/include/c++/11/bits/unordered_map.h:2155:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Hash, class _Pred, class _Alloc> bool std::operator!=(const std::unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&, const std::unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+[17.338s]  2155 |     [01;36m[Koperator[m[K!=(const unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+[17.339s]       |     [01;36m[K^~~~~~~~[m[K
+[17.340s] [01m[K/usr/include/c++/11/bits/unordered_map.h:2155:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.340s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>[m[K’
+[17.341s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.342s]       |                     [01;36m[K^[m[K
+[17.343s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[17.343s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[17.344s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[17.345s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[17.358s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[17.359s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.359s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.360s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.361s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.361s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.362s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1937:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator!=(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)[m[K’
+[17.363s]  1937 |     [01;36m[Koperator[m[K!=(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+[17.363s]       |     [01;36m[K^~~~~~~~[m[K
+[17.364s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1937:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.364s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::vector<_Tp, _Alloc>[m[K’
+[17.365s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.365s]       |                     [01;36m[K^[m[K
+[17.366s] In file included from [01m[K/usr/include/c++/11/bits/locale_facets.h:48[m[K,
+[17.366s]                  from [01m[K/usr/include/c++/11/bits/basic_ios.h:37[m[K,
+[17.367s]                  from [01m[K/usr/include/c++/11/ios:44[m[K,
+[17.368s]                  from [01m[K/usr/include/c++/11/ostream:38[m[K,
+[17.368s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[17.377s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[17.379s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.380s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.381s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.381s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.382s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.393s] [01m[K/usr/include/c++/11/bits/streambuf_iterator.h:232:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)[m[K’
+[17.394s]   232 |     [01;36m[Koperator[m[K!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+[17.410s]       |     [01;36m[K^~~~~~~~[m[K
+[17.411s] [01m[K/usr/include/c++/11/bits/streambuf_iterator.h:232:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.412s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::istreambuf_iterator<_CharT, _Traits>[m[K’
+[17.413s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.414s]       |                     [01;36m[K^[m[K
+[17.414s] In file included from [01m[K/usr/include/c++/11/list:63[m[K,
+[17.415s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:23[m[K,
+[17.416s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.416s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.420s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.421s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.422s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.423s] [01m[K/usr/include/c++/11/bits/stl_list.h:2092:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator!=(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)[m[K’
+[17.424s]  2092 |     [01;36m[Koperator[m[K!=(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+[17.424s]       |     [01;36m[K^~~~~~~~[m[K
+[17.437s] [01m[K/usr/include/c++/11/bits/stl_list.h:2092:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.438s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::list<_Tp, _Alloc>[m[K’
+[17.439s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.440s]       |                     [01;36m[K^[m[K
+[17.440s] In file included from [01m[K/usr/include/c++/11/map:61[m[K,
+[17.441s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24[m[K,
+[17.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.444s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.445s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.445s] [01m[K/usr/include/c++/11/bits/stl_map.h:1508:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)[m[K’
+[17.446s]  1508 |     [01;36m[Koperator[m[K!=(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+[17.447s]       |     [01;36m[K^~~~~~~~[m[K
+[17.448s] [01m[K/usr/include/c++/11/bits/stl_map.h:1508:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.448s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::map<_Key, _Tp, _Compare, _Allocator>[m[K’
+[17.449s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.455s]       |                     [01;36m[K^[m[K
+[17.455s] In file included from [01m[K/usr/include/c++/11/map:62[m[K,
+[17.456s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24[m[K,
+[17.457s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.457s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.458s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.459s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.460s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.460s] [01m[K/usr/include/c++/11/bits/stl_multimap.h:1173:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)[m[K’
+[17.461s]  1173 |     [01;36m[Koperator[m[K!=(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+[17.462s]       |     [01;36m[K^~~~~~~~[m[K
+[17.463s] [01m[K/usr/include/c++/11/bits/stl_multimap.h:1173:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.472s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::multimap<_Key, _Tp, _Compare, _Allocator>[m[K’
+[17.473s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.474s]       |                     [01;36m[K^[m[K
+[17.475s] In file included from [01m[K/usr/include/c++/11/unordered_set:47[m[K,
+[17.476s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:26[m[K,
+[17.477s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+[17.488s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.491s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.495s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.499s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.503s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.506s] [01m[K/usr/include/c++/11/bits/unordered_set.h:1811:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Value, class _Hash, class _Pred, class _Alloc> bool std::operator!=(const std::unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>&, const std::unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+[17.510s]  1811 |     [01;36m[Koperator[m[K!=(const unordered_set<_Value, _Hash, _Pred, _Alloc>& __x,
+[17.514s]       |     [01;36m[K^~~~~~~~[m[K
+[17.518s] [01m[K/usr/include/c++/11/bits/unordered_set.h:1811:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.521s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>[m[K’
+[17.525s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.528s]       |                     [01;36m[K^[m[K
+[17.532s] In file included from [01m[K/usr/include/c++/11/unordered_set:47[m[K,
+[17.536s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:26[m[K,
+[17.539s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+[17.543s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.548s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.551s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.555s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.559s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.563s] [01m[K/usr/include/c++/11/bits/unordered_set.h:1825:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Value, class _Hash, class _Pred, class _Alloc> bool std::operator!=(const std::unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>&, const std::unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+[17.566s]  1825 |     [01;36m[Koperator[m[K!=(const unordered_multiset<_Value, _Hash, _Pred, _Alloc>& __x,
+[17.570s]       |     [01;36m[K^~~~~~~~[m[K
+[17.574s] [01m[K/usr/include/c++/11/bits/unordered_set.h:1825:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.577s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>[m[K’
+[17.581s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.584s]       |                     [01;36m[K^[m[K
+[17.589s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23[m[K,
+[17.593s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[17.596s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[17.600s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[17.603s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[17.607s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[17.611s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[17.614s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.618s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.621s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.625s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.628s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.632s] [01m[K/usr/include/c++/11/optional:1054:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_ne_t<_Tp, _Up> std::operator!=(const std::optional<_Tp>&, const std::optional<_Up>&)[m[K’
+[17.636s]  1054 |     [01;36m[Koperator[m[K!=(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+[17.639s]       |     [01;36m[K^~~~~~~~[m[K
+[17.643s] [01m[K/usr/include/c++/11/optional:1054:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.646s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[17.649s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.653s]       |                     [01;36m[K^[m[K
+[17.656s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23[m[K,
+[17.660s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[17.663s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[17.667s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[17.670s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[17.674s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[17.677s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[17.681s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.685s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.693s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.697s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.700s] [01m[K/usr/include/c++/11/optional:1121:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr bool std::operator!=(const std::optional<_Tp>&, std::nullopt_t)[m[K’
+[17.704s]  1121 |     [01;36m[Koperator[m[K!=(const optional<_Tp>& __lhs, nullopt_t) noexcept
+[17.708s]       |     [01;36m[K^~~~~~~~[m[K
+[17.711s] [01m[K/usr/include/c++/11/optional:1121:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.715s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[17.718s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.722s]       |                     [01;36m[K^[m[K
+[17.726s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23[m[K,
+[17.729s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[17.733s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[17.737s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[17.740s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[17.744s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[17.748s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[17.751s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.755s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.758s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.762s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.766s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.769s] [01m[K/usr/include/c++/11/optional:1126:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr bool std::operator!=(std::nullopt_t, const std::optional<_Tp>&)[m[K’
+[17.773s]  1126 |     [01;36m[Koperator[m[K!=(nullopt_t, const optional<_Tp>& __rhs) noexcept
+[17.777s]       |     [01;36m[K^~~~~~~~[m[K
+[17.782s] [01m[K/usr/include/c++/11/optional:1126:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.786s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::optional<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[17.792s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.796s]       |                     [01;36m[K^[m[K
+[17.799s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23[m[K,
+[17.803s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[17.806s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[17.810s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[17.813s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[17.817s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[17.821s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[17.824s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.828s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.831s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.835s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.839s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.842s] [01m[K/usr/include/c++/11/optional:1185:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_ne_t<_Tp, _Up> std::operator!=(const std::optional<_Tp>&, const _Up&)[m[K’
+[17.846s]  1185 |     [01;36m[Koperator[m[K!=(const optional<_Tp>& __lhs, const _Up& __rhs)
+[17.850s]       |     [01;36m[K^~~~~~~~[m[K
+[17.854s] [01m[K/usr/include/c++/11/optional:1185:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.857s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[17.861s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.865s]       |                     [01;36m[K^[m[K
+[17.868s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23[m[K,
+[17.872s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[17.876s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[17.879s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[17.883s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[17.886s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[17.890s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[17.895s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.899s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.902s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.906s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.909s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.913s] [01m[K/usr/include/c++/11/optional:1191:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_ne_t<_Up, _Tp> std::operator!=(const _Up&, const std::optional<_Tp>&)[m[K’
+[17.916s]  1191 |     [01;36m[Koperator[m[K!=(const _Up& __lhs, const optional<_Tp>& __rhs)
+[17.920s]       |     [01;36m[K^~~~~~~~[m[K
+[17.923s] [01m[K/usr/include/c++/11/optional:1191:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.927s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::optional<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[17.931s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[17.934s]       |                     [01;36m[K^[m[K
+[17.937s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+[17.941s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[17.944s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[17.948s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[17.951s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[17.955s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[17.958s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[17.961s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.965s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.969s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.972s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[17.976s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[17.979s] [01m[K/usr/include/c++/11/variant:1233:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _Types> constexpr bool std::operator!=(const std::variant<_Types ...>&, const std::variant<_Types ...>&)[m[K’
+[17.983s]  1233 |   [01;36m[K_VARIANT_RELATION_FUNCTION_TEMPLATE[m[K(!=, not_equal)
+[17.986s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[17.990s] [01m[K/usr/include/c++/11/variant:1233:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.993s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::variant<_Types ...>[m[K’
+[17.998s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[18.001s]       |                     [01;36m[K^[m[K
+[18.005s] In file included from [01m[K/usr/include/c++/11/deque:67[m[K,
+[18.008s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:18[m[K,
+[18.021s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[18.022s] [01m[K/usr/include/c++/11/bits/stl_deque.h:2292:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator!=(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)[m[K’
+[18.023s]  2292 |     [01;36m[Koperator[m[K!=(const deque<_Tp, _Alloc>& __x, const deque<_Tp, _Alloc>& __y)
+[18.023s]       |     [01;36m[K^~~~~~~~[m[K
+[18.024s] [01m[K/usr/include/c++/11/bits/stl_deque.h:2292:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[18.025s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::deque<_Tp, _Alloc>[m[K’
+[18.027s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[18.028s]       |                     [01;36m[K^[m[K
+[18.029s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[18.031s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[18.031s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[18.032s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[18.033s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[18.034s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1171:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)[m[K’
+[18.035s]  1171 |     [01;36m[Koperator[m[K!=(const __normal_iterator<_IteratorL, _Container>& __lhs,
+[18.036s]       |     [01;36m[K^~~~~~~~[m[K
+[18.036s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1171:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[18.038s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst __gnu_cxx::__normal_iterator<_IteratorL, _Container>[m[K’
+[18.038s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[18.039s]       |                     [01;36m[K^[m[K
+[18.040s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[18.040s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[18.042s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[18.043s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[18.044s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[18.045s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1179:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)[m[K’
+[18.046s]  1179 |     [01;36m[Koperator[m[K!=(const __normal_iterator<_Iterator, _Container>& __lhs,
+[18.048s]       |     [01;36m[K^~~~~~~~[m[K
+[18.048s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1179:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[18.049s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst __gnu_cxx::__normal_iterator<_Iterator, _Container>[m[K’
+[18.050s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[18.052s]       |                     [01;36m[K^[m[K
+[18.053s] In file included from [01m[K/usr/include/aarch64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[18.054s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[18.055s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[18.056s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[18.056s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[18.058s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[18.059s] [01m[K/usr/include/c++/11/ext/new_allocator.h:190:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Up> bool __gnu_cxx::operator!=(const __gnu_cxx::new_allocator<char>&, const __gnu_cxx::new_allocator<_Tp>&)[m[K’
+[18.059s]   190 |         [01;36m[Koperator[m[K!=(const new_allocator&, const new_allocator<_Up>&)
+[18.060s]       |         [01;36m[K^~~~~~~~[m[K
+[18.061s] [01m[K/usr/include/c++/11/ext/new_allocator.h:190:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[18.062s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:56:21:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst __gnu_cxx::new_allocator<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[18.063s]    56 |     if(msg->data != [01;36m[K1[m[K)
+[18.066s]       |                     [01;36m[K^[m[K
+[18.067s] In file included from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[18.068s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[18.068s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[18.070s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[18.071s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[18.072s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[18.073s] [01m[K/usr/include/c++/11/system_error:416:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator!=(const std::error_code&, const std::error_code&)[m[K’
+[18.074s]   416 |   [01;36m[Koperator[m[K!=(const error_code& __lhs, const error_code& __rhs) noexcept
+[18.074s]       |   [01;36m[K^~~~~~~~[m[K
+[18.075s] [01m[K/usr/include/c++/11/system_error:416:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst std::error_code&[m[K’
+[18.077s]   416 |   operator!=([01;36m[Kconst error_code& __lhs[m[K, const error_code& __rhs) noexcept
+[18.078s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[18.079s] [01m[K/usr/include/c++/11/system_error:421:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator!=(const std::error_code&, const std::error_condition&)[m[K’
+[18.092s]   421 |   [01;36m[Koperator[m[K!=(const error_code& __lhs, const error_condition& __rhs) noexcept
+[18.092s]       |   [01;36m[K^~~~~~~~[m[K
+[18.093s] [01m[K/usr/include/c++/11/system_error:421:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst std::error_code&[m[K’
+[18.094s]   421 |   operator!=([01;36m[Kconst error_code& __lhs[m[K, const error_condition& __rhs) noexcept
+[18.095s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[18.096s] [01m[K/usr/include/c++/11/system_error:426:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator!=(const std::error_condition&, const std::error_code&)[m[K’
+[18.097s]   426 |   [01;36m[Koperator[m[K!=(const error_condition& __lhs, const error_code& __rhs) noexcept
+[18.108s]       |   [01;36m[K^~~~~~~~[m[K
+[18.109s] [01m[K/usr/include/c++/11/system_error:426:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst std::error_condition&[m[K’
+[18.110s]   426 |   operator!=([01;36m[Kconst error_condition& __lhs[m[K, const error_code& __rhs) noexcept
+[18.111s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[18.112s] [01m[K/usr/include/c++/11/system_error:431:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator!=(const std::error_condition&, const std::error_condition&)[m[K’
+[18.113s]   431 |   [01;36m[Koperator[m[K!=(const error_condition& __lhs,
+[18.121s]       |   [01;36m[K^~~~~~~~[m[K
+[18.121s] [01m[K/usr/include/c++/11/system_error:431:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst std::error_condition&[m[K’
+[18.122s]   431 |   operator!=([01;36m[Kconst error_condition& __lhs[m[K,
+[18.123s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[18.124s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:22[m[K,
+[18.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[18.132s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[18.133s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[18.133s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[18.134s] [01m[K/usr/include/c++/11/thread:66:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator!=(std::thread::id, std::thread::id)[m[K’
+[18.135s]    66 |   [01;36m[Koperator[m[K!=(thread::id __x, thread::id __y) noexcept
+[18.136s]       |   [01;36m[K^~~~~~~~[m[K
+[18.137s] [01m[K/usr/include/c++/11/thread:66:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kstd::thread::id[m[K’
+[18.149s]    66 |   operator!=([01;36m[Kthread::id __x[m[K, thread::id __y) noexcept
+[18.153s]       |              [01;36m[K~~~~~~~~~~~^~~[m[K
+[18.157s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+[18.160s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[18.163s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[18.168s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[18.170s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[18.171s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[18.172s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[18.173s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[18.181s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[18.184s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[18.188s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[18.192s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[18.195s] [01m[K/usr/include/c++/11/variant:1271:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr bool std::operator!=(std::monostate, std::monostate)[m[K’
+[18.200s]  1271 |   constexpr bool [01;36m[Koperator[m[K!=(monostate, monostate) noexcept { return false; }
+[18.204s]       |                  [01;36m[K^~~~~~~~[m[K
+[18.207s] [01m[K/usr/include/c++/11/variant:1271:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kstd::monostate[m[K’
+[18.211s]  1271 |   constexpr bool operator!=([01;36m[Kmonostate[m[K, monostate) noexcept { return false; }
+[18.215s]       |                             [01;36m[K^~~~~~~~~[m[K
+[18.218s] In file included from [01m[K/usr/include/c++/11/memory:64[m[K,
+[18.222s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[18.226s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[18.229s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[18.233s] [01m[K/usr/include/c++/11/bits/allocator.h:209:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator!=(const std::allocator<char>&, const std::allocator<char>&)[m[K’
+[18.237s]   209 |       [01;36m[Koperator[m[K!=(const allocator&, const allocator&) _GLIBCXX_NOTHROW
+[18.240s]       |       [01;36m[K^~~~~~~~[m[K
+[18.244s] [01m[K/usr/include/c++/11/bits/allocator.h:209:18:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst std::allocator<char>&[m[K’
+[18.247s]   209 |       operator!=([01;36m[Kconst allocator&[m[K, const allocator&) _GLIBCXX_NOTHROW
+[18.262s]       |                  [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[18.266s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[18.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[18.269s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[18.270s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[18.270s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[18.271s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[18.272s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[18.273s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[18.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[18.282s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[18.283s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[18.284s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp:12[m[K,
+[18.285s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:17[m[K:
+[18.304s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:[m[K In member function ‘[01m[Kvoid CoordinateCalculationsNode::initCallback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[18.309s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:126:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[18.312s]   126 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"Received init message with data: %d"[m[K,
+[18.313s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[18.313s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/CoordinateCalculationsNode.cpp:126:72:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[18.314s]   126 |     RCLCPP_INFO(this->get_logger(), "Received init message with data: [01;36m[K%d[m[K",
+[18.315s]       |                                                                       [01;36m[K~^[m[K
+[18.316s]       |                                                                        [01;36m[K|[m[K
+[18.317s]       |                                                                        [01;36m[Kint[m[K
+[18.339s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[18.343s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[18.344s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[18.345s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[18.346s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[18.347s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[18.347s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[18.348s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[18.356s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[18.357s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[18.358s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[18.359s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp:12[m[K,
+[18.360s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:9[m[K:
+[18.361s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:60:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[18.368s]    60 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"Received init message with data: %d"[m[K, msg->data);
+[18.368s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[18.369s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/WaypointQueueNode.cpp:60:72:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[18.370s]    60 |     RCLCPP_INFO(this->get_logger(), "Received init message with data: [01;36m[K%d[m[K", msg->data);
+[18.371s]       |                                                                       [01;36m[K~^[m[K
+[18.372s]       |                                                                        [01;36m[K|[m[K
+[18.373s]       |                                                                        [01;36m[Kint[m[K
+[39.675s] gmake[2]: *** [CMakeFiles/waypoint_queue_node.dir/build.make:76: CMakeFiles/waypoint_queue_node.dir/src/WaypointQueueNode.cpp.o] Error 1
+[39.682s] gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/waypoint_queue_node.dir/all] Error 2
+[39.683s] gmake[1]: *** Waiting for unfinished jobs....
+[65.522s] [ 70%] [32m[1mLinking CXX static library libRudderServoControlNodeLib.a[0m
+[67.717s] [ 70%] Built target RudderServoControlNodeLib
+[74.802s] [ 75%] [32m[1mLinking CXX static library libCoordinateCalculationsNodeLib.a[0m
+[76.571s] [ 75%] Built target CoordinateCalculationsNodeLib
+[76.576s] gmake: *** [Makefile:146: all] Error 2
+[76.921s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

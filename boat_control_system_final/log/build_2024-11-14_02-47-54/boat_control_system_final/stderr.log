@@ -1,0 +1,30 @@
+In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:13[m[K:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:11:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/Bool.hpp: No such file or directory
+   11 | #include [01;31m[K<std_msgs/msg/Bool.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/SailServoControlNodeLib.dir/build.make:76: CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/SailServoControlNodeLib.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderControlHelper.hpp:12[m[K,
+                 from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderControlHelper.cpp:12[m[K:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:40:44:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+   40 |     void initCallback(const std_msgs::msg::[01;31m[KString[m[K::SharedPtr msg);
+      |                                            [01;31m[K^~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:40:62:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+   40 |     void initCallback(const std_msgs::msg::String::SharedPtr [01;31m[Kmsg[m[K);
+      |                                                              [01;31m[K^~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:40:61:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+   40 |     void initCallback[34m[K([m[Kconst std_msgs::msg::String::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K);
+      |                      [34m[K~[m[K                                      [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                                             [32m[K)[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:40:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   40 |     void initCallback(const std_msgs::msg::String::[01;31m[KSharedPtr[m[K msg);
+      |                                                    [01;31m[K^~~~~~~~~[m[K
+      |                                                             [32m[K;[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp:40:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+   40 |     void initCallback(const std_msgs::msg::String::SharedPtr [01;31m[Kmsg[m[K);
+      |                                                              [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/RudderControlHelper.dir/build.make:76: CMakeFiles/RudderControlHelper.dir/src/RudderControlHelper.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:207: CMakeFiles/RudderControlHelper.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
