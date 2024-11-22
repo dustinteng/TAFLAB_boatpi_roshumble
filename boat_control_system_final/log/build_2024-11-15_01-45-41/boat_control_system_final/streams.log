@@ -1,0 +1,15 @@
+[0.070s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.281s] [35m[1mConsolidate compiler generated dependencies of target SailServoControlNodeLib[0m
+[0.496s] [ 10%] Built target CoordinateCalculations
+[0.505s] [ 20%] Built target WaypointQueue
+[0.513s] [ 30%] Built target RudderControlHelper
+[0.543s] [ 35%] [32mBuilding CXX object CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o[0m
+[0.759s] [ 45%] Built target CoordinateCalculationsNodeLib
+[0.798s] [ 55%] Built target waypoint_queue_node
+[0.804s] [ 65%] Built target RudderServoControlNodeLib
+[0.919s] [ 75%] Built target coordinate_calculations_node
+[0.967s] [ 85%] Built target rudder_servo_control_node
+[5.368s] gmake[2]: *** [CMakeFiles/SailServoControlNodeLib.dir/build.make:76: CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o] Interrupt
+[5.369s] gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/SailServoControlNodeLib.dir/all] Interrupt
+[5.370s] gmake: *** [Makefile:146: all] Interrupt
+[5.404s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4

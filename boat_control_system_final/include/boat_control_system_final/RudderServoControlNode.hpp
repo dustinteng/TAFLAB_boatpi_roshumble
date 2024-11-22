@@ -74,7 +74,7 @@ private:
 
     // Thread for waypoint execution
     std::thread execution_thread_;
-    bool autonomous_mode_;
+    std_msgs::msg::String autonomous_mode_;
 
     // Mutex for thread-safe queue access
     std::mutex queue_mutex_;

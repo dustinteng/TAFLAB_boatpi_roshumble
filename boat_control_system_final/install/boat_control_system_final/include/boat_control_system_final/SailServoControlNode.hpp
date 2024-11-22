@@ -26,8 +26,8 @@ private:
     void windCallback(const std_msgs::msg::Float32::SharedPtr msg);
     void loadSailData();
     void stateCallback(const std_msgs::msg::Bool::SharedPtr msg);
-    int interpolateSailPosition(int windAngle, const SailData& lower, const SailData& upper);
-    int getOptimalSailPosition(int windAngle);
+    float interpolateSailPosition(float windAngle, const SailData& lower, const SailData& upper);
+    float getOptimalSailPosition(float windAngle);
 
     // Member variables
     std::vector<SailData> sailData;
@@ -37,6 +37,13 @@ private:
     std_msgs::msg::Float32 latest_wind_data_;
     std_msgs::msg::Bool latest_state_;
     std::string filename = "boat_control_system_final/SailAngleData.csv"; 
+
+    // Logging helpers
+    bool shouldLog(const std::string& topic_name);
+    const int log_count_interval_ = 10;
+    std::unordered_map<std::string, int> message_counters_;
+    
+
 };
 
 #endif // BOAT_CONTROL_SYSTEM_FINAL_SAILSERVOCONTROLNODE_HPP_

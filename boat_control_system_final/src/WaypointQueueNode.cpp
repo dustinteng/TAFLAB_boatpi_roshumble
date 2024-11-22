@@ -61,15 +61,21 @@ void WaypointQueueNode::initCallback(const std_msgs::msg::String::SharedPtr msg)
 }
 
 void WaypointQueueNode::executing_callback(const std_msgs::msg::Bool::SharedPtr msg)
-{   //This Logic dictates that if message is true, the boat is ready to recieve a new waypoint
-    if(msg->data)
+{
+    // Log the received message correctly
+    RCLCPP_INFO(this->get_logger(), "Received executing state with data: %s", msg->data ? "true" : "false");
+
+    // This logic dictates that if message is true, the boat is ready to receive a new waypoint
+    if (msg->data)
     {
         waypoint_publisher_->publish(WaypointQueue::getInstance().get_next_waypoint());
-    }else
+    }
+    else
     {
         return;
     }
 }
+
 
 int main(int argc, char **argv)
 {

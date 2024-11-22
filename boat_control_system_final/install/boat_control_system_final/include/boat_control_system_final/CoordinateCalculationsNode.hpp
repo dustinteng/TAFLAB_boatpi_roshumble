@@ -69,7 +69,7 @@ private:
     void windCallback(const std_msgs::msg::Float32::SharedPtr msg);
 
     bool shouldLog(const std::string& topic_name);
-    int log_count_interval_;
+    const int log_count_interval_ = 10;
     std::unordered_map<std::string, int> message_counters_;
     
     // Member Variables used to store latest data

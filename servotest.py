@@ -3,20 +3,16 @@ import time
 
 # Set up GPIO mode
 GPIO.setmode(GPIO.BCM)  # Use Broadcom pin numbering
-servo_pin_1 = 23  # GPIO 23 for first servo
-servo_pin_2 = 25  # GPIO 25 for second servo
+servo_pin = 24  # GPIO 25 for the servo
 
-# Set up GPIO outputs for each servo
-GPIO.setup(servo_pin_1, GPIO.OUT)
-GPIO.setup(servo_pin_2, GPIO.OUT)
+# Set up GPIO output for the servo
+GPIO.setup(servo_pin, GPIO.OUT)
 
-# Set up PWM on each servo pin
-pwm1 = GPIO.PWM(servo_pin_1, 50)  # 50 Hz frequency (20 ms period)
-pwm2 = GPIO.PWM(servo_pin_2, 50)  # 50 Hz frequency (20 ms period)
+# Set up PWM on the servo pin
+pwm = GPIO.PWM(servo_pin, 50)  # 50 Hz frequency (20 ms period)
 
-# Start PWM with 0% duty cycle (servos in neutral position)
-pwm1.start(0)
-pwm2.start(0)
+# Start PWM with 0% duty cycle (servo in neutral position)
+pwm.start(0)
 
 def set_angle(pwm, angle):
     # Convert angle to duty cycle
@@ -26,26 +22,25 @@ def set_angle(pwm, angle):
 
 try:
     while True:
-        # Move the first servo to different angles
+        # Move the servo to different angles
         angle = 0
-        set_angle(pwm1, angle)
-        print(f"Servo 1 moved to {angle}°")
-        set_angle(pwm2, angle)
-        print(f"Servo 2 moved to {angle}°")
+        set_angle(pwm, angle)
+        print(f"Servo moved to {angle}°")
         time.sleep(1)
 
         angle = 90
-        set_angle(pwm1, angle)
-        print(f"Servo 1 moved to {angle}°")
-        set_angle(pwm2, angle)
-        print(f"Servo 2 moved to {angle}°")
+        set_angle(pwm, angle)
+        print(f"Servo moved to {angle}°")
         time.sleep(1)
 
         angle = 180
-        set_angle(pwm1, angle)
-        print(f"Servo 1 moved to {angle}°")
-        set_angle(pwm2, angle)
-        print(f"Servo 2 moved to {angle}°")
+        set_angle(pwm, angle)
+        print(f"Servo moved to {angle}°")
+        time.sleep(1)
+
+        angle = 270
+        set_angle(pwm, angle)
+        print(f"Servo moved to {angle}°")
         time.sleep(1)
 
 except KeyboardInterrupt:
@@ -53,6 +48,5 @@ except KeyboardInterrupt:
 
 finally:
     # Cleanup
-    pwm1.stop()
-    pwm2.stop()
+    pwm.stop()
     GPIO.cleanup()

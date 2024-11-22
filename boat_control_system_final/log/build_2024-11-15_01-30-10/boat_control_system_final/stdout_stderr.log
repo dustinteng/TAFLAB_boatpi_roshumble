@@ -1,0 +1,33 @@
+[35m[1mConsolidate compiler generated dependencies of target SailServoControlNodeLib[0m
+[ 10%] Built target RudderControlHelper
+[ 20%] Built target CoordinateCalculations
+[ 30%] Built target WaypointQueue
+[ 35%] [32mBuilding CXX object CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o[0m
+[ 45%] Built target RudderServoControlNodeLib
+[ 55%] Built target waypoint_queue_node
+[ 65%] Built target CoordinateCalculationsNodeLib
+[ 75%] Built target rudder_servo_control_node
+[ 85%] Built target coordinate_calculations_node
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:127:7:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kfloat SailServoControlNode::interpolateSailPosition(float, const SailData&, const SailData&)[m[K’
+  127 | float [01;31m[KSailServoControlNode[m[K::interpolateSailPosition(float windAngle, const SailData& lower, const SailData& upper)
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:13[m[K:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:29:11:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kfloat SailServoControlNode::interpolateSailPosition(int, const SailData&, const SailData&)[m[K’
+   29 |     float [01;36m[KinterpolateSailPosition[m[K(int windAngle, const SailData& lower, const SailData& upper);
+      |           [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:20:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass SailServoControlNode[m[K’ defined here
+   20 | class [01;36m[KSailServoControlNode[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:135:7:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kfloat SailServoControlNode::getOptimalSailPosition(float)[m[K’
+  135 | float [01;31m[KSailServoControlNode[m[K::getOptimalSailPosition(float windAngle)
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:13[m[K:
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:30:11:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kfloat SailServoControlNode::getOptimalSailPosition(int)[m[K’
+   30 |     float [01;36m[KgetOptimalSailPosition[m[K(int windAngle);
+      |           [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:20:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass SailServoControlNode[m[K’ defined here
+   20 | class [01;36m[KSailServoControlNode[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/SailServoControlNodeLib.dir/build.make:76: CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/SailServoControlNodeLib.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

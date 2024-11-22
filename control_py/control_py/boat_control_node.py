@@ -164,8 +164,8 @@ class BoatControlNode(Node):
             return {
                 'rudder_min': -90,
                 'rudder_max': 90,
-                'sail_min': -180,
-                'sail_max': 180,
+                'sail_min': -90,
+                'sail_max': 90,
                 'esc_min': -100,
                 'esc_max': 100
             }

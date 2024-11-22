@@ -1,0 +1,97 @@
+[0.074s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[0.334s] [35m[1mConsolidate compiler generated dependencies of target SailServoControlNodeLib[0m
+[0.459s] [ 10%] Built target WaypointQueue
+[0.474s] [ 20%] Built target CoordinateCalculations
+[0.479s] [ 30%] Built target RudderControlHelper
+[0.537s] [ 35%] [32mBuilding CXX object CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o[0m
+[0.710s] [ 45%] Built target CoordinateCalculationsNodeLib
+[0.718s] [ 55%] Built target RudderServoControlNodeLib
+[0.770s] [ 65%] Built target waypoint_queue_node
+[0.929s] [ 75%] Built target rudder_servo_control_node
+[0.961s] [ 85%] Built target coordinate_calculations_node
+[12.550s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[12.551s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.551s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.552s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.552s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.553s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.553s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.554s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.554s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.555s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.555s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.556s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:9[m[K,
+[12.556s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:13[m[K:
+[12.557s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:[m[K In member function ‘[01m[Kvoid SailServoControlNode::setSailServo(float)[m[K’:
+[12.558s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:67:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 5 has type ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[12.558s]    67 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"Setting sail servo to angle: %.2f"[m[K, [32m[Kangle_data[m[K);
+[12.559s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~[m[K
+[12.559s]       |                                                                          [32m[K|[m[K
+[12.560s]       |                                                                          [32m[Kstd_msgs::msg::Float32 {aka std_msgs::msg::Float32_<std::allocator<void> >}[m[K
+[12.560s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:67:70:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[12.562s]    67 |     RCLCPP_INFO(this->get_logger(), "Setting sail servo to angle: [01;36m[K%.2f[m[K", angle_data);
+[12.562s]       |                                                                   [01;36m[K~~~^[m[K
+[12.563s]       |                                                                      [01;36m[K|[m[K
+[12.564s]       |                                                                      [01;36m[Kdouble[m[K
+[50.758s] [ 90%] [32m[1mLinking CXX static library libSailServoControlNodeLib.a[0m
+[52.592s] [ 90%] Built target SailServoControlNodeLib
+[52.747s] [35m[1mConsolidate compiler generated dependencies of target sail_servo_control_node[0m
+[52.859s] [ 95%] [32mBuilding CXX object CMakeFiles/sail_servo_control_node.dir/src/SailServoControlNode.cpp.o[0m
+[64.490s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[64.491s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[64.492s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[64.492s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[64.493s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[64.493s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[64.494s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[64.495s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[64.495s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[64.496s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[64.496s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[64.497s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp:9[m[K,
+[64.497s]                  from [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:13[m[K:
+[64.499s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:[m[K In member function ‘[01m[Kvoid SailServoControlNode::setSailServo(float)[m[K’:
+[64.499s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:67:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 5 has type ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[64.500s]    67 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"Setting sail servo to angle: %.2f"[m[K, [32m[Kangle_data[m[K);
+[64.501s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~[m[K
+[64.501s]       |                                                                          [32m[K|[m[K
+[64.502s]       |                                                                          [32m[Kstd_msgs::msg::Float32 {aka std_msgs::msg::Float32_<std::allocator<void> >}[m[K
+[64.503s] [01m[K/home/boat/Desktop/src/boat_control_system_final/src/SailServoControlNode.cpp:67:70:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[64.504s]    67 |     RCLCPP_INFO(this->get_logger(), "Setting sail servo to angle: [01;36m[K%.2f[m[K", angle_data);
+[64.504s]       |                                                                   [01;36m[K~~~^[m[K
+[64.505s]       |                                                                      [01;36m[K|[m[K
+[64.505s]       |                                                                      [01;36m[Kdouble[m[K
+[102.302s] [100%] [32m[1mLinking CXX executable sail_servo_control_node[0m
+[105.146s] [100%] Built target sail_servo_control_node
+[105.195s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final -- -j4 -l4
+[105.525s] Invoking command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final
+[105.561s] -- Install configuration: ""
+[105.566s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/waypoint_queue_node
+[105.568s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/coordinate_calculations_node
+[105.574s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/rudder_servo_control_node
+[105.580s] -- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/sail_servo_control_node
+[105.636s] -- Set runtime path of "/home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/sail_servo_control_node" to ""
+[105.637s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final
+[105.638s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp
+[105.639s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp
+[105.641s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/WaypointQueue.hpp
+[105.644s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/Coordinate_Calculations.h
+[105.646s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp
+[105.647s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp
+[105.648s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/RudderControlHelper.hpp
+[105.649s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/package_run_dependencies/boat_control_system_final
+[105.650s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/parent_prefix_path/boat_control_system_final
+[105.652s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/ament_prefix_path.sh
+[105.652s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/ament_prefix_path.dsv
+[105.653s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/path.sh
+[105.658s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/path.dsv
+[105.659s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.bash
+[105.659s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.sh
+[105.660s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.zsh
+[105.664s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.dsv
+[105.665s] -- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/package.dsv
+[105.665s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/packages/boat_control_system_final
+[105.666s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/cmake/boat_control_system_finalConfig.cmake
+[105.666s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/cmake/boat_control_system_finalConfig-version.cmake
+[105.667s] -- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/package.xml
+[105.674s] Invoked command in '/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final

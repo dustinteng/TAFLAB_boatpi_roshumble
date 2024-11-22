@@ -26,8 +26,8 @@ private:
     void windCallback(const std_msgs::msg::Float32::SharedPtr msg);
     void loadSailData();
     void stateCallback(const std_msgs::msg::Bool::SharedPtr msg);
-    int interpolateSailPosition(int windAngle, const SailData& lower, const SailData& upper);
-    int getOptimalSailPosition(int windAngle);
+    float interpolateSailPosition(float windAngle, const SailData& lower, const SailData& upper);
+    float getOptimalSailPosition(float windAngle);
 
     // Member variables
     std::vector<SailData> sailData;

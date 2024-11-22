@@ -47,6 +47,11 @@ private:
     void setRudderServo(float angle);
 
 
+    // Logging helpers
+    bool shouldLog(const std::string& topic_name);
+    const int log_count_interval_ = 10;
+    std::unordered_map<std::string, int> message_counters_;
+
 
     // Member variables for storing the latest data
     sensor_msgs::msg::NavSatFix latest_gps_data_;

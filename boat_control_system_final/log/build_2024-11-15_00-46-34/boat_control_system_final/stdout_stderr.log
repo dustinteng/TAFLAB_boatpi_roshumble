@@ -1,0 +1,45 @@
+[35m[1mConsolidate compiler generated dependencies of target SailServoControlNodeLib[0m
+[ 10%] Built target RudderControlHelper
+[ 20%] Built target CoordinateCalculations
+[ 30%] Built target WaypointQueue
+[ 35%] [32mBuilding CXX object CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o[0m
+[ 45%] Built target RudderServoControlNodeLib
+[ 55%] Built target waypoint_queue_node
+[ 65%] Built target CoordinateCalculationsNodeLib
+[ 75%] Built target rudder_servo_control_node
+[ 85%] Built target coordinate_calculations_node
+[ 90%] [32m[1mLinking CXX static library libSailServoControlNodeLib.a[0m
+[ 90%] Built target SailServoControlNodeLib
+[35m[1mConsolidate compiler generated dependencies of target sail_servo_control_node[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/sail_servo_control_node.dir/src/SailServoControlNode.cpp.o[0m
+[100%] [32m[1mLinking CXX executable sail_servo_control_node[0m
+[100%] Built target sail_servo_control_node
+-- Install configuration: ""
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/waypoint_queue_node
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/coordinate_calculations_node
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/rudder_servo_control_node
+-- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/sail_servo_control_node
+-- Set runtime path of "/home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/lib/boat_control_system_final/sail_servo_control_node" to ""
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/RudderServoControlNode.hpp
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/WaypointQueueNode.hpp
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/WaypointQueue.hpp
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/Coordinate_Calculations.h
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/SailServoControlNode.hpp
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/CoordinateCalculationsNode.hpp
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/include/boat_control_system_final/RudderControlHelper.hpp
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/package_run_dependencies/boat_control_system_final
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/parent_prefix_path/boat_control_system_final
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/ament_prefix_path.sh
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/path.sh
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/environment/path.dsv
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.bash
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.sh
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.zsh
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/local_setup.dsv
+-- Installing: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/package.dsv
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/ament_index/resource_index/packages/boat_control_system_final
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/cmake/boat_control_system_finalConfig.cmake
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/cmake/boat_control_system_finalConfig-version.cmake
+-- Up-to-date: /home/boat/Desktop/src/boat_control_system_final/install/boat_control_system_final/share/boat_control_system_final/package.xml

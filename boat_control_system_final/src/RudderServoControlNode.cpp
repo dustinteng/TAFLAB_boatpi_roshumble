@@ -17,7 +17,7 @@
 #include "RudderServoControlNode.hpp"
 #include "RudderControlHelper.hpp"
 
-RudderServoControlNode::RudderServoControlNode() : Node("rudder_servo_control_node"), autonomous_mode_(true)
+RudderServoControlNode::RudderServoControlNode() : Node("rudder_servo_control_node")
 {
     // Initialize the publisher for rudder angle
     rudder_angle_publisher_ = this->create_publisher<std_msgs::msg::Float32>(
@@ -66,7 +66,7 @@ RudderServoControlNode::RudderServoControlNode() : Node("rudder_servo_control_no
 
 RudderServoControlNode::~RudderServoControlNode()
 {
-    autonomous_mode_ = false;  // Signal the thread to stop
+    autonomous_mode_.data = "False";  // Signal the thread to stop
     if (execution_thread_.joinable())
     {
         execution_thread_.join();
@@ -195,7 +195,7 @@ void RudderServoControlNode::turnBoat(sensor_msgs::msg::NavSatFix target_positio
 // Main function for handling waypoint execution
 void RudderServoControlNode::executeWaypoints()
 {
-    while (autonomous_mode_)
+    while (autonomous_mode_.data == "True")
     {
         std::lock_guard<std::mutex> lock(queue_mutex_);
         if (servo_queue_.empty())
