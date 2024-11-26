@@ -1,0 +1,43 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boat Admin Settings</title>
+    <style>
+        /* Basic styling for the form */
+        body { font-family: Arial, sans-serif; }
+        .container { width: 500px; margin: 0 auto; }
+        label { display: block; margin-top: 10px; }
+        input, select { width: 100%; padding: 8px; }
+        .button { margin-top: 20px; }
+        .logo { text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>TAFLAB</h1>
+        </div>
+        <h2>Boat Admin Settings</h2>
+        <form method="post">
+            <label for="boat_name">Boat Name:</label>
+            <input type="text" id="boat_name" name="boat_name" value="{{ boat_name }}" required>
+
+            <label for="port">Serial Port:</label>
+            <select name="port" id="port">
+                {% for port in ports %}
+                <option value="{{ port }}" {% if port == current_port %}selected{% endif %}>{{ port }}</option>
+                {% endfor %}
+            </select>
+
+            <div class="button">
+                <input type="submit" value="Save Settings">
+            </div>
+        </form>
+
+        <div class="button">
+            <a href="{{ url_for('network_settings') }}">Network Settings</a>
+        </div>
+    </div>
+</body>
+</html>

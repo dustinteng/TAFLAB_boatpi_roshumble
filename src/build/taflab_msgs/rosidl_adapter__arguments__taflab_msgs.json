@@ -1,0 +1,7 @@
+{
+  "package_name": "taflab_msgs",
+  "non_idl_tuples": [
+    "/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/taflab_msgs:msg/ControlData.msg",
+    "/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/taflab_msgs:msg/CalibrationData.msg"
+  ]
+}

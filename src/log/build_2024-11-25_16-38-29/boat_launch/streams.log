@@ -1,0 +1,20 @@
+[2.439s] Invoking command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/boat_launch': AMENT_PREFIX_PATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor:${AMENT_PREFIX_PATH} PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/lib/python3.10/site-packages:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/boat_launch build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/install.log --single-version-externally-managed install_data
+[3.385s] running egg_info
+[3.388s] writing ../build/boat_launch/boat_launch.egg-info/PKG-INFO
+[3.389s] writing dependency_links to ../build/boat_launch/boat_launch.egg-info/dependency_links.txt
+[3.390s] writing entry points to ../build/boat_launch/boat_launch.egg-info/entry_points.txt
+[3.391s] writing requirements to ../build/boat_launch/boat_launch.egg-info/requires.txt
+[3.392s] writing top-level names to ../build/boat_launch/boat_launch.egg-info/top_level.txt
+[3.400s] reading manifest file '../build/boat_launch/boat_launch.egg-info/SOURCES.txt'
+[3.404s] writing manifest file '../build/boat_launch/boat_launch.egg-info/SOURCES.txt'
+[3.405s] running build
+[3.406s] running build_py
+[3.407s] running install
+[3.408s] running install_lib
+[3.414s] running install_data
+[3.415s] running install_egg_info
+[3.422s] removing '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/lib/python3.10/site-packages/boat_launch-0.0.0-py3.10.egg-info' (and everything under it)
+[3.424s] Copying ../build/boat_launch/boat_launch.egg-info to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/lib/python3.10/site-packages/boat_launch-0.0.0-py3.10.egg-info
+[3.430s] running install_scripts
+[3.511s] writing list of installed files to '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/install.log'
+[3.630s] Invoked command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/boat_launch' returned '0': AMENT_PREFIX_PATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor:${AMENT_PREFIX_PATH} PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/lib/python3.10/site-packages:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/boat_launch build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/install.log --single-version-externally-managed install_data

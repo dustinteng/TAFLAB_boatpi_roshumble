@@ -1,0 +1,3 @@
+[console_scripts]
+xbee_node = xbee_node.xbee_node:main
+

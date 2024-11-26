@@ -1,0 +1,3 @@
+[console_scripts]
+gps_node = gps_gt_u7.gps_node:main
+

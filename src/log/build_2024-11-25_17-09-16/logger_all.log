@@ -1,0 +1,480 @@
+[0.456s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'as5600_sensor', 'lis3mdl_mag', 'gps_gt_u7', 'control_py', 'xbee_node', 'taflab_msgs']
+[0.456s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['as5600_sensor', 'lis3mdl_mag', 'gps_gt_u7', 'control_py', 'xbee_node', 'taflab_msgs'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff879e2ad0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff87db3610>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff87db3610>>)
+[1.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.116s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.116s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.116s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.116s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.117s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src'
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous_control) by extensions ['ignore', 'ignore_ament_install']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous_control) by extension 'ignore'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous_control) by extension 'ignore_ament_install'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous_control) by extensions ['colcon_pkg']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous_control) by extension 'colcon_pkg'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous_control) by extensions ['colcon_meta']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous_control) by extension 'colcon_meta'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous_control) by extensions ['ros']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous_control) by extension 'ros'
+[1.177s] DEBUG:colcon.colcon_core.package_identification:Package 'autonomous_control' with type 'ros.ament_python' and name 'autonomous_control'
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system_final) by extensions ['ignore', 'ignore_ament_install']
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system_final) by extension 'ignore'
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system_final) by extension 'ignore_ament_install'
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system_final) by extensions ['colcon_pkg']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system_final) by extension 'colcon_pkg'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system_final) by extensions ['colcon_meta']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system_final) by extension 'colcon_meta'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system_final) by extensions ['ros']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(boat_control_system_final) by extension 'ros'
+[1.182s] DEBUG:colcon.colcon_core.package_identification:Package 'boat_control_system_final' with type 'ros.ament_cmake' and name 'boat_control_system_final'
+[1.183s] Level 1:colcon.colcon_core.package_identification:_identify(boat_launch) by extensions ['ignore', 'ignore_ament_install']
+[1.184s] Level 1:colcon.colcon_core.package_identification:_identify(boat_launch) by extension 'ignore'
+[1.184s] Level 1:colcon.colcon_core.package_identification:_identify(boat_launch) by extension 'ignore_ament_install'
+[1.184s] Level 1:colcon.colcon_core.package_identification:_identify(boat_launch) by extensions ['colcon_pkg']
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(boat_launch) by extension 'colcon_pkg'
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(boat_launch) by extensions ['colcon_meta']
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(boat_launch) by extension 'colcon_meta'
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(boat_launch) by extensions ['ros']
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(boat_launch) by extension 'ros'
+[1.188s] DEBUG:colcon.colcon_core.package_identification:Package 'boat_launch' with type 'ros.ament_python' and name 'boat_launch'
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(boat_logic) by extensions ['ignore', 'ignore_ament_install']
+[1.190s] Level 1:colcon.colcon_core.package_identification:_identify(boat_logic) by extension 'ignore'
+[1.190s] Level 1:colcon.colcon_core.package_identification:_identify(boat_logic) by extension 'ignore_ament_install'
+[1.190s] Level 1:colcon.colcon_core.package_identification:_identify(boat_logic) by extensions ['colcon_pkg']
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(boat_logic) by extension 'colcon_pkg'
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(boat_logic) by extensions ['colcon_meta']
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(boat_logic) by extension 'colcon_meta'
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(boat_logic) by extensions ['ros']
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(boat_logic) by extension 'ros'
+[1.197s] DEBUG:colcon.colcon_core.package_identification:Package 'boat_logic' with type 'ros.ament_python' and name 'boat_logic'
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.198s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.198s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(comms) by extensions ['ignore', 'ignore_ament_install']
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(comms) by extension 'ignore'
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(comms) by extension 'ignore_ament_install'
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(comms) by extensions ['colcon_pkg']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(comms) by extension 'colcon_pkg'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(comms) by extensions ['colcon_meta']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(comms) by extension 'colcon_meta'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(comms) by extensions ['ros']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(comms) by extension 'ros'
+[1.201s] Level 1:colcon.colcon_core.package_identification:_identify(comms) by extensions ['cmake', 'python']
+[1.201s] Level 1:colcon.colcon_core.package_identification:_identify(comms) by extension 'cmake'
+[1.201s] Level 1:colcon.colcon_core.package_identification:_identify(comms) by extension 'python'
+[1.201s] Level 1:colcon.colcon_core.package_identification:_identify(comms) by extensions ['python_setup_py']
+[1.201s] Level 1:colcon.colcon_core.package_identification:_identify(comms) by extension 'python_setup_py'
+[1.202s] Level 1:colcon.colcon_core.package_identification:_identify(comms/xbee_node) by extensions ['ignore', 'ignore_ament_install']
+[1.202s] Level 1:colcon.colcon_core.package_identification:_identify(comms/xbee_node) by extension 'ignore'
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(comms/xbee_node) by extension 'ignore_ament_install'
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(comms/xbee_node) by extensions ['colcon_pkg']
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(comms/xbee_node) by extension 'colcon_pkg'
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(comms/xbee_node) by extensions ['colcon_meta']
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(comms/xbee_node) by extension 'colcon_meta'
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(comms/xbee_node) by extensions ['ros']
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(comms/xbee_node) by extension 'ros'
+[1.206s] DEBUG:colcon.colcon_core.package_identification:Package 'comms/xbee_node' with type 'ros.ament_python' and name 'xbee_node'
+[1.207s] Level 1:colcon.colcon_core.package_identification:_identify(control_py) by extensions ['ignore', 'ignore_ament_install']
+[1.207s] Level 1:colcon.colcon_core.package_identification:_identify(control_py) by extension 'ignore'
+[1.207s] Level 1:colcon.colcon_core.package_identification:_identify(control_py) by extension 'ignore_ament_install'
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(control_py) by extensions ['colcon_pkg']
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(control_py) by extension 'colcon_pkg'
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(control_py) by extensions ['colcon_meta']
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(control_py) by extension 'colcon_meta'
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(control_py) by extensions ['ros']
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(control_py) by extension 'ros'
+[1.211s] DEBUG:colcon.colcon_core.package_identification:Package 'control_py' with type 'ros.ament_python' and name 'control_py'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(sensors) by extensions ['ignore', 'ignore_ament_install']
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(sensors) by extension 'ignore'
+[1.215s] Level 1:colcon.colcon_core.package_identification:_identify(sensors) by extension 'ignore_ament_install'
+[1.215s] Level 1:colcon.colcon_core.package_identification:_identify(sensors) by extensions ['colcon_pkg']
+[1.215s] Level 1:colcon.colcon_core.package_identification:_identify(sensors) by extension 'colcon_pkg'
+[1.215s] Level 1:colcon.colcon_core.package_identification:_identify(sensors) by extensions ['colcon_meta']
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(sensors) by extension 'colcon_meta'
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(sensors) by extensions ['ros']
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(sensors) by extension 'ros'
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(sensors) by extensions ['cmake', 'python']
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(sensors) by extension 'cmake'
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(sensors) by extension 'python'
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(sensors) by extensions ['python_setup_py']
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(sensors) by extension 'python_setup_py'
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/as5600_sensor) by extensions ['ignore', 'ignore_ament_install']
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/as5600_sensor) by extension 'ignore'
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/as5600_sensor) by extension 'ignore_ament_install'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/as5600_sensor) by extensions ['colcon_pkg']
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/as5600_sensor) by extension 'colcon_pkg'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/as5600_sensor) by extensions ['colcon_meta']
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/as5600_sensor) by extension 'colcon_meta'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/as5600_sensor) by extensions ['ros']
+[1.220s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/as5600_sensor) by extension 'ros'
+[1.223s] DEBUG:colcon.colcon_core.package_identification:Package 'sensors/as5600_sensor' with type 'ros.ament_python' and name 'as5600_sensor'
+[1.223s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/gps_gt_u7) by extensions ['ignore', 'ignore_ament_install']
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/gps_gt_u7) by extension 'ignore'
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/gps_gt_u7) by extension 'ignore_ament_install'
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/gps_gt_u7) by extensions ['colcon_pkg']
+[1.225s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/gps_gt_u7) by extension 'colcon_pkg'
+[1.225s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/gps_gt_u7) by extensions ['colcon_meta']
+[1.225s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/gps_gt_u7) by extension 'colcon_meta'
+[1.225s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/gps_gt_u7) by extensions ['ros']
+[1.225s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/gps_gt_u7) by extension 'ros'
+[1.233s] DEBUG:colcon.colcon_core.package_identification:Package 'sensors/gps_gt_u7' with type 'ros.ament_python' and name 'gps_gt_u7'
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/lis3mdl_mag) by extensions ['ignore', 'ignore_ament_install']
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/lis3mdl_mag) by extension 'ignore'
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/lis3mdl_mag) by extension 'ignore_ament_install'
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/lis3mdl_mag) by extensions ['colcon_pkg']
+[1.235s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/lis3mdl_mag) by extension 'colcon_pkg'
+[1.235s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/lis3mdl_mag) by extensions ['colcon_meta']
+[1.235s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/lis3mdl_mag) by extension 'colcon_meta'
+[1.235s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/lis3mdl_mag) by extensions ['ros']
+[1.235s] Level 1:colcon.colcon_core.package_identification:_identify(sensors/lis3mdl_mag) by extension 'ros'
+[1.238s] DEBUG:colcon.colcon_core.package_identification:Package 'sensors/lis3mdl_mag' with type 'ros.ament_python' and name 'lis3mdl_mag'
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(taflab_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(taflab_msgs) by extension 'ignore'
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(taflab_msgs) by extension 'ignore_ament_install'
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(taflab_msgs) by extensions ['colcon_pkg']
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(taflab_msgs) by extension 'colcon_pkg'
+[1.240s] Level 1:colcon.colcon_core.package_identification:_identify(taflab_msgs) by extensions ['colcon_meta']
+[1.240s] Level 1:colcon.colcon_core.package_identification:_identify(taflab_msgs) by extension 'colcon_meta'
+[1.240s] Level 1:colcon.colcon_core.package_identification:_identify(taflab_msgs) by extensions ['ros']
+[1.240s] Level 1:colcon.colcon_core.package_identification:_identify(taflab_msgs) by extension 'ros'
+[1.243s] DEBUG:colcon.colcon_core.package_identification:Package 'taflab_msgs' with type 'ros.ament_cmake' and name 'taflab_msgs'
+[1.243s] Level 1:colcon.colcon_core.package_identification:_identify(xbee_comm_py) by extensions ['ignore', 'ignore_ament_install']
+[1.244s] Level 1:colcon.colcon_core.package_identification:_identify(xbee_comm_py) by extension 'ignore'
+[1.244s] Level 1:colcon.colcon_core.package_identification:_identify(xbee_comm_py) by extension 'ignore_ament_install'
+[1.245s] Level 1:colcon.colcon_core.package_identification:_identify(xbee_comm_py) by extensions ['colcon_pkg']
+[1.245s] Level 1:colcon.colcon_core.package_identification:_identify(xbee_comm_py) by extension 'colcon_pkg'
+[1.245s] Level 1:colcon.colcon_core.package_identification:_identify(xbee_comm_py) by extensions ['colcon_meta']
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(xbee_comm_py) by extension 'colcon_meta'
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(xbee_comm_py) by extensions ['ros']
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(xbee_comm_py) by extension 'ros'
+[1.249s] DEBUG:colcon.colcon_core.package_identification:Package 'xbee_comm_py' with type 'ros.ament_python' and name 'xbee_comm_py'
+[1.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.337s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'autonomous_control' in 'autonomous_control'
+[1.337s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'boat_control_system_final' in 'boat_control_system_final'
+[1.337s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'xbee_comm_py' in 'xbee_comm_py'
+[1.338s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'boat_launch' in 'boat_launch'
+[1.338s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'boat_logic' in 'boat_logic'
+[1.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.352s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install
+[1.358s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 180 installed packages in /opt/ros/humble
+[1.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.517s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'lis3mdl_mag' is in: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag
+	'as5600_sensor' is in: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor
+	'control_py' is in: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding as5600_sensor control_py lis3mdl_mag
+
+This may be promoted to an error in a future release of colcon-override-check.
+[1.521s] Level 5:colcon.colcon_core.verb:set package 'as5600_sensor' build argument 'cmake_args' from command line to 'None'
+[1.521s] Level 5:colcon.colcon_core.verb:set package 'as5600_sensor' build argument 'cmake_target' from command line to 'None'
+[1.521s] Level 5:colcon.colcon_core.verb:set package 'as5600_sensor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.521s] Level 5:colcon.colcon_core.verb:set package 'as5600_sensor' build argument 'cmake_clean_cache' from command line to 'False'
+[1.521s] Level 5:colcon.colcon_core.verb:set package 'as5600_sensor' build argument 'cmake_clean_first' from command line to 'False'
+[1.522s] Level 5:colcon.colcon_core.verb:set package 'as5600_sensor' build argument 'cmake_force_configure' from command line to 'False'
+[1.522s] Level 5:colcon.colcon_core.verb:set package 'as5600_sensor' build argument 'ament_cmake_args' from command line to 'None'
+[1.522s] Level 5:colcon.colcon_core.verb:set package 'as5600_sensor' build argument 'catkin_cmake_args' from command line to 'None'
+[1.522s] Level 5:colcon.colcon_core.verb:set package 'as5600_sensor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.522s] DEBUG:colcon.colcon_core.verb:Building package 'as5600_sensor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor', 'merge_install': False, 'path': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/as5600_sensor', 'symlink_install': False, 'test_result_base': None}
+[1.524s] Level 5:colcon.colcon_core.verb:set package 'control_py' build argument 'cmake_args' from command line to 'None'
+[1.524s] Level 5:colcon.colcon_core.verb:set package 'control_py' build argument 'cmake_target' from command line to 'None'
+[1.524s] Level 5:colcon.colcon_core.verb:set package 'control_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.525s] Level 5:colcon.colcon_core.verb:set package 'control_py' build argument 'cmake_clean_cache' from command line to 'False'
+[1.525s] Level 5:colcon.colcon_core.verb:set package 'control_py' build argument 'cmake_clean_first' from command line to 'False'
+[1.525s] Level 5:colcon.colcon_core.verb:set package 'control_py' build argument 'cmake_force_configure' from command line to 'False'
+[1.525s] Level 5:colcon.colcon_core.verb:set package 'control_py' build argument 'ament_cmake_args' from command line to 'None'
+[1.525s] Level 5:colcon.colcon_core.verb:set package 'control_py' build argument 'catkin_cmake_args' from command line to 'None'
+[1.525s] Level 5:colcon.colcon_core.verb:set package 'control_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.525s] DEBUG:colcon.colcon_core.verb:Building package 'control_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py', 'merge_install': False, 'path': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/control_py', 'symlink_install': False, 'test_result_base': None}
+[1.527s] Level 5:colcon.colcon_core.verb:set package 'gps_gt_u7' build argument 'cmake_args' from command line to 'None'
+[1.527s] Level 5:colcon.colcon_core.verb:set package 'gps_gt_u7' build argument 'cmake_target' from command line to 'None'
+[1.528s] Level 5:colcon.colcon_core.verb:set package 'gps_gt_u7' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.528s] Level 5:colcon.colcon_core.verb:set package 'gps_gt_u7' build argument 'cmake_clean_cache' from command line to 'False'
+[1.528s] Level 5:colcon.colcon_core.verb:set package 'gps_gt_u7' build argument 'cmake_clean_first' from command line to 'False'
+[1.528s] Level 5:colcon.colcon_core.verb:set package 'gps_gt_u7' build argument 'cmake_force_configure' from command line to 'False'
+[1.528s] Level 5:colcon.colcon_core.verb:set package 'gps_gt_u7' build argument 'ament_cmake_args' from command line to 'None'
+[1.528s] Level 5:colcon.colcon_core.verb:set package 'gps_gt_u7' build argument 'catkin_cmake_args' from command line to 'None'
+[1.528s] Level 5:colcon.colcon_core.verb:set package 'gps_gt_u7' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.528s] DEBUG:colcon.colcon_core.verb:Building package 'gps_gt_u7' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/gps_gt_u7', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7', 'merge_install': False, 'path': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/gps_gt_u7', 'symlink_install': False, 'test_result_base': None}
+[1.530s] Level 5:colcon.colcon_core.verb:set package 'lis3mdl_mag' build argument 'cmake_args' from command line to 'None'
+[1.530s] Level 5:colcon.colcon_core.verb:set package 'lis3mdl_mag' build argument 'cmake_target' from command line to 'None'
+[1.530s] Level 5:colcon.colcon_core.verb:set package 'lis3mdl_mag' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.530s] Level 5:colcon.colcon_core.verb:set package 'lis3mdl_mag' build argument 'cmake_clean_cache' from command line to 'False'
+[1.530s] Level 5:colcon.colcon_core.verb:set package 'lis3mdl_mag' build argument 'cmake_clean_first' from command line to 'False'
+[1.531s] Level 5:colcon.colcon_core.verb:set package 'lis3mdl_mag' build argument 'cmake_force_configure' from command line to 'False'
+[1.531s] Level 5:colcon.colcon_core.verb:set package 'lis3mdl_mag' build argument 'ament_cmake_args' from command line to 'None'
+[1.531s] Level 5:colcon.colcon_core.verb:set package 'lis3mdl_mag' build argument 'catkin_cmake_args' from command line to 'None'
+[1.531s] Level 5:colcon.colcon_core.verb:set package 'lis3mdl_mag' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.531s] DEBUG:colcon.colcon_core.verb:Building package 'lis3mdl_mag' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag', 'merge_install': False, 'path': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/lis3mdl_mag', 'symlink_install': False, 'test_result_base': None}
+[1.533s] Level 5:colcon.colcon_core.verb:set package 'taflab_msgs' build argument 'cmake_args' from command line to 'None'
+[1.533s] Level 5:colcon.colcon_core.verb:set package 'taflab_msgs' build argument 'cmake_target' from command line to 'None'
+[1.533s] Level 5:colcon.colcon_core.verb:set package 'taflab_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.533s] Level 5:colcon.colcon_core.verb:set package 'taflab_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.533s] Level 5:colcon.colcon_core.verb:set package 'taflab_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.533s] Level 5:colcon.colcon_core.verb:set package 'taflab_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.533s] Level 5:colcon.colcon_core.verb:set package 'taflab_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.533s] Level 5:colcon.colcon_core.verb:set package 'taflab_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.534s] Level 5:colcon.colcon_core.verb:set package 'taflab_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.534s] DEBUG:colcon.colcon_core.verb:Building package 'taflab_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs', 'merge_install': False, 'path': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/taflab_msgs', 'symlink_install': False, 'test_result_base': None}
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'xbee_node' build argument 'cmake_args' from command line to 'None'
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'xbee_node' build argument 'cmake_target' from command line to 'None'
+[1.536s] Level 5:colcon.colcon_core.verb:set package 'xbee_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.536s] Level 5:colcon.colcon_core.verb:set package 'xbee_node' build argument 'cmake_clean_cache' from command line to 'False'
+[1.536s] Level 5:colcon.colcon_core.verb:set package 'xbee_node' build argument 'cmake_clean_first' from command line to 'False'
+[1.536s] Level 5:colcon.colcon_core.verb:set package 'xbee_node' build argument 'cmake_force_configure' from command line to 'False'
+[1.536s] Level 5:colcon.colcon_core.verb:set package 'xbee_node' build argument 'ament_cmake_args' from command line to 'None'
+[1.536s] Level 5:colcon.colcon_core.verb:set package 'xbee_node' build argument 'catkin_cmake_args' from command line to 'None'
+[1.536s] Level 5:colcon.colcon_core.verb:set package 'xbee_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.536s] DEBUG:colcon.colcon_core.verb:Building package 'xbee_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node', 'merge_install': False, 'path': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/comms/xbee_node', 'symlink_install': False, 'test_result_base': None}
+[1.537s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.541s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.542s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/as5600_sensor' with build type 'ament_python'
+[1.542s] Level 1:colcon.colcon_core.shell:create_environment_hook('as5600_sensor', 'ament_prefix_path')
+[1.556s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.557s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/share/as5600_sensor/hook/ament_prefix_path.ps1'
+[1.560s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/share/as5600_sensor/hook/ament_prefix_path.dsv'
+[1.562s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/share/as5600_sensor/hook/ament_prefix_path.sh'
+[1.566s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.567s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.584s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/control_py' with build type 'ament_python'
+[1.585s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_py', 'ament_prefix_path')
+[1.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/share/control_py/hook/ament_prefix_path.ps1'
+[1.589s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/share/control_py/hook/ament_prefix_path.dsv'
+[1.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/share/control_py/hook/ament_prefix_path.sh'
+[1.596s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.596s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.613s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/gps_gt_u7' with build type 'ament_python'
+[1.614s] Level 1:colcon.colcon_core.shell:create_environment_hook('gps_gt_u7', 'ament_prefix_path')
+[1.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/share/gps_gt_u7/hook/ament_prefix_path.ps1'
+[1.618s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/share/gps_gt_u7/hook/ament_prefix_path.dsv'
+[1.621s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/share/gps_gt_u7/hook/ament_prefix_path.sh'
+[1.624s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.625s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.643s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/lis3mdl_mag' with build type 'ament_python'
+[1.643s] Level 1:colcon.colcon_core.shell:create_environment_hook('lis3mdl_mag', 'ament_prefix_path')
+[1.645s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/share/lis3mdl_mag/hook/ament_prefix_path.ps1'
+[1.648s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/share/lis3mdl_mag/hook/ament_prefix_path.dsv'
+[1.650s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/share/lis3mdl_mag/hook/ament_prefix_path.sh'
+[1.654s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.655s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.747s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/as5600_sensor'
+[2.749s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.749s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.812s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/control_py'
+[3.813s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.813s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.885s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/gps_gt_u7'
+[4.886s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.887s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.964s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/lis3mdl_mag'
+[5.965s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.965s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.195s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/gps_gt_u7': PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/gps_gt_u7/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gps_gt_u7 build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/gps_gt_u7/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/gps_gt_u7/install.log --single-version-externally-managed install_data
+[8.283s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/as5600_sensor': PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/as5600_sensor build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/install.log --single-version-externally-managed install_data
+[8.320s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/lis3mdl_mag': PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lis3mdl_mag build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/install.log --single-version-externally-managed install_data
+[8.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/control_py': PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/control_py build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/install.log --single-version-externally-managed install_data
+[10.182s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/control_py' returned '0': PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/control_py build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/install.log --single-version-externally-managed install_data
+[10.210s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py' for CMake module files
+[10.214s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py' for CMake config files
+[10.226s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/lib'
+[10.229s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/bin'
+[10.230s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/lib/pkgconfig/control_py.pc'
+[10.235s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/lib/python3.10/site-packages'
+[10.236s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_py', 'pythonpath')
+[10.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/share/control_py/hook/pythonpath.ps1'
+[10.248s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/share/control_py/hook/pythonpath.dsv'
+[10.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/share/control_py/hook/pythonpath.sh'
+[10.260s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/bin'
+[10.261s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control_py)
+[10.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/share/control_py/package.ps1'
+[10.288s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/share/control_py/package.dsv'
+[10.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/share/control_py/package.sh'
+[10.319s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/share/control_py/package.bash'
+[10.339s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/share/control_py/package.zsh'
+[10.358s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/share/colcon-core/packages/control_py)
+[10.370s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/taflab_msgs' with build type 'ament_cmake'
+[10.374s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/taflab_msgs'
+[10.381s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.382s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.412s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor' for CMake module files
+[10.416s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/as5600_sensor' returned '0': PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/as5600_sensor build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/install.log --single-version-externally-managed install_data
+[10.418s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor' for CMake config files
+[10.422s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib'
+[10.423s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/bin'
+[10.423s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/pkgconfig/as5600_sensor.pc'
+[10.424s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages'
+[10.425s] Level 1:colcon.colcon_core.shell:create_environment_hook('as5600_sensor', 'pythonpath')
+[10.426s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/share/as5600_sensor/hook/pythonpath.ps1'
+[10.429s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/share/as5600_sensor/hook/pythonpath.dsv'
+[10.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/share/as5600_sensor/hook/pythonpath.sh'
+[10.434s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/bin'
+[10.435s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(as5600_sensor)
+[10.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/share/as5600_sensor/package.ps1'
+[10.441s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/share/as5600_sensor/package.dsv'
+[10.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/share/as5600_sensor/package.sh'
+[10.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/share/as5600_sensor/package.bash'
+[10.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/share/as5600_sensor/package.zsh'
+[10.454s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/share/colcon-core/packages/as5600_sensor)
+[10.465s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/comms/xbee_node' with build type 'ament_python'
+[10.466s] Level 1:colcon.colcon_core.shell:create_environment_hook('xbee_node', 'ament_prefix_path')
+[10.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/xbee_node/hook/ament_prefix_path.ps1'
+[10.475s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/xbee_node/hook/ament_prefix_path.dsv'
+[10.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/xbee_node/hook/ament_prefix_path.sh'
+[10.486s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.487s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.518s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7' for CMake module files
+[10.523s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/gps_gt_u7' returned '0': PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/gps_gt_u7/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gps_gt_u7 build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/gps_gt_u7/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/gps_gt_u7/install.log --single-version-externally-managed install_data
+[10.526s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7' for CMake config files
+[10.531s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/lib'
+[10.533s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/bin'
+[10.534s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/lib/pkgconfig/gps_gt_u7.pc'
+[10.536s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/lib/python3.10/site-packages'
+[10.536s] Level 1:colcon.colcon_core.shell:create_environment_hook('gps_gt_u7', 'pythonpath')
+[10.538s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/share/gps_gt_u7/hook/pythonpath.ps1'
+[10.543s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/share/gps_gt_u7/hook/pythonpath.dsv'
+[10.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/share/gps_gt_u7/hook/pythonpath.sh'
+[10.556s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/bin'
+[10.557s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gps_gt_u7)
+[10.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/share/gps_gt_u7/package.ps1'
+[10.564s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/share/gps_gt_u7/package.dsv'
+[10.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/share/gps_gt_u7/package.sh'
+[10.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/share/gps_gt_u7/package.bash'
+[10.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/share/gps_gt_u7/package.zsh'
+[10.578s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/share/colcon-core/packages/gps_gt_u7)
+[10.612s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_logic:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor:/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs -- -j4 -l4
+[12.186s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/comms/xbee_node'
+[12.187s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.187s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.207s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag' for CMake module files
+[12.209s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/lis3mdl_mag' returned '0': PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lis3mdl_mag build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/install.log --single-version-externally-managed install_data
+[12.212s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag' for CMake config files
+[12.216s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib'
+[12.216s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/bin'
+[12.217s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/pkgconfig/lis3mdl_mag.pc'
+[12.218s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages'
+[12.218s] Level 1:colcon.colcon_core.shell:create_environment_hook('lis3mdl_mag', 'pythonpath')
+[12.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/share/lis3mdl_mag/hook/pythonpath.ps1'
+[12.221s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/share/lis3mdl_mag/hook/pythonpath.dsv'
+[12.224s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/share/lis3mdl_mag/hook/pythonpath.sh'
+[12.227s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/bin'
+[12.227s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lis3mdl_mag)
+[12.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/share/lis3mdl_mag/package.ps1'
+[12.232s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/share/lis3mdl_mag/package.dsv'
+[12.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/share/lis3mdl_mag/package.sh'
+[12.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/share/lis3mdl_mag/package.bash'
+[12.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/share/lis3mdl_mag/package.zsh'
+[12.243s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/share/colcon-core/packages/lis3mdl_mag)
+[12.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_logic:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor:/opt/ros/humble /usr/bin/cmake --build /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs -- -j4 -l4
+[13.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_logic:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor:/opt/ros/humble /usr/bin/cmake --install /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs
+[13.620s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(taflab_msgs)
+[13.622s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs' for CMake module files
+[13.635s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs' for CMake config files
+[13.652s] Level 1:colcon.colcon_core.shell:create_environment_hook('taflab_msgs', 'cmake_prefix_path')
+[13.654s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/hook/cmake_prefix_path.ps1'
+[13.657s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/hook/cmake_prefix_path.dsv'
+[13.662s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_logic:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor:/opt/ros/humble /usr/bin/cmake --install /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs
+[13.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/hook/cmake_prefix_path.sh'
+[13.667s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib'
+[13.667s] Level 1:colcon.colcon_core.shell:create_environment_hook('taflab_msgs', 'ld_library_path_lib')
+[13.668s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/hook/ld_library_path_lib.ps1'
+[13.671s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/hook/ld_library_path_lib.dsv'
+[13.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/hook/ld_library_path_lib.sh'
+[13.676s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/bin'
+[13.677s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/pkgconfig/taflab_msgs.pc'
+[13.678s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/python3.10/site-packages'
+[13.681s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/bin'
+[13.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/package.ps1'
+[13.689s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/package.dsv'
+[13.694s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/package.sh'
+[13.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/package.bash'
+[13.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/package.zsh'
+[13.707s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/colcon-core/packages/taflab_msgs)
+[13.837s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/comms/xbee_node': PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/xbee_node build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/install.log --single-version-externally-managed install_data
+[14.232s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(taflab_msgs)
+[14.233s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs' for CMake module files
+[14.238s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs' for CMake config files
+[14.244s] Level 1:colcon.colcon_core.shell:create_environment_hook('taflab_msgs', 'cmake_prefix_path')
+[14.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/hook/cmake_prefix_path.ps1'
+[14.248s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/hook/cmake_prefix_path.dsv'
+[14.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/hook/cmake_prefix_path.sh'
+[14.254s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib'
+[14.255s] Level 1:colcon.colcon_core.shell:create_environment_hook('taflab_msgs', 'ld_library_path_lib')
+[14.256s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/hook/ld_library_path_lib.ps1'
+[14.258s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/hook/ld_library_path_lib.dsv'
+[14.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/hook/ld_library_path_lib.sh'
+[14.263s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/bin'
+[14.263s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/pkgconfig/taflab_msgs.pc'
+[14.264s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/python3.10/site-packages'
+[14.266s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/bin'
+[14.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/package.ps1'
+[14.274s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/package.dsv'
+[14.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/package.sh'
+[14.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/package.bash'
+[14.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/package.zsh'
+[14.285s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/colcon-core/packages/taflab_msgs)
+[15.104s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node' for CMake module files
+[15.106s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/comms/xbee_node' returned '0': PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/xbee_node build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/install.log --single-version-externally-managed install_data
+[15.107s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node' for CMake config files
+[15.111s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib'
+[15.112s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/bin'
+[15.113s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/pkgconfig/xbee_node.pc'
+[15.115s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/python3.10/site-packages'
+[15.115s] Level 1:colcon.colcon_core.shell:create_environment_hook('xbee_node', 'pythonpath')
+[15.117s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/xbee_node/hook/pythonpath.ps1'
+[15.120s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/xbee_node/hook/pythonpath.dsv'
+[15.122s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/xbee_node/hook/pythonpath.sh'
+[15.125s] Level 1:colcon.colcon_core.environment:checking '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/bin'
+[15.126s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xbee_node)
+[15.127s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/xbee_node/package.ps1'
+[15.129s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/xbee_node/package.dsv'
+[15.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/xbee_node/package.sh'
+[15.134s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/xbee_node/package.bash'
+[15.136s] INFO:colcon.colcon_core.shell:Creating package script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/xbee_node/package.zsh'
+[15.138s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/colcon-core/packages/xbee_node)
+[15.139s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[15.140s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[15.142s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[15.142s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[15.166s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[15.166s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[15.167s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[15.171s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[15.172s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[15.173s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/local_setup.ps1'
+[15.177s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/_local_setup_util_ps1.py'
+[15.184s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/setup.ps1'
+[15.192s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/local_setup.sh'
+[15.195s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/_local_setup_util_sh.py'
+[15.198s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/setup.sh'
+[15.204s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/local_setup.bash'
+[15.207s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/setup.bash'
+[15.215s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/local_setup.zsh'
+[15.218s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/setup.zsh'

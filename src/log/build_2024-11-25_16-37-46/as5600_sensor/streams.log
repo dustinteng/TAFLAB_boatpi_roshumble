@@ -1,0 +1,21 @@
+[6.528s] Invoking command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/as5600_sensor': PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/as5600_sensor build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/install.log --single-version-externally-managed install_data
+[7.932s] running egg_info
+[7.944s] writing ../../build/as5600_sensor/as5600_sensor.egg-info/PKG-INFO
+[7.949s] writing dependency_links to ../../build/as5600_sensor/as5600_sensor.egg-info/dependency_links.txt
+[7.950s] writing entry points to ../../build/as5600_sensor/as5600_sensor.egg-info/entry_points.txt
+[7.951s] writing requirements to ../../build/as5600_sensor/as5600_sensor.egg-info/requires.txt
+[7.954s] writing top-level names to ../../build/as5600_sensor/as5600_sensor.egg-info/top_level.txt
+[7.955s] reading manifest file '../../build/as5600_sensor/as5600_sensor.egg-info/SOURCES.txt'
+[7.957s] writing manifest file '../../build/as5600_sensor/as5600_sensor.egg-info/SOURCES.txt'
+[7.958s] running build
+[7.959s] running build_py
+[7.961s] running install
+[7.962s] running install_lib
+[7.969s] running install_data
+[7.970s] running install_egg_info
+[7.982s] removing '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages/as5600_sensor-0.0.0-py3.10.egg-info' (and everything under it)
+[7.984s] Copying ../../build/as5600_sensor/as5600_sensor.egg-info to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages/as5600_sensor-0.0.0-py3.10.egg-info
+[7.992s] running install_scripts
+[8.098s] Installing as5600_node script to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/as5600_sensor
+[8.100s] writing list of installed files to '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/install.log'
+[8.289s] Invoked command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/as5600_sensor' returned '0': PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/as5600_sensor build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/install.log --single-version-externally-managed install_data

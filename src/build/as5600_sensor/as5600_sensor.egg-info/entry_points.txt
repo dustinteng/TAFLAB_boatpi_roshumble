@@ -1,0 +1,3 @@
+[console_scripts]
+as5600_node = as5600_sensor.as5600_node:main
+

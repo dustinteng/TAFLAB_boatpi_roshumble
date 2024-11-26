@@ -1,0 +1,39 @@
+[2.489s] Invoking command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/boat_launch': AMENT_PREFIX_PATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor:${AMENT_PREFIX_PATH} PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/lib/python3.10/site-packages:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/boat_launch build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/install.log --single-version-externally-managed install_data
+[3.422s] running egg_info
+[3.424s] creating ../build/boat_launch/boat_launch.egg-info
+[3.425s] writing ../build/boat_launch/boat_launch.egg-info/PKG-INFO
+[3.426s] writing dependency_links to ../build/boat_launch/boat_launch.egg-info/dependency_links.txt
+[3.427s] writing entry points to ../build/boat_launch/boat_launch.egg-info/entry_points.txt
+[3.428s] writing requirements to ../build/boat_launch/boat_launch.egg-info/requires.txt
+[3.428s] writing top-level names to ../build/boat_launch/boat_launch.egg-info/top_level.txt
+[3.430s] writing manifest file '../build/boat_launch/boat_launch.egg-info/SOURCES.txt'
+[3.435s] reading manifest file '../build/boat_launch/boat_launch.egg-info/SOURCES.txt'
+[3.440s] writing manifest file '../build/boat_launch/boat_launch.egg-info/SOURCES.txt'
+[3.443s] running build
+[3.444s] running build_py
+[3.446s] creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/build
+[3.447s] creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/build/lib
+[3.447s] creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/build/lib/boat_launch
+[3.448s] copying boat_launch/__init__.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/build/lib/boat_launch
+[3.449s] copying boat_launch/boat_launch.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/build/lib/boat_launch
+[3.450s] running install
+[3.451s] running install_lib
+[3.452s] creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/lib/python3.10/site-packages/boat_launch
+[3.452s] copying /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/build/lib/boat_launch/__init__.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/lib/python3.10/site-packages/boat_launch
+[3.453s] copying /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/build/lib/boat_launch/boat_launch.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/lib/python3.10/site-packages/boat_launch
+[3.456s] byte-compiling /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/lib/python3.10/site-packages/boat_launch/__init__.py to __init__.cpython-310.pyc
+[3.458s] byte-compiling /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/lib/python3.10/site-packages/boat_launch/boat_launch.py to boat_launch.cpython-310.pyc
+[3.460s] running install_data
+[3.461s] creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/share/ament_index
+[3.462s] creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/share/ament_index/resource_index
+[3.463s] creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/share/ament_index/resource_index/packages
+[3.464s] copying resource/boat_launch -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/share/ament_index/resource_index/packages
+[3.464s] copying package.xml -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/share/boat_launch
+[3.465s] creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/share/boat_launch/launch
+[3.466s] copying boat_launch/__init__.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/share/boat_launch/launch
+[3.466s] copying boat_launch/boat_launch.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/share/boat_launch/launch
+[3.467s] running install_egg_info
+[3.474s] Copying ../build/boat_launch/boat_launch.egg-info to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/lib/python3.10/site-packages/boat_launch-0.0.0-py3.10.egg-info
+[3.480s] running install_scripts
+[3.562s] writing list of installed files to '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/install.log'
+[3.679s] Invoked command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/boat_launch' returned '0': AMENT_PREFIX_PATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor:${AMENT_PREFIX_PATH} PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/boat_launch/lib/python3.10/site-packages:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/boat_launch build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/boat_launch/install.log --single-version-externally-managed install_data

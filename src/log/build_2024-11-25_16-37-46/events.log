@@ -1,0 +1,753 @@
+[0.000000] (-) TimerEvent: {}
+[0.001095] (-) JobUnselected: {'identifier': 'autonomous_control'}
+[0.002259] (-) JobUnselected: {'identifier': 'boat_control_system_final'}
+[0.002916] (-) JobUnselected: {'identifier': 'boat_launch'}
+[0.003400] (-) JobUnselected: {'identifier': 'boat_logic'}
+[0.003619] (-) JobUnselected: {'identifier': 'xbee_comm_py'}
+[0.003971] (as5600_sensor) JobQueued: {'identifier': 'as5600_sensor', 'dependencies': OrderedDict()}
+[0.004159] (control_py) JobQueued: {'identifier': 'control_py', 'dependencies': OrderedDict()}
+[0.004261] (gps_gt_u7) JobQueued: {'identifier': 'gps_gt_u7', 'dependencies': OrderedDict()}
+[0.004346] (lis3mdl_mag) JobQueued: {'identifier': 'lis3mdl_mag', 'dependencies': OrderedDict()}
+[0.004440] (taflab_msgs) JobQueued: {'identifier': 'taflab_msgs', 'dependencies': OrderedDict()}
+[0.004560] (xbee_node) JobQueued: {'identifier': 'xbee_node', 'dependencies': OrderedDict()}
+[0.004649] (as5600_sensor) JobStarted: {'identifier': 'as5600_sensor'}
+[0.076707] (control_py) JobStarted: {'identifier': 'control_py'}
+[0.099916] (-) TimerEvent: {}
+[0.102694] (gps_gt_u7) JobStarted: {'identifier': 'gps_gt_u7'}
+[0.125671] (lis3mdl_mag) JobStarted: {'identifier': 'lis3mdl_mag'}
+[0.200085] (-) TimerEvent: {}
+[0.300923] (-) TimerEvent: {}
+[0.401937] (-) TimerEvent: {}
+[0.503293] (-) TimerEvent: {}
+[0.604169] (-) TimerEvent: {}
+[0.704919] (-) TimerEvent: {}
+[0.805729] (-) TimerEvent: {}
+[0.906586] (-) TimerEvent: {}
+[1.007418] (-) TimerEvent: {}
+[1.108443] (-) TimerEvent: {}
+[1.209631] (-) TimerEvent: {}
+[1.310891] (-) TimerEvent: {}
+[1.411840] (-) TimerEvent: {}
+[1.512812] (-) TimerEvent: {}
+[1.613977] (-) TimerEvent: {}
+[1.714826] (-) TimerEvent: {}
+[1.815683] (-) TimerEvent: {}
+[1.917318] (-) TimerEvent: {}
+[2.018401] (-) TimerEvent: {}
+[2.119388] (-) TimerEvent: {}
+[2.220667] (-) TimerEvent: {}
+[2.321502] (-) TimerEvent: {}
+[2.422388] (-) TimerEvent: {}
+[2.523284] (-) TimerEvent: {}
+[2.624381] (-) TimerEvent: {}
+[2.725255] (-) TimerEvent: {}
+[2.826066] (-) TimerEvent: {}
+[2.926887] (-) TimerEvent: {}
+[3.027709] (-) TimerEvent: {}
+[3.128680] (-) TimerEvent: {}
+[3.229904] (-) TimerEvent: {}
+[3.331261] (-) TimerEvent: {}
+[3.432216] (-) TimerEvent: {}
+[3.533011] (-) TimerEvent: {}
+[3.633852] (-) TimerEvent: {}
+[3.734642] (-) TimerEvent: {}
+[3.835476] (-) TimerEvent: {}
+[3.936247] (-) TimerEvent: {}
+[4.037172] (-) TimerEvent: {}
+[4.138100] (-) TimerEvent: {}
+[4.239343] (-) TimerEvent: {}
+[4.341728] (-) TimerEvent: {}
+[4.442693] (-) TimerEvent: {}
+[4.543753] (-) TimerEvent: {}
+[4.644645] (-) TimerEvent: {}
+[4.746287] (-) TimerEvent: {}
+[4.847184] (-) TimerEvent: {}
+[4.948220] (-) TimerEvent: {}
+[5.049173] (-) TimerEvent: {}
+[5.150118] (-) TimerEvent: {}
+[5.251019] (-) TimerEvent: {}
+[5.352487] (-) TimerEvent: {}
+[5.453714] (-) TimerEvent: {}
+[5.554671] (-) TimerEvent: {}
+[5.655747] (-) TimerEvent: {}
+[5.756786] (-) TimerEvent: {}
+[5.857766] (-) TimerEvent: {}
+[5.958736] (-) TimerEvent: {}
+[6.061274] (-) TimerEvent: {}
+[6.165619] (-) TimerEvent: {}
+[6.270559] (-) TimerEvent: {}
+[6.376823] (-) TimerEvent: {}
+[6.420692] (gps_gt_u7) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/gps_gt_u7', 'build', '--build-base', '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/gps_gt_u7/build', 'install', '--record', '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/gps_gt_u7/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/gps_gt_u7', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'boat', 'SSH_CLIENT': '10.41.181.7 63024 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/boat', 'OLDPWD': '/home/boat/Desktop/TAFLAB_boatpi_roshumble', 'TERM_PROGRAM_VERSION': '1.95.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-182d1209-45ee-4faf-b364-cd78ecb8b4f1.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'LOGNAME': 'boat', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-35dd15a5b7.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/gps_gt_u7', 'SSH_CONNECTION': '10.41.181.7 63024 10.41.214.202 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/gps_gt_u7/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[6.480013] (-) TimerEvent: {}
+[6.491170] (control_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/control_py', 'build', '--build-base', '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/build', 'install', '--record', '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/control_py', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'boat', 'SSH_CLIENT': '10.41.181.7 63024 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/boat', 'OLDPWD': '/home/boat/Desktop/TAFLAB_boatpi_roshumble', 'TERM_PROGRAM_VERSION': '1.95.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-182d1209-45ee-4faf-b364-cd78ecb8b4f1.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'LOGNAME': 'boat', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-35dd15a5b7.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py', 'SSH_CONNECTION': '10.41.181.7 63024 10.41.214.202 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[6.528301] (as5600_sensor) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/as5600_sensor', 'build', '--build-base', '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/build', 'install', '--record', '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/as5600_sensor', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'boat', 'SSH_CLIENT': '10.41.181.7 63024 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/boat', 'OLDPWD': '/home/boat/Desktop/TAFLAB_boatpi_roshumble', 'TERM_PROGRAM_VERSION': '1.95.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-182d1209-45ee-4faf-b364-cd78ecb8b4f1.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'LOGNAME': 'boat', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-35dd15a5b7.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor', 'SSH_CONNECTION': '10.41.181.7 63024 10.41.214.202 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[6.553756] (lis3mdl_mag) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/lis3mdl_mag', 'build', '--build-base', '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/build', 'install', '--record', '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/lis3mdl_mag', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'boat', 'SSH_CLIENT': '10.41.181.7 63024 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/boat', 'OLDPWD': '/home/boat/Desktop/TAFLAB_boatpi_roshumble', 'TERM_PROGRAM_VERSION': '1.95.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-182d1209-45ee-4faf-b364-cd78ecb8b4f1.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'LOGNAME': 'boat', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-35dd15a5b7.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag', 'SSH_CONNECTION': '10.41.181.7 63024 10.41.214.202 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[6.580223] (-) TimerEvent: {}
+[6.681898] (-) TimerEvent: {}
+[6.784729] (-) TimerEvent: {}
+[6.886679] (-) TimerEvent: {}
+[6.988866] (-) TimerEvent: {}
+[7.091768] (-) TimerEvent: {}
+[7.193874] (-) TimerEvent: {}
+[7.296045] (-) TimerEvent: {}
+[7.398768] (-) TimerEvent: {}
+[7.501525] (-) TimerEvent: {}
+[7.604217] (-) TimerEvent: {}
+[7.707284] (-) TimerEvent: {}
+[7.810314] (-) TimerEvent: {}
+[7.913055] (-) TimerEvent: {}
+[7.936027] (as5600_sensor) StdoutLine: {'line': b'running egg_info\n'}
+[7.948196] (as5600_sensor) StdoutLine: {'line': b'writing ../../build/as5600_sensor/as5600_sensor.egg-info/PKG-INFO\n'}
+[7.948955] (as5600_sensor) StdoutLine: {'line': b'writing dependency_links to ../../build/as5600_sensor/as5600_sensor.egg-info/dependency_links.txt\n'}
+[7.954317] (as5600_sensor) StdoutLine: {'line': b'writing entry points to ../../build/as5600_sensor/as5600_sensor.egg-info/entry_points.txt\n'}
+[7.955013] (as5600_sensor) StdoutLine: {'line': b'writing requirements to ../../build/as5600_sensor/as5600_sensor.egg-info/requires.txt\n'}
+[7.957978] (as5600_sensor) StdoutLine: {'line': b'writing top-level names to ../../build/as5600_sensor/as5600_sensor.egg-info/top_level.txt\n'}
+[7.958901] (as5600_sensor) StdoutLine: {'line': b"reading manifest file '../../build/as5600_sensor/as5600_sensor.egg-info/SOURCES.txt'\n"}
+[7.961277] (as5600_sensor) StdoutLine: {'line': b"writing manifest file '../../build/as5600_sensor/as5600_sensor.egg-info/SOURCES.txt'\n"}
+[7.962378] (as5600_sensor) StdoutLine: {'line': b'running build\n'}
+[7.963323] (as5600_sensor) StdoutLine: {'line': b'running build_py\n'}
+[7.965154] (as5600_sensor) StdoutLine: {'line': b'running install\n'}
+[7.966674] (as5600_sensor) StdoutLine: {'line': b'running install_lib\n'}
+[7.971362] (gps_gt_u7) StdoutLine: {'line': b'running egg_info\n'}
+[7.973642] (as5600_sensor) StdoutLine: {'line': b'running install_data\n'}
+[7.974584] (as5600_sensor) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.978100] (gps_gt_u7) StdoutLine: {'line': b'writing ../../build/gps_gt_u7/gps_gt_u7.egg-info/PKG-INFO\n'}
+[7.981905] (gps_gt_u7) StdoutLine: {'line': b'writing dependency_links to ../../build/gps_gt_u7/gps_gt_u7.egg-info/dependency_links.txt\n'}
+[7.985590] (as5600_sensor) StdoutLine: {'line': b"removing '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages/as5600_sensor-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[7.987270] (gps_gt_u7) StdoutLine: {'line': b'writing entry points to ../../build/gps_gt_u7/gps_gt_u7.egg-info/entry_points.txt\n'}
+[7.988258] (as5600_sensor) StdoutLine: {'line': b'Copying ../../build/as5600_sensor/as5600_sensor.egg-info to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages/as5600_sensor-0.0.0-py3.10.egg-info\n'}
+[7.990250] (gps_gt_u7) StdoutLine: {'line': b'writing requirements to ../../build/gps_gt_u7/gps_gt_u7.egg-info/requires.txt\n'}
+[7.992506] (gps_gt_u7) StdoutLine: {'line': b'writing top-level names to ../../build/gps_gt_u7/gps_gt_u7.egg-info/top_level.txt\n'}
+[7.995844] (as5600_sensor) StdoutLine: {'line': b'running install_scripts\n'}
+[8.004995] (gps_gt_u7) StdoutLine: {'line': b"reading manifest file '../../build/gps_gt_u7/gps_gt_u7.egg-info/SOURCES.txt'\n"}
+[8.011914] (gps_gt_u7) StdoutLine: {'line': b"writing manifest file '../../build/gps_gt_u7/gps_gt_u7.egg-info/SOURCES.txt'\n"}
+[8.013223] (-) TimerEvent: {}
+[8.015039] (gps_gt_u7) StdoutLine: {'line': b'running build\n'}
+[8.016569] (gps_gt_u7) StdoutLine: {'line': b'running build_py\n'}
+[8.020628] (gps_gt_u7) StdoutLine: {'line': b'running install\n'}
+[8.023459] (gps_gt_u7) StdoutLine: {'line': b'running install_lib\n'}
+[8.031274] (gps_gt_u7) StdoutLine: {'line': b'running install_data\n'}
+[8.032085] (gps_gt_u7) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.038911] (lis3mdl_mag) StdoutLine: {'line': b'running egg_info\n'}
+[8.040137] (gps_gt_u7) StdoutLine: {'line': b"removing '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/lib/python3.10/site-packages/gps_gt_u7-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[8.042679] (gps_gt_u7) StdoutLine: {'line': b'Copying ../../build/gps_gt_u7/gps_gt_u7.egg-info to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/lib/python3.10/site-packages/gps_gt_u7-0.0.0-py3.10.egg-info\n'}
+[8.051240] (gps_gt_u7) StdoutLine: {'line': b'running install_scripts\n'}
+[8.057169] (lis3mdl_mag) StdoutLine: {'line': b'writing ../../build/lis3mdl_mag/lis3mdl_mag.egg-info/PKG-INFO\n'}
+[8.059746] (lis3mdl_mag) StdoutLine: {'line': b'writing dependency_links to ../../build/lis3mdl_mag/lis3mdl_mag.egg-info/dependency_links.txt\n'}
+[8.063406] (lis3mdl_mag) StdoutLine: {'line': b'writing entry points to ../../build/lis3mdl_mag/lis3mdl_mag.egg-info/entry_points.txt\n'}
+[8.068334] (lis3mdl_mag) StdoutLine: {'line': b'writing requirements to ../../build/lis3mdl_mag/lis3mdl_mag.egg-info/requires.txt\n'}
+[8.070532] (lis3mdl_mag) StdoutLine: {'line': b'writing top-level names to ../../build/lis3mdl_mag/lis3mdl_mag.egg-info/top_level.txt\n'}
+[8.089329] (lis3mdl_mag) StdoutLine: {'line': b"reading manifest file '../../build/lis3mdl_mag/lis3mdl_mag.egg-info/SOURCES.txt'\n"}
+[8.101729] (as5600_sensor) StdoutLine: {'line': b'Installing as5600_node script to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/as5600_sensor\n'}
+[8.104312] (as5600_sensor) StdoutLine: {'line': b"writing list of installed files to '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/install.log'\n"}
+[8.113870] (-) TimerEvent: {}
+[8.124900] (lis3mdl_mag) StdoutLine: {'line': b"writing manifest file '../../build/lis3mdl_mag/lis3mdl_mag.egg-info/SOURCES.txt'\n"}
+[8.130771] (lis3mdl_mag) StdoutLine: {'line': b'running build\n'}
+[8.135398] (lis3mdl_mag) StdoutLine: {'line': b'running build_py\n'}
+[8.144114] (lis3mdl_mag) StdoutLine: {'line': b'running install\n'}
+[8.151491] (lis3mdl_mag) StdoutLine: {'line': b'running install_lib\n'}
+[8.167445] (lis3mdl_mag) StdoutLine: {'line': b'running install_data\n'}
+[8.172356] (lis3mdl_mag) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.189237] (lis3mdl_mag) StdoutLine: {'line': b"removing '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages/lis3mdl_mag-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[8.199079] (gps_gt_u7) StdoutLine: {'line': b'Installing gps_node script to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/gps_gt_u7/lib/gps_gt_u7\n'}
+[8.203473] (gps_gt_u7) StdoutLine: {'line': b"writing list of installed files to '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/gps_gt_u7/install.log'\n"}
+[8.210735] (lis3mdl_mag) StdoutLine: {'line': b'Copying ../../build/lis3mdl_mag/lis3mdl_mag.egg-info to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages/lis3mdl_mag-0.0.0-py3.10.egg-info\n'}
+[8.214198] (-) TimerEvent: {}
+[8.271806] (lis3mdl_mag) StdoutLine: {'line': b'running install_scripts\n'}
+[8.292093] (as5600_sensor) CommandEnded: {'returncode': 0}
+[8.315952] (-) TimerEvent: {}
+[8.325777] (control_py) StdoutLine: {'line': b'running egg_info\n'}
+[8.330244] (control_py) StdoutLine: {'line': b'writing ../build/control_py/control_py.egg-info/PKG-INFO\n'}
+[8.331455] (control_py) StdoutLine: {'line': b'writing dependency_links to ../build/control_py/control_py.egg-info/dependency_links.txt\n'}
+[8.333902] (control_py) StdoutLine: {'line': b'writing entry points to ../build/control_py/control_py.egg-info/entry_points.txt\n'}
+[8.334661] (control_py) StdoutLine: {'line': b'writing requirements to ../build/control_py/control_py.egg-info/requires.txt\n'}
+[8.338254] (control_py) StdoutLine: {'line': b'writing top-level names to ../build/control_py/control_py.egg-info/top_level.txt\n'}
+[8.348473] (control_py) StdoutLine: {'line': b"reading manifest file '../build/control_py/control_py.egg-info/SOURCES.txt'\n"}
+[8.355301] (control_py) StdoutLine: {'line': b"writing manifest file '../build/control_py/control_py.egg-info/SOURCES.txt'\n"}
+[8.359510] (control_py) StdoutLine: {'line': b'running build\n'}
+[8.360602] (control_py) StdoutLine: {'line': b'running build_py\n'}
+[8.369186] (control_py) StdoutLine: {'line': b'running install\n'}
+[8.370163] (control_py) StdoutLine: {'line': b'running install_lib\n'}
+[8.374313] (control_py) StdoutLine: {'line': b'running install_data\n'}
+[8.377240] (control_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.389523] (control_py) StdoutLine: {'line': b"removing '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/lib/python3.10/site-packages/control_py-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[8.393262] (control_py) StdoutLine: {'line': b'Copying ../build/control_py/control_py.egg-info to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/lib/python3.10/site-packages/control_py-0.0.0-py3.10.egg-info\n'}
+[8.406883] (control_py) StdoutLine: {'line': b'running install_scripts\n'}
+[8.417192] (-) TimerEvent: {}
+[8.464309] (as5600_sensor) JobEnded: {'identifier': 'as5600_sensor', 'rc': 0}
+[8.468630] (taflab_msgs) JobStarted: {'identifier': 'taflab_msgs'}
+[8.475003] (lis3mdl_mag) StdoutLine: {'line': b'Installing magnetometer_node script to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/lis3mdl_mag\n'}
+[8.479912] (lis3mdl_mag) StdoutLine: {'line': b"writing list of installed files to '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/install.log'\n"}
+[8.502982] (gps_gt_u7) CommandEnded: {'returncode': 0}
+[8.517350] (-) TimerEvent: {}
+[8.546426] (control_py) StdoutLine: {'line': b'Installing boat_control script to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/lib/control_py\n'}
+[8.547809] (control_py) StdoutLine: {'line': b"writing list of installed files to '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/install.log'\n"}
+[8.605359] (gps_gt_u7) JobEnded: {'identifier': 'gps_gt_u7', 'rc': 0}
+[8.621796] (xbee_node) JobStarted: {'identifier': 'xbee_node'}
+[8.623226] (-) TimerEvent: {}
+[8.725457] (-) TimerEvent: {}
+[8.729413] (taflab_msgs) JobProgress: {'identifier': 'taflab_msgs', 'progress': 'cmake'}
+[8.736658] (taflab_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/taflab_msgs', '-DCMAKE_INSTALL_PREFIX=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs'], 'cwd': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'boat'), ('SSH_CLIENT', '10.41.181.7 63024 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/boat'), ('OLDPWD', '/home/boat/Desktop/TAFLAB_boatpi_roshumble'), ('TERM_PROGRAM_VERSION', '1.95.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-182d1209-45ee-4faf-b364-cd78ecb8b4f1.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'boat'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-35dd15a5b7.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs'), ('SSH_CONNECTION', '10.41.181.7 63024 10.41.214.202 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[8.825649] (-) TimerEvent: {}
+[8.927286] (-) TimerEvent: {}
+[9.028780] (-) TimerEvent: {}
+[9.046355] (taflab_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[9.088492] (taflab_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[9.128989] (-) TimerEvent: {}
+[9.230478] (-) TimerEvent: {}
+[9.332385] (-) TimerEvent: {}
+[9.434202] (-) TimerEvent: {}
+[9.463774] (taflab_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[9.491534] (taflab_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[9.492741] (taflab_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[9.494356] (taflab_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[9.516628] (taflab_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[9.534346] (-) TimerEvent: {}
+[9.635115] (-) TimerEvent: {}
+[9.736040] (-) TimerEvent: {}
+[9.836991] (-) TimerEvent: {}
+[9.938074] (-) TimerEvent: {}
+[10.039720] (-) TimerEvent: {}
+[10.075945] (lis3mdl_mag) CommandEnded: {'returncode': 0}
+[10.118999] (lis3mdl_mag) JobEnded: {'identifier': 'lis3mdl_mag', 'rc': 0}
+[10.125414] (control_py) CommandEnded: {'returncode': 0}
+[10.140397] (-) TimerEvent: {}
+[10.163697] (control_py) JobEnded: {'identifier': 'control_py', 'rc': 0}
+[10.240667] (-) TimerEvent: {}
+[10.252113] (taflab_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[10.340983] (-) TimerEvent: {}
+[10.444362] (-) TimerEvent: {}
+[10.545794] (-) TimerEvent: {}
+[10.647204] (-) TimerEvent: {}
+[10.748008] (-) TimerEvent: {}
+[10.770162] (taflab_msgs) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[10.848208] (-) TimerEvent: {}
+[10.949513] (-) TimerEvent: {}
+[11.050819] (-) TimerEvent: {}
+[11.053928] (taflab_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[11.089837] (taflab_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[11.142087] (taflab_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[11.150996] (-) TimerEvent: {}
+[11.210858] (taflab_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[11.251193] (-) TimerEvent: {}
+[11.306396] (taflab_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[11.351432] (-) TimerEvent: {}
+[11.453239] (-) TimerEvent: {}
+[11.555126] (-) TimerEvent: {}
+[11.600514] (taflab_msgs) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[11.628684] (xbee_node) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/xbee_node', 'build', '--build-base', '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/build', 'install', '--record', '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/comms/xbee_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'boat', 'SSH_CLIENT': '10.41.181.7 63024 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/boat', 'OLDPWD': '/home/boat/Desktop/TAFLAB_boatpi_roshumble', 'TERM_PROGRAM_VERSION': '1.95.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-182d1209-45ee-4faf-b364-cd78ecb8b4f1.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'LOGNAME': 'boat', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-35dd15a5b7.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node', 'SSH_CONNECTION': '10.41.181.7 63024 10.41.214.202 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[11.634706] (taflab_msgs) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[11.655291] (-) TimerEvent: {}
+[11.757235] (-) TimerEvent: {}
+[11.858998] (-) TimerEvent: {}
+[11.960851] (-) TimerEvent: {}
+[12.062016] (-) TimerEvent: {}
+[12.089439] (taflab_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[12.162287] (-) TimerEvent: {}
+[12.256924] (taflab_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[12.262477] (-) TimerEvent: {}
+[12.363291] (-) TimerEvent: {}
+[12.476318] (-) TimerEvent: {}
+[12.533360] (taflab_msgs) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[12.576487] (-) TimerEvent: {}
+[12.590253] (taflab_msgs) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[12.645866] (xbee_node) StdoutLine: {'line': b'running egg_info\n'}
+[12.648679] (xbee_node) StdoutLine: {'line': b'creating ../../build/xbee_node/xbee_node.egg-info\n'}
+[12.649718] (xbee_node) StdoutLine: {'line': b'writing ../../build/xbee_node/xbee_node.egg-info/PKG-INFO\n'}
+[12.650684] (xbee_node) StdoutLine: {'line': b'writing dependency_links to ../../build/xbee_node/xbee_node.egg-info/dependency_links.txt\n'}
+[12.651502] (xbee_node) StdoutLine: {'line': b'writing entry points to ../../build/xbee_node/xbee_node.egg-info/entry_points.txt\n'}
+[12.652357] (xbee_node) StdoutLine: {'line': b'writing requirements to ../../build/xbee_node/xbee_node.egg-info/requires.txt\n'}
+[12.653197] (xbee_node) StdoutLine: {'line': b'writing top-level names to ../../build/xbee_node/xbee_node.egg-info/top_level.txt\n'}
+[12.654000] (xbee_node) StdoutLine: {'line': b"writing manifest file '../../build/xbee_node/xbee_node.egg-info/SOURCES.txt'\n"}
+[12.661667] (xbee_node) StdoutLine: {'line': b"reading manifest file '../../build/xbee_node/xbee_node.egg-info/SOURCES.txt'\n"}
+[12.666111] (xbee_node) StdoutLine: {'line': b"writing manifest file '../../build/xbee_node/xbee_node.egg-info/SOURCES.txt'\n"}
+[12.667256] (xbee_node) StdoutLine: {'line': b'running build\n'}
+[12.668142] (xbee_node) StdoutLine: {'line': b'running build_py\n'}
+[12.669090] (xbee_node) StdoutLine: {'line': b'creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/build\n'}
+[12.670098] (xbee_node) StdoutLine: {'line': b'creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/build/lib\n'}
+[12.670645] (xbee_node) StdoutLine: {'line': b'creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/build/lib/xbee_node\n'}
+[12.671467] (xbee_node) StdoutLine: {'line': b'copying xbee_node/__init__.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/build/lib/xbee_node\n'}
+[12.672381] (xbee_node) StdoutLine: {'line': b'copying xbee_node/xbee_node.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/build/lib/xbee_node\n'}
+[12.676715] (-) TimerEvent: {}
+[12.681189] (xbee_node) StdoutLine: {'line': b'running install\n'}
+[12.682082] (xbee_node) StdoutLine: {'line': b'running install_lib\n'}
+[12.686230] (xbee_node) StdoutLine: {'line': b'creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/python3.10/site-packages/xbee_node\n'}
+[12.688638] (xbee_node) StdoutLine: {'line': b'copying /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/build/lib/xbee_node/__init__.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/python3.10/site-packages/xbee_node\n'}
+[12.690732] (xbee_node) StdoutLine: {'line': b'copying /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/build/lib/xbee_node/xbee_node.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/python3.10/site-packages/xbee_node\n'}
+[12.693386] (xbee_node) StdoutLine: {'line': b'byte-compiling /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/python3.10/site-packages/xbee_node/__init__.py to __init__.cpython-310.pyc\n'}
+[12.696409] (xbee_node) StdoutLine: {'line': b'byte-compiling /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/python3.10/site-packages/xbee_node/xbee_node.py to xbee_node.cpython-310.pyc\n'}
+[12.699162] (xbee_node) StdoutLine: {'line': b'running install_data\n'}
+[12.701578] (xbee_node) StdoutLine: {'line': b'creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/ament_index\n'}
+[12.704467] (xbee_node) StdoutLine: {'line': b'creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/ament_index/resource_index\n'}
+[12.706988] (xbee_node) StdoutLine: {'line': b'creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/ament_index/resource_index/packages\n'}
+[12.709244] (xbee_node) StdoutLine: {'line': b'copying resource/xbee_node -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/ament_index/resource_index/packages\n'}
+[12.711403] (xbee_node) StdoutLine: {'line': b'copying package.xml -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/xbee_node\n'}
+[12.713969] (xbee_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.717673] (xbee_node) StdoutLine: {'line': b'Copying ../../build/xbee_node/xbee_node.egg-info to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/python3.10/site-packages/xbee_node-0.0.0-py3.10.egg-info\n'}
+[12.721396] (xbee_node) StdoutLine: {'line': b'running install_scripts\n'}
+[12.777241] (-) TimerEvent: {}
+[12.806801] (xbee_node) StdoutLine: {'line': b'Installing xbee_node script to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/xbee_node\n'}
+[12.810425] (xbee_node) StdoutLine: {'line': b"writing list of installed files to '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/install.log'\n"}
+[12.878908] (-) TimerEvent: {}
+[12.964285] (xbee_node) CommandEnded: {'returncode': 0}
+[12.980423] (-) TimerEvent: {}
+[13.005441] (taflab_msgs) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[13.007429] (taflab_msgs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[13.011387] (xbee_node) JobEnded: {'identifier': 'xbee_node', 'rc': 0}
+[13.080633] (-) TimerEvent: {}
+[13.181417] (-) TimerEvent: {}
+[13.282425] (-) TimerEvent: {}
+[13.355005] (taflab_msgs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[13.360858] (taflab_msgs) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[13.382616] (-) TimerEvent: {}
+[13.483810] (-) TimerEvent: {}
+[13.584665] (-) TimerEvent: {}
+[13.593630] (taflab_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[13.684829] (-) TimerEvent: {}
+[13.785787] (-) TimerEvent: {}
+[13.886581] (-) TimerEvent: {}
+[13.987383] (-) TimerEvent: {}
+[14.088203] (-) TimerEvent: {}
+[14.188932] (-) TimerEvent: {}
+[14.289744] (-) TimerEvent: {}
+[14.390770] (-) TimerEvent: {}
+[14.492028] (-) TimerEvent: {}
+[14.592991] (-) TimerEvent: {}
+[14.678954] (taflab_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[14.693148] (-) TimerEvent: {}
+[14.793963] (-) TimerEvent: {}
+[14.894783] (-) TimerEvent: {}
+[14.996401] (-) TimerEvent: {}
+[15.097597] (-) TimerEvent: {}
+[15.199098] (-) TimerEvent: {}
+[15.300424] (-) TimerEvent: {}
+[15.401210] (-) TimerEvent: {}
+[15.502697] (-) TimerEvent: {}
+[15.603746] (-) TimerEvent: {}
+[15.704914] (-) TimerEvent: {}
+[15.805708] (-) TimerEvent: {}
+[15.907295] (-) TimerEvent: {}
+[15.998469] (taflab_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[16.007987] (-) TimerEvent: {}
+[16.109300] (-) TimerEvent: {}
+[16.210553] (-) TimerEvent: {}
+[16.311261] (-) TimerEvent: {}
+[16.412386] (-) TimerEvent: {}
+[16.469066] (taflab_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[16.512541] (-) TimerEvent: {}
+[16.554511] (taflab_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[16.567032] (taflab_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[16.612709] (-) TimerEvent: {}
+[16.650737] (taflab_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[16.651818] (taflab_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[16.652424] (taflab_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[16.652915] (taflab_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[16.713049] (-) TimerEvent: {}
+[16.724557] (taflab_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[16.813231] (-) TimerEvent: {}
+[16.891742] (taflab_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[16.913401] (-) TimerEvent: {}
+[17.014523] (-) TimerEvent: {}
+[17.093275] (taflab_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[17.110075] (taflab_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs\n'}
+[17.114857] (-) TimerEvent: {}
+[17.153640] (taflab_msgs) CommandEnded: {'returncode': 0}
+[17.156127] (taflab_msgs) JobProgress: {'identifier': 'taflab_msgs', 'progress': 'build'}
+[17.160973] (taflab_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs', '--', '-j4', '-l4'], 'cwd': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'boat'), ('SSH_CLIENT', '10.41.181.7 63024 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/boat'), ('OLDPWD', '/home/boat/Desktop/TAFLAB_boatpi_roshumble'), ('TERM_PROGRAM_VERSION', '1.95.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-182d1209-45ee-4faf-b364-cd78ecb8b4f1.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'boat'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-35dd15a5b7.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs'), ('SSH_CONNECTION', '10.41.181.7 63024 10.41.214.202 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[17.215080] (-) TimerEvent: {}
+[17.316399] (-) TimerEvent: {}
+[17.337865] (taflab_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[17.416600] (-) TimerEvent: {}
+[17.424426] (taflab_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[17.473479] (taflab_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_taflab_msgs\n'}
+[17.518183] (-) TimerEvent: {}
+[17.619317] (-) TimerEvent: {}
+[17.720377] (-) TimerEvent: {}
+[17.821329] (-) TimerEvent: {}
+[17.922198] (-) TimerEvent: {}
+[18.023047] (-) TimerEvent: {}
+[18.123940] (-) TimerEvent: {}
+[18.224712] (-) TimerEvent: {}
+[18.325513] (-) TimerEvent: {}
+[18.426733] (-) TimerEvent: {}
+[18.527994] (-) TimerEvent: {}
+[18.628774] (-) TimerEvent: {}
+[18.729598] (-) TimerEvent: {}
+[18.785563] (taflab_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[18.788253] (taflab_msgs) StdoutLine: {'line': b'creating taflab_msgs.egg-info\n'}
+[18.790879] (taflab_msgs) StdoutLine: {'line': b'writing taflab_msgs.egg-info/PKG-INFO\n'}
+[18.793960] (taflab_msgs) StdoutLine: {'line': b'writing dependency_links to taflab_msgs.egg-info/dependency_links.txt\n'}
+[18.794746] (taflab_msgs) StdoutLine: {'line': b'writing top-level names to taflab_msgs.egg-info/top_level.txt\n'}
+[18.795260] (taflab_msgs) StdoutLine: {'line': b"writing manifest file 'taflab_msgs.egg-info/SOURCES.txt'\n"}
+[18.809476] (taflab_msgs) StdoutLine: {'line': b"reading manifest file 'taflab_msgs.egg-info/SOURCES.txt'\n"}
+[18.812457] (taflab_msgs) StdoutLine: {'line': b"writing manifest file 'taflab_msgs.egg-info/SOURCES.txt'\n"}
+[18.829984] (-) TimerEvent: {}
+[18.933527] (-) TimerEvent: {}
+[18.975791] (taflab_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_taflab_msgs_egg\n'}
+[19.033716] (-) TimerEvent: {}
+[19.135562] (-) TimerEvent: {}
+[19.236957] (-) TimerEvent: {}
+[19.338883] (-) TimerEvent: {}
+[19.441529] (-) TimerEvent: {}
+[19.480189] (taflab_msgs) StdoutLine: {'line': b'[  5%] Built target taflab_msgs__cpp\n'}
+[19.510386] (taflab_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/taflab_msgs__rosidl_generator_c.dir/rosidl_generator_c/taflab_msgs/msg/detail/control_data__functions.c.o\x1b[0m\n'}
+[19.518099] (taflab_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/taflab_msgs__rosidl_generator_c.dir/rosidl_generator_c/taflab_msgs/msg/detail/calibration_data__functions.c.o\x1b[0m\n'}
+[19.525601] (taflab_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[19.540727] (taflab_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[19.541580] (-) TimerEvent: {}
+[19.644158] (-) TimerEvent: {}
+[19.746205] (-) TimerEvent: {}
+[19.843348] (taflab_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[19.846396] (-) TimerEvent: {}
+[19.860629] (taflab_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libtaflab_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[19.946596] (-) TimerEvent: {}
+[20.052750] (-) TimerEvent: {}
+[20.069950] (taflab_msgs) StdoutLine: {'line': b'[ 20%] Built target taflab_msgs__rosidl_generator_c\n'}
+[20.137720] (taflab_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[20.153153] (-) TimerEvent: {}
+[20.255839] (-) TimerEvent: {}
+[20.357985] (-) TimerEvent: {}
+[20.459619] (-) TimerEvent: {}
+[20.561199] (-) TimerEvent: {}
+[20.662661] (-) TimerEvent: {}
+[20.764147] (-) TimerEvent: {}
+[20.865788] (-) TimerEvent: {}
+[20.966860] (-) TimerEvent: {}
+[21.067918] (-) TimerEvent: {}
+[21.168939] (-) TimerEvent: {}
+[21.270210] (-) TimerEvent: {}
+[21.371229] (-) TimerEvent: {}
+[21.375552] (taflab_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/taflab_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/taflab_msgs/msg/control_data__type_support.cpp.o\x1b[0m\n'}
+[21.471473] (-) TimerEvent: {}
+[21.572957] (-) TimerEvent: {}
+[21.674301] (-) TimerEvent: {}
+[21.727147] (taflab_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/taflab_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/taflab_msgs/msg/detail/dds_fastrtps/control_data__type_support.cpp.o\x1b[0m\n'}
+[21.774790] (-) TimerEvent: {}
+[21.878967] (-) TimerEvent: {}
+[21.979990] (-) TimerEvent: {}
+[22.041678] (taflab_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/taflab_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/taflab_msgs/msg/detail/control_data__type_support.cpp.o\x1b[0m\n'}
+[22.080261] (-) TimerEvent: {}
+[22.181775] (-) TimerEvent: {}
+[22.283330] (-) TimerEvent: {}
+[22.386211] (-) TimerEvent: {}
+[22.505771] (-) TimerEvent: {}
+[22.570552] (taflab_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/taflab_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/taflab_msgs/msg/detail/control_data__type_support_c.cpp.o\x1b[0m\n'}
+[22.606114] (-) TimerEvent: {}
+[22.708357] (-) TimerEvent: {}
+[22.809909] (-) TimerEvent: {}
+[22.911238] (-) TimerEvent: {}
+[23.012745] (-) TimerEvent: {}
+[23.114453] (-) TimerEvent: {}
+[23.216819] (-) TimerEvent: {}
+[23.319331] (-) TimerEvent: {}
+[23.329747] (taflab_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/taflab_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/taflab_msgs/msg/calibration_data__type_support.cpp.o\x1b[0m\n'}
+[23.419623] (-) TimerEvent: {}
+[23.522044] (-) TimerEvent: {}
+[23.624788] (-) TimerEvent: {}
+[23.727193] (-) TimerEvent: {}
+[23.830131] (-) TimerEvent: {}
+[23.933176] (-) TimerEvent: {}
+[24.036317] (-) TimerEvent: {}
+[24.138991] (-) TimerEvent: {}
+[24.242960] (-) TimerEvent: {}
+[24.346440] (-) TimerEvent: {}
+[24.431415] (taflab_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/taflab_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/taflab_msgs/msg/detail/dds_fastrtps/calibration_data__type_support.cpp.o\x1b[0m\n'}
+[24.446691] (-) TimerEvent: {}
+[24.549588] (-) TimerEvent: {}
+[24.646264] (taflab_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/taflab_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/taflab_msgs/msg/detail/calibration_data__type_support.cpp.o\x1b[0m\n'}
+[24.650496] (-) TimerEvent: {}
+[24.753055] (-) TimerEvent: {}
+[24.855550] (-) TimerEvent: {}
+[24.958152] (-) TimerEvent: {}
+[24.994697] (taflab_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/taflab_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/taflab_msgs/msg/detail/calibration_data__type_support_c.cpp.o\x1b[0m\n'}
+[25.015860] (taflab_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libtaflab_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[25.058441] (-) TimerEvent: {}
+[25.160455] (-) TimerEvent: {}
+[25.262608] (-) TimerEvent: {}
+[25.283286] (taflab_msgs) StdoutLine: {'line': b'[ 46%] Built target taflab_msgs__rosidl_typesupport_cpp\n'}
+[25.335486] (taflab_msgs) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[25.362961] (-) TimerEvent: {}
+[25.465868] (-) TimerEvent: {}
+[25.569309] (-) TimerEvent: {}
+[25.672601] (-) TimerEvent: {}
+[25.776349] (-) TimerEvent: {}
+[25.879442] (-) TimerEvent: {}
+[25.982635] (-) TimerEvent: {}
+[26.086013] (-) TimerEvent: {}
+[26.189608] (-) TimerEvent: {}
+[26.293359] (-) TimerEvent: {}
+[26.396505] (-) TimerEvent: {}
+[26.499986] (-) TimerEvent: {}
+[26.603537] (-) TimerEvent: {}
+[26.707065] (-) TimerEvent: {}
+[26.810152] (-) TimerEvent: {}
+[26.913252] (-) TimerEvent: {}
+[27.016918] (-) TimerEvent: {}
+[27.120618] (-) TimerEvent: {}
+[27.195782] (taflab_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libtaflab_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[27.220984] (-) TimerEvent: {}
+[27.324705] (-) TimerEvent: {}
+[27.347009] (taflab_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libtaflab_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[27.425261] (-) TimerEvent: {}
+[27.439702] (taflab_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libtaflab_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[27.525556] (-) TimerEvent: {}
+[27.568631] (taflab_msgs) StdoutLine: {'line': b'[ 56%] Built target taflab_msgs__rosidl_typesupport_introspection_cpp\n'}
+[27.625783] (-) TimerEvent: {}
+[27.636572] (taflab_msgs) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[27.726142] (-) TimerEvent: {}
+[27.829428] (-) TimerEvent: {}
+[27.832843] (taflab_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/taflab_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/taflab_msgs/msg/detail/control_data__type_support.c.o\x1b[0m\n'}
+[27.915487] (taflab_msgs) StdoutLine: {'line': b'[ 61%] Built target taflab_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[27.929655] (-) TimerEvent: {}
+[27.963525] (taflab_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/taflab_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/taflab_msgs/msg/detail/calibration_data__type_support.c.o\x1b[0m\n'}
+[28.009728] (taflab_msgs) StdoutLine: {'line': b'[ 64%] Built target taflab_msgs__rosidl_typesupport_fastrtps_c\n'}
+[28.029854] (-) TimerEvent: {}
+[28.131213] (-) TimerEvent: {}
+[28.151435] (taflab_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking C shared library libtaflab_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[28.231806] (-) TimerEvent: {}
+[28.297514] (taflab_msgs) StdoutLine: {'line': b'[ 66%] Built target taflab_msgs__rosidl_typesupport_introspection_c\n'}
+[28.331951] (-) TimerEvent: {}
+[28.432813] (-) TimerEvent: {}
+[28.533729] (-) TimerEvent: {}
+[28.634600] (-) TimerEvent: {}
+[28.735434] (-) TimerEvent: {}
+[28.836182] (-) TimerEvent: {}
+[28.936925] (-) TimerEvent: {}
+[29.037790] (-) TimerEvent: {}
+[29.139062] (-) TimerEvent: {}
+[29.168684] (taflab_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/taflab_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/taflab_msgs/msg/control_data__type_support.cpp.o\x1b[0m\n'}
+[29.170375] (taflab_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/taflab_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/taflab_msgs/msg/calibration_data__type_support.cpp.o\x1b[0m\n'}
+[29.239278] (-) TimerEvent: {}
+[29.319337] (taflab_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libtaflab_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[29.339662] (-) TimerEvent: {}
+[29.440610] (-) TimerEvent: {}
+[29.481132] (taflab_msgs) StdoutLine: {'line': b'[ 74%] Built target taflab_msgs__rosidl_typesupport_c\n'}
+[29.540821] (-) TimerEvent: {}
+[29.564308] (taflab_msgs) StdoutLine: {'line': b'[ 74%] Built target taflab_msgs\n'}
+[29.641075] (-) TimerEvent: {}
+[29.654352] (taflab_msgs) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[29.741224] (-) TimerEvent: {}
+[29.842067] (-) TimerEvent: {}
+[29.942911] (-) TimerEvent: {}
+[30.043744] (-) TimerEvent: {}
+[30.144546] (-) TimerEvent: {}
+[30.245571] (-) TimerEvent: {}
+[30.346301] (-) TimerEvent: {}
+[30.447071] (-) TimerEvent: {}
+[30.547874] (-) TimerEvent: {}
+[30.648658] (-) TimerEvent: {}
+[30.749407] (-) TimerEvent: {}
+[30.850156] (-) TimerEvent: {}
+[30.950929] (-) TimerEvent: {}
+[31.051774] (-) TimerEvent: {}
+[31.153105] (-) TimerEvent: {}
+[31.253916] (-) TimerEvent: {}
+[31.354730] (-) TimerEvent: {}
+[31.455559] (-) TimerEvent: {}
+[31.556336] (-) TimerEvent: {}
+[31.657117] (-) TimerEvent: {}
+[31.758094] (-) TimerEvent: {}
+[31.859439] (-) TimerEvent: {}
+[31.913210] (taflab_msgs) StdoutLine: {'line': b'[ 76%] Built target taflab_msgs__py\n'}
+[31.959716] (-) TimerEvent: {}
+[32.000539] (taflab_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/taflab_msgs__rosidl_generator_py.dir/rosidl_generator_py/taflab_msgs/msg/_control_data_s.c.o\x1b[0m\n'}
+[32.008528] (taflab_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/taflab_msgs__rosidl_generator_py.dir/rosidl_generator_py/taflab_msgs/msg/_calibration_data_s.c.o\x1b[0m\n'}
+[32.059935] (-) TimerEvent: {}
+[32.160853] (-) TimerEvent: {}
+[32.261887] (-) TimerEvent: {}
+[32.363290] (-) TimerEvent: {}
+[32.466164] (-) TimerEvent: {}
+[32.507208] (taflab_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/taflab_msgs/libtaflab_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[32.566438] (-) TimerEvent: {}
+[32.667471] (-) TimerEvent: {}
+[32.681718] (taflab_msgs) StdoutLine: {'line': b'[ 84%] Built target taflab_msgs__rosidl_generator_py\n'}
+[32.767223] (taflab_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/taflab_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/taflab_msgs/_taflab_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[32.768352] (-) TimerEvent: {}
+[32.773158] (taflab_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/taflab_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/taflab_msgs/_taflab_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[32.778529] (taflab_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/taflab_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/taflab_msgs/_taflab_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[32.868577] (-) TimerEvent: {}
+[32.970972] (-) TimerEvent: {}
+[33.073284] (-) TimerEvent: {}
+[33.175904] (-) TimerEvent: {}
+[33.278371] (-) TimerEvent: {}
+[33.283732] (taflab_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/taflab_msgs/taflab_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[33.297212] (taflab_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/taflab_msgs/taflab_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[33.330734] (taflab_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/taflab_msgs/taflab_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[33.378753] (-) TimerEvent: {}
+[33.480823] (-) TimerEvent: {}
+[33.576536] (taflab_msgs) StdoutLine: {'line': b'[100%] Built target taflab_msgs__rosidl_typesupport_c__pyext\n'}
+[33.578919] (taflab_msgs) StdoutLine: {'line': b'[100%] Built target taflab_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[33.581362] (taflab_msgs) StdoutLine: {'line': b'[100%] Built target taflab_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[33.582564] (-) TimerEvent: {}
+[33.627286] (taflab_msgs) CommandEnded: {'returncode': 0}
+[33.682781] (-) TimerEvent: {}
+[33.784160] (-) TimerEvent: {}
+[33.885089] (-) TimerEvent: {}
+[33.986519] (-) TimerEvent: {}
+[34.088417] (-) TimerEvent: {}
+[34.132485] (taflab_msgs) JobProgress: {'identifier': 'taflab_msgs', 'progress': 'install'}
+[34.166588] (taflab_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs'], 'cwd': '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'boat'), ('SSH_CLIENT', '10.41.181.7 63024 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/boat'), ('OLDPWD', '/home/boat/Desktop/TAFLAB_boatpi_roshumble'), ('TERM_PROGRAM_VERSION', '1.95.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-182d1209-45ee-4faf-b364-cd78ecb8b4f1.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'boat'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/boat/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-35dd15a5b7.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/taflab_msgs'), ('SSH_CONNECTION', '10.41.181.7 63024 10.41.214.202 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[34.188591] (-) TimerEvent: {}
+[34.200911] (taflab_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[34.202151] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/ament_index/resource_index/rosidl_interfaces/taflab_msgs\n'}
+[34.203462] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs\n'}
+[34.204994] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg\n'}
+[34.206539] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/calibration_data.h\n'}
+[34.207107] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[34.208815] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail\n'}
+[34.210528] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/control_data__struct.h\n'}
+[34.211809] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/calibration_data__functions.h\n'}
+[34.213707] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/calibration_data__type_support.h\n'}
+[34.214974] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/control_data__type_support.h\n'}
+[34.216228] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/control_data__functions.c\n'}
+[34.217469] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/calibration_data__struct.h\n'}
+[34.218837] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/calibration_data__functions.c\n'}
+[34.220095] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/control_data__functions.h\n'}
+[34.221488] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/control_data.h\n'}
+[34.223206] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/environment/library_path.sh\n'}
+[34.224664] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/environment/library_path.dsv\n'}
+[34.226360] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/libtaflab_msgs__rosidl_generator_c.so\n'}
+[34.229418] (taflab_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/libtaflab_msgs__rosidl_generator_c.so" to ""\n'}
+[34.231731] (taflab_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs\n'}
+[34.232471] (taflab_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg\n'}
+[34.232879] (taflab_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail\n'}
+[34.233220] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/control_data__rosidl_typesupport_fastrtps_c.h\n'}
+[34.233614] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/calibration_data__rosidl_typesupport_fastrtps_c.h\n'}
+[34.234193] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[34.235246] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/libtaflab_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[34.238016] (taflab_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/libtaflab_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[34.238733] (taflab_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs\n'}
+[34.239340] (taflab_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg\n'}
+[34.239813] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/control_data.hpp\n'}
+[34.240587] (taflab_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail\n'}
+[34.241153] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/control_data__traits.hpp\n'}
+[34.242426] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/control_data__builder.hpp\n'}
+[34.243648] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/calibration_data__traits.hpp\n'}
+[34.244930] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/calibration_data__builder.hpp\n'}
+[34.246163] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/calibration_data__struct.hpp\n'}
+[34.247446] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/control_data__struct.hpp\n'}
+[34.248776] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/calibration_data.hpp\n'}
+[34.250014] (taflab_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs\n'}
+[34.250659] (taflab_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg\n'}
+[34.251196] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[34.252250] (taflab_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail\n'}
+[34.252866] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/control_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[34.254075] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/dds_fastrtps\n'}
+[34.254974] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/calibration_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[34.256648] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/libtaflab_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[34.259472] (taflab_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/libtaflab_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[34.260448] (taflab_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs\n'}
+[34.264112] (taflab_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg\n'}
+[34.264724] (taflab_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail\n'}
+[34.266546] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/control_data__type_support.c\n'}
+[34.268579] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/control_data__rosidl_typesupport_introspection_c.h\n'}
+[34.273298] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/calibration_data__rosidl_typesupport_introspection_c.h\n'}
+[34.274816] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/calibration_data__type_support.c\n'}
+[34.277655] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[34.280234] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/libtaflab_msgs__rosidl_typesupport_introspection_c.so\n'}
+[34.284920] (taflab_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/libtaflab_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[34.288388] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/libtaflab_msgs__rosidl_typesupport_c.so\n'}
+[34.288968] (-) TimerEvent: {}
+[34.289609] (taflab_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/libtaflab_msgs__rosidl_typesupport_c.so" to ""\n'}
+[34.290172] (taflab_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs\n'}
+[34.291902] (taflab_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg\n'}
+[34.292375] (taflab_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail\n'}
+[34.292731] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/control_data__type_support.cpp\n'}
+[34.293187] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/calibration_data__type_support.cpp\n'}
+[34.293557] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/control_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[34.295011] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/include/taflab_msgs/taflab_msgs/msg/detail/calibration_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[34.299196] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/libtaflab_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[34.302475] (taflab_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/libtaflab_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[34.303266] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/libtaflab_msgs__rosidl_typesupport_cpp.so\n'}
+[34.306841] (taflab_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/libtaflab_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[34.307753] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/environment/pythonpath.sh\n'}
+[34.308236] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/environment/pythonpath.dsv\n'}
+[34.308644] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs-0.0.0-py3.10.egg-info\n'}
+[34.312098] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[34.312501] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[34.312838] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[34.313346] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[34.314657] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs\n'}
+[34.315701] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/msg\n'}
+[34.316838] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/msg/_control_data.py\n'}
+[34.317762] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/msg/_control_data_s.c\n'}
+[34.319061] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/msg/_calibration_data.py\n'}
+[34.320608] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/msg/__init__.py\n'}
+[34.321844] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/msg/_calibration_data_s.c\n'}
+[34.323186] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/libtaflab_msgs__rosidl_generator_py.so\n'}
+[34.325058] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/taflab_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[34.326592] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/_taflab_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[34.328009] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/__init__.py\n'}
+[34.329204] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/taflab_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[34.330839] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/_taflab_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[34.332316] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/_taflab_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[34.333851] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/taflab_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[34.389164] (-) TimerEvent: {}
+[34.490193] (-) TimerEvent: {}
+[34.492445] (taflab_msgs) StdoutLine: {'line': b"Listing '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs'...\n"}
+[34.494045] (taflab_msgs) StdoutLine: {'line': b"Compiling '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/__init__.py'...\n"}
+[34.495529] (taflab_msgs) StdoutLine: {'line': b"Listing '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/msg'...\n"}
+[34.496993] (taflab_msgs) StdoutLine: {'line': b"Compiling '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/msg/__init__.py'...\n"}
+[34.498508] (taflab_msgs) StdoutLine: {'line': b"Compiling '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/msg/_calibration_data.py'...\n"}
+[34.500198] (taflab_msgs) StdoutLine: {'line': b"Compiling '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/msg/_control_data.py'...\n"}
+[34.518862] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/taflab_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[34.521916] (taflab_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/taflab_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[34.523720] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/taflab_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[34.528574] (taflab_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/taflab_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[34.530932] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/taflab_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[34.533591] (taflab_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/local/lib/python3.10/dist-packages/taflab_msgs/taflab_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[34.534513] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/libtaflab_msgs__rosidl_generator_py.so\n'}
+[34.537055] (taflab_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/lib/libtaflab_msgs__rosidl_generator_py.so" to ""\n'}
+[34.537822] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/msg/ControlData.idl\n'}
+[34.539178] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/msg/CalibrationData.idl\n'}
+[34.540544] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/msg/ControlData.msg\n'}
+[34.541853] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/msg/CalibrationData.msg\n'}
+[34.543551] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/ament_index/resource_index/package_run_dependencies/taflab_msgs\n'}
+[34.545622] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/ament_index/resource_index/parent_prefix_path/taflab_msgs\n'}
+[34.546998] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/environment/ament_prefix_path.sh\n'}
+[34.548432] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/environment/ament_prefix_path.dsv\n'}
+[34.549771] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/environment/path.sh\n'}
+[34.551279] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/environment/path.dsv\n'}
+[34.552615] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/local_setup.bash\n'}
+[34.553868] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/local_setup.sh\n'}
+[34.555366] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/local_setup.zsh\n'}
+[34.556666] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/local_setup.dsv\n'}
+[34.557918] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/package.dsv\n'}
+[34.559668] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/ament_index/resource_index/packages/taflab_msgs\n'}
+[34.561592] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/export_taflab_msgs__rosidl_generator_cExport.cmake\n'}
+[34.563104] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/export_taflab_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[34.564897] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/export_taflab_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[34.566546] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/export_taflab_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[34.568394] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/export_taflab_msgs__rosidl_generator_cppExport.cmake\n'}
+[34.570057] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/export_taflab_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[34.571715] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/export_taflab_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[34.573421] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/taflab_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[34.575035] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/taflab_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[34.576673] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/taflab_msgs__rosidl_typesupport_cExport.cmake\n'}
+[34.578204] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/taflab_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[34.580022] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/taflab_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[34.581653] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/taflab_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[34.583285] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/taflab_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[34.584936] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/taflab_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[34.586558] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/export_taflab_msgs__rosidl_generator_pyExport.cmake\n'}
+[34.588166] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/export_taflab_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[34.589794] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[34.590321] (-) TimerEvent: {}
+[34.591167] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[34.592616] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[34.594146] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[34.595698] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[34.597271] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[34.599289] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[34.600502] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/taflab_msgsConfig.cmake\n'}
+[34.601669] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/cmake/taflab_msgsConfig-version.cmake\n'}
+[34.602978] (taflab_msgs) StdoutLine: {'line': b'-- Installing: /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/taflab_msgs/share/taflab_msgs/package.xml\n'}
+[34.613020] (taflab_msgs) CommandEnded: {'returncode': 0}
+[34.690577] (-) TimerEvent: {}
+[34.791462] (-) TimerEvent: {}
+[34.892486] (-) TimerEvent: {}
+[34.993540] (-) TimerEvent: {}
+[35.094886] (-) TimerEvent: {}
+[35.196534] (-) TimerEvent: {}
+[35.213305] (taflab_msgs) JobEnded: {'identifier': 'taflab_msgs', 'rc': 0}
+[35.217517] (-) EventReactorShutdown: {}

@@ -1,0 +1,35 @@
+running egg_info
+creating ../build/control_py/control_py.egg-info
+writing ../build/control_py/control_py.egg-info/PKG-INFO
+writing dependency_links to ../build/control_py/control_py.egg-info/dependency_links.txt
+writing entry points to ../build/control_py/control_py.egg-info/entry_points.txt
+writing requirements to ../build/control_py/control_py.egg-info/requires.txt
+writing top-level names to ../build/control_py/control_py.egg-info/top_level.txt
+writing manifest file '../build/control_py/control_py.egg-info/SOURCES.txt'
+reading manifest file '../build/control_py/control_py.egg-info/SOURCES.txt'
+writing manifest file '../build/control_py/control_py.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/build
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/build/lib
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/build/lib/control_py
+copying control_py/__init__.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/build/lib/control_py
+copying control_py/boat_control_node.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/build/lib/control_py
+running install
+running install_lib
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/lib/python3.10/site-packages/control_py
+copying /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/build/lib/control_py/__init__.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/lib/python3.10/site-packages/control_py
+copying /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/build/lib/control_py/boat_control_node.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/lib/python3.10/site-packages/control_py
+byte-compiling /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/lib/python3.10/site-packages/control_py/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/lib/python3.10/site-packages/control_py/boat_control_node.py to boat_control_node.cpython-310.pyc
+running install_data
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/share/ament_index
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/share/ament_index/resource_index
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/share/ament_index/resource_index/packages
+copying resource/control_py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/share/ament_index/resource_index/packages
+copying package.xml -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/share/control_py
+running install_egg_info
+Copying ../build/control_py/control_py.egg-info to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/lib/python3.10/site-packages/control_py-0.0.0-py3.10.egg-info
+running install_scripts
+Installing boat_control script to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/control_py/lib/control_py
+writing list of installed files to '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/control_py/install.log'

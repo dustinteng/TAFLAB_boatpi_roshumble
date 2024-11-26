@@ -1,0 +1,21 @@
+[6.676s] Invoking command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/lis3mdl_mag': PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lis3mdl_mag build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/install.log --single-version-externally-managed install_data
+[8.620s] running egg_info
+[8.627s] writing ../../build/lis3mdl_mag/lis3mdl_mag.egg-info/PKG-INFO
+[8.630s] writing dependency_links to ../../build/lis3mdl_mag/lis3mdl_mag.egg-info/dependency_links.txt
+[8.631s] writing entry points to ../../build/lis3mdl_mag/lis3mdl_mag.egg-info/entry_points.txt
+[8.631s] writing requirements to ../../build/lis3mdl_mag/lis3mdl_mag.egg-info/requires.txt
+[8.632s] writing top-level names to ../../build/lis3mdl_mag/lis3mdl_mag.egg-info/top_level.txt
+[8.641s] reading manifest file '../../build/lis3mdl_mag/lis3mdl_mag.egg-info/SOURCES.txt'
+[8.651s] writing manifest file '../../build/lis3mdl_mag/lis3mdl_mag.egg-info/SOURCES.txt'
+[8.654s] running build
+[8.655s] running build_py
+[8.655s] running install
+[8.656s] running install_lib
+[8.664s] running install_data
+[8.665s] running install_egg_info
+[8.684s] removing '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages/lis3mdl_mag-0.0.0-py3.10.egg-info' (and everything under it)
+[8.685s] Copying ../../build/lis3mdl_mag/lis3mdl_mag.egg-info to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages/lis3mdl_mag-0.0.0-py3.10.egg-info
+[8.692s] running install_scripts
+[8.811s] Installing magnetometer_node script to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/lis3mdl_mag
+[8.832s] writing list of installed files to '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/install.log'
+[10.565s] Invoked command in '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/sensors/lis3mdl_mag' returned '0': PYTHONPATH=/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lis3mdl_mag build --build-base /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/build install --record /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/install.log --single-version-externally-managed install_data

@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/as5600_sensor/as5600_sensor.egg-info
+writing ../../build/as5600_sensor/as5600_sensor.egg-info/PKG-INFO
+writing dependency_links to ../../build/as5600_sensor/as5600_sensor.egg-info/dependency_links.txt
+writing entry points to ../../build/as5600_sensor/as5600_sensor.egg-info/entry_points.txt
+writing requirements to ../../build/as5600_sensor/as5600_sensor.egg-info/requires.txt
+writing top-level names to ../../build/as5600_sensor/as5600_sensor.egg-info/top_level.txt
+writing manifest file '../../build/as5600_sensor/as5600_sensor.egg-info/SOURCES.txt'
+reading manifest file '../../build/as5600_sensor/as5600_sensor.egg-info/SOURCES.txt'
+writing manifest file '../../build/as5600_sensor/as5600_sensor.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/build
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/build/lib
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/build/lib/as5600_sensor
+copying as5600_sensor/__init__.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/build/lib/as5600_sensor
+copying as5600_sensor/as5600_node.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/build/lib/as5600_sensor
+running install
+running install_lib
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages/as5600_sensor
+copying /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/build/lib/as5600_sensor/__init__.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages/as5600_sensor
+copying /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/build/lib/as5600_sensor/as5600_node.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages/as5600_sensor
+byte-compiling /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages/as5600_sensor/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages/as5600_sensor/as5600_node.py to as5600_node.cpython-310.pyc
+running install_data
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/share/ament_index
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/share/ament_index/resource_index
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/share/ament_index/resource_index/packages
+copying resource/as5600_sensor -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/share/ament_index/resource_index/packages
+copying package.xml -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/share/as5600_sensor
+running install_egg_info
+Copying ../../build/as5600_sensor/as5600_sensor.egg-info to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/python3.10/site-packages/as5600_sensor-0.0.0-py3.10.egg-info
+running install_scripts
+Installing as5600_node script to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/as5600_sensor/lib/as5600_sensor
+writing list of installed files to '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/as5600_sensor/install.log'

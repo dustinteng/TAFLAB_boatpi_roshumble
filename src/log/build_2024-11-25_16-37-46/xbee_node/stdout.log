@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/xbee_node/xbee_node.egg-info
+writing ../../build/xbee_node/xbee_node.egg-info/PKG-INFO
+writing dependency_links to ../../build/xbee_node/xbee_node.egg-info/dependency_links.txt
+writing entry points to ../../build/xbee_node/xbee_node.egg-info/entry_points.txt
+writing requirements to ../../build/xbee_node/xbee_node.egg-info/requires.txt
+writing top-level names to ../../build/xbee_node/xbee_node.egg-info/top_level.txt
+writing manifest file '../../build/xbee_node/xbee_node.egg-info/SOURCES.txt'
+reading manifest file '../../build/xbee_node/xbee_node.egg-info/SOURCES.txt'
+writing manifest file '../../build/xbee_node/xbee_node.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/build
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/build/lib
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/build/lib/xbee_node
+copying xbee_node/__init__.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/build/lib/xbee_node
+copying xbee_node/xbee_node.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/build/lib/xbee_node
+running install
+running install_lib
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/python3.10/site-packages/xbee_node
+copying /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/build/lib/xbee_node/__init__.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/python3.10/site-packages/xbee_node
+copying /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/build/lib/xbee_node/xbee_node.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/python3.10/site-packages/xbee_node
+byte-compiling /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/python3.10/site-packages/xbee_node/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/python3.10/site-packages/xbee_node/xbee_node.py to xbee_node.cpython-310.pyc
+running install_data
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/ament_index
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/ament_index/resource_index
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/ament_index/resource_index/packages
+copying resource/xbee_node -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/ament_index/resource_index/packages
+copying package.xml -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/share/xbee_node
+running install_egg_info
+Copying ../../build/xbee_node/xbee_node.egg-info to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/python3.10/site-packages/xbee_node-0.0.0-py3.10.egg-info
+running install_scripts
+Installing xbee_node script to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/xbee_node/lib/xbee_node
+writing list of installed files to '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/xbee_node/install.log'

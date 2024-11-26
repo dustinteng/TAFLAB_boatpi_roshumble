@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/lis3mdl_mag/lis3mdl_mag.egg-info
+writing ../../build/lis3mdl_mag/lis3mdl_mag.egg-info/PKG-INFO
+writing dependency_links to ../../build/lis3mdl_mag/lis3mdl_mag.egg-info/dependency_links.txt
+writing entry points to ../../build/lis3mdl_mag/lis3mdl_mag.egg-info/entry_points.txt
+writing requirements to ../../build/lis3mdl_mag/lis3mdl_mag.egg-info/requires.txt
+writing top-level names to ../../build/lis3mdl_mag/lis3mdl_mag.egg-info/top_level.txt
+writing manifest file '../../build/lis3mdl_mag/lis3mdl_mag.egg-info/SOURCES.txt'
+reading manifest file '../../build/lis3mdl_mag/lis3mdl_mag.egg-info/SOURCES.txt'
+writing manifest file '../../build/lis3mdl_mag/lis3mdl_mag.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/build
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/build/lib
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/build/lib/lis3mdl_mag
+copying lis3mdl_mag/magnetometer_node.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/build/lib/lis3mdl_mag
+copying lis3mdl_mag/__init__.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/build/lib/lis3mdl_mag
+running install
+running install_lib
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages/lis3mdl_mag
+copying /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/build/lib/lis3mdl_mag/magnetometer_node.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages/lis3mdl_mag
+copying /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/build/lib/lis3mdl_mag/__init__.py -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages/lis3mdl_mag
+byte-compiling /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages/lis3mdl_mag/magnetometer_node.py to magnetometer_node.cpython-310.pyc
+byte-compiling /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages/lis3mdl_mag/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/share/ament_index
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/share/ament_index/resource_index
+creating /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/share/ament_index/resource_index/packages
+copying resource/lis3mdl_mag -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/share/ament_index/resource_index/packages
+copying package.xml -> /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/share/lis3mdl_mag
+running install_egg_info
+Copying ../../build/lis3mdl_mag/lis3mdl_mag.egg-info to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/python3.10/site-packages/lis3mdl_mag-0.0.0-py3.10.egg-info
+running install_scripts
+Installing magnetometer_node script to /home/boat/Desktop/TAFLAB_boatpi_roshumble/src/install/lis3mdl_mag/lib/lis3mdl_mag
+writing list of installed files to '/home/boat/Desktop/TAFLAB_boatpi_roshumble/src/build/lis3mdl_mag/install.log'
