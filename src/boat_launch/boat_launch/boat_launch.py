@@ -71,10 +71,10 @@ def generate_launch_description():
         output='screen',
     )
 
-    autonomous_py = Node(
-        package='autonomous_py',
-        executable='autonomous_py',
-        name='autonomous_py',
+    autonomous_control = Node(
+        package='autonomous_control',
+        executable='controller',
+        name='controller',
         output='screen',
     )
 
