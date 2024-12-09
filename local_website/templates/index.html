@@ -1,4 +1,3 @@
-<!-- templates/index.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +10,9 @@
         input, select { width: 100%; padding: 8px; }
         .button { margin-top: 20px; }
         .logo { text-align: center; }
+        .status { margin-top: 20px; color: green; font-weight: bold; }
+        .status.inactive { color: red; }
+        .section { margin-bottom: 20px; }
     </style>
 </head>
 <body>
@@ -19,25 +21,45 @@
             <h1>TAFLAB</h1>
         </div>
         <h2>Boat Admin Settings</h2>
-        <form method="post">
-            <label for="boat_name">Boat Name:</label>
-            <input type="text" id="boat_name" name="boat_name" value="{{ boat_name }}" required>
 
-            <label for="port">Serial Port:</label>
-            <select name="port" id="port">
-                {% for port in ports %}
-                <option value="{{ port }}" {% if port == current_port %}selected{% endif %}>{{ port }}</option>
-                {% endfor %}
-            </select>
+        <!-- Boat Settings Form -->
+        <form method="post" action="/">
+            <div class="section">
+                <label for="boat_name">Boat Name:</label>
+                <input type="text" id="boat_name" name="boat_name" value="{{ boat_name }}" required>
 
+                <label for="port">Xbee Port:</label>
+                <select name="port" id="port">
+                    {% for port in ports %}
+                    <option value="{{ port }}" {% if port == current_port %}selected{% endif %}>{{ port }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <!-- Access Point Status -->
+            <div class="section">
+                <h3>Access Point WiFi Settings</h3>
+                <div class="status">
+                    {% if ap_active %}
+                        Current Access Point is Active WiFi with SSID: <strong>{{ ap_ssid }}</strong>
+                    {% else %}
+                        <span class="inactive">Current Access Point WiFi is Inactive</span>
+                    {% endif %}
+                </div>
+
+                <!-- AP Configuration Form -->
+                <label for="ap_ssid">AP SSID:</label>
+                <input type="text" id="ap_ssid" name="ap_ssid" value="{{ ap_ssid }}" required>
+
+                <label for="ap_password">AP Password: (base: boatboat)</label>
+                <input type="password" id="ap_password" name="ap_password" value="boatboat"required>
+            </div>
+
+            <!-- Submit Button -->
             <div class="button">
                 <input type="submit" value="Save Settings">
             </div>
         </form>
-
-        <div class="button">
-            <a href="{{ url_for('network_settings') }}">Network Settings</a>
-        </div>
     </div>
 </body>
 </html>

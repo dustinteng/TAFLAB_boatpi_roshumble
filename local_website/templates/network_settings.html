@@ -1,17 +1,49 @@
-<!-- templates/network_settings.html -->
 <!DOCTYPE html>
 <html>
 <head>
     <title>Network Settings</title>
     <style>
-        /* Basic styling for the form */
         body { font-family: Arial, sans-serif; }
         .container { width: 500px; margin: 0 auto; }
         label { display: block; margin-top: 10px; }
         input, select { width: 100%; padding: 8px; }
         .button { margin-top: 20px; }
         .logo { text-align: center; }
+        .flex-container { display: flex; align-items: center; }
+        .flex-container button { margin-left: 10px; padding: 8px; }
     </style>
+    <script>
+        function toggleRandomizeMAC() {
+            const checkbox = document.getElementById('randomize_mac');
+            const macInput = document.getElementById('mac_address');
+
+            if (checkbox.checked) {
+                // Generate a random MAC address
+                const mac = Array(6).fill(0).map(() => 
+                    Math.floor(Math.random() * 256).toString(16).padStart(2, '0')
+                ).join(':');
+                macInput.value = mac;
+            }
+        }
+
+        function refreshMAC() {
+            fetch('/refresh_mac')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to refresh MAC address.');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Update the MAC address field with the refreshed value
+                    document.getElementById('mac_address').value = data.mac_address;
+                })
+                .catch(error => {
+                    console.error(error);
+                    alert('Failed to refresh MAC address. Please try again.');
+                });
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -19,14 +51,20 @@
             <h1>TAFLAB</h1>
         </div>
         <h2>Network Settings</h2>
-        <form method="post">
-            <label for="mac_address">MAC Address:</label>
-            <input type="text" id="mac_address" name="mac_address" value="{{ mac_address }}">
-            <input type="checkbox" id="randomize_mac" name="randomize_mac">
-            <label for="randomize_mac">Randomize MAC Address</label>
+        <p>WiFi Connected to: <strong>{{ connected_ssid }}</strong></p>
 
-            <label for="ssid">Wi-Fi SSID:</label>
-            <input type="text" id="ssid" name="ssid" value="{{ ssid }}" required>
+        <form method="post">
+            
+
+            <label for="ssid">Select Wi-Fi SSID:</label>
+            <select id="ssid" name="ssid">
+                <option value="" disabled selected>Select a Wi-Fi network</option>
+                {% for network in available_networks %}
+                    <option value="{{ network }}" {% if network == ssid %}selected{% endif %}>
+                        {{ network }}
+                    </option>
+                {% endfor %}
+            </select>
 
             <label for="wifi_password">Wi-Fi Password:</label>
             <input type="password" id="wifi_password" name="wifi_password" value="" placeholder="Enter new password">
@@ -34,6 +72,16 @@
             <div class="button">
                 <input type="submit" value="Save Network Settings">
             </div>
+            <label for="mac_address">Current MAC Address:</label>
+            <div class="flex-container">
+                <input type="text" id="mac_address" name="mac_address" value="{{ mac_address }}">
+                <button type="button" onclick="refreshMAC()">Refresh</button>
+            </div>
+
+            <input type="checkbox" id="randomize_mac" name="randomize_mac" onclick="toggleRandomizeMAC()">
+            <label for="randomize_mac">Randomize MAC Address</label>
+
+
         </form>
 
         <form method="post" action="{{ url_for('restart') }}" onsubmit="return confirm('Are you sure you want to restart the Raspberry Pi?');">
