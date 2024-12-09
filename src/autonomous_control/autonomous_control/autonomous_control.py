@@ -59,19 +59,19 @@ class AutonomousControlNode(Node):
             
         self.rudderPublisher.publish(target_rudder_pos)
         
-    def turnSailTo(self, windAngle):
-        if 15 < windAngle < 90:
-            self.target_sail_pos = windAngle - 15
+    def turnSailTo(self):
+        if 15 < self.windAngle < 90:
+            target_sail_pos = self.windAngle - 15
         elif 270 < windAngle < 345:
-            self.target_sail_pos = windAngle + 15 - 180
+            target_sail_pos = self.windAngle + 15 - 180
         elif windAngle >= 90 or windAngle <= 270:
-            self.target_sail_pos = windAngle / 2
+            target_sail_pos = self.windAngle / 2
         else:
-            self.target_sail_pos = 0
+            target_sail_pos = 0
 
-        self.target_sail_pos -= 90
-        if self.target_sail_pos < 0:
-            self.target_sail_pos += 180
+        target_sail_pos -= 90
+        if target_sail_pos < 0:
+            target_sail_pos += 180
             
         self.sailPublisher.publish(target_sail_pos)
         
