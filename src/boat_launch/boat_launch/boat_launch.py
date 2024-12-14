@@ -74,7 +74,7 @@ def generate_launch_description():
     autonomous_control = Node(
         package='autonomous_control',
         executable='controller',
-        name='controller',
+        name='autonomous_control',
         output='screen',
     )
 
@@ -87,7 +87,7 @@ def generate_launch_description():
         main_logic_node,
         gps_node,
         xbee_node,
-        # autonomous_py,
+        autonomous_control,
         # auto_waypoint_queue,
         # auto_coordinate_calculations,
         # auto_rudder_control,

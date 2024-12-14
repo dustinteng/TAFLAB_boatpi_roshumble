@@ -1,6 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target CoordinateCalculationsNode[0m
-[ 33%] Built target WaypointQueue
-[ 50%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNode.dir/src/CoordinateCalculationsNode.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/WaypointQueueNode.dir/src/WaypointQueueNode.cpp.o[0m
-[ 83%] [32m[1mLinking CXX executable WaypointQueueNode[0m
-[ 83%] Built target WaypointQueueNode

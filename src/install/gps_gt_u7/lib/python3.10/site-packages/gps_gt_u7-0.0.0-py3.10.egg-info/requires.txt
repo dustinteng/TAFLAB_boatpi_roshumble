@@ -1,3 +1,0 @@
-pynmea2
-pyserial
-setuptools

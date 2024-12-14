@@ -1,7 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target CoordinateCalculations[0m
-[35m[1mConsolidate compiler generated dependencies of target RudderControlHelper[0m
-[  5%] [32mBuilding CXX object CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o[0m
-[ 15%] Built target WaypointQueue
-[ 20%] [32mBuilding CXX object CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/RudderControlHelper.dir/src/RudderControlHelper.cpp.o[0m
-[ 35%] Built target waypoint_queue_node

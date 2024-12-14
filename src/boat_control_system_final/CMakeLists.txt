@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(taflab_msgs REQUIRED)
 
 # Include directories
 include_directories(include/boat_control_system_final)
@@ -18,40 +19,37 @@ include_directories(include/boat_control_system_final)
 add_library(WaypointQueue src/WaypointQueue.cpp)
 ament_target_dependencies(WaypointQueue rclcpp sensor_msgs)
 
-# Add library for CoordinateCalculations
 add_library(CoordinateCalculations src/Coordinate_Calculations.cpp)
 ament_target_dependencies(CoordinateCalculations rclcpp sensor_msgs std_msgs)
 
-# Add library for RudderControlHelper
 add_library(RudderControlHelper src/RudderControlHelper.cpp)
 ament_target_dependencies(RudderControlHelper rclcpp sensor_msgs std_msgs)
 
 # Create a library for CoordinateCalculationsNode without a main function
 add_library(CoordinateCalculationsNodeLib src/CoordinateCalculationsNode.cpp)
-ament_target_dependencies(CoordinateCalculationsNodeLib rclcpp sensor_msgs std_msgs)
+ament_target_dependencies(CoordinateCalculationsNodeLib rclcpp sensor_msgs std_msgs taflab_msgs)
 target_link_libraries(CoordinateCalculationsNodeLib CoordinateCalculations WaypointQueue)
 
 # Create a library for RudderServoControlNode without a main function
 add_library(RudderServoControlNodeLib src/RudderServoControlNode.cpp)
-ament_target_dependencies(RudderServoControlNodeLib rclcpp sensor_msgs std_msgs)
+ament_target_dependencies(RudderServoControlNodeLib rclcpp sensor_msgs std_msgs taflab_msgs)
 target_link_libraries(RudderServoControlNodeLib RudderControlHelper WaypointQueue)
 
 # Add the executable for CoordinateCalculationsNode with the main function
 add_executable(coordinate_calculations_node src/CoordinateCalculationsNode.cpp)
 target_link_libraries(coordinate_calculations_node CoordinateCalculationsNodeLib)
 
-
 # Add the executable for RudderServoControlNode with the main function
 add_executable(rudder_servo_control_node src/RudderServoControlNode.cpp)
 target_link_libraries(rudder_servo_control_node RudderServoControlNodeLib)
 
-# Add executable for sail servo control
-add_executable(sail_servo_control_node src/SailServoControlNode.cpp)
-target_link_libraries(sail_servo_control_node SailServoControlNodeLib)
-
 # Add a library for SailServoControlNode
 add_library(SailServoControlNodeLib src/SailServoControlNode.cpp)
-ament_target_dependencies(SailServoControlNodeLib rclcpp sensor_msgs std_msgs)
+ament_target_dependencies(SailServoControlNodeLib rclcpp sensor_msgs std_msgs taflab_msgs)
+
+# Add the executable for sail servo control
+add_executable(sail_servo_control_node src/SailServoControlNode.cpp)
+target_link_libraries(sail_servo_control_node SailServoControlNodeLib)
 
 # Add the executable for WaypointQueueNode
 add_executable(waypoint_queue_node src/WaypointQueueNode.cpp)

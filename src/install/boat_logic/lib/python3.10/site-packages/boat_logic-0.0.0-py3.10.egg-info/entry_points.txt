@@ -1,3 +1,0 @@
-[console_scripts]
-main_logic_node = boat_logic.main_logic_node:main
-

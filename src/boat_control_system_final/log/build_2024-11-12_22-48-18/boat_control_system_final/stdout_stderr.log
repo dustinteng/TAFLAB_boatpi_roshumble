@@ -1,9 +1,0 @@
-[31mCMake Error at CMakeLists.txt:43:
-  Parse error.  Expected "(", got newline with text "
-
-  ".
-
-[0m
--- Configuring incomplete, errors occurred!
-See also "/home/boat/Desktop/src/boat_control_system_final/build/boat_control_system_final/CMakeFiles/CMakeOutput.log".
-gmake: *** [Makefile:506: cmake_check_build_system] Error 1

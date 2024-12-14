@@ -1,1 +1,0 @@
-lis3mdl_mag

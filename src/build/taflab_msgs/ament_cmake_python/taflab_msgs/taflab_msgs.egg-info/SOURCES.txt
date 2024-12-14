@@ -1,9 +1,0 @@
-setup.py
-taflab_msgs/__init__.py
-taflab_msgs.egg-info/PKG-INFO
-taflab_msgs.egg-info/SOURCES.txt
-taflab_msgs.egg-info/dependency_links.txt
-taflab_msgs.egg-info/top_level.txt
-taflab_msgs/msg/__init__.py
-taflab_msgs/msg/_calibration_data.py
-taflab_msgs/msg/_control_data.py

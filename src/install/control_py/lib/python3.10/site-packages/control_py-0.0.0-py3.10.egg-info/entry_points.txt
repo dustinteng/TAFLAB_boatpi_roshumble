@@ -1,3 +1,0 @@
-[console_scripts]
-boat_control = control_py.boat_control_node:main
-

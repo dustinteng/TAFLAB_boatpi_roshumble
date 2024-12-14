@@ -1,7 +1,0 @@
-[ 25%] Built target WaypointQueue
-[ 33%] Built target CoordinateCalculations
-[35m[1mConsolidate compiler generated dependencies of target RudderServoControlNode[0m
-[ 50%] Built target WaypointQueueNode
-[ 66%] Built target CoordinateCalculationsNodeLib
-[ 75%] [32mBuilding CXX object CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o[0m
-[ 91%] Built target CoordinateCalculationsNodeExec

@@ -1,3 +1,0 @@
-[console_scripts]
-magnetometer_node = lis3mdl_mag.magnetometer_node:main
-

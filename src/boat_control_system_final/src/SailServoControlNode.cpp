@@ -14,12 +14,13 @@
 #include <std_msgs/msg/float32.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/bool.hpp>
+#include "taflab_msgs/msg/control_data.hpp"
 
 SailServoControlNode::SailServoControlNode() : Node("sail_servo_control_node")
 {
     // Initialize the publisher for sail angle
-    sail_angle_publisher_ = this->create_publisher<std_msgs::msg::Float32>(
-        "/sail_servo_commands", 10);
+    sail_angle_publisher_ = this->create_publisher<taflab_msgs::msg::ControlData>(
+        "/boatcontrol", 10);
 
     // Subscription for Wind Angle Data
     wind_subscriber_ = this->create_subscription<std_msgs::msg::Float32>(
@@ -61,11 +62,14 @@ void SailServoControlNode::stateCallback(const std_msgs::msg::Bool::SharedPtr ms
 // Set the sail servo angle
 void SailServoControlNode::setSailServo(float angle)
 {
-    std_msgs::msg::Float32 angle_data;
-    angle_data.data = angle;
-    sail_angle_publisher_->publish(angle_data);
-    RCLCPP_INFO(this->get_logger(), "Setting sail servo to angle: %.2f", angle_data.data);
-    RCLCPP_INFO(this->get_logger(), "Test: %.2f", angle);
+    taflab_msgs::msg::ControlData control_msg;
+    control_msg.servo_sail = angle;  // Set sail angle
+    control_msg.servo_rudder = 0.0f; // Default rudder angle
+    control_msg.esc = 0.0f;          // Default ESC value
+
+    sail_angle_publisher_->publish(control_msg);
+
+    RCLCPP_INFO(this->get_logger(), "Published sail servo angle: %.2f", angle);
 }
 
 void SailServoControlNode::loadSailData()

@@ -1,9 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target CoordinateCalculations[0m
-[  6%] [32mBuilding CXX object CMakeFiles/RudderControlHelper.dir/src/RudderControlHelper.cpp.o[0m
-[ 18%] Built target WaypointQueue
-[ 31%] Built target CoordinateCalculations
-[35m[1mConsolidate compiler generated dependencies of target CoordinateCalculationsNodeLib[0m
-[ 43%] Built target WaypointQueueNodeExec
-[ 50%] [32mBuilding CXX object CMakeFiles/CoordinateCalculationsNodeLib.dir/src/CoordinateCalculationsNode.cpp.o[0m
-[ 56%] [32m[1mLinking CXX static library libCoordinateCalculationsNodeLib.a[0m
-[ 56%] Built target CoordinateCalculationsNodeLib

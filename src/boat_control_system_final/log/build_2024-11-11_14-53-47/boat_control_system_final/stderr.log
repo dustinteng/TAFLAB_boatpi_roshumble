@@ -1,8 +1,0 @@
-[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:[m[K In member function ‘[01m[Ksensor_msgs::msg::NavSatFix CoordinateCalculations::convert_to_position(sensor_msgs::msg::NavSatFix, float, float)[m[K’:
-[01m[K/home/boat/Desktop/src/boat_control_system_final/src/Coordinate_Calculations.cpp:79:5:[m[K [01;31m[Kerror: [m[K‘[01m[Knew_postion[m[K’ was not declared in this scope; did you mean ‘[01m[Knew_position[m[K’?
-   79 |     [01;31m[Knew_postion[m[K.latitude = new_lat;
-      |     [01;31m[K^~~~~~~~~~~[m[K
-      |     [32m[Knew_position[m[K
-gmake[2]: *** [CMakeFiles/CoordinateCalculations.dir/build.make:76: CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/CoordinateCalculations.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

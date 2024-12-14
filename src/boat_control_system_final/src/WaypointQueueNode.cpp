@@ -57,7 +57,7 @@ void WaypointQueueNode::initCallback(const std_msgs::msg::String::SharedPtr msg)
     {
         WaypointQueue::getInstance().close_autonomous_mode();
     }
-    RCLCPP_INFO(this->get_logger(), "Received init message with data: %d", msg->data);
+    RCLCPP_INFO(this->get_logger(), "Received init message with data: %s", msg->data.c_str());
 }
 
 void WaypointQueueNode::executing_callback(const std_msgs::msg::Bool::SharedPtr msg)

@@ -9,6 +9,8 @@
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/float32.hpp>
 #include <std_msgs/msg/bool.hpp>
+#include "taflab_msgs/msg/control_data.hpp"
+
 #include <vector>
 #include <string>
 
@@ -31,12 +33,12 @@ private:
 
     // Member variables
     std::vector<SailData> sailData;
-    rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr sail_angle_publisher_;
+    rclcpp::Publisher<taflab_msgs::msg::ControlData>::SharedPtr sail_angle_publisher_;
     rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr wind_subscriber_;
     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr reached_subscriber_;
     std_msgs::msg::Float32 latest_wind_data_;
     std_msgs::msg::Bool latest_state_;
-    std::string filename = "boat_control_system_final/SailAngleData.csv"; 
+    std::string filename = "/home/boat/Desktop/version2/TAFLAB_boatpi_roshumble/src/boat_control_system_final/SailAngleData.csv"; 
 
     // Logging helpers
     bool shouldLog(const std::string& topic_name);
