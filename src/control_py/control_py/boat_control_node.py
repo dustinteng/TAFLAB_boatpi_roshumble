@@ -117,7 +117,7 @@ class BoatControlNode(Node):
             min_duty=2, 
             max_duty=12
         )
-        self.rudder_pwm.ChangeDutyCycle(duty_cycle)
+        self.rudder_pwm.ChangeDutyCycle((12 - duty_cycle))
         self.get_logger().info(f"Rudder set to: {value} (Duty Cycle: {duty_cycle})")
 
     def control_sail(self, value):
