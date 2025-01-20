@@ -1,8 +1,0 @@
-[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:[m[K In member function ‘[01m[Kvoid RudderServoControlNode::turnBoat(float)[m[K’:
-[01m[K/home/boat/Desktop/src/boat_control_system_final/src/RudderServoControlNode.cpp:95:86:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CoordinateCalculations[m[K’ has no member named ‘[01m[KcalculateDirectionalBearing[m[K’; did you mean ‘[01m[Kcalculate_directional_bearing[m[K’?
-   95 |         std::tie(turn_direction, turn_angle) = CoordinateCalculations::getInstance().[01;31m[KcalculateDirectionalBearing[m[K(desired_angle_heading);
-      |                                                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-      |                                                                                      [32m[Kcalculate_directional_bearing[m[K
-gmake[2]: *** [CMakeFiles/RudderServoControlNode.dir/build.make:76: CMakeFiles/RudderServoControlNode.dir/src/RudderServoControlNode.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:281: CMakeFiles/RudderServoControlNode.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

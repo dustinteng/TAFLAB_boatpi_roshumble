@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'controller = autonomous_control.controller:main',
+            'controller = autonomous_control.autonomous_control:main',
         ],
     },
 )

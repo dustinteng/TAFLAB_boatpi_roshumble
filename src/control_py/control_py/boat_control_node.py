@@ -13,9 +13,9 @@ class BoatControlNode(Node):
         super().__init__('boat_control_node')
 
         # GPIO setup for each servo
-        self.RUDDER_PIN = 23
-        self.SAIL_PIN = 24
-        self.ESC_PIN = 25
+        self.RUDDER_PIN = 18
+        self.SAIL_PIN = 12
+        self.ESC_PIN = 13
         GPIO.setwarnings(False)
         GPIO.setmode(GPIO.BCM)
         
@@ -31,15 +31,20 @@ class BoatControlNode(Node):
         self.rudder_pwm.start(0)
         self.sail_pwm.start(0)
         self.esc_pwm.start(0)
+        self.currentSailPosition = 0
+        self.currentRudderPosition = 0
+        self.targetSailPos = 0
+        self.targetRudderPos = 0
+        # self.motorSpeed = 0
+        
+        # Load calibration data
+        self.calibration_data = self.load_calibration_data()
         
         # Queue for servo commands
         self.command_queue = Queue()
         self.worker_thread = threading.Thread(target=self.process_commands)
         self.worker_thread.daemon = True
         self.worker_thread.start()
-
-        # Load calibration data
-        self.calibration_data = self.load_calibration_data()
 
         # Subscriber to listen to control commands
         self.subscription = self.create_subscription(
@@ -60,9 +65,12 @@ class BoatControlNode(Node):
         self.get_logger().info("BoatControlNode initialized and listening to /boatcontrol and /calibration")
 
     def control_callback(self, msg):
-        self.command_queue.put(('rudder', msg.servo_rudder))
-        self.command_queue.put(('sail', msg.servo_sail))
-        self.command_queue.put(('esc', msg.esc))
+        # self.command_queue.put(('rudder', msg.servo_rudder))
+        # self.command_queue.put(('sail', msg.servo_sail))
+        # self.command_queue.put(('esc', msg.esc))
+        self.targetRudderPos = msg.servo_rudder
+        self.targetSailPos = msg.servo_sail
+        self.motorSpeed = msg.esc
 
     def calibration_callback(self, msg):
         # Save min and max angles from the calibration message
@@ -90,37 +98,42 @@ class BoatControlNode(Node):
 
     def process_commands(self):
         while True:
-            command_type, value = self.command_queue.get()
-            if command_type == 'rudder':
-                self.control_rudder(value)
-            elif command_type == 'sail':
-                self.control_sail(value)
-            elif command_type == 'esc':
-                self.control_esc(value)
-            self.command_queue.task_done()
-            time.sleep(0.05)  # Small delay to reduce CPU usage
+            self.control_rudder(self.targetRudderPos)
+            self.control_sail(self.targetSailPos)
+            # self.control_esc(self.motorSpeed)
+            time.sleep(0.03)  # Small delay to reduce CPU usage
 
     def control_rudder(self, value):
+        if (abs(self.currentRudderPosition - value) > 5):
+            if (self.currentRudderPosition < value):
+                self.currentRudderPosition += 1
+            else:
+                self.currentRudderPosition -= 1
         duty_cycle = self.map_to_duty_cycle(
-            value, 
+            self.currentRudderPosition, 
             min_value=self.calibration_data['rudder_min'], 
             max_value=self.calibration_data['rudder_max'], 
             min_duty=2, 
             max_duty=12
         )
-        self.rudder_pwm.ChangeDutyCycle(duty_cycle)
-        self.get_logger().info(f"Rudder set to: {value} (Duty Cycle: {duty_cycle})")
+        self.rudder_pwm.ChangeDutyCycle((12 - duty_cycle))
+        # self.get_logger().info(f"Rudder set to: {value} (Duty Cycle: {duty_cycle})")
 
     def control_sail(self, value):
+        if (abs(self.currentSailPosition - value) > 5):
+            if (self.currentSailPosition < value):
+                self.currentSailPosition += 1
+            else:
+                self.currentSailPosition -= 1
         duty_cycle = self.map_to_duty_cycle(
-            value, 
+            self.currentSailPosition, 
             min_value=self.calibration_data['sail_min'], 
             max_value=self.calibration_data['sail_max'], 
             min_duty=2, 
             max_duty=12
         )
         self.sail_pwm.ChangeDutyCycle(duty_cycle)
-        self.get_logger().info(f"Sail set to: {value} (Duty Cycle: {duty_cycle})")
+        # self.get_logger().info(f"Sail set to: {value} (Duty Cycle: {duty_cycle})")
 
     def control_esc(self, value):
         duty_cycle = self.map_to_duty_cycle(

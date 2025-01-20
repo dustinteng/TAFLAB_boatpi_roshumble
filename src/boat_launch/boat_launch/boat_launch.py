@@ -43,34 +43,6 @@ def generate_launch_description():
         output='screen',
     )
 
-    auto_waypoint_queue = Node(
-        package='boat_control_system_final',
-        executable='waypoint_queue_node',
-        name='waypoint_queue_node',
-        output='screen',
-    )
-
-    auto_coordinate_calculations = Node(
-        package='boat_control_system_final',
-        executable='coordinate_calculations_node',
-        name='coordinate_calculations_node',
-        output='screen',
-    )
-
-    auto_rudder_control = Node(
-        package='boat_control_system_final',
-        executable='rudder_servo_control_node',
-        name='rudder_servo_control_node',
-        output='screen',
-    )
-
-    auto_sail_control = Node(
-        package='boat_control_system_final',
-        executable='sail_servo_control_node',
-        name='sail_servo_control_node',
-        output='screen',
-    )
-
     autonomous_control = Node(
         package='autonomous_control',
         executable='controller',
@@ -87,10 +59,6 @@ def generate_launch_description():
         main_logic_node,
         gps_node,
         xbee_node,
-        # autonomous_py,
-        # auto_waypoint_queue,
-        # auto_coordinate_calculations,
-        # auto_rudder_control,
-        # auto_sail_control,
+        autonomous_control
     ])
 

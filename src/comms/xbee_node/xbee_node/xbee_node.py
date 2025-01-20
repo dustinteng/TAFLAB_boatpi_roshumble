@@ -13,7 +13,7 @@ class XBeeCommunicationNode(Node):
         self.get_logger().info('XBee Communication Node Initialized')
 
         # Configuration for XBee device
-        self.xbee_port = "/dev/ttyXbee"
+        self.xbee_port = "/dev/ttyUSB0"
         self.xbee_baud_rate = 115200
         self.device = None
 

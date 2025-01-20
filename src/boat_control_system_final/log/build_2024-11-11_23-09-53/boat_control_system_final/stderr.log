@@ -1,6 +1,0 @@
-/usr/bin/ld: libCoordinateCalculations.a(Coordinate_Calculations.cpp.o): in function `CoordinateCalculations::getInstance()':
-Coordinate_Calculations.cpp:(.text+0x5c): undefined reference to `CoordinateCalculations::CoordinateCalculations()'
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/CoordinateCalculationsNodeExec.dir/build.make:178: CoordinateCalculationsNodeExec] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:226: CMakeFiles/CoordinateCalculationsNodeExec.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2
