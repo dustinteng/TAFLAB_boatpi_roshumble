@@ -13,15 +13,17 @@
 #include <std_msgs/msg/int16.hpp>
 #include <std_msgs/msg/bool.hpp>
 #include <std_msgs/msg/float32.hpp>
+#include "taflab_msgs/msg/control_data.hpp"
 
 #include "RudderServoControlNode.hpp"
 #include "RudderControlHelper.hpp"
 
+
 RudderServoControlNode::RudderServoControlNode() : Node("rudder_servo_control_node")
 {
     // Initialize the publisher for rudder angle
-    rudder_angle_publisher_ = this->create_publisher<std_msgs::msg::Float32>(
-        "/rudder_servo_commands", 10);
+    rudder_angle_publisher_ = this->create_publisher<taflab_msgs::msg::ControlData>(
+        "/boatcontrols", 10);
 
     // Initialize the publisher for the executing state
     executing_state_publisher_ = this->create_publisher<std_msgs::msg::Bool>(
@@ -256,9 +258,12 @@ void RudderServoControlNode::executeWaypoints()
 // Set the rudder servo angle
 void RudderServoControlNode::setRudderServo(float angle)
 {
-    std_msgs::msg::Float32 msg;
-    msg.data = angle;
-    rudder_angle_publisher_->publish(msg);
+    taflab_msgs::msg::ControlData control_msg;
+    control_msg.servo_sail = 0.0f;  // Set sail angle
+    control_msg.servo_rudder = angle; // Default rudder angle
+    control_msg.esc = 0.0f;          // Default ESC value
+    rudder_angle_publisher_->publish(control_msg);
+
     RCLCPP_INFO(this->get_logger(), "Setting rudder servo to angle: %.2f", angle);
 }
 
