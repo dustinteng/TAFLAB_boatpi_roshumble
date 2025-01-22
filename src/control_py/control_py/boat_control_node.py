@@ -175,10 +175,10 @@ class BoatControlNode(Node):
         else:
             self.get_logger().warning("Calibration data file not found. Using default values.")
             return {
-                'rudder_min': -90,
-                'rudder_max': 90,
-                'sail_min': -90,
-                'sail_max': 90,
+                'rudder_min': 0,
+                'rudder_max': 180,
+                'sail_min': 0,
+                'sail_max': 180,
                 'esc_min': -100,
                 'esc_max': 100
             }

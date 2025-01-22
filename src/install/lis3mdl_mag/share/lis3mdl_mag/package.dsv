@@ -1,6 +1,0 @@
-source;share/lis3mdl_mag/hook/pythonpath.ps1
-source;share/lis3mdl_mag/hook/pythonpath.dsv
-source;share/lis3mdl_mag/hook/pythonpath.sh
-source;share/lis3mdl_mag/hook/ament_prefix_path.ps1
-source;share/lis3mdl_mag/hook/ament_prefix_path.dsv
-source;share/lis3mdl_mag/hook/ament_prefix_path.sh

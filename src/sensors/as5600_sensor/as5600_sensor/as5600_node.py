@@ -27,6 +27,7 @@ class AS5600Node(Node):
             
             # Calculate angle in degrees from the raw value
             raw_angle = (angle_data[0] << 8) | angle_data[1]
+            self.get_logger().info(f"Angle Raw Value: {raw_angle}")
             angle_degrees = (raw_angle / 4096) * 360.0  # AS5600 has 12-bit resolution
 
             # Check for potentially erroneous values

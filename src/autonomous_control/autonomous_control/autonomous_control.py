@@ -16,6 +16,10 @@ class AutonomousControlNode(Node):
         self.windAngle = 0  # Wind angle relative to the boat in degrees
         self.straight = 90  # Neutral rudder position
         self.range = 25  # Range for one-sided rudder movement in degrees
+        self.hard_iron = [-36.824, 3.727, -51.14]
+        self.soft_iron = [[0.572, 0, 0],
+                          [0, 0.577, 0],
+                          [0, 0, 0.594]]
 
         # Subscriptions
         self.create_subscription(NavSatFix, '/gps/fix', self.navigateToDestination, 10)
@@ -95,8 +99,21 @@ class AutonomousControlNode(Node):
         """
         Update the current heading based on magnetic field data.
         """
-        self.heading = math.atan2(msg.magnetic_field.y, msg.magnetic_field.x) * 180 / math.pi
+        raw = [msg.magnetic_field.x, msg.magnetic_field.y, msg.magnetic_field.z]
+        corrected = [0, 0, 0]
+
+        for i in range(3):
+            corrected[i] = raw[i] - self.hard_iron[i]
+
+        final = [0, 0, 0]
+
+        for i in range(3):
+            for j in range(3):
+                final[i] += self.soft_iron[i][j] * corrected[j]
+
+        self.heading = math.atan2(final[1], final[0]) * 180 / math.pi
         self.heading = (self.heading + 360) % 360
+        self.get_logger().info(f"Heading: {self.heading}")
 
     def setWindAngle(self, msg):
         """

@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 import rclpy
 from rclpy.node import Node
 from taflab_msgs.msg import ControlData, CalibrationData  # Import CalibrationData
@@ -8,6 +9,9 @@ from queue import Queue
 import threading
 import math
 import os
+
+CONFIG_FILE = Path("/home/boat/Desktop/python/TAFLAB_boatpi_roshumble/src/config.json")
+
 
 class Boat:
     def __init__(self, boat_id):
@@ -23,6 +27,7 @@ class Boat:
         self.magnetic_field_x = 0.0
         self.magnetic_field_y = 0.0
         self.magnetic_field_z = 0.0
+
 
     def get_heartbeat(self):
         return {
@@ -55,9 +60,12 @@ class MainLogicNode(Node):
     def __init__(self):
         super().__init__('main_logic_node')
         self.get_logger().info('Main Logic Node Initialized')
+        # Load configuration
+        self.config = self.load_config()
+        self.get_logger().info(f"Loaded configuration: {self.config}")
 
         # Boat configuration
-        self.boat = Boat("B1")
+        self.boat = Boat(self.config.get("boat_name", "default_boat"))
         self.in_autonomous_mode = False
 
         # Latest autonomous control values
@@ -99,6 +107,18 @@ class MainLogicNode(Node):
         self.create_timer(2.0, self.queue_location_data_transfer)
         self.create_timer(2.0, self.queue_magnetic_data_transfer)
 
+    def load_config(self):
+        """Load configuration from the JSON file."""
+        try:
+            with open(CONFIG_FILE, 'r') as f:
+                return json.load(f)
+        except FileNotFoundError:
+            self.get_logger().error(f"Configuration file not found at {CONFIG_FILE}. Using default values.")
+            return {"port": "/dev/ttyAMA0", "baud_rate": 115200, "boat_name": "default_boat"}
+        except json.JSONDecodeError as e:
+            self.get_logger().error(f"Error decoding JSON: {e}. Using default values.")
+            return {"port": "/dev/ttyAMA0", "baud_rate": 115200, "boat_name": "default_boat"}
+        
     # Queue and worker for XBee communication
     def queue_message(self, message_data, log_message):
         self.message_queue.put((json.dumps(message_data), log_message))

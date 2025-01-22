@@ -13,9 +13,11 @@ from functools import wraps
 app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'  # Replace with a secure random key
 
+RESTART_SCRIPT = '/home/boat/Desktop/python/TAFLAB_boatpi_roshumble/local_website/restart.sh'
+
 # Correctly resolve the paths
-BASE_DIR = Path(__file__).resolve().parent
-CONFIG_FILE = BASE_DIR / 'config.json'
+# BASE_DIR = Path(__file__).resolve().parent
+CONFIG_FILE = Path("/home/boat/Desktop/python/TAFLAB_boatpi_roshumble/src/config.json")
 NETPLAN_FILE = '/etc/netplan/01-network-manager-all.yaml'
 HOSTAPD_CONF = '/etc/hostapd/hostapd.conf'
 
@@ -41,10 +43,10 @@ def load_config():
             return json.load(f)
     except FileNotFoundError:
         # Return default config if file doesn't exist
-        return {'boat_name': '', 'port': ''}
+        return {'boat_name': '', 'xbee_port': ''}
     except json.JSONDecodeError:
         # Handle JSON parsing errors
-        return {'boat_name': '', 'port': ''}
+        return {'boat_name': '', 'xbee_port': ''}
 
 def save_config(config):
     with open(CONFIG_FILE, 'w') as f:
@@ -155,12 +157,13 @@ def get_ap_status():
     
 def update_hostapd_config(new_ssid, new_password):
     """Update the /etc/hostapd/hostapd.conf file with new SSID and password."""
+    temp_file = '/tmp/hostapd_temp.conf'
     try:
-        # Read existing hostapd.conf content
-        with open('/etc/hostapd/hostapd.conf', 'r') as f:
+        # Step 1: Read existing hostapd.conf content
+        with open(HOSTAPD_CONF, 'r') as f:
             lines = f.readlines()
         
-        # Modify the SSID and password lines
+        # Step 2: Modify the SSID and password lines
         updated_lines = []
         for line in lines:
             if line.startswith('ssid='):
@@ -170,14 +173,39 @@ def update_hostapd_config(new_ssid, new_password):
             else:
                 updated_lines.append(line)
 
-        # Write the updated lines back to the file
-        with open('/etc/hostapd/hostapd.conf', 'w') as f:
+        # Step 3: Write the updated lines to a temporary file
+        with open(temp_file, 'w') as f:
             f.writelines(updated_lines)
-        
-        # Restart the hostapd service to apply changes
+            result = subprocess.run(['sudo', 'mv', temp_file, HOSTAPD_CONF], check=True)
+        if result.returncode != 0:
+            print("Failed to replace the hostapd.conf file.")
+        return False
+
+
+        # Step 5: Re-read the updated configuration to confirm the changes
+        with open(HOSTAPD_CONF, 'r') as f:
+            updated_content = f.read()
+            if f"ssid={new_ssid}" not in updated_content or f"wpa_passphrase={new_password}" not in updated_content:
+                print("Error: Changes were not successfully written to hostapd.conf.")
+                return False
+
+        # Step 6: Restart the hostapd service to apply changes
         subprocess.run(['sudo', 'systemctl', 'restart', 'hostapd'], check=True)
+        print(f"Successfully updated {HOSTAPD_CONF} with SSID '{new_ssid}' and restarted hostapd.")
+        return True
+    except FileNotFoundError:
+        print(f"Error: {HOSTAPD_CONF} not found.")
+    except PermissionError:
+        print(f"Error: Permission denied when writing to {HOSTAPD_CONF}.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error executing command: {e}")
     except Exception as e:
-        print(f"Error updating hostapd configuration: {e}")
+        print(f"Unexpected error: {e}")
+    finally:
+        # Step 7: Clean up temporary file if it exists
+        if os.path.exists(temp_file):
+            os.remove(temp_file)
+
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -186,23 +214,36 @@ def index():
     if request.method == 'POST':
         # Handle form data
         boat_name = request.form.get('boat_name', '')
-        selected_port = request.form.get('port', '')
+        selected_port = request.form.get('xbee_port', '')
+        ap_ssid = request.form.get('ap_ssid', '').strip()
+        ap_password = request.form.get('ap_password', '').strip()
 
         # Update config.json
         config['boat_name'] = boat_name
-        config['port'] = selected_port
+        config['xbee_port'] = selected_port
         save_config(config)
+
+        # Update AP settings
+        if ap_ssid and ap_password:
+            update_hostapd_config(ap_ssid, ap_password)
 
         return redirect(url_for('index'))
     else:
+        # Render the form
         ports = get_serial_ports()
-        current_port = config.get('port', '')
+        current_port = config.get('xbee_port', '')
         boat_name = config.get('boat_name', '')
 
         ap_active, ap_ssid = get_ap_status()
 
-        return render_template('index.html', ports=ports, current_port=current_port,
-                               boat_name=boat_name, ap_active=ap_active, ap_ssid=ap_ssid)
+        return render_template(
+            'index.html',
+            ports=ports,
+            current_port=current_port,
+            boat_name=boat_name,
+            ap_active=ap_active,
+            ap_ssid=ap_ssid
+        )
 
 @app.route('/network_settings', methods=['GET', 'POST'])
 @login_required
@@ -236,11 +277,12 @@ def network_settings():
 def restart():
     # Restart the Raspberry Pi
     try:
-        subprocess.run(['sudo', 'reboot'], check=True)
+        subprocess.run(['sudo', RESTART_SCRIPT], check=True)
         return 'Restarting...'
     except Exception as e:
         print(f"Error restarting: {e}")
-        return 'Failed to restart.'
+        return 'Failed to restart.', 500
+
 
 @app.route('/refresh_mac', methods=['GET'])
 def refresh_mac():
@@ -258,6 +300,10 @@ def ap_settings():
 
         if not new_ssid or not new_password:
             return render_template('ap_settings.html', error="SSID and Password cannot be empty.")
+
+        # Debugging: Print values received
+        print(f"Received new SSID: {new_ssid}")
+        print(f"Received new Password: {new_password}")
 
         # Update the hostapd configuration
         update_hostapd_config(new_ssid, new_password)
@@ -301,4 +347,4 @@ def logout():
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000)
+    app.run(host='0.0.0.0', port=3333)

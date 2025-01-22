@@ -8,11 +8,26 @@
         .container { width: 500px; margin: 0 auto; }
         label { display: block; margin-top: 10px; }
         input, select { width: 100%; padding: 8px; }
-        .button { margin-top: 20px; }
+        .button { margin-top: 20px; text-align: center; }
         .logo { text-align: center; }
         .status { margin-top: 20px; color: green; font-weight: bold; }
         .status.inactive { color: red; }
         .section { margin-bottom: 20px; }
+        .button a, .button input[type="submit"] {
+            text-decoration: none;
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .button a:hover, .button input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -28,8 +43,8 @@
                 <label for="boat_name">Boat Name:</label>
                 <input type="text" id="boat_name" name="boat_name" value="{{ boat_name }}" required>
 
-                <label for="port">Xbee Port:</label>
-                <select name="port" id="port">
+                <label for="xbee_port">Xbee Port:</label>
+                <select name="xbee_port" id="xbee_port">
                     {% for port in ports %}
                     <option value="{{ port }}" {% if port == current_port %}selected{% endif %}>{{ port }}</option>
                     {% endfor %}
@@ -52,12 +67,13 @@
                 <input type="text" id="ap_ssid" name="ap_ssid" value="{{ ap_ssid }}" required>
 
                 <label for="ap_password">AP Password: (base: boatboat)</label>
-                <input type="password" id="ap_password" name="ap_password" value="boatboat"required>
+                <input type="password" id="ap_password" name="ap_password" value="boatboat" required>
             </div>
 
-            <!-- Submit Button -->
+            <!-- Buttons -->
             <div class="button">
                 <input type="submit" value="Save Settings">
+                <a href="/login">Admin Page</a>
             </div>
         </form>
     </div>
