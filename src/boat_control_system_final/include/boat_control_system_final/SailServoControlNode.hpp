@@ -38,7 +38,7 @@ private:
     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr reached_subscriber_;
     std_msgs::msg::Float32 latest_wind_data_;
     std_msgs::msg::Bool latest_state_;
-    std::string filename = "/home/boat/Desktop/version2/TAFLAB_boatpi_roshumble/src/boat_control_system_final/SailAngleData.csv"; 
+    std::string filename = "/root/ros2_ws/src/boat_control_system_final/SailAngleData.csv"; 
 
     // Logging helpers
     bool shouldLog(const std::string& topic_name);

@@ -23,7 +23,7 @@ RudderServoControlNode::RudderServoControlNode() : Node("rudder_servo_control_no
 {
     // Initialize the publisher for rudder angle
     rudder_angle_publisher_ = this->create_publisher<taflab_msgs::msg::ControlData>(
-        "/boatcontrols", 10);
+        "/boatcontrol", 10);
 
     // Initialize the publisher for the executing state
     executing_state_publisher_ = this->create_publisher<std_msgs::msg::Bool>(
