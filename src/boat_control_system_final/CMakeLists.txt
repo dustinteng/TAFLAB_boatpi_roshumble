@@ -13,7 +13,10 @@ find_package(sensor_msgs REQUIRED)
 find_package(taflab_msgs REQUIRED)
 
 # Include directories
-include_directories(include/boat_control_system_final)
+include_directories(
+  include/boat_control_system_final
+  ${taflab_msgs_INCLUDE_DIRS}  # Ensure taflab_msgs headers are included
+)
 
 # Add libraries for source files
 add_library(WaypointQueue src/WaypointQueue.cpp)
@@ -33,6 +36,7 @@ target_link_libraries(CoordinateCalculationsNodeLib CoordinateCalculations Waypo
 # Create a library for RudderServoControlNode without a main function
 add_library(RudderServoControlNodeLib src/RudderServoControlNode.cpp)
 ament_target_dependencies(RudderServoControlNodeLib rclcpp sensor_msgs std_msgs taflab_msgs)
+target_include_directories(RudderServoControlNodeLib PUBLIC ${taflab_msgs_INCLUDE_DIRS})
 target_link_libraries(RudderServoControlNodeLib RudderControlHelper WaypointQueue)
 
 # Add the executable for CoordinateCalculationsNode with the main function

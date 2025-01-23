@@ -15,7 +15,7 @@
 #include <std_msgs/msg/float32.hpp>
 #include <std_msgs/msg/bool.hpp>
 #include <sensor_msgs/msg/nav_sat_fix.hpp>
-
+#include "taflab_msgs/msg/control_data.hpp"
 
 
 class RudderServoControlNode : public rclcpp::Node
@@ -61,7 +61,7 @@ private:
     std::deque<sensor_msgs::msg::NavSatFix> servo_queue_;
 
     // Publishers and subscribers
-    rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr rudder_angle_publisher_;
+    rclcpp::Publisher<taflab_msgs::msg::ControlData>::SharedPtr rudder_angle_publisher_;
     rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr executing_state_publisher_;
     
     rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr final_waypoint_subscriber_;
