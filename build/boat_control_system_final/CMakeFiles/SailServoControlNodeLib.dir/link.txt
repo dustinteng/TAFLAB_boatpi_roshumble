@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSailServoControlNodeLib.a CMakeFiles/SailServoControlNodeLib.dir/src/SailServoControlNode.cpp.o
+/usr/bin/ranlib libSailServoControlNodeLib.a
