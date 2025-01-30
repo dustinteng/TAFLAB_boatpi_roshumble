@@ -56,7 +56,7 @@ public:
     @return std::pair<std::string, float> A pair containing the direction ("right" or "left") and the turn angle in degrees.
     @note The function assumes that the current heading and coordinates are obtained from other methods in the class.
      **/
-    std::pair<std::string, float> calculate_directional_bearing(sensor_msgs::msg::NavSatFix target_waypoint);
+    std::pair<std::string, float> calculate_directional_bearing(sensor_msgs::msg::NavSatFix target_waypoint, const float current_heading, const sensor_msgs::msg::NavSatFix current_position);
     
 
     /**
@@ -65,7 +65,7 @@ public:
     @return float A float value of the angle between the wind and current heading
     @note The function assumes that the current heading and coordinates are obtained from other methods in the class.
      **/
-    float calculate_angle_to_wind();
+    float calculate_angle_to_wind(const float curr_wind_angle, const float curr_magnetometer_heading);
 
     /**
     @brief Calculates and returns a list of waypoints required to reach the target waypoint, including intermediate waypoints for tacking if necessary.
@@ -76,7 +76,7 @@ public:
     @return std::vector<sensor_msgs::msg::NavSatFix> A vector containing either one waypoint (the original destination) or two intermediate waypoints plus the destination.
     @note The function assumes that relevant data such as the wind direction and heading are retrieved from other methods in the class or passed as parameters.
     **/
-    std::vector<sensor_msgs::msg::NavSatFix> plan_path(const sensor_msgs::msg::NavSatFix& curr_position, const sensor_msgs::msg::NavSatFix& next_waypoint);
+    std::vector<sensor_msgs::msg::NavSatFix> plan_path(const sensor_msgs::msg::NavSatFix& curr_position, const sensor_msgs::msg::NavSatFix& next_waypoint, const float wind_direction);
 
     // Static Method to access single instance
     static RudderControlHelper& getInstance();

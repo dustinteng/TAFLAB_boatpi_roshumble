@@ -48,6 +48,9 @@ private:
     void initCallback(const std_msgs::msg::String::SharedPtr msg);
     void executing_callback(const std_msgs::msg::Bool::SharedPtr msg);
 
+    void log_queue() const;
+
+
     // Member Variables used to store latest data
     sensor_msgs::msg::NavSatFix latest_gps_data_;
 };

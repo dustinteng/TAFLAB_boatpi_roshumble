@@ -61,6 +61,9 @@ public:
     std::size_t get_len_queue();
 
 
+    void log_queue();
+
+
 
 private:
 

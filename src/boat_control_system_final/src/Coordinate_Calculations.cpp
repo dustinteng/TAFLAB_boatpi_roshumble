@@ -144,14 +144,13 @@ float CoordinateCalculations::calculate_angle_to_wind()
 }
 
 
-std::vector<sensor_msgs::msg::NavSatFix> CoordinateCalculations::plan_path(const sensor_msgs::msg::NavSatFix& curr_position, const sensor_msgs::msg::NavSatFix& next_waypoint)
+std::vector<sensor_msgs::msg::NavSatFix> CoordinateCalculations::plan_path(const sensor_msgs::msg::NavSatFix& curr_position, const sensor_msgs::msg::NavSatFix& next_waypoint, const float curr_wind_angle)
 {
-    CoordinateCalculationsNode node_instance;
     std::vector<sensor_msgs::msg::NavSatFix> waypoints;
 
     float destination_bearing = calculate_bearing(curr_position, next_waypoint);
-    float wind_direction = node_instance.get_wind_angle().data;  // Get current wind direction
-
+    float wind_direction = curr_wind_angle;  // Get current wind direction
+    
     // Calculate angle between wind direction and destination bearing
     float angle_to_wind = abs(wind_direction - destination_bearing);
     if (angle_to_wind > 180) 

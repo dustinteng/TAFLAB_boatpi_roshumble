@@ -89,12 +89,8 @@ sensor_msgs::msg::NavSatFix RudderControlHelper::convert_to_position(sensor_msgs
     return new_position;
 }
 
-std::pair<std::string, float> RudderControlHelper::calculate_directional_bearing(sensor_msgs::msg::NavSatFix target_waypoint)
+std::pair<std::string, float> RudderControlHelper::calculate_directional_bearing(sensor_msgs::msg::NavSatFix target_waypoint,const float current_heading,const sensor_msgs::msg::NavSatFix current_position)
 {
-    RudderServoControlNode node_instance;
-    float current_heading = node_instance.get_magnetometer_heading().data;
-    sensor_msgs::msg::NavSatFix current_position = node_instance.get_curr_pos();
-
     float target_bearing = calculate_bearing(current_position, target_waypoint);
     float bearing_difference = target_bearing - current_heading;
     
@@ -125,13 +121,10 @@ std::pair<std::string, float> RudderControlHelper::calculate_directional_bearing
 }
 
 //TODO: Check if this function is actually needed
-float RudderControlHelper::calculate_angle_to_wind() 
+float RudderControlHelper::calculate_angle_to_wind(const float curr_wind_angle,const float curr_magnetometer_heading) 
 {   
-    RudderServoControlNode node_instance;
-    float wind_direction = node_instance.get_wind_angle().data;
-    float current_heading = node_instance.get_magnetometer_heading().data;
     // Calculate the angle difference between the current heading and wind direction
-    float angle_difference = abs(current_heading - wind_direction);
+    float angle_difference = abs(curr_magnetometer_heading - curr_wind_angle);
 
     // Normalize to range [0, 180] degrees
     if (angle_difference > 180) 
@@ -143,13 +136,11 @@ float RudderControlHelper::calculate_angle_to_wind()
 }
 
 
-std::vector<sensor_msgs::msg::NavSatFix> RudderControlHelper::plan_path(const sensor_msgs::msg::NavSatFix& curr_position, const sensor_msgs::msg::NavSatFix& next_waypoint)
+std::vector<sensor_msgs::msg::NavSatFix> RudderControlHelper::plan_path(const sensor_msgs::msg::NavSatFix& curr_position, const sensor_msgs::msg::NavSatFix& next_waypoint, const float wind_direction)
 {
-    RudderServoControlNode node_instance;
     std::vector<sensor_msgs::msg::NavSatFix> waypoints;
 
     float destination_bearing = calculate_bearing(curr_position, next_waypoint);
-    float wind_direction = node_instance.get_wind_angle().data;  // Get current wind direction
 
     // Calculate angle between wind direction and destination bearing
     float angle_to_wind = abs(wind_direction - destination_bearing);

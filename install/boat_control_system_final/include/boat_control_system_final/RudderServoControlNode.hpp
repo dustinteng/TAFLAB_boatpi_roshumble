@@ -74,10 +74,12 @@ private:
 
     // Thread for waypoint execution
     std::thread execution_thread_;
-    std_msgs::msg::String autonomous_mode_;
+    std::string autonomous_mode;
+    bool boat_running;
 
     // Mutex for thread-safe queue access
     std::mutex queue_mutex_;
+    std::mutex mode_mutex_;
 };
 
 #endif // BOAT_CONTROL_SYSTEM_FINAL_RUDDERSERVOCONTROLNODE_HPP_

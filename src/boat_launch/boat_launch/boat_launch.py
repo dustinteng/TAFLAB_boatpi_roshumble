@@ -78,6 +78,13 @@ def generate_launch_description():
         output='screen',
     )
 
+    test_publisher = Node(
+        package = 'test_publisher',
+        executable = 'test_publisher',
+        name='test_publisher',
+        output='screen',
+    )
+
 
 
     return LaunchDescription([
@@ -92,4 +99,5 @@ def generate_launch_description():
         auto_coordinate_calculations,
         auto_rudder_control,
         auto_sail_control,
+        test_publisher,
     ])

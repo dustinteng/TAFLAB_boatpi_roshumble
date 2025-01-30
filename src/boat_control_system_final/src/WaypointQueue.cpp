@@ -84,6 +84,26 @@ WaypointQueue& WaypointQueue::getInstance()
     return instance;
 }
 
+void WaypointQueue::log_queue()
+{
+    lock_guard<std::mutex> lock(queue_mutex);
+    if (waypoints.empty())
+    {
+        RCLCPP_INFO(rclcpp::get_logger("WaypointQueue"), "Queue is empty.");
+    }
+    else
+    {
+        RCLCPP_INFO(rclcpp::get_logger("WaypointQueue"), "Queue contains %zu waypoints:", waypoints.size());
+        for (size_t i = 0; i < waypoints.size(); ++i)
+        {
+            RCLCPP_INFO(rclcpp::get_logger("WaypointQueue"), 
+                        "Waypoint %zu: [lat: %.6f, lon: %.6f, alt: %.2f]",
+                        i + 1, waypoints[i].latitude, waypoints[i].longitude, waypoints[i].altitude);
+        }
+    }
+}
+
+
 // Constructor for singleton class
 WaypointQueue::WaypointQueue()
 {

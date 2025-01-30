@@ -28,9 +28,7 @@ public:
     std_msgs::msg::Float32 get_wind_angle();
     std_msgs::msg::Float32 get_magnetometer_heading();
     sensor_msgs::msg::NavSatFix get_curr_pos();
-    sensor_msgs::msg::NavSatFix get_latest_waypoint();
-
-   
+    sensor_msgs::msg::NavSatFix get_latest_waypoint();   
 
 private:
 

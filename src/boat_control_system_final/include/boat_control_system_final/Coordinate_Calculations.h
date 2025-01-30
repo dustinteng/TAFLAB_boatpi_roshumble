@@ -76,7 +76,7 @@ public:
     @return std::vector<sensor_msgs::msg::NavSatFix> A vector containing either one waypoint (the original destination) or two intermediate waypoints plus the destination.
     @note The function assumes that relevant data such as the wind direction and heading are retrieved from other methods in the class or passed as parameters.
     **/
-    std::vector<sensor_msgs::msg::NavSatFix> plan_path(const sensor_msgs::msg::NavSatFix& curr_position, const sensor_msgs::msg::NavSatFix& next_waypoint);
+    std::vector<sensor_msgs::msg::NavSatFix> plan_path(const sensor_msgs::msg::NavSatFix& curr_position, const sensor_msgs::msg::NavSatFix& next_waypoint, const float curr_wind_angle);
 
     // Static Method to access single instance
     static CoordinateCalculations& getInstance();
