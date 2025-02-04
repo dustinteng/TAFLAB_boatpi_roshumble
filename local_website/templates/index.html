@@ -40,13 +40,15 @@
         <!-- Boat Settings Form -->
         <form method="post" action="/">
             <div class="section">
-                <label for="boat_name">Boat Name:</label>
+                <label for="boat_name">Boat Name: (first time bootup? - change me)</label>
                 <input type="text" id="boat_name" name="boat_name" value="{{ boat_name }}" required>
 
-                <label for="xbee_port">Xbee Port:</label>
+                <label for="xbee_port">Xbee Port: - ttyXbee has been set. should connect to the correct one</label>
                 <select name="xbee_port" id="xbee_port">
+                    <!-- Explicitly add the /ttyXbee option -->
+                    <option value="/ttyXbee" {% if "/dev/ttyXbee" == current_port %}selected{% endif %}>/dev/ttyXbee</option>
                     {% for port in ports %}
-                    <option value="{{ port }}" {% if port == current_port %}selected{% endif %}>{{ port }}</option>
+                        <option value="{{ port }}" {% if port == current_port %}selected{% endif %}>{{ port }}</option>
                     {% endfor %}
                 </select>
             </div>

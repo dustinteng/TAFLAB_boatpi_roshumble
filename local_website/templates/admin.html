@@ -34,11 +34,18 @@
             margin-left: 10px;
             padding: 8px;
         }
-
-        /* 
-            Simple fullscreen loading overlay 
-            Initially hidden (display: none).
-        */
+        fieldset {
+            margin-top: 20px;
+            text-align: left;
+            padding: 10px;
+        }
+        table {
+            margin: 0 auto;
+        }
+        table td {
+            padding: 5px;
+        }
+        /* Simple fullscreen loading overlay (initially hidden) */
         #loadingOverlay {
             display: none; 
             position: fixed;
@@ -46,13 +53,13 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* semi-transparent */
+            background-color: rgba(0, 0, 0, 0.5);
             color: #ffffff;
             font-size: 1.5rem;
             font-weight: bold;
-            align-items: center;      /* for flexbox vertical centering */
-            justify-content: center;  /* for flexbox horizontal centering */
-            z-index: 9999;            /* on top of everything */
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
         }
     </style>
     <script>
@@ -60,7 +67,7 @@
         function showLoadingOverlay(message) {
             const overlay = document.getElementById('loadingOverlay');
             overlay.innerText = message;
-            overlay.style.display = 'flex'; // make it visible (flex container)
+            overlay.style.display = 'flex';
         }
 
         // Hide the loading overlay
@@ -73,7 +80,6 @@
         function toggleRandomizeMAC() {
             const checkbox = document.getElementById('randomize_mac');
             const macInput = document.getElementById('mac_address');
-
             if (checkbox.checked) {
                 const mac = Array(6).fill(0).map(() =>
                     Math.floor(Math.random() * 256).toString(16).padStart(2, '0')
@@ -99,14 +105,13 @@
                     alert('Failed to refresh MAC address. Please try again.');
                 });
         }
-        // Enable I2C Bypass
+
+        // Enable I2C Bypass function
         function enableI2CBypass() {
             const button = document.querySelector("button[onclick='enableI2CBypass()']");
             button.disabled = true;
             button.innerText = "Enabling...";
-
             showLoadingOverlay("Enabling I2C Bypass...");
-
             fetch('/enable_i2c_bypass', { method: 'POST' })
                 .then(response => response.json())
                 .then(data => {
@@ -122,16 +127,12 @@
                 });
         }
 
-        // Calibrate IMU
+        // Calibrate IMU function
         function calibrateIMU() {
-            // Disable button and change text
             const button = document.querySelector("button[onclick='calibrateIMU()']");
             button.disabled = true;
             button.innerText = "Calibrating... Please wait";
-
-            // Show overlay
             showLoadingOverlay("Calibrating IMU... Please keep the sensor still.");
-
             fetch('/calibrate_imu', { method: 'POST' })
                 .then(response => response.json())
                 .then(data => {
@@ -141,35 +142,8 @@
                     alert("IMU Calibration failed: " + error);
                 })
                 .finally(() => {
-                    // Hide overlay, restore button state
                     hideLoadingOverlay();
                     button.innerText = "Calibrate IMU (Accelerometer + Gyroscope)";
-                    button.disabled = false;
-                });
-        }
-
-        // Calibrate Magnetometer
-        function calibrateMagnetometer() {
-            // Disable button and change text
-            const button = document.querySelector("button[onclick='calibrateMagnetometer()']");
-            button.disabled = true;
-            button.innerText = "Calibrating... Please wait";
-
-            // Show overlay
-            showLoadingOverlay("Calibrating Magnetometer... Move sensor in a figure-8 pattern.");
-
-            fetch('/calibrate_magnetometer', { method: 'POST' })
-                .then(response => response.json())
-                .then(data => {
-                    alert(data.message);
-                })
-                .catch(error => {
-                    alert("Magnetometer Calibration failed: " + error);
-                })
-                .finally(() => {
-                    // Hide overlay, restore button state
-                    hideLoadingOverlay();
-                    button.innerText = "Calibrate Magnetometer";
                     button.disabled = false;
                 });
         }
@@ -177,7 +151,7 @@
 </head>
 <body>
 
-    <!-- This is the full-screen overlay that appears while calibrations are in progress -->
+    <!-- Fullscreen loading overlay -->
     <div id="loadingOverlay"></div>
 
     <div class="container">
@@ -186,9 +160,9 @@
         </div>
         <h2>Admin Settings</h2>
 
+        <!-- Network Configuration Section -->
         <h3>Network Configuration</h3>
         <p>WiFi Connected to: <strong>{{ connected_ssid }}</strong></p>
-
         <form method="post">
             <label for="ssid">Select Wi-Fi SSID:</label>
             <select id="ssid" name="ssid">
@@ -199,24 +173,21 @@
                     </option>
                 {% endfor %}
             </select>
-
             <label for="wifi_password">Wi-Fi Password:</label>
             <input type="password" id="wifi_password" name="wifi_password" placeholder="Enter new password">
-
             <div class="button">
                 <input type="submit" value="Save Network Settings">
             </div>
-
             <label for="mac_address">Current MAC Address:</label>
             <div class="flex-container">
                 <input type="text" id="mac_address" name="mac_address" value="{{ mac_address }}">
                 <button type="button" onclick="refreshMAC()">Refresh</button>
             </div>
-
             <input type="checkbox" id="randomize_mac" name="randomize_mac" onclick="toggleRandomizeMAC()">
             <label for="randomize_mac">Randomize MAC Address</label>
         </form>
 
+        <!-- System Controls Section -->
         <h3>System Controls</h3>
         <form method="post" action="{{ url_for('restart') }}"
               onsubmit="return confirm('Are you sure you want to restart the Raspberry Pi?');">
@@ -224,12 +195,56 @@
                 <input type="submit" value="Restart Raspberry Pi">
             </div>
         </form>
-
-        <h3>Calibration</h3>
+        <h3>IMU Calibration - MPU9250</h3>
         <button onclick="calibrateIMU()">Calibrate IMU (Accelerometer + Gyroscope)</button>
-        <button onclick="calibrateMagnetometer()">Calibrate Magnetometer</button>
-        <h3>I2C Bypass</h3>
         <button onclick="enableI2CBypass()">Enable I2C Bypass</button>
+
+        <!-- Calibration Settings Section -->
+        <h3>Magnetometer Calibration Settings</h3>
+        <form method="POST" action="{{ url_for('update_calibration_config') }}">
+            <fieldset>
+                <legend>Mag Offset</legend>
+                <label for="mag_offset_0">Offset X:</label>
+                <input type="number" step="any" id="mag_offset_0" name="mag_offset_0" value="{{ config.mag_offset[0] }}">
+                
+                <label for="mag_offset_1">Offset Y:</label>
+                <input type="number" step="any" id="mag_offset_1" name="mag_offset_1" value="{{ config.mag_offset[1] }}">
+                
+                <label for="mag_offset_2">Offset Z:</label>
+                <input type="number" step="any" id="mag_offset_2" name="mag_offset_2" value="{{ config.mag_offset[2] }}">
+            </fieldset>
+
+            <fieldset>
+                <legend>Mag Matrix</legend>
+                <table>
+                    <tr>
+                        <td><input type="number" step="any" id="mag_matrix_0_0" name="mag_matrix_0_0" value="{{ config.mag_matrix[0][0] }}"></td>
+                        <td><input type="number" step="any" id="mag_matrix_0_1" name="mag_matrix_0_1" value="{{ config.mag_matrix[0][1] }}"></td>
+                        <td><input type="number" step="any" id="mag_matrix_0_2" name="mag_matrix_0_2" value="{{ config.mag_matrix[0][2] }}"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" step="any" id="mag_matrix_1_0" name="mag_matrix_1_0" value="{{ config.mag_matrix[1][0] }}"></td>
+                        <td><input type="number" step="any" id="mag_matrix_1_1" name="mag_matrix_1_1" value="{{ config.mag_matrix[1][1] }}"></td>
+                        <td><input type="number" step="any" id="mag_matrix_1_2" name="mag_matrix_1_2" value="{{ config.mag_matrix[1][2] }}"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" step="any" id="mag_matrix_2_0" name="mag_matrix_2_0" value="{{ config.mag_matrix[2][0] }}"></td>
+                        <td><input type="number" step="any" id="mag_matrix_2_1" name="mag_matrix_2_1" value="{{ config.mag_matrix[2][1] }}"></td>
+                        <td><input type="number" step="any" id="mag_matrix_2_2" name="mag_matrix_2_2" value="{{ config.mag_matrix[2][2] }}"></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Heading Offset</legend>
+                <label for="heading_offset">Heading Offset:</label>
+                <input type="number" step="any" id="heading_offset" name="heading_offset" value="{{ config.heading_offset }}">
+            </fieldset>
+
+            <div class="button">
+                <input type="submit" value="Save Calibration Settings">
+            </div>
+        </form>
 
         <div class="button" style="margin-top: 20px;">
             <a href="{{ url_for('logout') }}">Logout</a>
