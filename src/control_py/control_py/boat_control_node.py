@@ -37,6 +37,8 @@ class BoatControlNode(Node):
         self.targetRudderPos = 0
         # self.motorSpeed = 0
         
+        self.currentSailPublisher = self.create_publisher(Float32, '/currentSailPos', 10)
+        
         # Load calibration data
         self.calibration_data = self.load_calibration_data()
         
@@ -133,6 +135,7 @@ class BoatControlNode(Node):
             max_duty=12
         )
         self.sail_pwm.ChangeDutyCycle(duty_cycle)
+        self.currentSailPublisher.publish(Float32(data=self.currentSailPosition))
         # self.get_logger().info(f"Sail set to: {value} (Duty Cycle: {duty_cycle})")
 
     def control_esc(self, value):
@@ -178,7 +181,7 @@ class BoatControlNode(Node):
                 'rudder_min': 0,
                 'rudder_max': 180,
                 'sail_min': 0,
-                'sail_max': 180,
+                'sail_max': 360,
                 'esc_min': -100,
                 'esc_max': 100
             }

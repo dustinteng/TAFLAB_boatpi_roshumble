@@ -24,9 +24,7 @@ class Boat:
         self.notification = None
         self.target_lat = None
         self.target_lng = None
-        self.magnetic_field_x = 0.0
-        self.magnetic_field_y = 0.0
-        self.magnetic_field_z = 0.0
+        self.heading = 0.0
 
 
     def get_heartbeat(self):
@@ -37,23 +35,21 @@ class Boat:
             "n": self.notification or ""
         }
 
-    def get_location_data_transfer(self):
+    def get_data_transfer_1(self):
         return {
             "t": "dt1",
             "id": self.boat_id,
             "lt": round(self.lat, 4),
-            "lg": round(self.lng, 4),
-            "w": round(self.wndvn, 2),
-            "tp": round(self.temperature, 1)
+            "lg": round(self.lng, 4)
         }
 
-    def get_magnetic_data_transfer(self):
+    def get_data_transfer_2(self):
         return {
             "t": "dt2",
             "id": self.boat_id,
-            "mx": round(self.magnetic_field_x, 3),
-            "my": round(self.magnetic_field_y, 3),
-            "mz": round(self.magnetic_field_z, 3)
+            "h": round(self.heading,2),
+            "w": round(self.wndvn, 2),
+            "tp": round(self.temperature, 1)
         }
 
 class MainLogicNode(Node):
@@ -88,7 +84,8 @@ class MainLogicNode(Node):
         self.create_subscription(String, '/xbee_data', self.xbee_data_callback, 10)
         self.create_subscription(Float32, '/as5600_angle', self.angle_callback, 10)
         self.create_subscription(NavSatFix, '/gps/fix', self.gps_callback, 10)
-        self.create_subscription(MagneticField, '/magnetic_field', self.magnetometer_callback, 10)
+        # self.create_subscription(MagneticField, '/magnetic_field', self.magnetometer_callback, 10)
+        self.create_subscription(Float32, '/witmotion_heading', self.heading_callback, 10)
         self.create_subscription(Float32, '/rud_cmd_auto', self.rud_callback_auto, 10)
         self.create_subscription(Float32, '/sail_cmd_auto', self.sail_callback_auto, 10)
         self.create_subscription(Float32, '/esc_cmd_auto', self.esc_callback_auto, 10)
@@ -104,8 +101,8 @@ class MainLogicNode(Node):
         
         # Timers for periodic messages
         self.create_timer(10.0, self.queue_heartbeat_message)
-        self.create_timer(2.0, self.queue_location_data_transfer)
-        self.create_timer(2.0, self.queue_magnetic_data_transfer)
+        self.create_timer(2.0, self.queue_data_transfer_1)
+        self.create_timer(2.0, self.queue_data_transfer_2)
 
     def load_config(self):
         """Load configuration from the JSON file."""
@@ -136,11 +133,11 @@ class MainLogicNode(Node):
     def queue_heartbeat_message(self):
         self.queue_message(self.boat.get_heartbeat(), "Sent heartbeat message")
 
-    def queue_location_data_transfer(self):
-        self.queue_message(self.boat.get_location_data_transfer(), "Sent location data transfer message")
+    def queue_data_transfer_1(self):
+        self.queue_message(self.boat.get_data_transfer_1(), "Sent data transfer 1 message")
 
-    def queue_magnetic_data_transfer(self):
-        self.queue_message(self.boat.get_magnetic_data_transfer(), "Sent magnetic data transfer message")
+    def queue_data_transfer_2(self):
+        self.queue_message(self.boat.get_data_transfer_2(), "Sent data transfer 2 message")
 
     def handle_backend_command(self, data):
         mode = data.get('md', 'auto')
@@ -245,11 +242,16 @@ class MainLogicNode(Node):
         self.boat.lat = msg.latitude if not math.isnan(msg.latitude) else 0.0
         self.boat.lng = msg.longitude if not math.isnan(msg.longitude) else 0.0
 
-    def magnetometer_callback(self, msg):
-        self.boat.magnetic_field_x = msg.magnetic_field.x
-        self.boat.magnetic_field_y = msg.magnetic_field.y
-        self.boat.magnetic_field_z = msg.magnetic_field.z
+    def heading_callback(self, msg):
+        self.boat.heading = msg.data
+        self.get_logger().info(f"Updated heading: {self.boat.heading}")
+
+    # def magnetometer_callback(self, msg):
+    #     self.boat.magnetic_field_x = msg.magnetic_field.x
+    #     self.boat.magnetic_field_y = msg.magnetic_field.y
+    #     self.boat.magnetic_field_z = msg.magnetic_field.z
     
+
     def xbee_data_callback(self, msg):
         try:
             data = json.loads(msg.data)

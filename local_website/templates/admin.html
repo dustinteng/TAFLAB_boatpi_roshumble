@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+        }
+        .button {
+            margin-top: 20px;
+        }
+        .logo {
+            text-align: center;
+        }
+        .flex-container {
+            display: flex;
+            align-items: center;
+        }
+        .flex-container button {
+            margin-left: 10px;
+            padding: 8px;
+        }
+
+        /* 
+            Simple fullscreen loading overlay 
+            Initially hidden (display: none).
+        */
+        #loadingOverlay {
+            display: none; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* semi-transparent */
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            align-items: center;      /* for flexbox vertical centering */
+            justify-content: center;  /* for flexbox horizontal centering */
+            z-index: 9999;            /* on top of everything */
+        }
+    </style>
+    <script>
+        // Show the loading overlay with a custom message
+        function showLoadingOverlay(message) {
+            const overlay = document.getElementById('loadingOverlay');
+            overlay.innerText = message;
+            overlay.style.display = 'flex'; // make it visible (flex container)
+        }
+
+        // Hide the loading overlay
+        function hideLoadingOverlay() {
+            const overlay = document.getElementById('loadingOverlay');
+            overlay.style.display = 'none';
+        }
+
+        // Randomize MAC function
+        function toggleRandomizeMAC() {
+            const checkbox = document.getElementById('randomize_mac');
+            const macInput = document.getElementById('mac_address');
+
+            if (checkbox.checked) {
+                const mac = Array(6).fill(0).map(() =>
+                    Math.floor(Math.random() * 256).toString(16).padStart(2, '0')
+                ).join(':');
+                macInput.value = mac;
+            }
+        }
+
+        // Refresh MAC function
+        function refreshMAC() {
+            fetch('/refresh_mac')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to refresh MAC address.');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    document.getElementById('mac_address').value = data.mac_address;
+                })
+                .catch(error => {
+                    console.error(error);
+                    alert('Failed to refresh MAC address. Please try again.');
+                });
+        }
+        // Enable I2C Bypass
+        function enableI2CBypass() {
+            const button = document.querySelector("button[onclick='enableI2CBypass()']");
+            button.disabled = true;
+            button.innerText = "Enabling...";
+
+            showLoadingOverlay("Enabling I2C Bypass...");
+
+            fetch('/enable_i2c_bypass', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message);
+                })
+                .catch(error => {
+                    alert("Failed to enable I2C Bypass: " + error);
+                })
+                .finally(() => {
+                    hideLoadingOverlay();
+                    button.innerText = "Enable I2C Bypass";
+                    button.disabled = false;
+                });
+        }
+
+        // Calibrate IMU
+        function calibrateIMU() {
+            // Disable button and change text
+            const button = document.querySelector("button[onclick='calibrateIMU()']");
+            button.disabled = true;
+            button.innerText = "Calibrating... Please wait";
+
+            // Show overlay
+            showLoadingOverlay("Calibrating IMU... Please keep the sensor still.");
+
+            fetch('/calibrate_imu', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message);
+                })
+                .catch(error => {
+                    alert("IMU Calibration failed: " + error);
+                })
+                .finally(() => {
+                    // Hide overlay, restore button state
+                    hideLoadingOverlay();
+                    button.innerText = "Calibrate IMU (Accelerometer + Gyroscope)";
+                    button.disabled = false;
+                });
+        }
+
+        // Calibrate Magnetometer
+        function calibrateMagnetometer() {
+            // Disable button and change text
+            const button = document.querySelector("button[onclick='calibrateMagnetometer()']");
+            button.disabled = true;
+            button.innerText = "Calibrating... Please wait";
+
+            // Show overlay
+            showLoadingOverlay("Calibrating Magnetometer... Move sensor in a figure-8 pattern.");
+
+            fetch('/calibrate_magnetometer', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message);
+                })
+                .catch(error => {
+                    alert("Magnetometer Calibration failed: " + error);
+                })
+                .finally(() => {
+                    // Hide overlay, restore button state
+                    hideLoadingOverlay();
+                    button.innerText = "Calibrate Magnetometer";
+                    button.disabled = false;
+                });
+        }
+    </script>
+</head>
+<body>
+
+    <!-- This is the full-screen overlay that appears while calibrations are in progress -->
+    <div id="loadingOverlay"></div>
+
+    <div class="container">
+        <div class="logo">
+            <h1>TAFLAB</h1>
+        </div>
+        <h2>Admin Settings</h2>
+
+        <h3>Network Configuration</h3>
+        <p>WiFi Connected to: <strong>{{ connected_ssid }}</strong></p>
+
+        <form method="post">
+            <label for="ssid">Select Wi-Fi SSID:</label>
+            <select id="ssid" name="ssid">
+                <option value="" disabled selected>Select a Wi-Fi network</option>
+                {% for network in available_networks %}
+                    <option value="{{ network }}" {% if network == ssid %}selected{% endif %}>
+                        {{ network }}
+                    </option>
+                {% endfor %}
+            </select>
+
+            <label for="wifi_password">Wi-Fi Password:</label>
+            <input type="password" id="wifi_password" name="wifi_password" placeholder="Enter new password">
+
+            <div class="button">
+                <input type="submit" value="Save Network Settings">
+            </div>
+
+            <label for="mac_address">Current MAC Address:</label>
+            <div class="flex-container">
+                <input type="text" id="mac_address" name="mac_address" value="{{ mac_address }}">
+                <button type="button" onclick="refreshMAC()">Refresh</button>
+            </div>
+
+            <input type="checkbox" id="randomize_mac" name="randomize_mac" onclick="toggleRandomizeMAC()">
+            <label for="randomize_mac">Randomize MAC Address</label>
+        </form>
+
+        <h3>System Controls</h3>
+        <form method="post" action="{{ url_for('restart') }}"
+              onsubmit="return confirm('Are you sure you want to restart the Raspberry Pi?');">
+            <div class="button">
+                <input type="submit" value="Restart Raspberry Pi">
+            </div>
+        </form>
+
+        <h3>Calibration</h3>
+        <button onclick="calibrateIMU()">Calibrate IMU (Accelerometer + Gyroscope)</button>
+        <button onclick="calibrateMagnetometer()">Calibrate Magnetometer</button>
+        <h3>I2C Bypass</h3>
+        <button onclick="enableI2CBypass()">Enable I2C Bypass</button>
+
+        <div class="button" style="margin-top: 20px;">
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </div>
+    </div>
+</body>
+</html>

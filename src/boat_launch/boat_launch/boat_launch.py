@@ -11,14 +11,35 @@ def generate_launch_description():
 
     lis3mdl_node = Node(
         package='lis3mdl_mag',
-        executable='magnetometer_node',  # Replace with actual executable name
+        executable='magnetometer_node',  
         name='magnetometer_node',
+        output='screen',
+    )
+
+    mpu9250_node = Node(
+        package='mpu9250_sensor',
+        executable='mpu9250_node', 
+        name='mpu9250_node',
+        output='screen',
+    )
+    
+    pht_sensor_node = Node(
+        package='pht_sensor',
+        executable='pht_sensor_node',  
+        name='pht_sensor_node',
+        output='screen',
+    )
+    
+    witmotionmag_node = Node(
+        package='witmotionmag',
+        executable='witmotionmag_node', 
+        name='witmotionmag_node',
         output='screen',
     )
 
     gps_node = Node(
         package='gps_gt_u7',
-        executable='gps_node',  # Replace with actual executable name
+        executable='gps_node',  
         name='gps_node',
         output='screen',
     )
@@ -54,11 +75,14 @@ def generate_launch_description():
 
     return LaunchDescription([
         as5600_node,
-        lis3mdl_node,
+        # lis3mdl_node,
+        pht_sensor_node,
         control_node,
         main_logic_node,
         gps_node,
         xbee_node,
-        autonomous_control
+        autonomous_control,
+        # mpu9250_node,
+        witmotionmag_node,
     ])
 
