@@ -1,5 +1,5 @@
 {
-    "xbee_port": "/dev/ttyUSB0",
+    "xbee_port": "/dev/ttyXbee",
     "xbee_baud_rate": 115200,
     "boat_name": "boat1"
 }

@@ -99,7 +99,7 @@ class AutonomousControlNode(Node):
         Update the current heading from /witmotion_heading topic.
         """
         self.heading = msg.data
-        self.get_logger().info(f"Heading: {self.heading}")
+        # self.get_logger().info(f"Heading: {self.heading}")
 
     def setWindAngle(self, msg):
         """

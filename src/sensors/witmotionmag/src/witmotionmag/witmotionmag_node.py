@@ -147,8 +147,8 @@ class WitMotionMagNode(Node):
         self.angle_publisher.publish(heading_msg)
 
         # Log for debugging
-        self.get_logger().info(f"Published Heading: {self.last_heading_degrees:.2f}° (Offset: {self.heading_offset:.2f}°)")
-        self.get_logger().info(f"Published Magnetic Field (T): {self.corrected_mag_vector}")
+        # self.get_logger().info(f"Published Heading: {self.last_heading_degrees:.2f}° (Offset: {self.heading_offset:.2f}°)")
+        # self.get_logger().info(f"Published Magnetic Field (T): {self.corrected_mag_vector}")
 
 def main(args=None):
     rclpy.init(args=args)

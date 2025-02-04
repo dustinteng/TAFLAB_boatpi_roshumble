@@ -244,7 +244,7 @@ class MainLogicNode(Node):
 
     def heading_callback(self, msg):
         self.boat.heading = msg.data
-        self.get_logger().info(f"Updated heading: {self.boat.heading}")
+        # self.get_logger().info(f"Updated heading: {self.boat.heading}")
 
     # def magnetometer_callback(self, msg):
     #     self.boat.magnetic_field_x = msg.magnetic_field.x

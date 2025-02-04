@@ -16,7 +16,7 @@ class XBeeCommunicationNode(Node):
 
         # Load configuration
         self.config = self.load_config()
-        self.xbee_port = self.config.get('xbee_port', '/dev/ttyUSB0')
+        self.xbee_port = self.config.get('xbee_port', '/dev/ttyXbee')
         self.xbee_baud_rate = self.config.get('xbee_baud_rate', 115200)
         self.device = None
 
