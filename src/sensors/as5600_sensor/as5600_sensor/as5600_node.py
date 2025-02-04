@@ -17,7 +17,7 @@ class AS5600Node(Node):
         self.currentAngle = 0
         self.currentSailPos = 0
         self.reverse = False
-        self.offset = 0
+        self.offset = -1000
         
         self.create_subscription(Float32, '/currentSailPos', self.saveCurrentSailPos, 10)
         
@@ -31,9 +31,13 @@ class AS5600Node(Node):
             self.get_logger().debug(f"Raw angle data: {angle_data}")
             
             # Calculate angle in degrees from the raw value
-            raw_angle = (angle_data[0] << 8) | angle_data[1]
+            raw_angle = (angle_data[0] << 8) | angle_data[1] + self.offset
+            if raw_angle < 0:
+                raw_angle += 4096
+            elif raw_angle > 4096:
+                raw_angle -= 4096
             self.get_logger().info(f"Angle Raw Value: {raw_angle}")
-            windVaneAngle = ((raw_angle + self.offset) / 4096) * 360.0  # AS5600 has 12-bit resolution
+            windVaneAngle = ((raw_angle) / 4096) * 360.0  # AS5600 has 12-bit resolution
             
             if self.reverse:
                 windVaneAngle = 360 - windVaneAngle
