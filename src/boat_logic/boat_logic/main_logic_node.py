@@ -100,9 +100,9 @@ class MainLogicNode(Node):
         self.queue_message(self.boat.get_heartbeat(), "Sent registration message")
         
         # Timers for periodic messages
-        self.create_timer(10.0, self.queue_heartbeat_message)
-        self.create_timer(2.0, self.queue_data_transfer_1)
-        self.create_timer(2.0, self.queue_data_transfer_2)
+        self.create_timer(6.0, self.queue_heartbeat_message)
+        # self.create_timer(2.0, self.queue_data_transfer_1)
+        # self.create_timer(2.0, self.queue_data_transfer_2)
 
     def load_config(self):
         """Load configuration from the JSON file."""
@@ -271,6 +271,10 @@ class MainLogicNode(Node):
                 calibration_data = self.handle_calibration_request(target_boat_id)
                 # Emit calibration data to the backend
                 self.calibration_publisher.publish(calibration_data)
+            elif msg_type == "data_req":
+                self.get_logger().info("Received data request from backend")
+                self.queue_data_transfer_1()
+                self.queue_data_transfer_2()
             else:
                 self.get_logger().warning(f"Unhandled message type: {msg_type}")
         
