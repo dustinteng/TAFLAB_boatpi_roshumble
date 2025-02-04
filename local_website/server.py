@@ -38,7 +38,6 @@ def login_required(f):
             return redirect(url_for('login', next=request.url))
     return decorated_function
 
-
 ###############################################################################
 #                             HELPER FUNCTIONS
 ###############################################################################
@@ -47,15 +46,32 @@ def get_serial_ports():
     return [port.device for port in ports]
 
 def load_config():
+    """
+    Loads the configuration from CONFIG_FILE.
+    If the file doesn't exist or is invalid, returns a default config that now
+    includes magnetometer calibration settings.
+    """
+    default_config = {
+        'boat_name': '',
+        'xbee_port': '',
+        'mag_offset': [-3.78, 4.096, 2.163],
+        'mag_matrix': [
+            [1.00, 0.0078, -0.011],
+            [0.0078, 0.979, 0.0669],
+            [-0.0110, 0.0669, 1.0453]
+        ],
+        'heading_offset': 0.0
+    }
     try:
         with open(CONFIG_FILE, 'r') as f:
-            return json.load(f)
-    except FileNotFoundError:
-        # Return default config if file doesn't exist
-        return {'boat_name': '', 'xbee_port': ''}
-    except json.JSONDecodeError:
-        # Handle JSON parsing errors
-        return {'boat_name': '', 'xbee_port': ''}
+            config = json.load(f)
+        # Ensure new keys are present; if not, add default values.
+        for key, value in default_config.items():
+            if key not in config:
+                config[key] = value
+        return config
+    except (FileNotFoundError, json.JSONDecodeError):
+        return default_config
 
 def save_config(config):
     with open(CONFIG_FILE, 'w') as f:
@@ -93,7 +109,6 @@ def update_netplan(mac_address, ssid, wifi_password):
     try:
         with open(NETPLAN_FILE, 'w') as f:
             yaml.dump(netplan_config, f, default_flow_style=False)
-        # Apply netplan changes
         subprocess.run(['sudo', 'netplan', 'apply'], check=True)
     except Exception as e:
         print(f"Error updating netplan: {e}")
@@ -133,7 +148,7 @@ def get_current_ssid():
         result = subprocess.check_output(['nmcli', '-t', '-f', 'ACTIVE,SSID', 'dev', 'wifi'], text=True)
         for line in result.splitlines():
             if line.startswith('yes:'):
-                return line.split(':')[1]  # Return the SSID after 'yes:'
+                return line.split(':')[1]
     except subprocess.CalledProcessError as e:
         print(f"Error getting current SSID: {e}")
     return "Unknown"
@@ -142,8 +157,8 @@ def get_available_networks():
     """Use nmcli to retrieve a list of available Wi-Fi SSIDs."""
     try:
         result = subprocess.check_output(['nmcli', '-t', '-f', 'SSID', 'dev', 'wifi'], text=True)
-        ssids = list(filter(None, result.splitlines()))  # Remove empty lines
-        return sorted(set(ssids))  # Remove duplicates and sort
+        ssids = list(filter(None, result.splitlines()))
+        return sorted(set(ssids))
     except subprocess.CalledProcessError as e:
         print(f"Error getting available networks: {e}")
     return []
@@ -153,7 +168,6 @@ def get_ap_status():
     try:
         result = subprocess.check_output(['ip', 'addr', 'show', 'wlan0_ap'], text=True)
         if 'state UP' in result:
-            # Read the SSID from the hostapd configuration
             ssid = ''
             with open(HOSTAPD_CONF, 'r') as f:
                 for line in f:
@@ -173,11 +187,9 @@ def update_hostapd_config(new_ssid, new_password):
     """
     temp_file = '/tmp/hostapd_temp.conf'
     try:
-        # Step 1: Read existing hostapd.conf content
         with open(HOSTAPD_CONF, 'r') as f:
             lines = f.readlines()
 
-        # Step 2: Modify the SSID and password lines
         updated_lines = []
         for line in lines:
             if line.startswith('ssid='):
@@ -187,24 +199,20 @@ def update_hostapd_config(new_ssid, new_password):
             else:
                 updated_lines.append(line)
 
-        # Step 3: Write the updated lines to a temporary file
         with open(temp_file, 'w') as f:
             f.writelines(updated_lines)
 
-        # Step 4: Move the temp file to hostapd.conf
         result = subprocess.run(['sudo', 'mv', temp_file, HOSTAPD_CONF], check=False)
         if result.returncode != 0:
             print("Failed to replace the hostapd.conf file.")
             return False
 
-        # Step 5: Re-read the updated configuration to confirm the changes
         with open(HOSTAPD_CONF, 'r') as f:
             updated_content = f.read()
             if f"ssid={new_ssid}" not in updated_content or f"wpa_passphrase={new_password}" not in updated_content:
                 print("Error: Changes were not successfully written to hostapd.conf.")
                 return False
 
-        # Step 6: Restart the hostapd service to apply changes
         subprocess.run(['sudo', 'systemctl', 'restart', 'hostapd'], check=True)
         print(f"Successfully updated {HOSTAPD_CONF} with SSID '{new_ssid}' and restarted hostapd.")
         return True
@@ -218,11 +226,9 @@ def update_hostapd_config(new_ssid, new_password):
     except Exception as e:
         print(f"Unexpected error: {e}")
     finally:
-        # Step 7: Clean up temporary file if it still exists
         if os.path.exists(temp_file):
             os.remove(temp_file)
-    return False  # If we reached here, it didn't succeed fully
-
+    return False
 
 ###############################################################################
 #                               FLASK ROUTES
@@ -232,24 +238,20 @@ def index():
     """Main index page for boat name and XBee port selection."""
     config = load_config()
     if request.method == 'POST':
-        # Handle form data
         boat_name = request.form.get('boat_name', '')
         selected_port = request.form.get('xbee_port', '')
         ap_ssid = request.form.get('ap_ssid', '').strip()
         ap_password = request.form.get('ap_password', '').strip()
 
-        # Update config.json
         config['boat_name'] = boat_name
         config['xbee_port'] = selected_port
         save_config(config)
 
-        # Update AP settings (if provided)
         if ap_ssid and ap_password:
             update_hostapd_config(ap_ssid, ap_password)
 
         return redirect(url_for('index'))
     else:
-        # Render the form
         ports = get_serial_ports()
         current_port = config.get('xbee_port', '')
         boat_name = config.get('boat_name', '')
@@ -268,37 +270,77 @@ def index():
 @login_required
 def admin():
     """
-    Admin page for network settings (Wi-Fi, MAC).
+    Admin page for network settings (Wi-Fi, MAC) and for displaying calibration settings.
     """
     if request.method == 'POST':
-        # Handle form data
         mac_address = request.form.get('mac_address', '')
         ssid = request.form.get('ssid', '')
         wifi_password = request.form.get('wifi_password', '')
 
-        # If 'randomize_mac' was checked, generate a new MAC
         if 'randomize_mac' in request.form:
             mac_address = random_mac()
 
-        # Update netplan configuration
         update_netplan(mac_address, ssid, wifi_password)
-
         return redirect(url_for('admin'))
     else:
-        current_mac = get_current_mac()  # Dynamically get the MAC address
+        current_mac = get_current_mac()
         available_networks = get_available_networks()
         connected_ssid = get_current_ssid()
+        config = load_config()
+
         return render_template(
             'admin.html',
             mac_address=current_mac,
             connected_ssid=connected_ssid,
-            available_networks=available_networks
+            available_networks=available_networks,
+            config=config
         )
+
+@app.route('/update_calibration_config', methods=['POST'])
+@login_required
+def update_calibration_config():
+    """
+    Route to update calibration configuration values from the admin form.
+    """
+    config = load_config()
+    try:
+        # Retrieve calibration values from the form and convert to floats.
+        mag_offset = [
+            float(request.form.get('mag_offset_0', config.get('mag_offset', [0, 0, 0])[0])),
+            float(request.form.get('mag_offset_1', config.get('mag_offset', [0, 0, 0])[1])),
+            float(request.form.get('mag_offset_2', config.get('mag_offset', [0, 0, 0])[2]))
+        ]
+        mag_matrix = [
+            [
+                float(request.form.get('mag_matrix_0_0', config.get('mag_matrix', [[0,0,0],[0,0,0],[0,0,0]])[0][0])),
+                float(request.form.get('mag_matrix_0_1', config.get('mag_matrix', [[0,0,0],[0,0,0],[0,0,0]])[0][1])),
+                float(request.form.get('mag_matrix_0_2', config.get('mag_matrix', [[0,0,0],[0,0,0],[0,0,0]])[0][2]))
+            ],
+            [
+                float(request.form.get('mag_matrix_1_0', config.get('mag_matrix', [[0,0,0],[0,0,0],[0,0,0]])[1][0])),
+                float(request.form.get('mag_matrix_1_1', config.get('mag_matrix', [[0,0,0],[0,0,0],[0,0,0]])[1][1])),
+                float(request.form.get('mag_matrix_1_2', config.get('mag_matrix', [[0,0,0],[0,0,0],[0,0,0]])[1][2]))
+            ],
+            [
+                float(request.form.get('mag_matrix_2_0', config.get('mag_matrix', [[0,0,0],[0,0,0],[0,0,0]])[2][0])),
+                float(request.form.get('mag_matrix_2_1', config.get('mag_matrix', [[0,0,0],[0,0,0],[0,0,0]])[2][1])),
+                float(request.form.get('mag_matrix_2_2', config.get('mag_matrix', [[0,0,0],[0,0,0],[0,0,0]])[2][2]))
+            ]
+        ]
+        heading_offset = float(request.form.get('heading_offset', config.get('heading_offset', 0.0)))
+    except ValueError:
+        return "Invalid input: Please ensure all calibration values are numeric.", 400
+
+    config['mag_offset'] = mag_offset
+    config['mag_matrix'] = mag_matrix
+    config['heading_offset'] = heading_offset
+    save_config(config)
+    return redirect(url_for('admin'))
 
 @app.route('/refresh_mac', methods=['GET'])
 def refresh_mac():
     """API endpoint to refresh the current MAC address."""
-    current_mac = get_current_mac()  # Dynamically get the MAC address
+    current_mac = get_current_mac()
     return {"mac_address": current_mac}, 200
 
 @app.route('/restart', methods=['POST'])
@@ -323,7 +365,6 @@ def ap_settings():
         if not new_ssid or not new_password:
             return render_template('ap_settings.html', error="SSID and Password cannot be empty.")
 
-        # Debugging: Print values received
         print(f"Received new SSID: {new_ssid}")
         print(f"Received new Password: {new_password}")
 
@@ -333,7 +374,6 @@ def ap_settings():
         else:
             return render_template('ap_settings.html', error="Failed to update AP settings.")
     else:
-        # Fetch current SSID and Password from hostapd.conf
         current_ssid, current_password = '', ''
         try:
             with open(HOSTAPD_CONF, 'r') as f:
@@ -349,7 +389,7 @@ def ap_settings():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    """Simple password-based login (replace with more secure auth in production)."""
+    """Simple password-based login."""
     if request.method == 'POST':
         password = request.form.get('password', '')
         if password == NETWORK_SETTINGS_PASSWORD:
@@ -367,7 +407,6 @@ def logout():
     session.pop('authenticated', None)
     return redirect(url_for('index'))
 
-
 ###############################################################################
 #                          I2C BYPASS & MPU9250 SETUP
 ###############################################################################
@@ -379,30 +418,26 @@ def enable_i2c_bypass():
     """
     try:
         bus = smbus2.SMBus(1)
-        # Register 0x37: INT_PIN_CFG -> BYPASS_EN = 0x02
         bus.write_byte_data(0x68, 0x37, 0x02)
-        # Register 0x24: I2C_MST_CTRL. 0x22 => for example 400KHz. Adjust if needed.
         bus.write_byte_data(0x68, 0x24, 0x22)
         print("I2C bypass mode enabled on MPU9250.")
         bus.close()
     except Exception as e:
         print(f"Error enabling I2C bypass: {e}")
 
+# Enable bypass before initializing MPU9250
+enable_i2c_bypass()
 
-enable_i2c_bypass()  # Enable bypass before initializing MPU9250
-
-# Now initialize MPU9250
 mpu = MPU9250(
-    address_ak=0x0C,  # AK8963 magnetometer address
-    address_mpu_master=0x68,  # MPU9250 address
+    address_ak=0x0C,
+    address_mpu_master=0x68,
     address_mpu_slave=None,
-    bus=1,  # I2C bus (likely /dev/i2c-1)
+    bus=1,
     gfs=GFS_250,
     afs=AFS_2G,
     mfs=AK8963_BIT_16,
     mode=AK8963_MODE_C100HZ
 )
-
 
 ###############################################################################
 #                           CALIBRATION LOGIC
@@ -434,7 +469,6 @@ def load_calibration():
     except json.JSONDecodeError as e:
         print(f"Error parsing calibration file: {e}")
 
-# Load calibration at startup (after creating `mpu`)
 load_calibration()
 
 @app.route('/calibrate_imu', methods=['POST'])
@@ -446,7 +480,7 @@ def calibrate_imu():
     """
     try:
         print("Calibrating Accelerometer and Gyroscope... Keep sensor still.")
-        mpu.calibrate()  # Calibrate IMU
+        mpu.calibrate()
         save_calibration()
         return {"status": "success", "message": "IMU calibration complete."}, 200
     except Exception as e:
@@ -467,9 +501,8 @@ def calibrate_magnetometer():
     except Exception as e:
         return {"status": "error", "message": f"Magnetometer calibration failed: {e}"}, 500
 
-
 ###############################################################################
 #                           RUN THE FLASK APP
 ###############################################################################
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=3334)
+    app.run(host='0.0.0.0', port=3332)

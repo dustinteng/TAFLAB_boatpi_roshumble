@@ -34,7 +34,7 @@ class WitMotionMagNode(Node):
         self.corrected_mag_vector = np.array([0.0, 0.0, 0.0])  
 
         # Calibration file path
-        self.calibration_file = "wit_calibration.json"
+        self.calibration_file = "/home/boat/Desktop/python/TAFLAB_boatpi_roshumble/src/config.json"
 
         # Default calibration values
         self.mag_offset = np.zeros(3)  # Offset vector [offset_x, offset_y, offset_z]
@@ -77,24 +77,38 @@ class WitMotionMagNode(Node):
                     self.mag_matrix = np.array(data.get("mag_matrix", np.eye(3).tolist()))
                     self.heading_offset = data.get("heading_offset", 0.0)
 
-                self.get_logger().info("Loaded calibration values from wit_calibration.json.")
+                    self.get_logger().info(f"Loaded calibration values from: {self.calibration_file}.")
             except Exception as e:
                 self.get_logger().error(f"Error loading calibration file: {e}")
         else:
             self.save_calibration()
-            self.get_logger().info("Created default wit_calibration.json.")
+            self.get_logger().info(f"Created default: {self.calibration_file}.")
+
 
     def save_calibration(self):
         """
-        Saves the current calibration values to 'wit_calibration.json'.
+        Saves the current calibration values to 'config.json' without altering existing settings.
         """
-        data = {
+        # Load existing configuration if the file exists
+        try:
+            with open(self.calibration_file, 'r') as f:
+                config_data = json.load(f)  # Load existing JSON data
+        except (FileNotFoundError, json.JSONDecodeError):
+            config_data = {}  # Start with an empty dict if the file doesn't exist or is corrupted
+
+        # Update only the calibration values
+        config_data.update({
             "mag_offset": self.mag_offset.tolist(),
             "mag_matrix": self.mag_matrix.tolist(),
             "heading_offset": self.heading_offset
-        }
+        })
+
+        # Save back to the same file
         with open(self.calibration_file, 'w') as f:
-            json.dump(data, f, indent=4)
+            json.dump(config_data, f, indent=4)
+
+        self.get_logger().info(f"Saved calibration values to: {self.calibration_file}.")
+
 
     def onUpdate(self, deviceModel):
         """
