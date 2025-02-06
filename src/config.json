@@ -1,7 +1,7 @@
 {
     "xbee_port": "/dev/ttyXbee",
     "xbee_baud_rate": 115200,
-    "boat_name": "boat1",
+    "boat_name": "boat L",
     "mag_offset": [
         -3.78,
         4.096,

@@ -7,17 +7,18 @@ from queue import Queue
 import threading
 import json
 import os
+from std_msgs.msg import Float32
 
 class BoatControlNode(Node):
     def __init__(self):
         super().__init__('boat_control_node')
 
         # GPIO setup for each servo
-        self.RUDDER_PIN = 18
-        self.SAIL_PIN = 12
-        self.ESC_PIN = 13
+        self.RUDDER_PIN = 33
+        self.SAIL_PIN = 32
+        self.ESC_PIN = 12
         GPIO.setwarnings(False)
-        GPIO.setmode(GPIO.BCM)
+        GPIO.setmode(GPIO.BOARD)
         
         # Set up GPIO outputs for each servo
         GPIO.setup(self.RUDDER_PIN, GPIO.OUT)
@@ -31,11 +32,12 @@ class BoatControlNode(Node):
         self.rudder_pwm.start(0)
         self.sail_pwm.start(0)
         self.esc_pwm.start(0)
+        
         self.currentSailPosition = 0
         self.currentRudderPosition = 0
         self.targetSailPos = 0
         self.targetRudderPos = 0
-        # self.motorSpeed = 0
+        self.motorSpeed = 0
         
         self.currentSailPublisher = self.create_publisher(Float32, '/currentSailPos', 10)
         
@@ -102,7 +104,7 @@ class BoatControlNode(Node):
         while True:
             self.control_rudder(self.targetRudderPos)
             self.control_sail(self.targetSailPos)
-            # self.control_esc(self.motorSpeed)
+            self.control_esc(self.motorSpeed)
             time.sleep(0.03)  # Small delay to reduce CPU usage
 
     def control_rudder(self, value):
@@ -119,7 +121,7 @@ class BoatControlNode(Node):
             max_duty=12
         )
         self.rudder_pwm.ChangeDutyCycle((12 - duty_cycle))
-        # self.get_logger().info(f"Rudder set to: {value} (Duty Cycle: {duty_cycle})")
+        self.get_logger().info(f"Rudder set to: {value} (Duty Cycle: {duty_cycle})")
 
     def control_sail(self, value):
         if (abs(self.currentSailPosition - value) > 5):
@@ -135,8 +137,11 @@ class BoatControlNode(Node):
             max_duty=12
         )
         self.sail_pwm.ChangeDutyCycle(duty_cycle)
-        self.currentSailPublisher.publish(Float32(data=self.currentSailPosition))
-        # self.get_logger().info(f"Sail set to: {value} (Duty Cycle: {duty_cycle})")
+
+        sail_msg = Float32()
+        sail_msg.data = float(self.currentSailPosition)
+        self.currentSailPublisher.publish(sail_msg)
+        self.get_logger().info(f"Sail set to: {self.currentSailPosition} (Duty Cycle: {duty_cycle})")
 
     def control_esc(self, value):
         duty_cycle = self.map_to_duty_cycle(
@@ -152,7 +157,7 @@ class BoatControlNode(Node):
     def map_to_duty_cycle(self, value, min_value, max_value, min_duty, max_duty):
         value = max(min_value, min(max_value, value))
         duty_cycle = min_duty + (value - min_value) * (max_duty - min_duty) / (max_value - min_value)
-        return round(duty_cycle, 1)
+        return round(duty_cycle, 2)
 
     def save_calibration_data(self):
         try:
@@ -179,7 +184,7 @@ class BoatControlNode(Node):
             self.get_logger().warning("Calibration data file not found. Using default values.")
             return {
                 'rudder_min': 0,
-                'rudder_max': 180,
+                'rudder_max': 360,
                 'sail_min': 0,
                 'sail_max': 360,
                 'esc_min': -100,

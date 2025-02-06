@@ -16,8 +16,8 @@ class AS5600Node(Node):
         
         self.currentAngle = 0
         self.currentSailPos = 0
-        self.reverse = False
-        self.offset = -1000
+        self.reverse = True
+        self.offset = -1300
         
         self.create_subscription(Float32, '/currentSailPos', self.saveCurrentSailPos, 10)
         
@@ -31,7 +31,7 @@ class AS5600Node(Node):
             self.get_logger().debug(f"Raw angle data: {angle_data}")
             
             # Calculate angle in degrees from the raw value
-            raw_angle = (angle_data[0] << 8) | angle_data[1] + self.offset
+            raw_angle = ((angle_data[0] << 8) | angle_data[1]) + self.offset
             if raw_angle < 0:
                 raw_angle += 4096
             elif raw_angle > 4096:
@@ -50,7 +50,8 @@ class AS5600Node(Node):
 
             # Publish the angle
             self.angle_publisher.publish(Float32(data=self.currentAngle))
-            # self.get_logger().info(f"Published angle: {self.currentAngle:.2f} degrees")
+            self.get_logger().info(f"Sail position: {self.currentSailPos:.2f}")
+            self.get_logger().info(f"Published angle: {self.currentAngle:.2f} degrees")
 
         except Exception as e:
             self.get_logger().error(f"Error reading angle: {e}")

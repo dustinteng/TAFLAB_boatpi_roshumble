@@ -62,12 +62,16 @@ class MainLogicNode(Node):
 
         # Boat configuration
         self.boat = Boat(self.config.get("boat_name", "default_boat"))
-        self.in_autonomous_mode = False
+        self.in_autonomous_mode = True
 
         # Latest autonomous control values
         self.rudder_auto = 0.0
         self.sail_auto = 0.0
         self.esc_auto = 0.0
+
+        # Latest manual control values
+        self.rudder_manual = 90
+        self.esc_manual = 0
 
         # Publisher to send commands to XBeeCommunicationNode
         self.xbee_command_publisher = self.create_publisher(String, '/xbee_commands', 10)
@@ -146,11 +150,14 @@ class MainLogicNode(Node):
         if mode == 'mnl':
             self.in_autonomous_mode = False
             self.auto_state_publisher.publish(String(data=str(self.in_autonomous_mode)))
-            control_msg = ControlData()
-            control_msg.servo_rudder = float(data.get('r', 0.0))
-            control_msg.servo_sail = float(data.get('s', 0.0))
-            control_msg.esc = float(data.get('th', 0.0))
-            self.control_publisher.publish(control_msg)
+            # control_msg = ControlData()
+            self.rudder_manual = float(data.get('r', 0.0))
+            self.esc_manual = float(data.get('th', 0.0))
+            # control_msg.servo_rudder = float(data.get('r', 0.0))
+            # control_msg.servo_sail = float(data.get('s', 0.0))
+            # control_msg.servo_sail = float(self.sail_auto)
+            # control_msg.esc = float(data.get('th', 0.0))
+            # self.control_publisher.publish(control_msg)
             self.boat.status = "manual"
             self.get_logger().info("Manual mode: Control command sent.")
 
@@ -217,6 +224,14 @@ class MainLogicNode(Node):
             self.get_logger().warning(f"Calibration data for {boat_id} not found.")
             return None
 
+    def publish_manual_control(self):
+        control_msg = ControlData()
+        control_msg.servo_rudder = self.rudder_manual
+        control_msg.servo_sail = self.sail_auto
+        control_msg.esc = self.esc_manual
+        self.control_publisher.publish(control_msg)
+        # self.get_logger().info(f"Manual control command sent: Rudder={self.rudder_manual}, Sail={self.sail_auto}, ESC={self.esc_manual}")
+
     def publish_autonomous_control(self):
         if self.in_autonomous_mode:
             control_msg = ControlData()
@@ -224,7 +239,7 @@ class MainLogicNode(Node):
             control_msg.servo_sail = self.sail_auto
             control_msg.esc = self.esc_auto
             self.control_publisher.publish(control_msg)
-            self.get_logger().info(f"Autonomous control command sent: Rudder={self.rudder_auto}, Sail={self.sail_auto}, ESC={self.esc_auto}")
+            # self.get_logger().info(f"Autonomous control command sent: Rudder={self.rudder_auto}, Sail={self.sail_auto}, ESC={self.esc_auto}")
 
     def publish_target_coordinates(self):
         target_msg = NavSatFix()
@@ -256,7 +271,9 @@ class MainLogicNode(Node):
         try:
             data = json.loads(msg.data)
             target_boat_id = data.get('id')
-            if target_boat_id not in [self.boat.boat_id, 'all']:
+
+            # Process message only if it is intended for this boat or all boats
+            if target_boat_id != self.boat.boat_id and target_boat_id != 'all':
                 self.get_logger().info(f"Ignored message for boat ID {target_boat_id}")
                 return
 
@@ -272,7 +289,7 @@ class MainLogicNode(Node):
                 # Emit calibration data to the backend
                 self.calibration_publisher.publish(calibration_data)
             elif msg_type == "data_req":
-                self.get_logger().info("Received data request from backend")
+                # self.get_logger().info("Received data request from backend")
                 self.queue_data_transfer_1()
                 self.queue_data_transfer_2()
             else:
@@ -292,7 +309,10 @@ class MainLogicNode(Node):
 
     def sail_callback_auto(self, msg):
         self.sail_auto = msg.data
-        self.publish_autonomous_control()
+        if self.in_autonomous_mode:
+            self.publish_autonomous_control()
+        else:
+            self.publish_manual_control()
 
     def esc_callback_auto(self, msg):
         self.esc_auto = msg.data
