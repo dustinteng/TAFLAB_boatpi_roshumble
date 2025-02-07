@@ -56,7 +56,7 @@ class WitMotionMagNode(Node):
         if platform.system().lower() == 'linux':
             self.device.serialConfig.portName = "/dev/ttyMag"
         else:
-            self.device.serialConfig.portName = "/dev/ttyUSB0"
+            self.device.serialConfig.portName = "/dev/ttyUSB1"
 
         self.device.serialConfig.baud = 9600
         self.device.openDevice()
@@ -116,9 +116,9 @@ class WitMotionMagNode(Node):
         Stores the latest magnetometer readings and heading.
         """
         # Convert raw milligauss (mG) to Tesla (T) by multiplying by 1e-7
-        raw_mx = float(deviceModel.getDeviceData("magX") or 0.0) * 1e-7
-        raw_my = float(deviceModel.getDeviceData("magY") or 0.0) * 1e-7
-        raw_mz = float(deviceModel.getDeviceData("magZ") or 0.0) * 1e-7
+        raw_mx = float(deviceModel.getDeviceData("magX") or 0.0) * 1e-2
+        raw_my = float(deviceModel.getDeviceData("magY") or 0.0) * 1e-2
+        raw_mz = float(deviceModel.getDeviceData("magZ") or 0.0) * 1e-2
 
         # Convert raw vector to numpy array
         raw_mag_vector = np.array([raw_mx, raw_my, raw_mz])
@@ -138,6 +138,7 @@ class WitMotionMagNode(Node):
             heading_degrees += 360.0  # Convert to range [0, 360)
 
         self.last_heading_degrees = heading_degrees
+        self.get_logger().info(f"Heading: {self.last_heading_degrees}")
 
     def updateData(self):
         """

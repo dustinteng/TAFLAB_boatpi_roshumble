@@ -36,7 +36,8 @@ class AutonomousControlNode(Node):
         currentLat = msg.latitude
         currentLon = msg.longitude
 
-        if self.waypoints:
+        self.get_logger().info(f"Length set to: {len(self.waypoints)}")
+        if len(self.waypoints) > 0:
             targetLat, targetLon = self.waypoints[0]
             distance = self.calculateDistance(currentLat, currentLon, targetLat, targetLon)
             targetBearing = self.calculateBearing(currentLat, currentLon, targetLat, targetLon)
@@ -65,7 +66,10 @@ class AutonomousControlNode(Node):
         else:
             target_rudder_pos = self.straight
 
-        self.rudderPublisher.publish(Float32(data=target_rudder_pos))
+        rudder_msg = Float32()
+        rudder_msg.data = float(target_rudder_pos)
+        self.rudderPublisher.publish(rudder_msg)
+        self.get_logger().info(f"Rudder set to: {target_rudder_pos}")
 
     def turnSailTo(self):
         """

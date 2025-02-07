@@ -17,7 +17,7 @@ class AS5600Node(Node):
         self.currentAngle = 0
         self.currentSailPos = 0
         self.reverse = True
-        self.offset = -1300
+        self.offset = -2300
         
         self.create_subscription(Float32, '/currentSailPos', self.saveCurrentSailPos, 10)
         
