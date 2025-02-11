@@ -56,7 +56,7 @@ class WitMotionMagNode(Node):
         if platform.system().lower() == 'linux':
             self.device.serialConfig.portName = "/dev/ttyMag"
         else:
-            self.device.serialConfig.portName = "/dev/ttyUSB1"
+            self.device.serialConfig.portName = "/dev/ttyUSB0"
 
         self.device.serialConfig.baud = 9600
         self.device.openDevice()
