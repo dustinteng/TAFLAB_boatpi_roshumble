@@ -14,8 +14,8 @@ from functools import wraps
 
 # For MPU and I2C bypass
 import smbus2
-from mpu9250_jmdev.registers import *
-from mpu9250_jmdev.mpu_9250 import MPU9250
+# from mpu9250_jmdev.registers import *
+# from mpu9250_jmdev.mpu_9250 import MPU9250
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'  # Replace with a secure random key
@@ -410,96 +410,96 @@ def logout():
 ###############################################################################
 #                          I2C BYPASS & MPU9250 SETUP
 ###############################################################################
-@app.route('/enable_i2c_bypass', methods=['POST'])
-def enable_i2c_bypass():
-    """
-    Enable I2C bypass on the MPU9250 so the AK8963 magnetometer (0x0C)
-    can be accessed directly on the bus.
-    """
-    try:
-        bus = smbus2.SMBus(1)
-        bus.write_byte_data(0x68, 0x37, 0x02)
-        bus.write_byte_data(0x68, 0x24, 0x22)
-        print("I2C bypass mode enabled on MPU9250.")
-        bus.close()
-    except Exception as e:
-        print(f"Error enabling I2C bypass: {e}")
+# @app.route('/enable_i2c_bypass', methods=['POST'])
+# def enable_i2c_bypass():
+#     """
+#     Enable I2C bypass on the MPU9250 so the AK8963 magnetometer (0x0C)
+#     can be accessed directly on the bus.
+#     """
+#     try:
+#         bus = smbus2.SMBus(1)
+#         bus.write_byte_data(0x68, 0x37, 0x02)
+#         bus.write_byte_data(0x68, 0x24, 0x22)
+#         print("I2C bypass mode enabled on MPU9250.")
+#         bus.close()
+#     except Exception as e:
+#         print(f"Error enabling I2C bypass: {e}")
 
-# Enable bypass before initializing MPU9250
-enable_i2c_bypass()
+# # Enable bypass before initializing MPU9250
+# enable_i2c_bypass()
 
-mpu = MPU9250(
-    address_ak=0x0C,
-    address_mpu_master=0x68,
-    address_mpu_slave=None,
-    bus=1,
-    gfs=GFS_250,
-    afs=AFS_2G,
-    mfs=AK8963_BIT_16,
-    mode=AK8963_MODE_C100HZ
-)
+# mpu = MPU9250(
+#     address_ak=0x0C,
+#     address_mpu_master=0x68,
+#     address_mpu_slave=None,
+#     bus=1,
+#     gfs=GFS_250,
+#     afs=AFS_2G,
+#     mfs=AK8963_BIT_16,
+#     mode=AK8963_MODE_C100HZ
+# )
 
-###############################################################################
-#                           CALIBRATION LOGIC
-###############################################################################
-CALIBRATION_FILE = Path("/home/boat/Desktop/python/TAFLAB_boatpi_roshumble/src/mpu_calibration.json")
+# ###############################################################################
+# #                           CALIBRATION LOGIC
+# ###############################################################################
+# CALIBRATION_FILE = Path("/home/boat/Desktop/python/TAFLAB_boatpi_roshumble/src/mpu_calibration.json")
 
-def save_calibration():
-    """Saves calibration data to a file."""
-    calibration_data = {
-        "abias": mpu.abias,
-        "gbias": mpu.gbias,
-        "mbias": mpu.mbias
-    }
-    with open(CALIBRATION_FILE, "w") as f:
-        json.dump(calibration_data, f, indent=4)
-    print("Calibration saved.")
+# def save_calibration():
+#     """Saves calibration data to a file."""
+#     calibration_data = {
+#         "abias": mpu.abias,
+#         "gbias": mpu.gbias,
+#         "mbias": mpu.mbias
+#     }
+#     with open(CALIBRATION_FILE, "w") as f:
+#         json.dump(calibration_data, f, indent=4)
+#     print("Calibration saved.")
 
-def load_calibration():
-    """Loads calibration data from file."""
-    try:
-        with open(CALIBRATION_FILE, "r") as f:
-            calibration_data = json.load(f)
-            mpu.abias = calibration_data.get("abias", mpu.abias)
-            mpu.gbias = calibration_data.get("gbias", mpu.gbias)
-            mpu.mbias = calibration_data.get("mbias", mpu.mbias)
-        print("Calibration loaded successfully.")
-    except FileNotFoundError:
-        print("No calibration file found. Using default values.")
-    except json.JSONDecodeError as e:
-        print(f"Error parsing calibration file: {e}")
+# def load_calibration():
+#     """Loads calibration data from file."""
+#     try:
+#         with open(CALIBRATION_FILE, "r") as f:
+#             calibration_data = json.load(f)
+#             mpu.abias = calibration_data.get("abias", mpu.abias)
+#             mpu.gbias = calibration_data.get("gbias", mpu.gbias)
+#             mpu.mbias = calibration_data.get("mbias", mpu.mbias)
+#         print("Calibration loaded successfully.")
+#     except FileNotFoundError:
+#         print("No calibration file found. Using default values.")
+#     except json.JSONDecodeError as e:
+#         print(f"Error parsing calibration file: {e}")
 
-load_calibration()
+# load_calibration()
 
-@app.route('/calibrate_imu', methods=['POST'])
-@login_required
-def calibrate_imu():
-    """
-    Calibrates the accelerometer and gyroscope (IMU).
-    Keep the sensor still during this calibration.
-    """
-    try:
-        print("Calibrating Accelerometer and Gyroscope... Keep sensor still.")
-        mpu.calibrate()
-        save_calibration()
-        return {"status": "success", "message": "IMU calibration complete."}, 200
-    except Exception as e:
-        return {"status": "error", "message": f"IMU calibration failed: {e}"}, 500
+# @app.route('/calibrate_imu', methods=['POST'])
+# @login_required
+# def calibrate_imu():
+#     """
+#     Calibrates the accelerometer and gyroscope (IMU).
+#     Keep the sensor still during this calibration.
+#     """
+#     try:
+#         print("Calibrating Accelerometer and Gyroscope... Keep sensor still.")
+#         mpu.calibrate()
+#         save_calibration()
+#         return {"status": "success", "message": "IMU calibration complete."}, 200
+#     except Exception as e:
+#         return {"status": "error", "message": f"IMU calibration failed: {e}"}, 500
 
-@app.route('/calibrate_magnetometer', methods=['POST'])
-@login_required
-def calibrate_magnetometer():
-    """
-    Calibrates the magnetometer.
-    Move the sensor in a figure-eight pattern.
-    """
-    try:
-        print("Calibrating Magnetometer... Move the sensor in a figure-eight pattern.")
-        mpu.calibrateAK8963()
-        save_calibration()
-        return {"status": "success", "message": "Magnetometer calibration complete."}, 200
-    except Exception as e:
-        return {"status": "error", "message": f"Magnetometer calibration failed: {e}"}, 500
+# @app.route('/calibrate_magnetometer', methods=['POST'])
+# @login_required
+# def calibrate_magnetometer():
+#     """
+#     Calibrates the magnetometer.
+#     Move the sensor in a figure-eight pattern.
+#     """
+#     try:
+#         print("Calibrating Magnetometer... Move the sensor in a figure-eight pattern.")
+#         mpu.calibrateAK8963()
+#         save_calibration()
+#         return {"status": "success", "message": "Magnetometer calibration complete."}, 200
+#     except Exception as e:
+#         return {"status": "error", "message": f"Magnetometer calibration failed: {e}"}, 500
 
 ###############################################################################
 #                           RUN THE FLASK APP
