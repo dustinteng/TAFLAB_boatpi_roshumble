@@ -71,7 +71,40 @@ def generate_launch_description():
         output='screen',
     )
 
+    auto_waypoint_queue = Node(
+        package='boat_control_system_final',
+        executable='waypoint_queue_node',
+        name='waypoint_queue_node',
+        output='screen',
+    )
 
+    auto_coordinate_calculations = Node(
+        package='boat_control_system_final',
+        executable='coordinate_calculations_node',
+        name='coordinate_calculations_node',
+        output='screen',
+    )
+
+    auto_rudder_control = Node(
+        package='boat_control_system_final',
+        executable='rudder_servo_control_node',
+        name='rudder_servo_control_node',
+        output='screen',
+    )
+
+    auto_sail_control = Node(
+        package='boat_control_system_final',
+        executable='sail_servo_control_node',
+        name='sail_servo_control_node',
+        output='screen',
+    )
+
+    test_publisher = Node(
+        package = 'test_publisher',
+        executable = 'test_publisher',
+        name='test_publisher',
+        output='screen',
+    )
 
     return LaunchDescription([
         as5600_node,
@@ -84,5 +117,10 @@ def generate_launch_description():
         autonomous_control,
         # mpu9250_node,
         witmotionmag_node,
+        auto_waypoint_queue,
+        auto_coordinate_calculations,
+        auto_rudder_control,
+        auto_sail_control,
+        test_publisher,
     ])
 

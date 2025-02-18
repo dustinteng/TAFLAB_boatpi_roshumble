@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>test_publisher</name>
+  <version>0.0.0</version>
+  <description>A test publisher node for ROS 2</description>
+  <maintainer email="root@todo.todo">root</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Dependencies for building -->
+  <buildtool_depend>ament_python</buildtool_depend>
+  <build_depend>rclpy</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <!-- Dependencies for exporting -->
+  <build_export_depend>rclpy</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+
+  <!-- Runtime dependencies -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
