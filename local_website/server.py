@@ -13,9 +13,9 @@ import re
 from functools import wraps
 
 # For MPU and I2C bypass
-import smbus2
-from mpu9250_jmdev.registers import *
-from mpu9250_jmdev.mpu_9250 import MPU9250
+# import smbus2
+# from mpu9250_jmdev.registers import *
+# from mpu9250_jmdev.mpu_9250 import MPU9250
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'  # Replace with a secure random key
@@ -54,6 +54,7 @@ def load_config():
     default_config = {
         'boat_name': '',
         'xbee_port': '',
+        'mag_port' : '',
         'mag_offset': [-3.78, 4.096, 2.163],
         'mag_matrix': [
             [1.00, 0.0078, -0.011],
@@ -235,16 +236,18 @@ def update_hostapd_config(new_ssid, new_password):
 ###############################################################################
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    """Main index page for boat name and XBee port selection."""
+    """Main index page for boat name, XBee port, and Magnetometer port selection."""
     config = load_config()
     if request.method == 'POST':
         boat_name = request.form.get('boat_name', '')
         selected_port = request.form.get('xbee_port', '')
+        mag_port = request.form.get('mag_port', '')  # Retrieve mag_port from form
         ap_ssid = request.form.get('ap_ssid', '').strip()
         ap_password = request.form.get('ap_password', '').strip()
 
         config['boat_name'] = boat_name
         config['xbee_port'] = selected_port
+        config['mag_port'] = mag_port  # Save mag_port in config
         save_config(config)
 
         if ap_ssid and ap_password:
@@ -253,15 +256,17 @@ def index():
         return redirect(url_for('index'))
     else:
         ports = get_serial_ports()
-        current_port = config.get('xbee_port', '')
+        xbee_port = config.get('xbee_port', '')
         boat_name = config.get('boat_name', '')
+        mag_port = config.get('mag_port', '')  # Get mag_port from config
         ap_active, ap_ssid = get_ap_status()
 
         return render_template(
             'index.html',
             ports=ports,
-            current_port=current_port,
+            xbee_port=xbee_port,
             boat_name=boat_name,
+            mag_port=mag_port,
             ap_active=ap_active,
             ap_ssid=ap_ssid
         )
@@ -505,4 +510,4 @@ def calibrate_magnetometer():
 #                           RUN THE FLASK APP
 ###############################################################################
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=3334)
+    app.run(host='0.0.0.0', port=3333)

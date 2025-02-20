@@ -43,12 +43,23 @@
                 <label for="boat_name">Boat Name: (first time bootup? - change me)</label>
                 <input type="text" id="boat_name" name="boat_name" value="{{ boat_name }}" required>
 
-                <label for="xbee_port">Xbee Port: - ttyXbee has been set. should connect to the correct one</label>
+                <!-- XBee Port Selection -->
+                <label for="xbee_port">XBee Port:</label>
                 <select name="xbee_port" id="xbee_port">
-                    <!-- Explicitly add the /ttyXbee option -->
-                    <option value="/ttyXbee" {% if "/dev/ttyXbee" == current_port %}selected{% endif %}>/dev/ttyXbee</option>
+                    <!-- Explicitly add the /dev/ttyXbee option -->
+                    <option value="/dev/ttyXbee" {% if "/dev/ttyXbee" == xbee_port %}selected{% endif %}>/dev/ttyXbee</option>
                     {% for port in ports %}
-                        <option value="{{ port }}" {% if port == current_port %}selected{% endif %}>{{ port }}</option>
+                        <option value="{{ port }}" {% if port == xbee_port %}selected{% endif %}>{{ port }}</option>
+                    {% endfor %}
+                </select>
+
+                <!-- Magnetometer Port Selection -->
+                <label for="mag_port">Magnetometer Port:</label>
+                <select name="mag_port" id="mag_port">
+                    <!-- Explicitly add /dev/ttyUSB0 in case it's not listed in `ports` -->
+                    <option value=mag_port {% if "/dev/ttyUSB0" == mag_port %}selected{% endif %}>/dev/ttyUSB0</option>
+                    {% for port in ports %}
+                        <option value="{{ port }}" {% if port == mag_port %}selected{% endif %}>{{ port }}</option>
                     {% endfor %}
                 </select>
             </div>
