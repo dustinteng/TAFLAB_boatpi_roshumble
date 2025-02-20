@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from taflab_msgs.msg import ControlData, CalibrationData  # Add CalibrationData message for calibration inputs
 import RPi.GPIO as GPIO
+import pigpio
 import time
 from queue import Queue
 import threading
@@ -14,24 +15,37 @@ class BoatControlNode(Node):
         super().__init__('boat_control_node')
 
         # GPIO setup for each servo
-        self.RUDDER_PIN = 33
-        self.SAIL_PIN = 32
-        self.ESC_PIN = 12
-        GPIO.setwarnings(False)
-        GPIO.setmode(GPIO.BOARD)
+        self.RUDDER_PIN = 18
+        self.SAIL_PIN = 12
+        self.ESC_PIN = 13
         
-        # Set up GPIO outputs for each servo
-        GPIO.setup(self.RUDDER_PIN, GPIO.OUT)
-        GPIO.setup(self.SAIL_PIN, GPIO.OUT)
-        GPIO.setup(self.ESC_PIN, GPIO.OUT)
+        self.rudder_pwm = pigpio.pi('localhost', 8888)
+        self.rudder_pwm.set_mode(self.RUDDER_PIN, pigpio.OUTPUT)
+        self.rudder_pwm.set_PWM_frequency(self.RUDDER_PIN, 50)
         
-        # PWM setup
-        self.rudder_pwm = GPIO.PWM(self.RUDDER_PIN, 50)
-        self.sail_pwm = GPIO.PWM(self.SAIL_PIN, 50)
-        self.esc_pwm = GPIO.PWM(self.ESC_PIN, 50)
-        self.rudder_pwm.start(0)
-        self.sail_pwm.start(0)
-        self.esc_pwm.start(0)
+        self.sail_pwm = pigpio.pi()
+        self.sail_pwm.set_mode(self.SAIL_PIN, pigpio.OUTPUT)
+        self.sail_pwm.set_PWM_frequency(self.SAIL_PIN, 50)
+        
+        self.esc_pwm = pigpio.pi()
+        self.esc_pwm.set_mode(self.ESC_PIN, pigpio.OUTPUT)
+        self.esc_pwm.set_PWM_frequency(self.ESC_PIN, 50)
+        
+        # GPIO.setwarnings(False)
+        # GPIO.setmode(GPIO.BOARD)
+        
+        # # Set up GPIO outputs for each servo
+        # GPIO.setup(self.RUDDER_PIN, GPIO.OUT)
+        # GPIO.setup(self.SAIL_PIN, GPIO.OUT)
+        # GPIO.setup(self.ESC_PIN, GPIO.OUT)
+        
+        # # PWM setup
+        # self.rudder_pwm = GPIO.PWM(self.RUDDER_PIN, 50)
+        # self.sail_pwm = GPIO.PWM(self.SAIL_PIN, 50)
+        # self.esc_pwm = GPIO.PWM(self.ESC_PIN, 50)
+        # self.rudder_pwm.start(0)
+        # self.sail_pwm.start(0)
+        # self.esc_pwm.start(0)
         
         self.currentSailPosition = 0
         self.currentRudderPosition = 0
@@ -117,11 +131,11 @@ class BoatControlNode(Node):
             self.currentRudderPosition, 
             min_value=self.calibration_data['rudder_min'], 
             max_value=self.calibration_data['rudder_max'], 
-            min_duty=2, 
-            max_duty=12
+            min_duty=500, 
+            max_duty=2500
         )
-        self.rudder_pwm.ChangeDutyCycle((12 - duty_cycle))
-        self.get_logger().info(f"Rudder set to: {value} (Duty Cycle: {duty_cycle})")
+        self.rudder_pwm.set_servo_pulsewidth(self.RUDDER_PIN, (3000 - duty_cycle))
+        # self.get_logger().info(f"Rudder set to: {value} (Duty Cycle: {duty_cycle})")
 
     def control_sail(self, value):
         if (abs(self.currentSailPosition - value) > 5):
@@ -133,26 +147,26 @@ class BoatControlNode(Node):
             self.currentSailPosition, 
             min_value=self.calibration_data['sail_min'], 
             max_value=self.calibration_data['sail_max'], 
-            min_duty=2, 
-            max_duty=12
+            min_duty=500, 
+            max_duty=2500
         )
-        self.sail_pwm.ChangeDutyCycle(duty_cycle)
+        self.sail_pwm.set_servo_pulsewidth(self.SAIL_PIN, duty_cycle)
 
         sail_msg = Float32()
         sail_msg.data = float(self.currentSailPosition)
         self.currentSailPublisher.publish(sail_msg)
-        self.get_logger().info(f"Sail set to: {self.currentSailPosition} (Duty Cycle: {duty_cycle})")
+        # self.get_logger().info(f"Sail set to: {self.currentSailPosition} (Duty Cycle: {duty_cycle})")
 
     def control_esc(self, value):
         duty_cycle = self.map_to_duty_cycle(
             value, 
             min_value=self.calibration_data['esc_min'], 
             max_value=self.calibration_data['esc_max'], 
-            min_duty=2, 
-            max_duty=12
+            min_duty=500, 
+            max_duty=2500
         )
-        self.esc_pwm.ChangeDutyCycle(duty_cycle)
-        self.get_logger().info(f"ESC set to: {value} (Duty Cycle: {duty_cycle})")
+        self.esc_pwm.set_servo_pulsewidth(self.ESC_PIN, duty_cycle)
+        # self.get_logger().info(f"ESC set to: {value} (Duty Cycle: {duty_cycle})")
 
     def map_to_duty_cycle(self, value, min_value, max_value, min_duty, max_duty):
         value = max(min_value, min(max_value, value))
