@@ -93,6 +93,7 @@ class MainLogicNode(Node):
         self.create_subscription(Float32, '/rud_cmd_auto', self.rud_callback_auto, 10)
         self.create_subscription(Float32, '/sail_cmd_auto', self.sail_callback_auto, 10)
         self.create_subscription(Float32, '/esc_cmd_auto', self.esc_callback_auto, 10)
+        self.create_subscription(Float32, '/currentSailPos', self.sail_callback_man, 10)
 
         # Message queue and worker thread for XBee communication
         self.message_queue = Queue()
@@ -314,6 +315,13 @@ class MainLogicNode(Node):
         else:
             self.publish_manual_control()
 
+    def sail_callback_man(self, msg):
+        self.sail_auto = msg.data
+        if not self.in_autonomous_mode:
+            self.publish_manual_control()
+        else:
+            self.publish_autonomous_control()
+            
     def esc_callback_auto(self, msg):
         self.esc_auto = msg.data
         self.publish_autonomous_control()

@@ -15,7 +15,7 @@ class AutonomousControlNode(Node):
         self.heading = 0  # Current heading of the boat in degrees
         self.windAngle = 0  # Wind angle relative to the boat in degrees
         self.straight = 90  # Neutral rudder position
-        self.range = 25  # Range for one-sided rudder movement in degrees
+        self.range = 40  # Range for one-sided rudder movement in degrees
         self.currentSailPos = 0
 
         # Subscriptions
@@ -36,7 +36,6 @@ class AutonomousControlNode(Node):
         currentLat = msg.latitude
         currentLon = msg.longitude
 
-        self.get_logger().info(f"Length set to: {len(self.waypoints)}")
         if len(self.waypoints) > 0:
             targetLat, targetLon = self.waypoints[0]
             distance = self.calculateDistance(currentLat, currentLon, targetLat, targetLon)

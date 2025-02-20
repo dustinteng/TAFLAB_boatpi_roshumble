@@ -12,6 +12,8 @@ import lib.device_model as deviceModel
 from lib.data_processor.roles.jy901s_dataProcessor import JY901SDataProcessor
 from lib.protocol_resolver.roles.wit_protocol_resolver import WitProtocolResolver
 
+config_file = "/home/boat/Desktop/python/TAFLAB_boatpi_roshumble/src/config.json"
+
 class WitMotionMagNode(Node):
     
     def __init__(self):
@@ -24,6 +26,9 @@ class WitMotionMagNode(Node):
         # Timer (publishes data at 10Hz)
         self.timer = self.create_timer(0.1, self.updateData)  # Every 0.1s
 
+        # magnetometer value
+        self.mag_port = self.get_mag_port()
+        
         # Store latest magnetometer readings
         self.last_mx = 0.0
         self.last_my = 0.0
@@ -34,7 +39,7 @@ class WitMotionMagNode(Node):
         self.corrected_mag_vector = np.array([0.0, 0.0, 0.0])  
 
         # Calibration file path
-        self.calibration_file = "/home/boat/Desktop/python/TAFLAB_boatpi_roshumble/src/config.json"
+        self.config_file = "/home/boat/Desktop/python/TAFLAB_boatpi_roshumble/src/config.json"
 
         # Default calibration values
         self.mag_offset = np.zeros(3)  # Offset vector [offset_x, offset_y, offset_z]
@@ -54,30 +59,44 @@ class WitMotionMagNode(Node):
 
         # Set serial port based on OS
         if platform.system().lower() == 'linux':
-            self.device.serialConfig.portName = "/dev/ttyMag"
+            self.device.serialConfig.portName = self.mag_port
         else:
-            self.device.serialConfig.portName = "/dev/ttyUSB1"
-
+            self.device.serialConfig.portName = "/dev/ttyUSB0"
+            print("USB0 not getting the mag_port from config")
         self.device.serialConfig.baud = 9600
         self.device.openDevice()
 
         # Register update callback (fires whenever new sensor data is available)
         self.device.dataProcessor.onVarChanged.append(self.onUpdate)
 
+    def get_mag_port():
+        try:
+            with open(config_file, 'r') as file:
+                config = json.load(file)  # Load JSON file as a dictionary
+                mag_port = config.get("mag_port", "Not Found")  # Get mag_port or return "Not Found"
+                return mag_port
+        except FileNotFoundError:
+            print("Error: Config file not found.")
+            return None
+        except json.JSONDecodeError:
+            print("Error: Failed to decode JSON.")
+            return None
+
+
     def load_calibration(self):
         """
         Loads calibration data from 'wit_calibration.json'.
         If the file doesn't exist, it creates a default one.
         """
-        if os.path.exists(self.calibration_file):
+        if os.path.exists(self.config_file):
             try:
-                with open(self.calibration_file, 'r') as f:
+                with open(self.config_file, 'r') as f:
                     data = json.load(f)
                     self.mag_offset = np.array(data.get("mag_offset", [0.0, 0.0, 0.0]))
                     self.mag_matrix = np.array(data.get("mag_matrix", np.eye(3).tolist()))
                     self.heading_offset = data.get("heading_offset", 0.0)
 
-                    self.get_logger().info(f"Loaded calibration values from: {self.calibration_file}.")
+                    self.get_logger().info(f"Loaded calibration values from: {self.config_file}.")
             except Exception as e:
                 self.get_logger().error(f"Error loading calibration file: {e}")
         else:
