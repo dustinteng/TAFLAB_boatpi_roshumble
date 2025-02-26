@@ -12,12 +12,13 @@ class AS5600Node(Node):
         super().__init__('as5600_node')
         self.bus = SMBus(1)  # Raspberry Pi I2C bus
         self.angle_publisher = self.create_publisher(Float32, 'as5600_angle', 10)
-        self.timer = self.create_timer(0.1, self.read_angle)  # Publish every 0.1 seconds
+        self.angle_total_publisher = self.create_publisher(Float32, 'windvane_and_sail_heading',10)
+        self.timer = self.create_timer(0.25, self.read_angle)  # Publish every 0.1 seconds
         
         self.currentAngle = 0
         self.currentSailPos = 0
         self.reverse = True
-        self.offset = -2300
+        self.offset = -2078
         
         self.create_subscription(Float32, '/currentSailPos', self.saveCurrentSailPos, 10)
         
@@ -36,7 +37,7 @@ class AS5600Node(Node):
                 raw_angle += 4096
             elif raw_angle > 4096:
                 raw_angle -= 4096
-            self.get_logger().info(f"Angle Raw Value: {raw_angle}")
+            # self.get_logger().info(f"Angle Raw Value: {raw_angle}")
             windVaneAngle = ((raw_angle) / 4096) * 360.0  # AS5600 has 12-bit resolution
             
             if self.reverse:
@@ -48,10 +49,14 @@ class AS5600Node(Node):
             elif self.currentAngle > 360:
                 self.currentAngle -= 360
 
+
             # Publish the angle
-            self.angle_publisher.publish(Float32(data=self.currentAngle))
+            self.angle_publisher.publish(Float32(data=self.windVaneAngle))
+            self.angle_total_publisher.publish(Float32(data=self.currentAngle))
+
+            self.get_logger().info(f"Windvane Angle: {windVaneAngle:.2f}")
             self.get_logger().info(f"Sail position: {self.currentSailPos:.2f}")
-            self.get_logger().info(f"Published angle: {self.currentAngle:.2f} degrees")
+            self.get_logger().info(f"total angle windvane + sail: {self.currentAngle:.2f} degrees")
 
         except Exception as e:
             self.get_logger().error(f"Error reading angle: {e}")
