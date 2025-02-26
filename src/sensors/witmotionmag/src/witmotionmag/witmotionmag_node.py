@@ -69,7 +69,7 @@ class WitMotionMagNode(Node):
         # Register update callback (fires whenever new sensor data is available)
         self.device.dataProcessor.onVarChanged.append(self.onUpdate)
 
-    def get_mag_port():
+    def get_mag_port(self):
         try:
             with open(config_file, 'r') as file:
                 config = json.load(file)  # Load JSON file as a dictionary

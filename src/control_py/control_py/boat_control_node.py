@@ -1,6 +1,7 @@
+#!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from taflab_msgs.msg import ControlData, CalibrationData  # Add CalibrationData message for calibration inputs
+from taflab_msgs.msg import ControlData, CalibrationData  # Still subscribed, if needed
 import RPi.GPIO as GPIO
 import pigpio
 import time
@@ -19,6 +20,7 @@ class BoatControlNode(Node):
         self.SAIL_PIN = 12
         self.ESC_PIN = 13
         
+        # Initialize pigpio for each servo
         self.rudder_pwm = pigpio.pi('localhost', 8888)
         self.rudder_pwm.set_mode(self.RUDDER_PIN, pigpio.OUTPUT)
         self.rudder_pwm.set_PWM_frequency(self.RUDDER_PIN, 50)
@@ -31,40 +33,26 @@ class BoatControlNode(Node):
         self.esc_pwm.set_mode(self.ESC_PIN, pigpio.OUTPUT)
         self.esc_pwm.set_PWM_frequency(self.ESC_PIN, 50)
         
-        # GPIO.setwarnings(False)
-        # GPIO.setmode(GPIO.BOARD)
-        
-        # # Set up GPIO outputs for each servo
-        # GPIO.setup(self.RUDDER_PIN, GPIO.OUT)
-        # GPIO.setup(self.SAIL_PIN, GPIO.OUT)
-        # GPIO.setup(self.ESC_PIN, GPIO.OUT)
-        
-        # # PWM setup
-        # self.rudder_pwm = GPIO.PWM(self.RUDDER_PIN, 50)
-        # self.sail_pwm = GPIO.PWM(self.SAIL_PIN, 50)
-        # self.esc_pwm = GPIO.PWM(self.ESC_PIN, 50)
-        # self.rudder_pwm.start(0)
-        # self.sail_pwm.start(0)
-        # self.esc_pwm.start(0)
-        
-        self.currentSailPosition = 0
-        self.currentRudderPosition = 0
+        # Initial positions/targets
+        self.currentSailPosition = 90    # Commanded value in degrees (for sail: 0 to 180)
+        self.currentRudderPosition = 0  # Commanded value in degrees (for rudder: -90 to 90)
         self.targetSailPos = 0
         self.targetRudderPos = 0
         self.motorSpeed = 0
-        
+
+        # Load duty-cycle limits from config file
+        self.load_config()  # Sets: self.minDutyRudder, self.midDutyRudder, self.maxDutyRudder,
+                             #       self.minDutySail, self.midDutySail, self.maxDutySail
+
         self.currentSailPublisher = self.create_publisher(Float32, '/currentSailPos', 10)
         
-        # Load calibration data
-        self.calibration_data = self.load_calibration_data()
-        
-        # Queue for servo commands
+        # Queue for servo commands and worker thread
         self.command_queue = Queue()
         self.worker_thread = threading.Thread(target=self.process_commands)
         self.worker_thread.daemon = True
         self.worker_thread.start()
 
-        # Subscriber to listen to control commands
+        # Subscribers to listen to control and (optionally) calibration commands
         self.subscription = self.create_subscription(
             ControlData,
             '/boatcontrol',
@@ -72,7 +60,7 @@ class BoatControlNode(Node):
             10
         )
         
-        # Subscriber for calibration data
+        # Calibration subscription (if needed)
         self.calibration_subscription = self.create_subscription(
             CalibrationData,
             '/calibration',
@@ -82,37 +70,39 @@ class BoatControlNode(Node):
 
         self.get_logger().info("BoatControlNode initialized and listening to /boatcontrol and /calibration")
 
+    def load_config(self):
+        """Load servo duty-cycle limits from config.json."""
+        config_path = os.path.join(os.path.dirname(__file__), "config.json")
+        if os.path.exists(config_path):
+            with open(config_path, 'r') as f:
+                config = json.load(f)
+            servo_config = config.get("servo_config", {})
+            self.minDutyRudder = servo_config.get("minDutyRudder", 1041)
+            self.midDutyRudder = servo_config.get("midDutyRudder", 1544)
+            self.maxDutyRudder = servo_config.get("maxDutyRudder", 2027)
+            self.minDutySail   = servo_config.get("minDutySail", 1137)
+            self.midDutySail   = servo_config.get("midDutySail", 1642)
+            self.maxDutySail   = servo_config.get("maxDutySail", 2107)
+            self.get_logger().info(f"Config loaded: Rudder [{self.minDutyRudder}, {self.midDutyRudder}, {self.maxDutyRudder}], "
+                                   f"Sail [{self.minDutySail}, {self.midDutySail}, {self.maxDutySail}]")
+        else:
+            # Use default values if config file is missing
+            self.minDutyRudder = 1041
+            self.midDutyRudder = 1544
+            self.maxDutyRudder = 2027
+            self.minDutySail   = 1137
+            self.midDutySail   = 1642
+            self.maxDutySail   = 2107
+            self.get_logger().warn("Config file not found. Using default servo duty values.")
+
     def control_callback(self, msg):
-        # self.command_queue.put(('rudder', msg.servo_rudder))
-        # self.command_queue.put(('sail', msg.servo_sail))
-        # self.command_queue.put(('esc', msg.esc))
         self.targetRudderPos = msg.servo_rudder
         self.targetSailPos = msg.servo_sail
         self.motorSpeed = msg.esc
 
     def calibration_callback(self, msg):
-        # Save min and max angles from the calibration message
-        self.calibration_data = {
-            'rudder_min': msg.rudder_min,
-            'rudder_max': msg.rudder_max,
-            'sail_min': msg.sail_min,
-            'sail_max': msg.sail_max,
-            'esc_min': msg.esc_min,
-            'esc_max': msg.esc_max
-        }
-        self.save_calibration_data()
-        self.get_logger().info("Calibration data updated and saved")
-
-    def get_calibration_data(self, boat_id):
-        # Load calibration data specific to this boat (from file or memory)
-        file_path = f"/home/boat/{boat_id}_calibration.json"
-        if os.path.exists(file_path):
-            with open(file_path, 'r') as f:
-                calibration_data = json.load(f)
-            return calibration_data
-        else:
-            return None
-
+        # Optional: process calibration messages if desired.
+        self.get_logger().info("Received calibration message (not used for duty limits in this version)")
 
     def process_commands(self):
         while True:
@@ -122,89 +112,76 @@ class BoatControlNode(Node):
             time.sleep(0.03)  # Small delay to reduce CPU usage
 
     def control_rudder(self, value):
-        if (abs(self.currentRudderPosition - value) > 5):
-            if (self.currentRudderPosition < value):
+        # Smoothly approach the target rudder angle (range: -90 to 90)
+        if abs(self.currentRudderPosition - value) > 5:
+            if self.currentRudderPosition < value:
                 self.currentRudderPosition += 1
             else:
                 self.currentRudderPosition -= 1
-        duty_cycle = self.map_to_duty_cycle(
-            self.currentRudderPosition, 
-            min_value=self.calibration_data['rudder_min'], 
-            max_value=self.calibration_data['rudder_max'], 
-            min_duty=500, 
-            max_duty=2500
-        )
-        self.rudder_pwm.set_servo_pulsewidth(self.RUDDER_PIN, (3000 - duty_cycle))
-        # self.get_logger().info(f"Rudder set to: {value} (Duty Cycle: {duty_cycle})")
+        duty_cycle = self.map_rudder_duty(self.currentRudderPosition)
+        self.rudder_pwm.set_servo_pulsewidth(self.RUDDER_PIN, duty_cycle)
 
     def control_sail(self, value):
-        if (abs(self.currentSailPosition - value) > 5):
-            if (self.currentSailPosition < value):
+        # Smoothly approach the target sail angle (range: 0 to 180)
+        if abs(self.currentSailPosition - value) > 5:
+            if self.currentSailPosition < value:
                 self.currentSailPosition += 1
             else:
                 self.currentSailPosition -= 1
-        duty_cycle = self.map_to_duty_cycle(
-            self.currentSailPosition, 
-            min_value=self.calibration_data['sail_min'], 
-            max_value=self.calibration_data['sail_max'], 
-            min_duty=500, 
-            max_duty=2500
-        )
+        duty_cycle = self.map_sail_duty(self.currentSailPosition)
         self.sail_pwm.set_servo_pulsewidth(self.SAIL_PIN, duty_cycle)
 
         sail_msg = Float32()
         sail_msg.data = float(self.currentSailPosition)
         self.currentSailPublisher.publish(sail_msg)
-        # self.get_logger().info(f"Sail set to: {self.currentSailPosition} (Duty Cycle: {duty_cycle})")
 
     def control_esc(self, value):
+        # For ESC, we use a simple linear mapping (range: -100 to 100)
         duty_cycle = self.map_to_duty_cycle(
             value, 
-            min_value=self.calibration_data['esc_min'], 
-            max_value=self.calibration_data['esc_max'], 
+            min_value=-100, 
+            max_value=100, 
             min_duty=500, 
             max_duty=2500
         )
         self.esc_pwm.set_servo_pulsewidth(self.ESC_PIN, duty_cycle)
-        # self.get_logger().info(f"ESC set to: {value} (Duty Cycle: {duty_cycle})")
+
+    def map_rudder_duty(self, angle):
+        """
+        Map rudder angle (in degrees, range: -90 to 90) to a PWM duty cycle.
+        Uses piecewise linear mapping:
+          -90° -> minDutyRudder
+           0°  -> midDutyRudder
+          90°  -> maxDutyRudder
+        """
+        angle = -angle
+        if angle < 0:
+            # Map from -90 to 0
+            duty = self.minDutyRudder + ((angle + 90) / 90) * (self.midDutyRudder - self.minDutyRudder)
+        else:
+            # Map from 0 to 90
+            duty = self.midDutyRudder + (angle / 90) * (self.maxDutyRudder - self.midDutyRudder)
+        return round(duty, 2)
+
+    def map_sail_duty(self, angle):
+        """
+        Map sail angle (in degrees, range: 0 to 180) to a PWM duty cycle.
+        Uses piecewise linear mapping:
+          0°   -> minDutySail
+          90°  -> midDutySail
+          180° -> maxDutySail
+        """
+        if angle < 90:
+            duty = self.minDutySail + (angle / 90) * (self.midDutySail - self.minDutySail)
+        else:
+            duty = self.midDutySail + ((angle - 90) / 90) * (self.maxDutySail - self.midDutySail)
+        return round(duty, 2)
 
     def map_to_duty_cycle(self, value, min_value, max_value, min_duty, max_duty):
+        # A simple linear mapping if needed elsewhere.
         value = max(min_value, min(max_value, value))
         duty_cycle = min_duty + (value - min_value) * (max_duty - min_duty) / (max_value - min_value)
         return round(duty_cycle, 2)
-
-    def save_calibration_data(self):
-        try:
-            file_path = '/home/boat/Desktop/src/control_py/control_py/calibration_data.json'
-            self.get_logger().info(f"Current working directory: {os.getcwd()}")
-            with open('calibration_data.json', 'w') as f:
-                json.dump(self.calibration_data, f)
-            self.get_logger().info("Calibration data saved successfully")
-        except Exception as e:
-            self.get_logger().error(f"Failed to save calibration data: {e}")
-
-
-    def load_calibration_data(self):
-        # Define the full path to the calibration file
-        file_path = '/home/boat/Desktop/src/calibration_data.json'
-        # Debug: Print the file path to confirm where it is looking
-        self.get_logger().info(f"Attempting to load calibration data from: {file_path}")
-        
-        if os.path.exists(file_path):
-            with open(file_path, 'r') as f:
-                self.get_logger().info("Calibration data found and loaded.")
-                return json.load(f)
-        else:
-            self.get_logger().warning("Calibration data file not found. Using default values.")
-            return {
-                'rudder_min': 0,
-                'rudder_max': 360,
-                'sail_min': 0,
-                'sail_max': 360,
-                'esc_min': -100,
-                'esc_max': 100
-            }
-
 
     def destroy_node(self):
         self.rudder_pwm.stop()

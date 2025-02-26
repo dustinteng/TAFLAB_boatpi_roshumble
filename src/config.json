@@ -9,21 +9,17 @@
         2.163
     ],
     "mag_matrix": [
-        [
-            1.0,
-            0.0078,
-            -0.011
-        ],
-        [
-            0.0078,
-            0.979,
-            0.0669
-        ],
-        [
-            -0.011,
-            0.0669,
-            1.0453
-        ]
+        [1.0, 0.0078, -0.011],
+        [0.0078, 0.979, 0.0669],
+        [-0.011, 0.0669, 1.0453]
     ],
-    "heading_offset": 0.0
+    "heading_offset": 0.0,
+    "servo_config": {
+        "minDutyRudder": 1041,
+        "midDutyRudder": 1544,
+        "maxDutyRudder": 2027,
+        "minDutySail": 1137,
+        "midDutySail": 1642,
+        "maxDutySail": 2107
+    }
 }

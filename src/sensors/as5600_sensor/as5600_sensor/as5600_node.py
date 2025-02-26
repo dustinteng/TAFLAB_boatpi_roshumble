@@ -51,7 +51,7 @@ class AS5600Node(Node):
 
 
             # Publish the angle
-            self.angle_publisher.publish(Float32(data=self.windVaneAngle))
+            self.angle_publisher.publish(Float32(data=windVaneAngle))
             self.angle_total_publisher.publish(Float32(data=self.currentAngle))
 
             self.get_logger().info(f"Windvane Angle: {windVaneAngle:.2f}")

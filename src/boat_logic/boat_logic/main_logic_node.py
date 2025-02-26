@@ -66,7 +66,7 @@ class MainLogicNode(Node):
 
         # Latest autonomous control values
         self.rudder_auto = 0.0
-        self.sail_auto = 0.0
+        self.sail_auto = 90.0
         self.esc_auto = 0.0
 
         # Latest manual control values
