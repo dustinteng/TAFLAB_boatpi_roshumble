@@ -1,0 +1,2 @@
+/usr/bin/ar qc libRudderServoControlNodeLib.a CMakeFiles/RudderServoControlNodeLib.dir/src/RudderServoControlNode.cpp.o
+/usr/bin/ranlib libRudderServoControlNodeLib.a

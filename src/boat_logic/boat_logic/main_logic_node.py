@@ -168,6 +168,7 @@ class MainLogicNode(Node):
             self.boat.target_lng = data.get('tlng', self.boat.lng)
             self.boat.status = "autonomous"
             self.publish_target_coordinates()
+            self.publish_autonomous_control()
             self.get_logger().info("Autonomous mode: Target coordinates updated.")
         else:
             self.get_logger().warning(f"Unknown mode '{mode}' received. Ignoring command.")
