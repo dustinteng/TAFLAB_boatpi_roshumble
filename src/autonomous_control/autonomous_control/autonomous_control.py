@@ -16,14 +16,12 @@ class AutonomousControlNode(Node):
         self.windAngle = 0  # Wind angle relative to the boat in degrees
         self.straight = 90  # Neutral rudder position
         self.range = 25  # Range for one-sided rudder movement in degrees
-        self.currentSailPos = 0
 
         # Subscriptions
         self.create_subscription(NavSatFix, '/gps/fix', self.navigateToDestination, 10)
         self.create_subscription(NavSatFix, '/boat/target_coordinates', self.setNewTarget, 10)
+        self.create_subscription(MagneticField, '/magnetic_field', self.setHeading, 10)
         self.create_subscription(Float32, '/as5600_angle', self.setWindAngle, 10)
-        self.create_subscription(Float32, '/witmotion_heading', self.setHeading, 10)
-
 
         # Publishers
         self.rudderPublisher = self.create_publisher(Float32, '/rud_cmd_auto', 10)
@@ -36,8 +34,7 @@ class AutonomousControlNode(Node):
         currentLat = msg.latitude
         currentLon = msg.longitude
 
-        self.get_logger().info(f"Length set to: {len(self.waypoints)}")
-        if len(self.waypoints) > 0:
+        if self.waypoints:
             targetLat, targetLon = self.waypoints[0]
             distance = self.calculateDistance(currentLat, currentLon, targetLat, targetLon)
             targetBearing = self.calculateBearing(currentLat, currentLon, targetLat, targetLon)
@@ -66,10 +63,7 @@ class AutonomousControlNode(Node):
         else:
             target_rudder_pos = self.straight
 
-        rudder_msg = Float32()
-        rudder_msg.data = float(target_rudder_pos)
-        self.rudderPublisher.publish(rudder_msg)
-        self.get_logger().info(f"Rudder set to: {target_rudder_pos}")
+        self.rudderPublisher.publish(Float32(data=target_rudder_pos))
 
     def turnSailTo(self):
         """
@@ -97,18 +91,20 @@ class AutonomousControlNode(Node):
         self.waypoints.append((msg.latitude, msg.longitude))
         self.get_logger().info("New target added: ({}, {})".format(msg.latitude, msg.longitude))
 
-
     def setHeading(self, msg):
         """
-        Update the current heading from /witmotion_heading topic.
+        Update the current heading based on magnetic field data.
         """
-        self.heading = msg.data
-        # self.get_logger().info(f"Heading: {self.heading}")
+        self.heading = math.atan2(msg.magnetic_field.y, msg.magnetic_field.x) * 180 / math.pi
+        self.heading = (self.heading + 360) % 360
 
     def setWindAngle(self, msg):
         """
         Update the wind angle and adjust the sail position accordingly.
         """
+        from_range = 4095
+        to_range = 360
+        scaled_value = msg.data / from_range
         self.windAngle = msg.data
         self.turnSailTo()
 
