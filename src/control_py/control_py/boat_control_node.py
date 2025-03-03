@@ -32,13 +32,7 @@ class BoatControlNode(Node):
         self.rudder_pwm.start(0)
         self.sail_pwm.start(0)
         self.esc_pwm.start(0)
-        self.currentSailPosition = 0
-        self.currentRudderPosition = 0
-        self.targetSailPos = 0
-        self.targetRudderPos = 0
-        # self.motorSpeed = 0
         
-<<<<<<< HEAD
         self.currentSailPosition = 0
         self.currentRudderPosition = 0
         self.targetSailPos = 0
@@ -50,11 +44,6 @@ class BoatControlNode(Node):
         # Load calibration data
         self.calibration_data = self.load_calibration_data()
         
-=======
-        # Load calibration data
-        self.calibration_data = self.load_calibration_data()
-
->>>>>>> version2
         # Queue for servo commands
         self.command_queue = Queue()
         self.worker_thread = threading.Thread(target=self.process_commands)
@@ -115,11 +104,7 @@ class BoatControlNode(Node):
         while True:
             self.control_rudder(self.targetRudderPos)
             self.control_sail(self.targetSailPos)
-<<<<<<< HEAD
             self.control_esc(self.motorSpeed)
-=======
-            # self.control_esc(self.motorSpeed)
->>>>>>> version2
             time.sleep(0.03)  # Small delay to reduce CPU usage
 
     def control_rudder(self, value):
@@ -128,10 +113,6 @@ class BoatControlNode(Node):
                 self.currentRudderPosition += 1
             else:
                 self.currentRudderPosition -= 1
-<<<<<<< HEAD
-=======
-        self.get_logger().info(f"Rudder Pos: {self.currentRudderPosition} (Target: {value})")
->>>>>>> version2
         duty_cycle = self.map_to_duty_cycle(
             self.currentRudderPosition, 
             min_value=self.calibration_data['rudder_min'], 
@@ -148,10 +129,6 @@ class BoatControlNode(Node):
                 self.currentSailPosition += 1
             else:
                 self.currentSailPosition -= 1
-<<<<<<< HEAD
-=======
-        self.get_logger().info(f"Sail Pos: {self.currentSailPosition} (Target: {value})")
->>>>>>> version2
         duty_cycle = self.map_to_duty_cycle(
             self.currentSailPosition, 
             min_value=self.calibration_data['sail_min'], 

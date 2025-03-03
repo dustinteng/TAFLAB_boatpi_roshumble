@@ -1,2 +1,0 @@
-/usr/bin/ar qc libRudderControlHelper.a CMakeFiles/RudderControlHelper.dir/src/RudderControlHelper.cpp.o
-/usr/bin/ranlib libRudderControlHelper.a
