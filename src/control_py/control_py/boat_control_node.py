@@ -32,11 +32,6 @@ class BoatControlNode(Node):
         self.rudder_pwm.start(0)
         self.sail_pwm.start(0)
         self.esc_pwm.start(0)
-        self.currentSailPosition = 0
-        self.currentRudderPosition = 0
-        self.targetSailPos = 0
-        self.targetRudderPos = 0
-        # self.motorSpeed = 0
         
         self.currentSailPosition = 0
         self.currentRudderPosition = 0
