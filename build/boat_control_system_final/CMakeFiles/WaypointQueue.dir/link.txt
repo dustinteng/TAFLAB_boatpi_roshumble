@@ -1,2 +1,0 @@
-/usr/bin/ar qc libWaypointQueue.a CMakeFiles/WaypointQueue.dir/src/WaypointQueue.cpp.o
-/usr/bin/ranlib libWaypointQueue.a

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libCoordinateCalculations.a CMakeFiles/CoordinateCalculations.dir/src/Coordinate_Calculations.cpp.o
-/usr/bin/ranlib libCoordinateCalculations.a

@@ -5,7 +5,7 @@ FROM ros:humble-ros-base
 RUN apt-get update && apt-get install -y \
     python3-colcon-common-extensions \
     build-essential \
-    python3-rpi.gpio \
+    # python3-rpi.gpio \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 

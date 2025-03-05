@@ -88,13 +88,6 @@ def generate_launch_description():
         main_logic_node,
         gps_node,
         xbee_node,
-<<<<<<< HEAD
-        autonomous_control,
-        # mpu9250_node,
-        witmotionmag_node,
-    ])
-
-=======
         # autonomous_control,
         auto_waypoint_queue,
         auto_coordinate_calculations,
@@ -102,4 +95,3 @@ def generate_launch_description():
         auto_sail_control,
         test_publisher,
     ])
->>>>>>> version2
