@@ -71,6 +71,42 @@ def generate_launch_description():
         output='screen',
     )
 
+    # Additional nodes from boat_control_system_final
+    auto_waypoint_queue = Node(
+        package='boat_control_system_final',
+        executable='waypoint_queue_node',
+        name='auto_waypoint_queue',
+        output='screen',
+    )
+
+    auto_coordinate_calculations = Node(
+        package='boat_control_system_final',
+        executable='coordinate_calculations_node',
+        name='auto_coordinate_calculations',
+        output='screen',
+    )
+
+    auto_rudder_control = Node(
+        package='boat_control_system_final',
+        executable='rudder_servo_control_node',
+        name='auto_rudder_control',
+        output='screen',
+    )
+
+    auto_sail_control = Node(
+        package='boat_control_system_final',
+        executable='sail_servo_control_node',
+        name='auto_sail_control',
+        output='screen',
+    )
+
+    # CHECK THIS
+    test_publisher = Node(
+        package='test_publisher_package',
+        executable='test_publisher_node',
+        name='test_publisher',
+        output='screen',
+    )
 
 
     return LaunchDescription([
@@ -82,4 +118,10 @@ def generate_launch_description():
         gps_node,
         xbee_node,
         witmotionmag_node,
+        autonomous_control,
+        auto_waypoint_queue,
+        auto_coordinate_calculations,
+        auto_rudder_control,
+        auto_sail_control,
+        test_publisher,
     ])
