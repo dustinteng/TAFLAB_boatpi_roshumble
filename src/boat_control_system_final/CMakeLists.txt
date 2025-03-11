@@ -14,6 +14,7 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(taflab_msgs REQUIRED)
+find_package(ament_index_cpp REQUIRED)  # Added dependency for package share directory resolution
 
 # Include directories
 include_directories(
@@ -53,6 +54,7 @@ target_link_libraries(rudder_servo_control_node RudderServoControlNodeLib)
 # Add a library for SailServoControlNode
 add_library(SailServoControlNodeLib src/SailServoControlNode.cpp)
 ament_target_dependencies(SailServoControlNodeLib rclcpp sensor_msgs std_msgs taflab_msgs)
+target_link_libraries(SailServoControlNodeLib ament_index_cpp::ament_index_cpp)  # Link ament_index_cpp
 
 # Add the executable for sail servo control
 add_executable(sail_servo_control_node src/SailServoControlNode.cpp)

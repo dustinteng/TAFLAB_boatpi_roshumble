@@ -18,6 +18,11 @@
 
 SailServoControlNode::SailServoControlNode() : Node("sail_servo_control_node")
 {
+
+    std::string package_share_directory = ament_index_cpp::get_package_share_directory("boat_control_system_final");
+    // Now initialize filename with the correct path
+    filename = package_share_directory + "/SailAngleData.csv";
+
     // Initialize the publisher for sail angle
     sail_angle_publisher_ = this->create_publisher<taflab_msgs::msg::ControlData>(
         "/boatcontrol", 10);
@@ -79,7 +84,8 @@ void SailServoControlNode::loadSailData()
 
     if (!file.is_open())
     {
-        throw std::runtime_error("Could not open file");
+        RCLCPP_ERROR(this->get_logger(), "Could not open file: %s", filename.c_str());
+        throw std::runtime_error("Could not open file: " + filename);
     }
 
     // Skip the header line if present
@@ -126,6 +132,7 @@ void SailServoControlNode::loadSailData()
     file.close();
     RCLCPP_INFO(this->get_logger(), "Sail data loaded successfully.");
 }
+
 
 
 float SailServoControlNode::interpolateSailPosition(float windAngle, const SailData& lower, const SailData& upper)
