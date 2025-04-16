@@ -28,6 +28,7 @@ class AutonomousControlNode(Node):
         # Publishers
         self.rudderPublisher = self.create_publisher(Float32, '/rud_cmd_auto', 10)
         self.sailPublisher = self.create_publisher(Float32, '/sail_cmd_auto', 10)
+        self.escPublisher = self.create_publisher(Float32, '/esc_cmd_auto', 10)
 
     def navigateToDestination(self, msg):
         """
@@ -42,32 +43,39 @@ class AutonomousControlNode(Node):
             targetBearing = self.calculateBearing(currentLat, currentLon, targetLat, targetLon)
 
             self.turnRudderTo(targetBearing)
-
+            self.setEscValue(20.0)
             if distance < 5:  # Close enough to the target waypoint
                 self.get_logger().info("Arrived at waypoint: ({}, {})".format(targetLat, targetLon))
                 self.waypoints.pop(0)
 
+    def setEscValue(self, num):
+        """
+        input ESC        
+        """
+        # msg = Float32
+        # msg.data = num
+        self.escPublisher.publish(Float32(data=num))
+
+
+
+
     def turnRudderTo(self, targetBearing):
         """
-        Adjust the rudder to steer the boat toward the target bearing.
+        Adjust the rudder to steer the boat toward the target bearing,
+        ensuring the output is in the range [-90, 90].
         """
-        delta = self.heading - targetBearing
-        if delta > 0:
-            if delta > 180:
-                target_rudder_pos = self.straight + math.pow(((360 - delta) / 180), 0.5) * self.range
-            else:
-                target_rudder_pos = self.straight - math.pow((delta / 180), 0.5) * self.range
-        elif delta < 0:
-            if delta < -180:
-                target_rudder_pos = self.straight - math.pow(((360 + delta) / 180), 0.5) * self.range
-            else:
-                target_rudder_pos = self.straight + math.pow((-delta / 180), 0.5) * self.range
-        else:
-            target_rudder_pos = self.straight
+        delta = (targetBearing - self.heading + 180) % 360 - 180  # Normalize delta to [-180, 180]
+        
+        # Map delta to the range [-90, 90] using a proportional scaling factor
+        target_rudder_pos = max(-90, min(90, (delta / 180) * 90))
 
+        # Publish the rudder position
         rudder_msg = Float32()
         rudder_msg.data = float(target_rudder_pos)
         self.rudderPublisher.publish(rudder_msg)
+
+        # Logging for debugging
+        self.get_logger().info(f"Heading: {self.heading}, Target Bearing: {targetBearing}")
         self.get_logger().info(f"Rudder set to: {target_rudder_pos}")
 
     def turnSailTo(self):
