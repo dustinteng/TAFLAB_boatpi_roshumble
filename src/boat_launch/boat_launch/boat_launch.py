@@ -65,40 +65,40 @@ def generate_launch_description():
         output='screen',
     )
 
-    autonomous_control = Node(
-        package='autonomous_control',
-        executable='controller',
-        name='controller',
+    # autonomous_control = Node(
+    #     package='autonomous_control',
+    #     executable='controller',
+    #     name='controller',
+    #     output='screen',
+    # )
+
+    auto_waypoint_queue = Node(
+        package='boat_control_system_final',
+        executable='waypoint_queue_node',
+        name='auto_waypoint_queue',
         output='screen',
     )
 
-    # auto_waypoint_queue = Node(
-    #     package='boat_control_system_final',
-    #     executable='waypoint_queue_node',
-    #     name='auto_waypoint_queue',
-    #     output='screen',
-    # )
+    auto_coordinate_calculations = Node(
+        package='boat_control_system_final',
+        executable='coordinate_calculations_node',
+        name='auto_coordinate_calculations',
+        output='screen',
+    )
 
-    # auto_coordinate_calculations = Node(
-    #     package='boat_control_system_final',
-    #     executable='coordinate_calculations_node',
-    #     name='auto_coordinate_calculations',
-    #     output='screen',
-    # )
+    auto_rudder_control = Node(
+        package='boat_control_system_final',
+        executable='rudder_servo_control_node',
+        name='auto_rudder_control',
+        output='screen',
+    )
 
-    # auto_rudder_control = Node(
-    #     package='boat_control_system_final',
-    #     executable='rudder_servo_control_node',
-    #     name='auto_rudder_control',
-    #     output='screen',
-    # )
-
-    # auto_sail_control = Node(
-    #     package='boat_control_system_final',
-    #     executable='sail_servo_control_node',
-    #     name='auto_sail_control',
-    #     output='screen',
-    # )
+    auto_sail_control = Node(
+        package='boat_control_system_final',
+        executable='sail_servo_control_node',
+        name='auto_sail_control',
+        output='screen',
+    )
 
     # auto_test_node = Node(
     #     package='test_publisher',
@@ -117,10 +117,10 @@ def generate_launch_description():
         control_node,
         main_logic_node,
         xbee_node,
-        autonomous_control,
-        # auto_waypoint_queue,
-        # auto_coordinate_calculations,
-        # auto_rudder_control,
-        # auto_sail_control,
+        # autonomous_control,
+        auto_waypoint_queue,
+        auto_coordinate_calculations,
+        auto_rudder_control,
+        auto_sail_control,
         # auto_test_node,
     ])
