@@ -11,35 +11,35 @@ def generate_launch_description():
 
     lis3mdl_node = Node(
         package='lis3mdl_mag',
-        executable='magnetometer_node',  
+        executable='magnetometer_node',
         name='magnetometer_node',
         output='screen',
     )
 
     mpu9250_node = Node(
         package='mpu9250_sensor',
-        executable='mpu9250_node', 
+        executable='mpu9250_node',
         name='mpu9250_node',
         output='screen',
     )
     
     pht_sensor_node = Node(
         package='pht_sensor',
-        executable='pht_sensor_node',  
+        executable='pht_sensor_node',
         name='pht_sensor_node',
         output='screen',
     )
     
     witmotionmag_node = Node(
         package='witmotionmag',
-        executable='witmotionmag_node', 
+        executable='witmotionmag_node',
         name='witmotionmag_node',
         output='screen',
     )
 
     gps_node = Node(
         package='gps_gt_u7',
-        executable='gps_node',  
+        executable='gps_node',
         name='gps_node',
         output='screen',
     )
@@ -57,6 +57,7 @@ def generate_launch_description():
         name='main_logic_node',
         output='screen',
     )
+
     xbee_node = Node(
         package='xbee_node',
         executable='xbee_node',
@@ -71,47 +72,55 @@ def generate_launch_description():
         output='screen',
     )
 
-    # Additional nodes from boat_control_system_final
-    auto_waypoint_queue = Node(
-        package='boat_control_system_final',
-        executable='waypoint_queue_node',
-        name='auto_waypoint_queue',
-        output='screen',
-    )
+    # auto_waypoint_queue = Node(
+    #     package='boat_control_system_final',
+    #     executable='waypoint_queue_node',
+    #     name='auto_waypoint_queue',
+    #     output='screen',
+    # )
 
-    auto_coordinate_calculations = Node(
-        package='boat_control_system_final',
-        executable='coordinate_calculations_node',
-        name='auto_coordinate_calculations',
-        output='screen',
-    )
+    # auto_coordinate_calculations = Node(
+    #     package='boat_control_system_final',
+    #     executable='coordinate_calculations_node',
+    #     name='auto_coordinate_calculations',
+    #     output='screen',
+    # )
 
-    auto_rudder_control = Node(
-        package='boat_control_system_final',
-        executable='rudder_servo_control_node',
-        name='auto_rudder_control',
-        output='screen',
-    )
+    # auto_rudder_control = Node(
+    #     package='boat_control_system_final',
+    #     executable='rudder_servo_control_node',
+    #     name='auto_rudder_control',
+    #     output='screen',
+    # )
 
-    auto_sail_control = Node(
-        package='boat_control_system_final',
-        executable='sail_servo_control_node',
-        name='auto_sail_control',
-        output='screen',
-    )
+    # auto_sail_control = Node(
+    #     package='boat_control_system_final',
+    #     executable='sail_servo_control_node',
+    #     name='auto_sail_control',
+    #     output='screen',
+    # )
+
+    # auto_test_node = Node(
+    #     package='test_publisher',
+    #     executable='test_publisher',
+    #     name='test_publisher',
+    #     output='screen',
+    # )
 
     return LaunchDescription([
         as5600_node,
-        # # lis3mdl_node,
+        # lis3mdl_node,
+        # mpu9250_node,
         pht_sensor_node,
+        witmotionmag_node,
+        gps_node,
         control_node,
         main_logic_node,
-        gps_node,
         xbee_node,
-        witmotionmag_node,
-        # autonomous_control,
-        auto_waypoint_queue,
-        auto_coordinate_calculations,
-        auto_rudder_control,
-        auto_sail_control,
+        autonomous_control,
+        # auto_waypoint_queue,
+        # auto_coordinate_calculations,
+        # auto_rudder_control,
+        # auto_sail_control,
+        # auto_test_node,
     ])

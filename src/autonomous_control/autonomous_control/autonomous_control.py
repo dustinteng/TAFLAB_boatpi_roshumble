@@ -43,10 +43,12 @@ class AutonomousControlNode(Node):
             targetBearing = self.calculateBearing(currentLat, currentLon, targetLat, targetLon)
 
             self.turnRudderTo(targetBearing)
-            self.setEscValue(20.0)
+            self.setEscValue(10.0)
             if distance < 5:  # Close enough to the target waypoint
                 self.get_logger().info("Arrived at waypoint: ({}, {})".format(targetLat, targetLon))
                 self.waypoints.pop(0)
+                self.setEscValue(0.0)
+
 
     def setEscValue(self, num):
         """
