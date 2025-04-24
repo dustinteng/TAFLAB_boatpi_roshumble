@@ -18,6 +18,8 @@ WaypointQueueNode::WaypointQueueNode() : Node("waypoint_queue_node")
         "/unscreened_coordinates", 
         10);
 
+    reached_state_publisher_ = this->create_publisher<std_msgs::msg::Bool>("/reached_state", 10);
+
     // Subscription to receive waypoints from the ground station
     ground_station_subscriber_ = this->create_subscription<sensor_msgs::msg::NavSatFix>(
         "/boat/target_coordinates", 
