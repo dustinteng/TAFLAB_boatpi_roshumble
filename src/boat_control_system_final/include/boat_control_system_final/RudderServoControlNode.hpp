@@ -63,6 +63,7 @@ private:
     // Publishers and subscribers
     rclcpp::Publisher<taflab_msgs::msg::ControlData>::SharedPtr rudder_angle_publisher_;
     rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr executing_state_publisher_;
+    rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr reached_state_publisher_;
     
     rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr final_waypoint_subscriber_;
     rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr gps_subscriber_;

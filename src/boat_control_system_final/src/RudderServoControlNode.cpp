@@ -29,6 +29,9 @@ RudderServoControlNode::RudderServoControlNode() : Node("rudder_servo_control_no
     executing_state_publisher_ = this->create_publisher<std_msgs::msg::Bool>(
         "/executing_state", 10);
 
+    // Initialize the publisher for the reached state
+    reached_state_publisher_ = this->create_publisher<std_msgs::msg::Bool>("/reached_state", 10);
+
     // Main Subscription for waypoints set from coordinate calculations
     final_waypoint_subscriber_ = this->create_subscription<sensor_msgs::msg::NavSatFix>(
         "/rudder_servo_control",
@@ -319,6 +322,11 @@ void RudderServoControlNode::executeWaypoints()
                     msg.data = false;  // Set the value of the Bool message
                     executing_state_publisher_->publish(msg);  // Publish the message
                     RCLCPP_INFO(this->get_logger(), "Waypoint queue empty, publishing execution state false.");
+
+                    std_msgs::msg::Bool reached_msg;
+                    reached_msg.data = true;
+                    reached_state_publisher_->publish(reached_msg);
+                    RCLCPP_INFO(this->get_logger(), "Waypoint queue empty, publishing reached_state true.");
                 }
             }
         }

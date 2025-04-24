@@ -20,7 +20,7 @@ WaypointQueueNode::WaypointQueueNode() : Node("waypoint_queue_node")
 
     // Subscription to receive waypoints from the ground station
     ground_station_subscriber_ = this->create_subscription<sensor_msgs::msg::NavSatFix>(
-        "/ground_targets", 
+        "/boat/target_coordinates", 
         10,
         std::bind(&WaypointQueueNode::ground_station_callback, this, std::placeholders::_1));
 
@@ -45,6 +45,10 @@ void WaypointQueueNode::ground_station_callback(const sensor_msgs::msg::NavSatFi
     WaypointQueue::getInstance().add_waypoint(*msg); // Add waypoint to the queue
     RCLCPP_INFO(this->get_logger(), "Received waypoint from ground station: [lat: %.6f, lon: %.6f, alt: %.2f]",
                 msg->latitude, msg->longitude, msg->altitude);
+    std_msgs::msg::Bool reached_msg;
+    reached_msg.data = false;
+    reached_state_publisher_->publish(reached_msg);
+    RCLCPP_INFO(this->get_logger(), "Published reached_state: false");
 }
 
 void WaypointQueueNode::initCallback(const std_msgs::msg::String::SharedPtr msg)

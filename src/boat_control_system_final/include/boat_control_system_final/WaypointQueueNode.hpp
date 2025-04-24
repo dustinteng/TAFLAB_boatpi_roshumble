@@ -28,6 +28,9 @@ private:
     // Declare a publisher
     rclcpp::Publisher<sensor_msgs::msg::NavSatFix>::SharedPtr waypoint_publisher_;
 
+    // Declare a publisher
+    rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr reached_state_publisher_;
+
 
     //Listing Subscribers:
 
