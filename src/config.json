@@ -21,5 +21,8 @@
         "minDutySail": 1137,
         "midDutySail": 1642,
         "maxDutySail": 2107
-    }
+    },
+    "windvane_offset": -3231,
+    "windvane_reverse": "True"
+
 }

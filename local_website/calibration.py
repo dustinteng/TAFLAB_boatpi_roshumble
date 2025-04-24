@@ -30,7 +30,7 @@ RAW_ANGLE_REGISTER = 0x0C
 bus = SMBus(1)  # I2C bus for windvane sensor
 
 # Global variables for windvane
-windvane_offset = -2300  # initial offset
+windvane_offset = -3231  # initial offset
 last_raw_value = 0       # most recent raw sensor reading
 windvane_angle = 0       # computed angle (in degrees)
 reverse = True           # reverse output if needed
