@@ -10,6 +10,7 @@ import threading
 import json
 import os
 from std_msgs.msg import Float32
+import math
 
 class BoatControlNode(Node):
     def __init__(self):
@@ -96,9 +97,14 @@ class BoatControlNode(Node):
             self.get_logger().warn("Config file not found. Using default servo duty values.")
 
     def control_callback(self, msg):
-        self.targetRudderPos = msg.servo_rudder
-        self.targetSailPos = msg.servo_sail
-        self.motorSpeed = msg.esc
+        if not math.isnan(msg.servo_rudder):
+            self.targetRudderPos = msg.servo_rudder
+        if not math.isnan(msg.servo_sail):
+            self.targetSailPos = msg.servo_sail
+        if not math.isnan(msg.esc):
+            self.motorSpeed = msg.esc
+
+
 
     def calibration_callback(self, msg):
         # Optional: process calibration messages if desired.

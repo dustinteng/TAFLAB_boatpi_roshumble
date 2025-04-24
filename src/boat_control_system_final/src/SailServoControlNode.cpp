@@ -9,6 +9,9 @@
 #include <vector>
 #include <string>
 #include <stdexcept>
+#include <limits>      // for std::numeric_limits<float>
+#include <cmath>       // for std::isnan if you need it elsewhere
+
 
 #include "SailServoControlNode.hpp"
 #include <std_msgs/msg/float32.hpp>
@@ -78,9 +81,10 @@ void SailServoControlNode::stateCallback(const std_msgs::msg::Bool::SharedPtr ms
 void SailServoControlNode::setSailServo(float angle)
 {
     taflab_msgs::msg::ControlData control_msg;
-    control_msg.servo_sail = angle;  // Set sail angle
-    control_msg.servo_rudder = 0.0f; // Default rudder angle
-    control_msg.esc = 0.0f;          // Default ESC value
+    control_msg.servo_sail   = angle;
+    control_msg.servo_rudder = std::numeric_limits<float>::quiet_NaN();
+    control_msg.esc          = std::numeric_limits<float>::quiet_NaN();
+    
 
     sail_angle_publisher_->publish(control_msg);
 

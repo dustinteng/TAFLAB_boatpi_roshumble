@@ -7,6 +7,8 @@
 #include <cmath>
 #include <thread>
 #include <mutex>
+#include <limits>     // for std::numeric_limits<float>
+
 
 #include <std_msgs/msg/string.hpp>
 #include <sensor_msgs/msg/nav_sat_fix.hpp>
@@ -191,7 +193,7 @@ void RudderServoControlNode::turnBoat(sensor_msgs::msg::NavSatFix target_positio
 
         RCLCPP_INFO(this->get_logger(), "Turn Angle: %.2f, Direction: %s, Desired: %.2f", turn_angle, turn_direction.c_str(), desired_heading);
 
-        if (abs(turn_angle) <= 1.0f) 
+        if (std::abs(turn_angle) <= 1.0f) 
         {
             setRudderServo(0);
             turn_complete = true;
@@ -345,9 +347,9 @@ void RudderServoControlNode::executeWaypoints()
 void RudderServoControlNode::setRudderServo(float angle)
 {
     taflab_msgs::msg::ControlData control_msg;
-    control_msg.servo_sail = 0.0f;  // Set sail angle
+    control_msg.servo_sail   = std::numeric_limits<float>::quiet_NaN();
     control_msg.servo_rudder = angle; // Default rudder angle
-    control_msg.esc = 0.0f;          // Default ESC value
+    control_msg.esc          = std::numeric_limits<float>::quiet_NaN();
     rudder_angle_publisher_->publish(control_msg);
 
     RCLCPP_INFO(this->get_logger(), "Setting rudder servo to angle: %.2f", angle);
